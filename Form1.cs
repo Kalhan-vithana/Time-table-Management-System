@@ -196,7 +196,7 @@ namespace Time_Table_managemnt
         {
             GenarateIDPanel.Hide();
         }
-        //
+       
         private void GenGroupmaterialButton7_Click(object sender, EventArgs e)
         {
             ClearGroupID();
@@ -210,7 +210,7 @@ namespace Time_Table_managemnt
             GropIDdataGridView1.DataSource = dt;
         }
 
-        //
+        
         private void materialButton7_Click(object sender, EventArgs e)
         {
           
@@ -548,15 +548,6 @@ namespace Time_Table_managemnt
 
             UpdateTagTextbox.Focus();
         }
-
-
-   //------------------------ADD lectures ---------------------------------------------------------------------------
-
-
-
-
-
-
 
 
  //-----------panels and buttons navigations-------------------------------------------------------
@@ -936,9 +927,6 @@ namespace Time_Table_managemnt
             panelManageSession.Hide();
         }
 
-        private void LecSave_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }
