@@ -88,7 +88,10 @@ namespace Time_Table_managemnt
             GenarateIDPanel.Hide();
         }
 
-     
+
+
+        /*=============================================Get Students to Table =============================================================================== */
+
 
         private void getStudents()
         {
@@ -106,9 +109,10 @@ namespace Time_Table_managemnt
             
         }
 
-     
-       
-        //add Students Groups Data
+
+
+
+        /*=============================================  Add Students Group=============================================================================== */
 
         private void AddStudents_Click(object sender, EventArgs e)
         {
@@ -137,7 +141,8 @@ namespace Time_Table_managemnt
             Reset();
         }
 
-        //reset button
+
+        /*============================================= Reset method  Students Group =============================================================================== */
 
         private void Reset()
         {
@@ -151,7 +156,8 @@ namespace Time_Table_managemnt
         }
 
 
-        //Search Students
+
+        /*=============================================  Search Students Groups  =============================================================================== */
 
         private void SearchStudntGroup_TextChanged(object sender, EventArgs e)
         {
@@ -236,7 +242,8 @@ namespace Time_Table_managemnt
            
         }
 
-        //Add GropID
+
+        /*=============================================  Add Students GroupsID   =============================================================================== */
         private void AddGroupID_Click(object sender, EventArgs e)
         {
             if (studentID > 0)
@@ -269,7 +276,7 @@ namespace Time_Table_managemnt
         }
 
 
-        //add sub group
+        /*=============================================  Add  Students Sub Groups =============================================================================== */
         private void SubGroupIDmaterialButton8_Click(object sender, EventArgs e)
         {
 
@@ -297,14 +304,16 @@ namespace Time_Table_managemnt
         }
 
 
-        //sub group
+
+        /*=============================================  Select SubGroupID data  ============================================================================== */
         private void SubdataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             studentID = Convert.ToInt32(SubdataGridView1.SelectedRows[0].Cells[0].Value);
             SubGroupmaterial.Text = SubdataGridView1.SelectedRows[0].Cells[1].Value.ToString();
         }
 
-        //UpdateGroup
+
+        /*============================================= Select  GroupID data =============================================================================== */
         private void UpdateStudentdataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             studentID = Convert.ToInt32(UpdateStudentdataGridView1.SelectedRows[0].Cells[0].Value);
@@ -317,7 +326,8 @@ namespace Time_Table_managemnt
 
         }
 
-        //update Students Groups
+
+        /*============================================= Update Students Groups  =============================================================================== */
         private void UpdateStudentsGroupmaterialButton11_Click(object sender, EventArgs e)
         {
 
@@ -352,7 +362,8 @@ namespace Time_Table_managemnt
 
 
         }
-        //deleted Students
+
+        /*=============================================    Delete Students Groups   =============================================================================== */
         private void DeleteStudentsmaterialButton10_Click(object sender, EventArgs e)
         {
             if (studentID > 0)
@@ -377,7 +388,7 @@ namespace Time_Table_managemnt
         }
 
 
-        //clear Students data
+        /*=============================================   Clear Students Groups   =============================================================================== */
         private void ClearData_Click(object sender, EventArgs e)
         {
             clearStudents();
@@ -399,7 +410,8 @@ namespace Time_Table_managemnt
 
         }
 
-        //Add Tag 
+
+        /*=============================================   Add Tags     =============================================================================== */
         private void SaveTag_Click(object sender, EventArgs e)
         {
             con.Close();
@@ -420,7 +432,8 @@ namespace Time_Table_managemnt
             GetTags(); //get tags details
         }
 
-        //get Tags Data into Table
+
+        /*============================================  Get Tags data in Table  =============================================================================== */
         private void GetTags()
         {
             con.Close();
@@ -435,7 +448,8 @@ namespace Time_Table_managemnt
             TagdataGridView.DataSource = dt;
         }
 
-        //search Tags 
+
+        /*=============================================  Search Tags   =============================================================================== */
         private void SearchTags_TextChanged(object sender, EventArgs e)
         {
 
@@ -463,9 +477,10 @@ namespace Time_Table_managemnt
             }
         }
 
-      
 
-        //Select Tag DataGrid View Detais
+
+
+        /*=============================================   Select TagDatagridView   =============================================================================== */
         private void TagdataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             TagID = Convert.ToInt32(TagdataGridView.SelectedRows[0].Cells[0].Value);
@@ -482,7 +497,8 @@ namespace Time_Table_managemnt
         }
 
 
-        //update Tag Button
+
+        /*=============================================   Update Students Tags   =============================================================================== */
         private void UpdateTagButton_Click(object sender, EventArgs e)
         {
             if(TagID > 0)
@@ -516,7 +532,7 @@ namespace Time_Table_managemnt
             }
         }
 
-        //Delete Tags 
+  /*=============================================  Delete Students Tags   =============================================================================== */
         private void DeleteTagButton_Click(object sender, EventArgs e)
         {
 
@@ -554,8 +570,8 @@ namespace Time_Table_managemnt
             UpdateTagTextbox.Focus();
         }
 
-        //--------------------------------------Add subjects--------------------------------------------------------------
 
+        /*=============================================Addd Subjects =============================================================================== */
 
         private void SaveBtnSub_Click(object sender, EventArgs e)
         {
@@ -599,7 +615,8 @@ namespace Time_Table_managemnt
             SubjectGridView1.DataSource = dt;
 
         }
-        /*--------------------Clear Subject data ------------------------------------*/
+
+        /*=============================================  Clear Subjects ============================================================================== */
 
 
 
@@ -620,7 +637,7 @@ namespace Time_Table_managemnt
         }
 
 
-        //---------------------Subject Data GridVeiw ----------------------------------------
+        /*============================================  select Subjects =============================================================================== */
 
 
 
@@ -642,8 +659,8 @@ namespace Time_Table_managemnt
 
         }
 
-        //----------------------------------Update Subject -----------------------------------------------------------
 
+        /*============================================= Update  Subjects  =============================================================================== */
 
         private void materialButtonSaveManage_Click(object sender, EventArgs e)
         {
@@ -674,7 +691,7 @@ namespace Time_Table_managemnt
         }
 
 
-        //------------------delete subject--------------------------------------
+        /*=============================================    Delete Subjects    =============================================================================== */
 
         private void materialButtonManagesub_Click(object sender, EventArgs e)
         {
@@ -690,7 +707,7 @@ namespace Time_Table_managemnt
             MessageBox.Show("deleted");
         }
 
-        //----------------------clear Subject------------
+        /*=============================================Clear Subjects =============================================================================== */
 
         private void materialButtonManage_Click(object sender, EventArgs e)
         {
@@ -703,7 +720,10 @@ namespace Time_Table_managemnt
             numericUpDown13.ResetText();
         }
 
-        //-----------panels and buttons navigations-------------------------------------------------------
+
+
+
+        //-----------panels and buttons navigations-------------------------------------------------------------------------------------------------
 
 
 
