@@ -30,15 +30,16 @@ namespace Time_Table_managemnt
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Logopanel2 = new System.Windows.Forms.Panel();
@@ -363,6 +364,7 @@ namespace Time_Table_managemnt
             this.addworkpanel = new System.Windows.Forms.Panel();
             this.addworkTabControl = new MaterialSkin.Controls.MaterialTabControl();
             this.addworktabPage = new System.Windows.Forms.TabPage();
+            this.HoursMinitsCombo = new MaterialSkin.Controls.MaterialComboBox();
             this.addworkclearbut = new MaterialSkin.Controls.MaterialButton();
             this.addworkpicBox = new System.Windows.Forms.PictureBox();
             this.addworksavebut = new MaterialSkin.Controls.MaterialButton();
@@ -637,7 +639,7 @@ namespace Time_Table_managemnt
             this.elipseControl45 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl46 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl47 = new Time_Table_managemnt.ElipseControl();
-            this.HoursMinitsCombo = new MaterialSkin.Controls.MaterialComboBox();
+            this.WorkingDatdataGridView = new System.Windows.Forms.DataGridView();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.Logopanel2.SuspendLayout();
@@ -848,6 +850,7 @@ namespace Time_Table_managemnt
             this.tabPage21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WorkingDatdataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -1196,17 +1199,17 @@ namespace Time_Table_managemnt
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(3, 46);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series2.Legend = "Legend1";
-            series2.Name = "StudentsGroups";
-            this.chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "StudentsGroups";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(679, 337);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -2258,8 +2261,8 @@ namespace Time_Table_managemnt
             this.GropIDdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GropIDdataGridView1.Name = "GropIDdataGridView1";
             this.GropIDdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Red;
-            this.GropIDdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Red;
+            this.GropIDdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.GropIDdataGridView1.RowTemplate.Height = 24;
             this.GropIDdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GropIDdataGridView1.Size = new System.Drawing.Size(300, 160);
@@ -2319,8 +2322,8 @@ namespace Time_Table_managemnt
             this.SubdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubdataGridView1.Name = "SubdataGridView1";
             this.SubdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Red;
-            this.SubdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Red;
+            this.SubdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.SubdataGridView1.RowTemplate.Height = 24;
             this.SubdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SubdataGridView1.Size = new System.Drawing.Size(293, 166);
@@ -2692,8 +2695,8 @@ namespace Time_Table_managemnt
             this.UpdateStudentdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateStudentdataGridView1.Name = "UpdateStudentdataGridView1";
             this.UpdateStudentdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Red;
-            this.UpdateStudentdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Red;
+            this.UpdateStudentdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.UpdateStudentdataGridView1.RowTemplate.Height = 24;
             this.UpdateStudentdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.UpdateStudentdataGridView1.Size = new System.Drawing.Size(733, 183);
@@ -3269,8 +3272,8 @@ namespace Time_Table_managemnt
             this.SubjectGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjectGridView1.Name = "SubjectGridView1";
             this.SubjectGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Red;
-            this.SubjectGridView1.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Red;
+            this.SubjectGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.SubjectGridView1.RowTemplate.Height = 24;
             this.SubjectGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SubjectGridView1.Size = new System.Drawing.Size(657, 89);
@@ -4099,8 +4102,8 @@ namespace Time_Table_managemnt
             this.TagdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TagdataGridView.Name = "TagdataGridView";
             this.TagdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Red;
-            this.TagdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Red;
+            this.TagdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.TagdataGridView.RowTemplate.Height = 24;
             this.TagdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TagdataGridView.Size = new System.Drawing.Size(615, 183);
@@ -5310,7 +5313,7 @@ namespace Time_Table_managemnt
             this.manageworkpanel.BackColor = System.Drawing.Color.White;
             this.manageworkpanel.Controls.Add(this.manageworkTabControl);
             this.manageworkpanel.Controls.Add(this.manageworkTabSelector);
-            this.manageworkpanel.Location = new System.Drawing.Point(26, 743);
+            this.manageworkpanel.Location = new System.Drawing.Point(29, 442);
             this.manageworkpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.manageworkpanel.Name = "manageworkpanel";
             this.manageworkpanel.Size = new System.Drawing.Size(815, 519);
@@ -5331,6 +5334,7 @@ namespace Time_Table_managemnt
             // 
             // manageworktabPage
             // 
+            this.manageworktabPage.Controls.Add(this.WorkingDatdataGridView);
             this.manageworktabPage.Controls.Add(this.numericUpDown6);
             this.manageworktabPage.Controls.Add(this.numericUpDown5);
             this.manageworktabPage.Controls.Add(this.MWmaterialCheckbox7);
@@ -5673,6 +5677,34 @@ namespace Time_Table_managemnt
             this.addworktabPage.TabIndex = 0;
             this.addworktabPage.Text = "add working days/hours";
             this.addworktabPage.UseVisualStyleBackColor = true;
+            // 
+            // HoursMinitsCombo
+            // 
+            this.HoursMinitsCombo.AutoResize = false;
+            this.HoursMinitsCombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.HoursMinitsCombo.Depth = 0;
+            this.HoursMinitsCombo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.HoursMinitsCombo.DropDownHeight = 174;
+            this.HoursMinitsCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.HoursMinitsCombo.DropDownWidth = 121;
+            this.HoursMinitsCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.HoursMinitsCombo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.HoursMinitsCombo.FormattingEnabled = true;
+            this.HoursMinitsCombo.IntegralHeight = false;
+            this.HoursMinitsCombo.ItemHeight = 43;
+            this.HoursMinitsCombo.Items.AddRange(new object[] {
+            "00.30",
+            "01.00",
+            "01.30",
+            "2.00"});
+            this.HoursMinitsCombo.Location = new System.Drawing.Point(40, 308);
+            this.HoursMinitsCombo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HoursMinitsCombo.MaxDropDownItems = 4;
+            this.HoursMinitsCombo.MouseState = MaterialSkin.MouseState.OUT;
+            this.HoursMinitsCombo.Name = "HoursMinitsCombo";
+            this.HoursMinitsCombo.Size = new System.Drawing.Size(289, 49);
+            this.HoursMinitsCombo.StartIndex = 0;
+            this.HoursMinitsCombo.TabIndex = 18;
             // 
             // addworkclearbut
             // 
@@ -9331,33 +9363,20 @@ namespace Time_Table_managemnt
             this.elipseControl47.CornerRadius = 70;
             this.elipseControl47.TargetControl = this.GenarateIDPanel;
             // 
-            // HoursMinitsCombo
+            // WorkingDatdataGridView
             // 
-            this.HoursMinitsCombo.AutoResize = false;
-            this.HoursMinitsCombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.HoursMinitsCombo.Depth = 0;
-            this.HoursMinitsCombo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.HoursMinitsCombo.DropDownHeight = 174;
-            this.HoursMinitsCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.HoursMinitsCombo.DropDownWidth = 121;
-            this.HoursMinitsCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.HoursMinitsCombo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.HoursMinitsCombo.FormattingEnabled = true;
-            this.HoursMinitsCombo.IntegralHeight = false;
-            this.HoursMinitsCombo.ItemHeight = 43;
-            this.HoursMinitsCombo.Items.AddRange(new object[] {
-            "00.30",
-            "01.00",
-            "01.30",
-            "2.00"});
-            this.HoursMinitsCombo.Location = new System.Drawing.Point(40, 308);
-            this.HoursMinitsCombo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.HoursMinitsCombo.MaxDropDownItems = 4;
-            this.HoursMinitsCombo.MouseState = MaterialSkin.MouseState.OUT;
-            this.HoursMinitsCombo.Name = "HoursMinitsCombo";
-            this.HoursMinitsCombo.Size = new System.Drawing.Size(289, 49);
-            this.HoursMinitsCombo.StartIndex = 0;
-            this.HoursMinitsCombo.TabIndex = 18;
+            this.WorkingDatdataGridView.BackgroundColor = System.Drawing.Color.MintCream;
+            this.WorkingDatdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.WorkingDatdataGridView.Location = new System.Drawing.Point(324, 14);
+            this.WorkingDatdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.WorkingDatdataGridView.Name = "WorkingDatdataGridView";
+            this.WorkingDatdataGridView.RowHeadersWidth = 51;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Red;
+            this.WorkingDatdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.WorkingDatdataGridView.RowTemplate.Height = 24;
+            this.WorkingDatdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.WorkingDatdataGridView.Size = new System.Drawing.Size(253, 89);
+            this.WorkingDatdataGridView.TabIndex = 53;
             // 
             // Form1
             // 
@@ -9624,6 +9643,7 @@ namespace Time_Table_managemnt
             this.tabPage21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WorkingDatdataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -10229,6 +10249,7 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialTextBox offerdSem;
         private MaterialSkin.Controls.MaterialTextBox OfferdYear;
         private MaterialSkin.Controls.MaterialComboBox HoursMinitsCombo;
+        private System.Windows.Forms.DataGridView WorkingDatdataGridView;
     }
 }
 

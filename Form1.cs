@@ -727,28 +727,101 @@ namespace Time_Table_managemnt
 
         private void addworksavebut_Click(object sender, EventArgs e)
         {
+            String Day ="";
+            String Mon = "";
+            String Tue = "";
+            String Wen = "";
+            String Thu = "";
+            String Fri = "";
+            String Sat = "";
+            String Sun = "";
+
 
             con.Close();
-            SqlCommand cmd = new SqlCommand("INSERT INTO Subject(offerdYear,offerdSemester,subjectname,subjectCode,lecHours,labHours,TuteHours,evhours) values (@offerdYear,@offerdSemester,@subjectname,@subjectCode,@lecHours,@labHours,@TuteHours,@evhours)", con);
+
+           
+            if (AWmaterialCheckbox1.Checked)
+            {
+
+                Mon = "Monday";
+            }
+            
+            if (AWmaterialCheckbox2.Checked)
+            {
+
+                Tue = "Tuesday";
+            }
+            if (AWmaterialCheckbox6.Checked)
+            {
+
+                Wen = "wednesday";
+            }
+            if (AWmaterialCheckbox4.Checked)
+            {
+
+                Thu = "ThursDay";
+            }
+            if (AWmaterialCheckbox7.Checked)
+            {
+
+                Fri = "Friday";
+            }
+            if (AWmaterialCheckbox3.Checked)
+            {
+
+                Sun = "Saturday";
+            }
+            if (AWmaterialCheckbox5.Checked)
+            {
+
+                Day = "";
+            }
+            else
+            {
+                Day = "";
+            }
+
+            
+            SqlCommand cmd = new SqlCommand("INSERT INTO Work(NoWorkingDays,WorkingHours,Mon,Tue,Wen,Thu,Fri,Sat,Sun) values(@NoWorkingDays,@WorkingHours,@Mon,@Tue,@Wen,@Thu,@Fri,@Sat,@Sun)", con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.AddWithValue("@offerdYear", materialComboBox24.Text.ToString());
-            cmd.Parameters.AddWithValue("@offerdSemester", materialComboBox25.Text.ToString());
-            cmd.Parameters.AddWithValue("@subjectname", materialTextBox27.Text);
-            cmd.Parameters.AddWithValue("@subjectCode", materialTextBox30.Text);
-            cmd.Parameters.AddWithValue("@lecHours", numericUpDown14.Value);
-            cmd.Parameters.AddWithValue("@labHours", numericUpDown15.Value);
-            cmd.Parameters.AddWithValue("@TuteHours", numericUpDown16.Value);
-            cmd.Parameters.AddWithValue("@evhours", numericUpDown17.Value);
+
+            cmd.Parameters.AddWithValue("@NoWorkingDays", AWmaterialComboBox10.Text.ToString());
+            cmd.Parameters.AddWithValue("@WorkingHours", HoursMinitsCombo.Text.ToString());
+            cmd.Parameters.AddWithValue("@Mon", Mon);
+            cmd.Parameters.AddWithValue("@Tue", Tue);
+            cmd.Parameters.AddWithValue("@Wen", Wen);
+            cmd.Parameters.AddWithValue("@Thu", Thu);
+            cmd.Parameters.AddWithValue("@Fri", Fri);
+            cmd.Parameters.AddWithValue("@Sat", Sat);
+            cmd.Parameters.AddWithValue("@Sun", Sun);
 
             con.Open();
 
             cmd.ExecuteNonQuery();
             con.Close();
 
+
             MessageBox.Show("added");
+
+            getWorkingDays();
 
         }
 
+        private void getWorkingDays()
+        {
+
+
+            SqlCommand cmd = new SqlCommand("select * from Work", con);
+            DataTable dt = new DataTable();
+
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+
+
+            WorkingDatdataGridView.DataSource = dt;
+        }
 
 
         //-----------panels and buttons navigations-------------------------------------------------------------------------------------------------
@@ -1128,6 +1201,6 @@ namespace Time_Table_managemnt
             panelManageSession.Hide();
         }
 
-       
+        
     }
 }
