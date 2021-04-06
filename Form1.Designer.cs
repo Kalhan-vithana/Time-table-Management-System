@@ -37,6 +37,7 @@ namespace Time_Table_managemnt
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -203,7 +204,6 @@ namespace Time_Table_managemnt
             this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
             this.materialComboBox23 = new MaterialSkin.Controls.MaterialComboBox();
             this.materialComboBox22 = new MaterialSkin.Controls.MaterialComboBox();
-            this.ManageSubTable = new System.Windows.Forms.DataGridView();
             this.materialButtonManage = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel60 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel62 = new MaterialSkin.Controls.MaterialLabel();
@@ -640,6 +640,7 @@ namespace Time_Table_managemnt
             this.elipseControl45 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl46 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl47 = new Time_Table_managemnt.ElipseControl();
+            this.SubjectGridView1 = new System.Windows.Forms.DataGridView();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.Logopanel2.SuspendLayout();
@@ -711,7 +712,6 @@ namespace Time_Table_managemnt
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ManageSubTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxManagesub)).BeginInit();
             this.SubjectPanalAddSubject.SuspendLayout();
             this.materialTabControlAddSubject.SuspendLayout();
@@ -852,6 +852,7 @@ namespace Time_Table_managemnt
             this.tabPage21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SubjectGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -3206,13 +3207,13 @@ namespace Time_Table_managemnt
             // tabPage24
             // 
             this.tabPage24.BackColor = System.Drawing.Color.White;
+            this.tabPage24.Controls.Add(this.SubjectGridView1);
             this.tabPage24.Controls.Add(this.numericUpDown13);
             this.tabPage24.Controls.Add(this.numericUpDown12);
             this.tabPage24.Controls.Add(this.numericUpDown11);
             this.tabPage24.Controls.Add(this.numericUpDown10);
             this.tabPage24.Controls.Add(this.materialComboBox23);
             this.tabPage24.Controls.Add(this.materialComboBox22);
-            this.tabPage24.Controls.Add(this.ManageSubTable);
             this.tabPage24.Controls.Add(this.materialButtonManage);
             this.tabPage24.Controls.Add(this.materialLabel60);
             this.tabPage24.Controls.Add(this.materialLabel62);
@@ -3312,18 +3313,6 @@ namespace Time_Table_managemnt
             this.materialComboBox22.Size = new System.Drawing.Size(249, 49);
             this.materialComboBox22.StartIndex = 0;
             this.materialComboBox22.TabIndex = 46;
-            // 
-            // ManageSubTable
-            // 
-            this.ManageSubTable.BackgroundColor = System.Drawing.Color.MintCream;
-            this.ManageSubTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ManageSubTable.Location = new System.Drawing.Point(15, 16);
-            this.ManageSubTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ManageSubTable.Name = "ManageSubTable";
-            this.ManageSubTable.RowHeadersWidth = 51;
-            this.ManageSubTable.RowTemplate.Height = 24;
-            this.ManageSubTable.Size = new System.Drawing.Size(676, 78);
-            this.ManageSubTable.TabIndex = 42;
             // 
             // materialButtonManage
             // 
@@ -3534,7 +3523,7 @@ namespace Time_Table_managemnt
             this.SubjectPanalAddSubject.BackColor = System.Drawing.Color.White;
             this.SubjectPanalAddSubject.Controls.Add(this.materialTabControlAddSubject);
             this.SubjectPanalAddSubject.Controls.Add(this.materialTabSelectorAddsubject);
-            this.SubjectPanalAddSubject.Location = new System.Drawing.Point(137, 501);
+            this.SubjectPanalAddSubject.Location = new System.Drawing.Point(105, 374);
             this.SubjectPanalAddSubject.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjectPanalAddSubject.Name = "SubjectPanalAddSubject";
             this.SubjectPanalAddSubject.Size = new System.Drawing.Size(792, 599);
@@ -3741,6 +3730,7 @@ namespace Time_Table_managemnt
             this.SaveBtnSub.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.SaveBtnSub.UseAccentColor = false;
             this.SaveBtnSub.UseVisualStyleBackColor = true;
+            this.SaveBtnSub.Click += new System.EventHandler(this.SaveBtnSub_Click);
             // 
             // ClearBtnSub
             // 
@@ -4103,8 +4093,8 @@ namespace Time_Table_managemnt
             this.TagdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TagdataGridView.Name = "TagdataGridView";
             this.TagdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Red;
-            this.TagdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Red;
+            this.TagdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.TagdataGridView.RowTemplate.Height = 24;
             this.TagdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TagdataGridView.Size = new System.Drawing.Size(615, 183);
@@ -9367,6 +9357,21 @@ namespace Time_Table_managemnt
             this.elipseControl47.CornerRadius = 70;
             this.elipseControl47.TargetControl = this.GenarateIDPanel;
             // 
+            // SubjectGridView1
+            // 
+            this.SubjectGridView1.BackgroundColor = System.Drawing.Color.MintCream;
+            this.SubjectGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SubjectGridView1.Location = new System.Drawing.Point(14, 16);
+            this.SubjectGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SubjectGridView1.Name = "SubjectGridView1";
+            this.SubjectGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Red;
+            this.SubjectGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.SubjectGridView1.RowTemplate.Height = 24;
+            this.SubjectGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.SubjectGridView1.Size = new System.Drawing.Size(200, 89);
+            this.SubjectGridView1.TabIndex = 52;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -9466,7 +9471,6 @@ namespace Time_Table_managemnt
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ManageSubTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxManagesub)).EndInit();
             this.SubjectPanalAddSubject.ResumeLayout(false);
             this.materialTabControlAddSubject.ResumeLayout(false);
@@ -9634,6 +9638,7 @@ namespace Time_Table_managemnt
             this.tabPage21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SubjectGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -9920,7 +9925,6 @@ namespace Time_Table_managemnt
         private System.Windows.Forms.Panel SubjectManageSubpanal;
         private MaterialSkin.Controls.MaterialTabControl materialTabControlmanagesub;
         private System.Windows.Forms.TabPage tabPage24;
-        private System.Windows.Forms.DataGridView ManageSubTable;
         private MaterialSkin.Controls.MaterialButton materialButtonManage;
         private MaterialSkin.Controls.MaterialLabel materialLabel60;
         private MaterialSkin.Controls.MaterialLabel materialLabel62;
@@ -10242,6 +10246,7 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialComboBox UpdateRelatedTags;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataGridView SubjectGridView1;
     }
 }
 
