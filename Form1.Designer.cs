@@ -149,10 +149,9 @@ namespace Time_Table_managemnt
             this.materialTabSelector3 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl4 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.UpdateAcdemictxt = new MaterialSkin.Controls.MaterialComboBox();
             this.SearchStudntGroup = new MaterialSkin.Controls.MaterialTextBox();
             this.SearchStudentsCombobox1 = new MaterialSkin.Controls.MaterialComboBox();
-            this.UpdateAcdemictxt = new MaterialSkin.Controls.MaterialTextBox();
-            this.UpdateProgrammeTxt = new MaterialSkin.Controls.MaterialTextBox();
             this.ClearData = new MaterialSkin.Controls.MaterialButton();
             this.DeleteStudentsmaterialButton10 = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
@@ -255,10 +254,6 @@ namespace Time_Table_managemnt
             this.materialCard11 = new MaterialSkin.Controls.MaterialCard();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.Tag1panel = new System.Windows.Forms.Panel();
-            this.materialTabSelector6 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.materialTabControl7 = new MaterialSkin.Controls.MaterialTabControl();
-            this.tabPage22 = new System.Windows.Forms.TabPage();
             this.tagpanel2 = new System.Windows.Forms.Panel();
             this.materialTabSelector5 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl6 = new MaterialSkin.Controls.MaterialTabControl();
@@ -276,6 +271,10 @@ namespace Time_Table_managemnt
             this.UpdateTagTextbox = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.Tag1panel = new System.Windows.Forms.Panel();
+            this.materialTabSelector6 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.materialTabControl7 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabPage22 = new System.Windows.Forms.TabPage();
             this.AddTagCombo1 = new MaterialSkin.Controls.MaterialComboBox();
             this.ADDTagCodeComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
@@ -397,8 +396,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector8 = new MaterialSkin.Controls.MaterialTabSelector();
             this.LocationmaterialTabControl8 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage18 = new System.Windows.Forms.TabPage();
-            this.materialRadioButton4 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton3 = new MaterialSkin.Controls.MaterialRadioButton();
+            this.ManagedataGridView = new System.Windows.Forms.DataGridView();
             this.DisplayLocClearBtn = new MaterialSkin.Controls.MaterialButton();
             this.DisplayLocDeleteBtn = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel38 = new MaterialSkin.Controls.MaterialLabel();
@@ -594,7 +592,7 @@ namespace Time_Table_managemnt
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.materialTabSelector2 = new MaterialSkin.Controls.MaterialTabSelector();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.ManagedataGridView = new System.Windows.Forms.DataGridView();
+            this.UpdateProgrammeTxt = new MaterialSkin.Controls.MaterialComboBox();
             this.elipseControl1 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl2 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl3 = new Time_Table_managemnt.ElipseControl();
@@ -642,6 +640,7 @@ namespace Time_Table_managemnt
             this.elipseControl45 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl46 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl47 = new Time_Table_managemnt.ElipseControl();
+            this.materialComboBox4 = new MaterialSkin.Controls.MaterialComboBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.Logopanel2.SuspendLayout();
@@ -730,14 +729,14 @@ namespace Time_Table_managemnt
             this.materialCard11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             this.tabPage5.SuspendLayout();
-            this.Tag1panel.SuspendLayout();
-            this.materialTabControl7.SuspendLayout();
-            this.tabPage22.SuspendLayout();
             this.tagpanel2.SuspendLayout();
             this.materialTabControl6.SuspendLayout();
             this.tabPage14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TagdataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.Tag1panel.SuspendLayout();
+            this.materialTabControl7.SuspendLayout();
+            this.tabPage22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.flowLayoutPanel5.SuspendLayout();
             this.materialCard5.SuspendLayout();
@@ -784,6 +783,7 @@ namespace Time_Table_managemnt
             this.DisplayLocationPanel.SuspendLayout();
             this.LocationmaterialTabControl8.SuspendLayout();
             this.tabPage18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ManagedataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDisplayLoc)).BeginInit();
             this.AddLocationPanel1.SuspendLayout();
             this.AddLocTab2.SuspendLayout();
@@ -852,7 +852,6 @@ namespace Time_Table_managemnt
             this.tabPage21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ManagedataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -2412,10 +2411,10 @@ namespace Time_Table_managemnt
             // 
             // tabPage12
             // 
+            this.tabPage12.Controls.Add(this.UpdateProgrammeTxt);
+            this.tabPage12.Controls.Add(this.UpdateAcdemictxt);
             this.tabPage12.Controls.Add(this.SearchStudntGroup);
             this.tabPage12.Controls.Add(this.SearchStudentsCombobox1);
-            this.tabPage12.Controls.Add(this.UpdateAcdemictxt);
-            this.tabPage12.Controls.Add(this.UpdateProgrammeTxt);
             this.tabPage12.Controls.Add(this.ClearData);
             this.tabPage12.Controls.Add(this.DeleteStudentsmaterialButton10);
             this.tabPage12.Controls.Add(this.materialLabel7);
@@ -2439,6 +2438,38 @@ namespace Time_Table_managemnt
             this.tabPage12.TabIndex = 0;
             this.tabPage12.Text = "Manage Students Group";
             this.tabPage12.UseVisualStyleBackColor = true;
+            // 
+            // UpdateAcdemictxt
+            // 
+            this.UpdateAcdemictxt.AutoResize = false;
+            this.UpdateAcdemictxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UpdateAcdemictxt.Depth = 0;
+            this.UpdateAcdemictxt.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.UpdateAcdemictxt.DropDownHeight = 174;
+            this.UpdateAcdemictxt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.UpdateAcdemictxt.DropDownWidth = 121;
+            this.UpdateAcdemictxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.UpdateAcdemictxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UpdateAcdemictxt.FormattingEnabled = true;
+            this.UpdateAcdemictxt.IntegralHeight = false;
+            this.UpdateAcdemictxt.ItemHeight = 43;
+            this.UpdateAcdemictxt.Items.AddRange(new object[] {
+            "Y1S1",
+            "Y1S2",
+            "Y2S1",
+            "Y2S2",
+            "Y3S1",
+            "Y3S2",
+            "Y4S1",
+            "Y4S2",
+            ""});
+            this.UpdateAcdemictxt.Location = new System.Drawing.Point(41, 357);
+            this.UpdateAcdemictxt.MaxDropDownItems = 4;
+            this.UpdateAcdemictxt.MouseState = MaterialSkin.MouseState.OUT;
+            this.UpdateAcdemictxt.Name = "UpdateAcdemictxt";
+            this.UpdateAcdemictxt.Size = new System.Drawing.Size(263, 49);
+            this.UpdateAcdemictxt.StartIndex = 0;
+            this.UpdateAcdemictxt.TabIndex = 50;
             // 
             // SearchStudntGroup
             // 
@@ -2479,36 +2510,6 @@ namespace Time_Table_managemnt
             this.SearchStudentsCombobox1.Size = new System.Drawing.Size(167, 49);
             this.SearchStudentsCombobox1.StartIndex = 0;
             this.SearchStudentsCombobox1.TabIndex = 48;
-            // 
-            // UpdateAcdemictxt
-            // 
-            this.UpdateAcdemictxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UpdateAcdemictxt.Depth = 0;
-            this.UpdateAcdemictxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.UpdateAcdemictxt.Location = new System.Drawing.Point(41, 352);
-            this.UpdateAcdemictxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.UpdateAcdemictxt.MaxLength = 50;
-            this.UpdateAcdemictxt.MouseState = MaterialSkin.MouseState.OUT;
-            this.UpdateAcdemictxt.Multiline = false;
-            this.UpdateAcdemictxt.Name = "UpdateAcdemictxt";
-            this.UpdateAcdemictxt.Size = new System.Drawing.Size(252, 50);
-            this.UpdateAcdemictxt.TabIndex = 47;
-            this.UpdateAcdemictxt.Text = "";
-            // 
-            // UpdateProgrammeTxt
-            // 
-            this.UpdateProgrammeTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UpdateProgrammeTxt.Depth = 0;
-            this.UpdateProgrammeTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.UpdateProgrammeTxt.Location = new System.Drawing.Point(42, 466);
-            this.UpdateProgrammeTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.UpdateProgrammeTxt.MaxLength = 50;
-            this.UpdateProgrammeTxt.MouseState = MaterialSkin.MouseState.OUT;
-            this.UpdateProgrammeTxt.Multiline = false;
-            this.UpdateProgrammeTxt.Name = "UpdateProgrammeTxt";
-            this.UpdateProgrammeTxt.Size = new System.Drawing.Size(252, 50);
-            this.UpdateProgrammeTxt.TabIndex = 46;
-            this.UpdateProgrammeTxt.Text = "";
             // 
             // ClearData
             // 
@@ -3949,69 +3950,11 @@ namespace Time_Table_managemnt
             this.tabPage5.Text = "Tags";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // Tag1panel
-            // 
-            this.Tag1panel.Controls.Add(this.materialTabSelector6);
-            this.Tag1panel.Controls.Add(this.materialTabControl7);
-            this.Tag1panel.Location = new System.Drawing.Point(197, 26);
-            this.Tag1panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Tag1panel.Name = "Tag1panel";
-            this.Tag1panel.Size = new System.Drawing.Size(751, 562);
-            this.Tag1panel.TabIndex = 11;
-            // 
-            // materialTabSelector6
-            // 
-            this.materialTabSelector6.BaseTabControl = this.materialTabControl7;
-            this.materialTabSelector6.Depth = 0;
-            this.materialTabSelector6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTabSelector6.Location = new System.Drawing.Point(0, 0);
-            this.materialTabSelector6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialTabSelector6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabSelector6.Name = "materialTabSelector6";
-            this.materialTabSelector6.Size = new System.Drawing.Size(751, 48);
-            this.materialTabSelector6.TabIndex = 1;
-            this.materialTabSelector6.Text = "materialTabSelector6";
-            // 
-            // materialTabControl7
-            // 
-            this.materialTabControl7.Controls.Add(this.tabPage22);
-            this.materialTabControl7.Depth = 0;
-            this.materialTabControl7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialTabControl7.Location = new System.Drawing.Point(0, 0);
-            this.materialTabControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialTabControl7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabControl7.Multiline = true;
-            this.materialTabControl7.Name = "materialTabControl7";
-            this.materialTabControl7.SelectedIndex = 0;
-            this.materialTabControl7.Size = new System.Drawing.Size(751, 562);
-            this.materialTabControl7.TabIndex = 0;
-            // 
-            // tabPage22
-            // 
-            this.tabPage22.Controls.Add(this.AddTagCombo1);
-            this.tabPage22.Controls.Add(this.ADDTagCodeComboBox1);
-            this.tabPage22.Controls.Add(this.materialLabel13);
-            this.tabPage22.Controls.Add(this.VeiwRelateTagComboBox3);
-            this.tabPage22.Controls.Add(this.materialLabel14);
-            this.tabPage22.Controls.Add(this.ClearTag);
-            this.tabPage22.Controls.Add(this.materialLabel15);
-            this.tabPage22.Controls.Add(this.pictureBox9);
-            this.tabPage22.Controls.Add(this.SaveTag);
-            this.tabPage22.Location = new System.Drawing.Point(4, 25);
-            this.tabPage22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage22.Name = "tabPage22";
-            this.tabPage22.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage22.Size = new System.Drawing.Size(743, 533);
-            this.tabPage22.TabIndex = 0;
-            this.tabPage22.Text = "Add Tags";
-            this.tabPage22.UseVisualStyleBackColor = true;
-            // 
             // tagpanel2
             // 
             this.tagpanel2.Controls.Add(this.materialTabSelector5);
             this.tagpanel2.Controls.Add(this.materialTabControl6);
-            this.tagpanel2.Location = new System.Drawing.Point(83, 432);
+            this.tagpanel2.Location = new System.Drawing.Point(72, 286);
             this.tagpanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tagpanel2.Name = "tagpanel2";
             this.tagpanel2.Size = new System.Drawing.Size(748, 771);
@@ -4083,6 +4026,10 @@ namespace Time_Table_managemnt
             this.UpdateRelatedTags.FormattingEnabled = true;
             this.UpdateRelatedTags.IntegralHeight = false;
             this.UpdateRelatedTags.ItemHeight = 43;
+            this.UpdateRelatedTags.Items.AddRange(new object[] {
+            "Lecture",
+            "Tutorial",
+            "Lab"});
             this.UpdateRelatedTags.Location = new System.Drawing.Point(81, 616);
             this.UpdateRelatedTags.MaxDropDownItems = 4;
             this.UpdateRelatedTags.MouseState = MaterialSkin.MouseState.OUT;
@@ -4280,6 +4227,64 @@ namespace Time_Table_managemnt
             this.pictureBox11.TabIndex = 24;
             this.pictureBox11.TabStop = false;
             this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click_2);
+            // 
+            // Tag1panel
+            // 
+            this.Tag1panel.Controls.Add(this.materialTabSelector6);
+            this.Tag1panel.Controls.Add(this.materialTabControl7);
+            this.Tag1panel.Location = new System.Drawing.Point(197, 26);
+            this.Tag1panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Tag1panel.Name = "Tag1panel";
+            this.Tag1panel.Size = new System.Drawing.Size(751, 562);
+            this.Tag1panel.TabIndex = 11;
+            // 
+            // materialTabSelector6
+            // 
+            this.materialTabSelector6.BaseTabControl = this.materialTabControl7;
+            this.materialTabSelector6.Depth = 0;
+            this.materialTabSelector6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.materialTabSelector6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector6.Location = new System.Drawing.Point(0, 0);
+            this.materialTabSelector6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.materialTabSelector6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector6.Name = "materialTabSelector6";
+            this.materialTabSelector6.Size = new System.Drawing.Size(751, 48);
+            this.materialTabSelector6.TabIndex = 1;
+            this.materialTabSelector6.Text = "materialTabSelector6";
+            // 
+            // materialTabControl7
+            // 
+            this.materialTabControl7.Controls.Add(this.tabPage22);
+            this.materialTabControl7.Depth = 0;
+            this.materialTabControl7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialTabControl7.Location = new System.Drawing.Point(0, 0);
+            this.materialTabControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.materialTabControl7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabControl7.Multiline = true;
+            this.materialTabControl7.Name = "materialTabControl7";
+            this.materialTabControl7.SelectedIndex = 0;
+            this.materialTabControl7.Size = new System.Drawing.Size(751, 562);
+            this.materialTabControl7.TabIndex = 0;
+            // 
+            // tabPage22
+            // 
+            this.tabPage22.Controls.Add(this.AddTagCombo1);
+            this.tabPage22.Controls.Add(this.ADDTagCodeComboBox1);
+            this.tabPage22.Controls.Add(this.materialLabel13);
+            this.tabPage22.Controls.Add(this.VeiwRelateTagComboBox3);
+            this.tabPage22.Controls.Add(this.materialLabel14);
+            this.tabPage22.Controls.Add(this.ClearTag);
+            this.tabPage22.Controls.Add(this.materialLabel15);
+            this.tabPage22.Controls.Add(this.pictureBox9);
+            this.tabPage22.Controls.Add(this.SaveTag);
+            this.tabPage22.Location = new System.Drawing.Point(4, 25);
+            this.tabPage22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage22.Name = "tabPage22";
+            this.tabPage22.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage22.Size = new System.Drawing.Size(743, 533);
+            this.tabPage22.TabIndex = 0;
+            this.tabPage22.Text = "Add Tags";
+            this.tabPage22.UseVisualStyleBackColor = true;
             // 
             // AddTagCombo1
             // 
@@ -6115,9 +6120,8 @@ namespace Time_Table_managemnt
             // 
             // tabPage18
             // 
+            this.tabPage18.Controls.Add(this.materialComboBox4);
             this.tabPage18.Controls.Add(this.ManagedataGridView);
-            this.tabPage18.Controls.Add(this.materialRadioButton4);
-            this.tabPage18.Controls.Add(this.materialRadioButton3);
             this.tabPage18.Controls.Add(this.DisplayLocClearBtn);
             this.tabPage18.Controls.Add(this.DisplayLocDeleteBtn);
             this.tabPage18.Controls.Add(this.materialLabel38);
@@ -6138,37 +6142,21 @@ namespace Time_Table_managemnt
             this.tabPage18.Text = "manage Location";
             this.tabPage18.UseVisualStyleBackColor = true;
             // 
-            // materialRadioButton4
+            // ManagedataGridView
             // 
-            this.materialRadioButton4.AutoSize = true;
-            this.materialRadioButton4.Depth = 0;
-            this.materialRadioButton4.Location = new System.Drawing.Point(501, 398);
-            this.materialRadioButton4.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton4.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton4.Name = "materialRadioButton4";
-            this.materialRadioButton4.Ripple = true;
-            this.materialRadioButton4.Size = new System.Drawing.Size(112, 37);
-            this.materialRadioButton4.TabIndex = 43;
-            this.materialRadioButton4.TabStop = true;
-            this.materialRadioButton4.Text = "Laboratory";
-            this.materialRadioButton4.UseVisualStyleBackColor = true;
-            // 
-            // materialRadioButton3
-            // 
-            this.materialRadioButton3.AutoSize = true;
-            this.materialRadioButton3.Depth = 0;
-            this.materialRadioButton3.Location = new System.Drawing.Point(501, 342);
-            this.materialRadioButton3.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton3.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton3.Name = "materialRadioButton3";
-            this.materialRadioButton3.Ripple = true;
-            this.materialRadioButton3.Size = new System.Drawing.Size(119, 37);
-            this.materialRadioButton3.TabIndex = 42;
-            this.materialRadioButton3.TabStop = true;
-            this.materialRadioButton3.Text = "Lecture Hall";
-            this.materialRadioButton3.UseVisualStyleBackColor = true;
+            this.ManagedataGridView.BackgroundColor = System.Drawing.Color.MintCream;
+            this.ManagedataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ManagedataGridView.Location = new System.Drawing.Point(22, 73);
+            this.ManagedataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ManagedataGridView.Name = "ManagedataGridView";
+            this.ManagedataGridView.RowHeadersWidth = 51;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Red;
+            this.ManagedataGridView.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.ManagedataGridView.RowTemplate.Height = 24;
+            this.ManagedataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ManagedataGridView.Size = new System.Drawing.Size(697, 182);
+            this.ManagedataGridView.TabIndex = 53;
+            this.ManagedataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ManagedataGridView_CellClick_1);
             // 
             // DisplayLocClearBtn
             // 
@@ -6187,6 +6175,7 @@ namespace Time_Table_managemnt
             this.DisplayLocClearBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.DisplayLocClearBtn.UseAccentColor = false;
             this.DisplayLocClearBtn.UseVisualStyleBackColor = true;
+            this.DisplayLocClearBtn.Click += new System.EventHandler(this.DisplayLocClearBtn_Click);
             // 
             // DisplayLocDeleteBtn
             // 
@@ -6205,6 +6194,7 @@ namespace Time_Table_managemnt
             this.DisplayLocDeleteBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.DisplayLocDeleteBtn.UseAccentColor = false;
             this.DisplayLocDeleteBtn.UseVisualStyleBackColor = true;
+            this.DisplayLocDeleteBtn.Click += new System.EventHandler(this.DisplayLocDeleteBtn_Click);
             // 
             // materialLabel38
             // 
@@ -9114,21 +9104,33 @@ namespace Time_Table_managemnt
             this.pictureBox12.TabIndex = 2;
             this.pictureBox12.TabStop = false;
             // 
-            // ManagedataGridView
+            // UpdateProgrammeTxt
             // 
-            this.ManagedataGridView.BackgroundColor = System.Drawing.Color.MintCream;
-            this.ManagedataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ManagedataGridView.Location = new System.Drawing.Point(22, 73);
-            this.ManagedataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ManagedataGridView.Name = "ManagedataGridView";
-            this.ManagedataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Red;
-            this.ManagedataGridView.RowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.ManagedataGridView.RowTemplate.Height = 24;
-            this.ManagedataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ManagedataGridView.Size = new System.Drawing.Size(697, 182);
-            this.ManagedataGridView.TabIndex = 53;
-            this.ManagedataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ManagedataGridView_CellClick_1);
+            this.UpdateProgrammeTxt.AutoResize = false;
+            this.UpdateProgrammeTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UpdateProgrammeTxt.Depth = 0;
+            this.UpdateProgrammeTxt.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.UpdateProgrammeTxt.DropDownHeight = 174;
+            this.UpdateProgrammeTxt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.UpdateProgrammeTxt.DropDownWidth = 121;
+            this.UpdateProgrammeTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.UpdateProgrammeTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UpdateProgrammeTxt.FormattingEnabled = true;
+            this.UpdateProgrammeTxt.IntegralHeight = false;
+            this.UpdateProgrammeTxt.ItemHeight = 43;
+            this.UpdateProgrammeTxt.Items.AddRange(new object[] {
+            "IT",
+            "SE",
+            "DS",
+            "CS",
+            "ISE"});
+            this.UpdateProgrammeTxt.Location = new System.Drawing.Point(41, 469);
+            this.UpdateProgrammeTxt.MaxDropDownItems = 4;
+            this.UpdateProgrammeTxt.MouseState = MaterialSkin.MouseState.OUT;
+            this.UpdateProgrammeTxt.Name = "UpdateProgrammeTxt";
+            this.UpdateProgrammeTxt.Size = new System.Drawing.Size(263, 49);
+            this.UpdateProgrammeTxt.StartIndex = 0;
+            this.UpdateProgrammeTxt.TabIndex = 51;
             // 
             // elipseControl1
             // 
@@ -9365,6 +9367,31 @@ namespace Time_Table_managemnt
             this.elipseControl47.CornerRadius = 70;
             this.elipseControl47.TargetControl = this.GenarateIDPanel;
             // 
+            // materialComboBox4
+            // 
+            this.materialComboBox4.AutoResize = false;
+            this.materialComboBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialComboBox4.Depth = 0;
+            this.materialComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.materialComboBox4.DropDownHeight = 174;
+            this.materialComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.materialComboBox4.DropDownWidth = 121;
+            this.materialComboBox4.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialComboBox4.FormattingEnabled = true;
+            this.materialComboBox4.IntegralHeight = false;
+            this.materialComboBox4.ItemHeight = 43;
+            this.materialComboBox4.Items.AddRange(new object[] {
+            "LectureHall",
+            "Laboratory"});
+            this.materialComboBox4.Location = new System.Drawing.Point(467, 331);
+            this.materialComboBox4.MaxDropDownItems = 4;
+            this.materialComboBox4.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialComboBox4.Name = "materialComboBox4";
+            this.materialComboBox4.Size = new System.Drawing.Size(297, 49);
+            this.materialComboBox4.StartIndex = 0;
+            this.materialComboBox4.TabIndex = 54;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -9483,16 +9510,16 @@ namespace Time_Table_managemnt
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            this.Tag1panel.ResumeLayout(false);
-            this.materialTabControl7.ResumeLayout(false);
-            this.tabPage22.ResumeLayout(false);
-            this.tabPage22.PerformLayout();
             this.tagpanel2.ResumeLayout(false);
             this.materialTabControl6.ResumeLayout(false);
             this.tabPage14.ResumeLayout(false);
             this.tabPage14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TagdataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.Tag1panel.ResumeLayout(false);
+            this.materialTabControl7.ResumeLayout(false);
+            this.tabPage22.ResumeLayout(false);
+            this.tabPage22.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.flowLayoutPanel5.ResumeLayout(false);
             this.materialCard5.ResumeLayout(false);
@@ -9547,6 +9574,7 @@ namespace Time_Table_managemnt
             this.LocationmaterialTabControl8.ResumeLayout(false);
             this.tabPage18.ResumeLayout(false);
             this.tabPage18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ManagedataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDisplayLoc)).EndInit();
             this.AddLocationPanel1.ResumeLayout(false);
             this.AddLocTab2.ResumeLayout(false);
@@ -9630,7 +9658,6 @@ namespace Time_Table_managemnt
             this.tabPage21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ManagedataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -10089,8 +10116,6 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialTabSelector materialTabSelector8;
         private MaterialSkin.Controls.MaterialTabControl LocationmaterialTabControl8;
         private System.Windows.Forms.TabPage tabPage18;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton4;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton3;
         private MaterialSkin.Controls.MaterialButton DisplayLocClearBtn;
         private MaterialSkin.Controls.MaterialButton DisplayLocDeleteBtn;
         private MaterialSkin.Controls.MaterialLabel materialLabel38;
@@ -10205,8 +10230,6 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialButton SubGroupIDmaterialButton8;
         private MaterialSkin.Controls.MaterialTextBox SubGroupmaterial;
         private System.Windows.Forms.DataGridView SubdataGridView1;
-        private MaterialSkin.Controls.MaterialTextBox UpdateAcdemictxt;
-        private MaterialSkin.Controls.MaterialTextBox UpdateProgrammeTxt;
         private MaterialSkin.Controls.MaterialComboBox ADDTagCodeComboBox1;
         private System.Windows.Forms.DataGridView TagdataGridView;
         private MaterialSkin.Controls.MaterialTextBox SearchTags;
@@ -10237,6 +10260,9 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialTextBox Lec1UP4;
         private MaterialSkin.Controls.MaterialTextBox Lec1UP3;
         private System.Windows.Forms.DataGridView ManagedataGridView;
+        private MaterialSkin.Controls.MaterialComboBox UpdateAcdemictxt;
+        private MaterialSkin.Controls.MaterialComboBox UpdateProgrammeTxt;
+        private MaterialSkin.Controls.MaterialComboBox materialComboBox4;
     }
 }
 

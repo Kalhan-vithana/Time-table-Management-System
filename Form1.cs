@@ -400,8 +400,8 @@ namespace Time_Table_managemnt
         {
 
             studentID = 0;
-            UpdateAcdemictxt.Clear();
-            UpdateProgrammeTxt.Clear();
+            UpdateAcdemictxt.SelectedIndex = -1;
+            UpdateProgrammeTxt.SelectedIndex = -1;
             UpdateStudentsnumericUpDown4.ResetText();
             UpdateStudentGroupnumericUpDown3.ResetText();
             UpdateSubGroup.Clear();
@@ -659,7 +659,7 @@ namespace Time_Table_managemnt
         {
 
             SubjectID = Convert.ToInt32(SubjectGridView1.SelectedRows[0].Cells[0].Value);
-            OfferdYear.Text = SubjectGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            UpdateAcdemictxt.Text = SubjectGridView1.SelectedRows[0].Cells[1].Value.ToString();
             offerdSem.Text = SubjectGridView1.SelectedRows[0].Cells[2].Value.ToString();
             Subjectname.Text = SubjectGridView1.SelectedRows[0].Cells[3].Value.ToString();
             SubjectCode.Text = SubjectGridView1.SelectedRows[0].Cells[4].Value.ToString();
@@ -1014,7 +1014,7 @@ namespace Time_Table_managemnt
             }
             if(materialRadioButton2.Checked == true)
             {
-                Lec = "Laboratory";
+                Lab = "Laboratory";
             }
             else
             {
@@ -1022,15 +1022,15 @@ namespace Time_Table_managemnt
             }
             con.Close();
 
-            SqlCommand cmd = new SqlCommand("INSERT INTO Location(BuildingName,RoomName,Capacity,LecHall,Laboratorys) values(@BuildingName,@RoomName,@Capacity,@LecHall,@Laboratorys)", con);
+            SqlCommand cmd = new SqlCommand("INSERT INTO Location(BuildingName,RoomName,Capacity,RoomType) values(@BuildingName,@RoomName,@Capacity,@RoomType)", con);
             cmd.CommandType = CommandType.Text;
 
             cmd.Parameters.AddWithValue("@BuildingName", materialTextBox14.Text);
             cmd.Parameters.AddWithValue("@RoomName", materialTextBox1.Text);
             cmd.Parameters.AddWithValue("@Capacity", materialTextBox6.Text);
 
-            cmd.Parameters.AddWithValue("@LecHall", Lab);
-            cmd.Parameters.AddWithValue("@Laboratorys", Lec);
+            cmd.Parameters.AddWithValue("@RoomType", Lab);
+           
             
 
             con.Open();
@@ -1079,6 +1079,8 @@ namespace Time_Table_managemnt
             materialTextBox16.Text = ManagedataGridView.SelectedRows[0].Cells[1].Value.ToString();
             materialTextBox17.Text = ManagedataGridView.SelectedRows[0].Cells[2].Value.ToString();
             materialTextBox15.Text = ManagedataGridView.SelectedRows[0].Cells[3].Value.ToString();
+            materialComboBox4.Text = ManagedataGridView.SelectedRows[0].Cells[4].Value.ToString();
+           
         }
 
         /*=============================================   Update Location     =============================================================================== */
@@ -1088,15 +1090,14 @@ namespace Time_Table_managemnt
         private void DisplayLocUpdateBtn_Click(object sender, EventArgs e)
         {
 
-            SqlCommand cmd = new SqlCommand("update  Location set  BuildingName=@BuildingName,RoomName=@RoomName,Capacity=@Capacity,LecHall=@LecHall,Laboratorys=@Laboratorys where Id=@Id", con);
+            SqlCommand cmd = new SqlCommand("update  Location set  BuildingName=@BuildingName,RoomName=@RoomName,Capacity=@Capacity,RoomType=@RoomType where Id=@Id", con);
             cmd.CommandType = CommandType.Text;
 
             cmd.Parameters.AddWithValue("@BuildingName", materialTextBox16.Text);
             cmd.Parameters.AddWithValue("@RoomName", materialTextBox17.Text);
             cmd.Parameters.AddWithValue("@Capacity", materialTextBox15.Text);
 
-            cmd.Parameters.AddWithValue("@LecHall", materialRadioButton3.Text);
-            cmd.Parameters.AddWithValue("@Laboratorys", materialRadioButton3.Text);
+            cmd.Parameters.AddWithValue("@RoomType", materialComboBox4.Text);
             cmd.Parameters.AddWithValue("@Id", LocationID);
 
 
@@ -1104,12 +1105,48 @@ namespace Time_Table_managemnt
 
             cmd.ExecuteNonQuery();
             con.Close();
+            MessageBox.Show("added");
             getLocationdata();
 
         }
 
 
-      
+
+        /*=============================================   Delete Location   =============================================================================== */
+
+
+
+        private void DisplayLocDeleteBtn_Click(object sender, EventArgs e)
+        {
+
+
+            SqlCommand cmd = new SqlCommand("delete from Location  where Id=@Id", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@Id", SubjectID);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+           
+
+            MessageBox.Show("deleted");
+            getLocationdata();
+
+
+        }
+
+
+
+        //clear Location
+        private void DisplayLocClearBtn_Click(object sender, EventArgs e)
+        {
+
+            materialTextBox16.Text = "";
+            materialTextBox17.Text = "";
+            materialTextBox15.Text = "";
+            materialComboBox4.Text = "";
+            
+
+        }
 
 
 
@@ -1491,6 +1528,6 @@ namespace Time_Table_managemnt
             panelManageSession.Hide();
         }
 
-       
+      
     }
 }
