@@ -38,6 +38,7 @@ namespace Time_Table_managemnt
         public int studentID;
         public int TagID;
         public int SubjectID;
+        public int LectureID;
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -720,6 +721,164 @@ namespace Time_Table_managemnt
             numericUpDown13.ResetText();
         }
 
+        /*=============================================Add Lecture =============================================================================== */
+
+        private void LecSave_Click(object sender, EventArgs e)
+        {
+
+
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("INSERT INTO Lecture(Lecname,LecID,Faculty,Department,Center,Bulding,Leval,Rank) values (@Lecname,@LecID,@Faculty,@Department,@Center,@Bulding,@Leval,@Rank)", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@Lecname", LecName.Text);
+            cmd.Parameters.AddWithValue("@LecID", idLecs.Text);
+            cmd.Parameters.AddWithValue("@Faculty", materialComboBox17.Text);
+            cmd.Parameters.AddWithValue("@Department", materialComboBox18.Text);
+            cmd.Parameters.AddWithValue("@Center", materialComboBox19.Text);
+            cmd.Parameters.AddWithValue("@Bulding", materialComboBox20.Text);
+            cmd.Parameters.AddWithValue("@Leval", materialComboBox21.Text);
+            cmd.Parameters.AddWithValue("@Rank", Rank.Text);
+
+           
+            con.Open();
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            MessageBox.Show("Added ");
+            getLecData();
+
+
+
+        }
+
+        private void getLecData()
+        {
+           
+
+                 SqlCommand cmd = new SqlCommand("select * from  Lecture", con);
+            DataTable dt = new DataTable();
+
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+
+
+            LecdataGridView.DataSource = dt;
+        }
+
+
+        //clear Lecture
+        private void LecClear_Click(object sender, EventArgs e)
+        {
+
+
+      
+            LecName.Text ="";
+            idLecs.Text ="";
+            materialComboBox17.SelectedIndex = -1;
+            materialComboBox18.SelectedIndex = -1;
+            materialComboBox19.SelectedIndex = -1;
+            materialComboBox20.SelectedIndex = -1;
+            materialComboBox21.SelectedIndex = -1;
+            Rank.Text = "";
+
+
+        }
+
+        //Geta Data
+        private void LecdataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            LectureID = Convert.ToInt32(LecdataGridView.SelectedRows[0].Cells[0].Value);
+            Lec1UP.Text = LecdataGridView.SelectedRows[0].Cells[1].Value.ToString();
+            Lec1UP2.Text = LecdataGridView.SelectedRows[0].Cells[2].Value.ToString();
+            Lec1UP3.Text = LecdataGridView.SelectedRows[0].Cells[3].Value.ToString();
+            Lec1UP4.Text = LecdataGridView.SelectedRows[0].Cells[4].Value.ToString();
+            Lec1UP5.Text = LecdataGridView.SelectedRows[0].Cells[5].Value.ToString();
+            Lec1UP6.Text = LecdataGridView.SelectedRows[0].Cells[6].Value.ToString();
+            Lec1UP7.Text = LecdataGridView.SelectedRows[0].Cells[7].Value.ToString();
+            Lec1UP8.Text = LecdataGridView.SelectedRows[0].Cells[8].Value.ToString();
+        }
+
+
+        /*============================================= Update Lectures =============================================================================== */
+
+
+
+        private void Updatelec_Click(object sender, EventArgs e)
+        {
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("update Lecture set Lecname=@Lecname,LecID=@LecID,Faculty=@Faculty,Department=@Department,Center=@Center,Bulding=@Bulding,Leval=@Leval,Rank=@Rank  where Id=@Id", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@Lecname", Lec1UP.Text);
+            cmd.Parameters.AddWithValue("@LecID", Lec1UP2.Text);
+            cmd.Parameters.AddWithValue("@Faculty", Lec1UP3.Text);
+            cmd.Parameters.AddWithValue("@Department", Lec1UP4.Text);
+            cmd.Parameters.AddWithValue("@Center", Lec1UP5.Text);
+            cmd.Parameters.AddWithValue("@Bulding", Lec1UP6.Text);
+            cmd.Parameters.AddWithValue("@Leval", Lec1UP7.Text);
+            cmd.Parameters.AddWithValue("@Rank", Lec1UP8.Text);
+            cmd.Parameters.AddWithValue("@Id", LectureID);
+
+            con.Open();
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            MessageBox.Show("Updated ");
+            getLecData();
+        }
+
+        /*============================================= Delete Lectures =============================================================================== */
+
+
+
+        private void materiaDeletelec_Click(object sender, EventArgs e)
+        {
+
+            SqlCommand cmd = new SqlCommand("delete from Lecture  where Id=@Id", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@Id", this.LectureID);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+            getLecData();
+
+            MessageBox.Show("Deleted ");
+        }
+
+        /*============================================= Clear Lectures =============================================================================== */
+
+
+
+        private void Clearlec_Click(object sender, EventArgs e)
+        {
+            Lec1UP.Text = "";
+            Lec1UP2.Text = "";
+            Lec1UP3.Text = "";
+            Lec1UP4.Text = "";
+            Lec1UP5.Text = "";
+            Lec1UP6.Text = "";
+            Lec1UP7.Text = "";
+            Lec1UP8.Text = "";
+        }
+
+
+
+        /*============================================= Generate Rank =============================================================================== */
+
+
+        private void LecRank_Click(object sender, EventArgs e)
+        {
+            Rank.Text = "";
+            Rank.Text = idLecs.Text + '.' + materialComboBox21.Text;
+
+        }
+       
+
 
 
         /*============================================= Add Working Days Hours =============================================================================== */
@@ -822,6 +981,8 @@ namespace Time_Table_managemnt
 
             WorkingDatdataGridView.DataSource = dt;
         }
+
+
 
 
         //-----------panels and buttons navigations-------------------------------------------------------------------------------------------------
@@ -1201,6 +1362,6 @@ namespace Time_Table_managemnt
             panelManageSession.Hide();
         }
 
-        
+       
     }
 }
