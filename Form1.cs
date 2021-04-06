@@ -37,6 +37,7 @@ namespace Time_Table_managemnt
 
         public int studentID;
         public int TagID;
+        public int SubjectID;
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -97,7 +98,8 @@ namespace Time_Table_managemnt
             con.Open();
             SqlDataReader sdr = cmd.ExecuteReader();
             dt.Load(sdr);
-           
+
+            con.Close();
 
             UpdateStudentdataGridView1.DataSource = dt;
 
@@ -110,9 +112,9 @@ namespace Time_Table_managemnt
 
         private void AddStudents_Click(object sender, EventArgs e)
         {
-         
 
-          
+
+            con.Close();
            SqlCommand cmd = new SqlCommand("INSERT INTO Students(AcdemicYear,Programne,GroupNumber,SubGroup,GroupID,subGroupID) values (@AcdemicYear,@Programne,@GroupNumber,@SubGroup,@GroupID,@subGroupID)", con);
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@AcdemicYear", AdecmicYear_ComboBox.Text.ToString());
@@ -121,7 +123,7 @@ namespace Time_Table_managemnt
             cmd.Parameters.AddWithValue("@SubGroup", numericUpDown2.Value);
             cmd.Parameters.AddWithValue("@GroupID", GroupID1.Text );
             cmd.Parameters.AddWithValue("@subGroupID", SubGroupsID.Text);
-
+            con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
           
@@ -203,10 +205,10 @@ namespace Time_Table_managemnt
             SqlCommand cmd = new SqlCommand("select Id, CONCAT(AcdemicYear,'.',Programne,'.',GroupNumber) AS YEAR from Students ORDER BY Id DESC; ", con);
             DataTable dt = new DataTable();
 
-           
+            con.Open();
             SqlDataReader sdr = cmd.ExecuteReader();
             dt.Load(sdr);
-
+            con.Close();
             GropIDdataGridView1.DataSource = dt;
         }
 
@@ -217,10 +219,11 @@ namespace Time_Table_managemnt
             ClearSubGroupID();
             SqlCommand cmd = new SqlCommand("select Id,CONCAT(AcdemicYear,'.',Programne,'.',GroupNumber,'.',SubGroup) AS SubGroup  from Students ORDER BY Id DESC ", con);
             DataTable dt = new DataTable();
-
+            con.Open();
 
             SqlDataReader sdr = cmd.ExecuteReader();
             dt.Load(sdr);
+            con.Close();
 
             SubdataGridView1.DataSource = dt;
 
@@ -245,6 +248,7 @@ namespace Time_Table_managemnt
                 cmd.Parameters.AddWithValue("@GroupID", GenarateIDGroup.Text);
                 cmd.Parameters.AddWithValue("@Id", this.studentID);
 
+                con.Open();
 
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -277,7 +281,7 @@ namespace Time_Table_managemnt
 
                 cmd.Parameters.AddWithValue("@subGroupID", SubGroupmaterial.Text);
                 cmd.Parameters.AddWithValue("@Id", this.studentID);
-
+                con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("added", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -331,7 +335,7 @@ namespace Time_Table_managemnt
                 cmd.Parameters.AddWithValue("@Id", this.studentID);
 
 
-
+                con.Open();
 
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -357,7 +361,7 @@ namespace Time_Table_managemnt
                 SqlCommand cmd = new SqlCommand("delete from Students  where Id=@Id", con);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id", this.studentID);
-
+                con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
 
@@ -398,6 +402,7 @@ namespace Time_Table_managemnt
         //Add Tag 
         private void SaveTag_Click(object sender, EventArgs e)
         {
+            con.Close();
             SqlCommand cmd = new SqlCommand("INSERT INTO Tags(SubjectName,SubjectCode,RelatedTags) values(@SubjectName,@SubjectCode,@RelatedTags)", con);
             cmd.CommandType = CommandType.Text;
 
@@ -405,7 +410,7 @@ namespace Time_Table_managemnt
             cmd.Parameters.AddWithValue("@SubjectCode", ADDTagCodeComboBox1.Text.ToString());
             cmd.Parameters.AddWithValue("@RelatedTags", VeiwRelateTagComboBox3.Text.ToString());
 
-            //con.Open();
+            con.Open();
 
             cmd.ExecuteNonQuery();
             con.Close();
@@ -554,6 +559,7 @@ namespace Time_Table_managemnt
 
         private void SaveBtnSub_Click(object sender, EventArgs e)
         {
+            con.Close();
             SqlCommand cmd = new SqlCommand("INSERT INTO Subject(offerdYear,offerdSemester,subjectname,subjectCode,lecHours,labHours,TuteHours,evhours) values (@offerdYear,@offerdSemester,@subjectname,@subjectCode,@lecHours,@labHours,@TuteHours,@evhours)", con);
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@offerdYear", materialComboBox24.Text.ToString());
@@ -565,6 +571,7 @@ namespace Time_Table_managemnt
             cmd.Parameters.AddWithValue("@TuteHours", numericUpDown16.Value);
             cmd.Parameters.AddWithValue("@evhours", numericUpDown17.Value);
 
+            con.Open();
 
             cmd.ExecuteNonQuery();
             con.Close();
@@ -607,6 +614,93 @@ namespace Time_Table_managemnt
             numericUpDown15.ResetText();
             numericUpDown16.ResetText();
             numericUpDown17.ResetText();
+
+
+           
+        }
+
+
+        //---------------------Subject Data GridVeiw ----------------------------------------
+
+
+
+        private void SubjectGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            SubjectID = Convert.ToInt32(SubjectGridView1.SelectedRows[0].Cells[0].Value);
+            OfferdYear.Text = SubjectGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            offerdSem.Text = SubjectGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            Subjectname.Text = SubjectGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            SubjectCode.Text = SubjectGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            numericUpDown10.Text = SubjectGridView1.SelectedRows[0].Cells[5].Value.ToString();
+            numericUpDown11.Text = SubjectGridView1.SelectedRows[0].Cells[6].Value.ToString();
+            numericUpDown12.Text = SubjectGridView1.SelectedRows[0].Cells[7].Value.ToString();
+            numericUpDown13.Text = SubjectGridView1.SelectedRows[0].Cells[7].Value.ToString();
+
+
+
+
+        }
+
+        //----------------------------------Update Subject -----------------------------------------------------------
+
+
+        private void materialButtonSaveManage_Click(object sender, EventArgs e)
+        {
+
+
+            SqlCommand cmd = new SqlCommand("update Subject set offerdYear=@offerdYear,offerdSemester=@offerdSemester,subjectname=@subjectname,subjectCode=@subjectCode,lecHours=@lecHours,labHours=@labHours,TuteHours=@TuteHours,evhours=@evhours where Id=@Id", con);
+            cmd.CommandType = CommandType.Text;
+
+            cmd.Parameters.AddWithValue("@offerdYear", OfferdYear.Text.ToString());
+            cmd.Parameters.AddWithValue("@offerdSemester", offerdSem.Text.ToString());
+            cmd.Parameters.AddWithValue("@subjectname", Subjectname.Text);
+            cmd.Parameters.AddWithValue("@subjectCode", SubjectCode.Text);
+            cmd.Parameters.AddWithValue("@lecHours", numericUpDown10.Value);
+            cmd.Parameters.AddWithValue("@labHours", numericUpDown11.Value);
+            cmd.Parameters.AddWithValue("@TuteHours", numericUpDown12.Value);
+            cmd.Parameters.AddWithValue("@evhours", numericUpDown13.Value);
+
+            cmd.Parameters.AddWithValue("@Id", SubjectID);
+
+            con.Open();
+
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+           
+            MessageBox.Show("updated");
+            getSubjects();
+        }
+
+
+        //------------------delete subject--------------------------------------
+
+        private void materialButtonManagesub_Click(object sender, EventArgs e)
+        {
+
+            SqlCommand cmd = new SqlCommand("delete from Subject  where Id=@Id", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@Id", SubjectID);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+            getSubjects();
+
+            MessageBox.Show("deleted");
+        }
+
+        //----------------------clear Subject------------
+
+        private void materialButtonManage_Click(object sender, EventArgs e)
+        {
+            OfferdYear.Clear();
+            offerdSem.Clear();
+            Subjectname.Clear();
+            numericUpDown10.ResetText();
+            numericUpDown11.ResetText();
+            numericUpDown12.ResetText();
+            numericUpDown13.ResetText();
         }
 
         //-----------panels and buttons navigations-------------------------------------------------------
@@ -986,5 +1080,6 @@ namespace Time_Table_managemnt
             panelManageSession.Hide();
         }
 
+       
     }
 }
