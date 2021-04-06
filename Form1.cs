@@ -549,8 +549,67 @@ namespace Time_Table_managemnt
             UpdateTagTextbox.Focus();
         }
 
+        //--------------------------------------Add subjects--------------------------------------------------------------
 
- //-----------panels and buttons navigations-------------------------------------------------------
+
+        private void SaveBtnSub_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("INSERT INTO Subject(offerdYear,offerdSemester,subjectname,subjectCode,lecHours,labHours,TuteHours,evhours) values (@offerdYear,@offerdSemester,@subjectname,@subjectCode,@lecHours,@labHours,@TuteHours,@evhours)", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@offerdYear", materialComboBox24.Text.ToString());
+            cmd.Parameters.AddWithValue("@offerdSemester", materialComboBox25.Text.ToString());
+            cmd.Parameters.AddWithValue("@subjectname", materialTextBox27.Text);
+            cmd.Parameters.AddWithValue("@subjectCode", materialTextBox30.Text);
+            cmd.Parameters.AddWithValue("@lecHours", numericUpDown14.Value);
+            cmd.Parameters.AddWithValue("@labHours", numericUpDown15.Value);
+            cmd.Parameters.AddWithValue("@TuteHours", numericUpDown16.Value);
+            cmd.Parameters.AddWithValue("@evhours", numericUpDown17.Value);
+
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            MessageBox.Show("added");
+
+            getSubjects();
+
+
+
+        }
+
+        private void getSubjects()
+        {
+
+            SqlCommand cmd = new SqlCommand("select * from Subject", con);
+            DataTable dt = new DataTable();
+
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+
+
+            SubjectGridView1.DataSource = dt;
+
+        }
+        /*--------------------Clear Subject data ------------------------------------*/
+
+
+
+        private void ClearBtnSub_Click(object sender, EventArgs e)
+        {
+            studentID = 0;
+            materialComboBox24.SelectedIndex = -1;
+            materialComboBox25.SelectedIndex = -1;
+            materialTextBox27.Clear();
+            materialTextBox30.Clear();
+            numericUpDown14.ResetText();
+            numericUpDown15.ResetText();
+            numericUpDown16.ResetText();
+            numericUpDown17.ResetText();
+        }
+
+        //-----------panels and buttons navigations-------------------------------------------------------
 
 
 
@@ -927,45 +986,5 @@ namespace Time_Table_managemnt
             panelManageSession.Hide();
         }
 
-        private void SaveBtnSub_Click(object sender, EventArgs e)
-        {
-            SqlCommand cmd = new SqlCommand("INSERT INTO Subject(offerdYear,offerdSemester,subjectname,subjectCode,lecHours,labHours,TuteHours,evhours) values (@offerdYear,@offerdSemester,@subjectname,@subjectCode,@lecHours,@labHours,@TuteHours,@evhours)", con);
-            cmd.CommandType = CommandType.Text;
-            cmd.Parameters.AddWithValue("@offerdYear", materialComboBox24.Text.ToString());
-            cmd.Parameters.AddWithValue("@offerdSemester", materialComboBox25.Text.ToString());
-            cmd.Parameters.AddWithValue("@subjectname", materialTextBox27.Text);
-            cmd.Parameters.AddWithValue("@subjectCode", materialTextBox30.Text);
-            cmd.Parameters.AddWithValue("@lecHours", numericUpDown14.Value);
-            cmd.Parameters.AddWithValue("@labHours", numericUpDown15.Value);
-            cmd.Parameters.AddWithValue("@TuteHours", numericUpDown16.Value);
-            cmd.Parameters.AddWithValue("@evhours", numericUpDown17.Value);
-
-
-            cmd.ExecuteNonQuery();
-            con.Close();
-
-            MessageBox.Show("added");
-
-            getSubjects();
-
-
-
-        }
-
-        private void getSubjects()
-        {
-
-            SqlCommand cmd = new SqlCommand("select * from Subject", con);
-            DataTable dt = new DataTable();
-
-            con.Open();
-            SqlDataReader sdr = cmd.ExecuteReader();
-            dt.Load(sdr);
-            con.Close();
-
-
-            SubjectGridView1.DataSource = dt;
-
-        }
     }
 }
