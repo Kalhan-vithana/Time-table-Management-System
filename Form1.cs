@@ -39,6 +39,7 @@ namespace Time_Table_managemnt
         public int TagID;
         public int SubjectID;
         public int LectureID;
+        public int LocationID;
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -908,7 +909,7 @@ namespace Time_Table_managemnt
             String Sun = "";
 
 
-            con.Close();
+         
 
            
             if (AWmaterialCheckbox1.Checked)
@@ -945,14 +946,15 @@ namespace Time_Table_managemnt
             if (AWmaterialCheckbox5.Checked)
             {
 
-                Day = "";
+                Day = "Sunday";
             }
             else
             {
                 Day = "";
             }
 
-            
+            con.Close();
+
             SqlCommand cmd = new SqlCommand("INSERT INTO Work(NoWorkingDays,WorkingHours,Mon,Tue,Wen,Thu,Fri,Sat,Sun) values(@NoWorkingDays,@WorkingHours,@Mon,@Tue,@Wen,@Thu,@Fri,@Sat,@Sun)", con);
             cmd.CommandType = CommandType.Text;
 
@@ -993,6 +995,121 @@ namespace Time_Table_managemnt
 
             WorkingDatdataGridView.DataSource = dt;
         }
+
+
+
+        /*=============================================   Add Locations    =============================================================================== */
+
+
+        private void AddLocSaveBtn_Click(object sender, EventArgs e)
+        {
+            String Lab = "";
+            String Lec = "";
+            String tute = ""; 
+            if(materialRadioButton1.Checked == true)
+            {
+                Lab = "Lecturehall ";
+
+
+            }
+            if(materialRadioButton2.Checked == true)
+            {
+                Lec = "Laboratory";
+            }
+            else
+            {
+                tute = "";
+            }
+            con.Close();
+
+            SqlCommand cmd = new SqlCommand("INSERT INTO Location(BuildingName,RoomName,Capacity,LecHall,Laboratorys) values(@BuildingName,@RoomName,@Capacity,@LecHall,@Laboratorys)", con);
+            cmd.CommandType = CommandType.Text;
+
+            cmd.Parameters.AddWithValue("@BuildingName", materialTextBox14.Text);
+            cmd.Parameters.AddWithValue("@RoomName", materialTextBox1.Text);
+            cmd.Parameters.AddWithValue("@Capacity", materialTextBox6.Text);
+
+            cmd.Parameters.AddWithValue("@LecHall", Lab);
+            cmd.Parameters.AddWithValue("@Laboratorys", Lec);
+            
+
+            con.Open();
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            getLocationdata();
+
+
+        }
+
+        private void getLocationdata()
+        {
+            SqlCommand cmd = new SqlCommand("select * from Location", con);
+            DataTable dt = new DataTable();
+
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+
+
+            ManagedataGridView.DataSource = dt;
+        }
+
+
+
+        //ClearLocation
+
+
+        private void AddLocClearBtn_Click(object sender, EventArgs e)
+        {
+            materialTextBox14.Text = "";
+            materialTextBox1.Text = "";
+            materialTextBox1.Text = "";
+            materialRadioButton1.Checked = false;
+            materialRadioButton2.Checked = false;
+        }
+
+        //select Location view
+
+        private void ManagedataGridView_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            LocationID = Convert.ToInt32(ManagedataGridView.SelectedRows[0].Cells[0].Value);
+            materialTextBox16.Text = ManagedataGridView.SelectedRows[0].Cells[1].Value.ToString();
+            materialTextBox17.Text = ManagedataGridView.SelectedRows[0].Cells[2].Value.ToString();
+            materialTextBox15.Text = ManagedataGridView.SelectedRows[0].Cells[3].Value.ToString();
+        }
+
+        /*=============================================   Update Location     =============================================================================== */
+
+
+
+        private void DisplayLocUpdateBtn_Click(object sender, EventArgs e)
+        {
+
+            SqlCommand cmd = new SqlCommand("update  Location set  BuildingName=@BuildingName,RoomName=@RoomName,Capacity=@Capacity,LecHall=@LecHall,Laboratorys=@Laboratorys where Id=@Id", con);
+            cmd.CommandType = CommandType.Text;
+
+            cmd.Parameters.AddWithValue("@BuildingName", materialTextBox16.Text);
+            cmd.Parameters.AddWithValue("@RoomName", materialTextBox17.Text);
+            cmd.Parameters.AddWithValue("@Capacity", materialTextBox15.Text);
+
+            cmd.Parameters.AddWithValue("@LecHall", materialRadioButton3.Text);
+            cmd.Parameters.AddWithValue("@Laboratorys", materialRadioButton3.Text);
+            cmd.Parameters.AddWithValue("@Id", LocationID);
+
+
+            con.Open();
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+            getLocationdata();
+
+        }
+
+
+      
 
 
 
