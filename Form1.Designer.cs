@@ -30,15 +30,15 @@ namespace Time_Table_managemnt
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Logopanel2 = new System.Windows.Forms.Panel();
@@ -363,7 +363,6 @@ namespace Time_Table_managemnt
             this.addworkpanel = new System.Windows.Forms.Panel();
             this.addworkTabControl = new MaterialSkin.Controls.MaterialTabControl();
             this.addworktabPage = new System.Windows.Forms.TabPage();
-            this.materialCard15 = new MaterialSkin.Controls.MaterialCard();
             this.addworkclearbut = new MaterialSkin.Controls.MaterialButton();
             this.addworkpicBox = new System.Windows.Forms.PictureBox();
             this.addworksavebut = new MaterialSkin.Controls.MaterialButton();
@@ -375,10 +374,7 @@ namespace Time_Table_managemnt
             this.AWmaterialCheckbox3 = new MaterialSkin.Controls.MaterialCheckbox();
             this.AWmaterialCheckbox2 = new MaterialSkin.Controls.MaterialCheckbox();
             this.AWmaterialCheckbox1 = new MaterialSkin.Controls.MaterialCheckbox();
-            this.AWnumericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.AWnumericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.materialLabel30 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel31 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel32 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel42 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel43 = new MaterialSkin.Controls.MaterialLabel();
@@ -641,6 +637,7 @@ namespace Time_Table_managemnt
             this.elipseControl45 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl46 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl47 = new Time_Table_managemnt.ElipseControl();
+            this.HoursMinitsCombo = new MaterialSkin.Controls.MaterialComboBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.Logopanel2.SuspendLayout();
@@ -772,8 +769,6 @@ namespace Time_Table_managemnt
             this.addworkTabControl.SuspendLayout();
             this.addworktabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addworkpicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AWnumericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AWnumericUpDown5)).BeginInit();
             this.WorkflowLayoutPanel6.SuspendLayout();
             this.materialCard7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
@@ -952,7 +947,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox13.Depth = 0;
-            this.materialTextBox13.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox13.Location = new System.Drawing.Point(17, 267);
             this.materialTextBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox13.MaxLength = 50;
@@ -967,7 +962,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox12.Depth = 0;
-            this.materialTextBox12.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox12.Location = new System.Drawing.Point(20, 183);
             this.materialTextBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox12.MaxLength = 50;
@@ -982,7 +977,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox11.Depth = 0;
-            this.materialTextBox11.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox11.Location = new System.Drawing.Point(20, 82);
             this.materialTextBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox11.MaxLength = 50;
@@ -1201,17 +1196,17 @@ namespace Time_Table_managemnt
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(3, 46);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "StudentsGroups";
-            this.chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Legend = "Legend1";
+            series2.Name = "StudentsGroups";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(679, 337);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -1271,7 +1266,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTabSelectorManageLec.BaseTabControl = this.materialTabControlManageLec;
             this.materialTabSelectorManageLec.Depth = 0;
-            this.materialTabSelectorManageLec.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelectorManageLec.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelectorManageLec.Location = new System.Drawing.Point(0, 2);
             this.materialTabSelectorManageLec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelectorManageLec.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1486,7 +1481,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox18.Depth = 0;
-            this.materialTextBox18.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox18.Location = new System.Drawing.Point(333, 446);
             this.materialTextBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox18.MaxLength = 50;
@@ -1537,7 +1532,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox22.Depth = 0;
-            this.materialTextBox22.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox22.Location = new System.Drawing.Point(11, 254);
             this.materialTextBox22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox22.MaxLength = 50;
@@ -1624,7 +1619,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox26.Depth = 0;
-            this.materialTextBox26.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox26.Location = new System.Drawing.Point(11, 164);
             this.materialTextBox26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox26.MaxLength = 50;
@@ -1673,7 +1668,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTabSelector7.BaseTabControl = this.AddLecWhite;
             this.materialTabSelector7.Depth = 0;
-            this.materialTabSelector7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector7.Location = new System.Drawing.Point(0, 2);
             this.materialTabSelector7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelector7.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1875,7 +1870,7 @@ namespace Time_Table_managemnt
             // 
             this.Rank.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Rank.Depth = 0;
-            this.Rank.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Rank.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Rank.Location = new System.Drawing.Point(347, 324);
             this.Rank.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Rank.MaxLength = 50;
@@ -1926,7 +1921,7 @@ namespace Time_Table_managemnt
             // 
             this.id.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.id.Depth = 0;
-            this.id.Font = new System.Drawing.Font("Roboto", 12F);
+            this.id.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.id.Location = new System.Drawing.Point(5, 132);
             this.id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.id.MaxLength = 50;
@@ -2013,7 +2008,7 @@ namespace Time_Table_managemnt
             // 
             this.LecName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.LecName.Depth = 0;
-            this.LecName.Font = new System.Drawing.Font("Roboto", 12F);
+            this.LecName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.LecName.Location = new System.Drawing.Point(5, 42);
             this.LecName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LecName.MaxLength = 50;
@@ -2185,7 +2180,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector9.BaseTabControl = this.GenarateIDmaterialTabControl8;
             this.materialTabSelector9.Depth = 0;
             this.materialTabSelector9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector9.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabSelector9.Name = "materialTabSelector9";
@@ -2245,7 +2240,7 @@ namespace Time_Table_managemnt
             // 
             this.GenarateIDGroup.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GenarateIDGroup.Depth = 0;
-            this.GenarateIDGroup.Font = new System.Drawing.Font("Roboto", 12F);
+            this.GenarateIDGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.GenarateIDGroup.Location = new System.Drawing.Point(18, 98);
             this.GenarateIDGroup.MaxLength = 50;
             this.GenarateIDGroup.MouseState = MaterialSkin.MouseState.OUT;
@@ -2263,8 +2258,8 @@ namespace Time_Table_managemnt
             this.GropIDdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GropIDdataGridView1.Name = "GropIDdataGridView1";
             this.GropIDdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Red;
-            this.GropIDdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Red;
+            this.GropIDdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.GropIDdataGridView1.RowTemplate.Height = 24;
             this.GropIDdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GropIDdataGridView1.Size = new System.Drawing.Size(300, 160);
@@ -2324,8 +2319,8 @@ namespace Time_Table_managemnt
             this.SubdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubdataGridView1.Name = "SubdataGridView1";
             this.SubdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Red;
-            this.SubdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Red;
+            this.SubdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle7;
             this.SubdataGridView1.RowTemplate.Height = 24;
             this.SubdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SubdataGridView1.Size = new System.Drawing.Size(293, 166);
@@ -2355,7 +2350,7 @@ namespace Time_Table_managemnt
             // 
             this.SubGroupmaterial.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SubGroupmaterial.Depth = 0;
-            this.SubGroupmaterial.Font = new System.Drawing.Font("Roboto", 12F);
+            this.SubGroupmaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.SubGroupmaterial.Location = new System.Drawing.Point(7, 90);
             this.SubGroupmaterial.MaxLength = 50;
             this.SubGroupmaterial.MouseState = MaterialSkin.MouseState.OUT;
@@ -2410,7 +2405,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector3.BaseTabControl = this.materialTabControl4;
             this.materialTabSelector3.Depth = 0;
             this.materialTabSelector3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector3.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelector3.MouseState = MaterialSkin.MouseState.HOVER;
@@ -2467,7 +2462,7 @@ namespace Time_Table_managemnt
             // 
             this.SearchStudntGroup.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SearchStudntGroup.Depth = 0;
-            this.SearchStudntGroup.Font = new System.Drawing.Font("Roboto", 12F);
+            this.SearchStudntGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.SearchStudntGroup.Location = new System.Drawing.Point(227, 54);
             this.SearchStudntGroup.MaxLength = 50;
             this.SearchStudntGroup.MouseState = MaterialSkin.MouseState.OUT;
@@ -2507,7 +2502,7 @@ namespace Time_Table_managemnt
             // 
             this.UpdateAcdemictxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UpdateAcdemictxt.Depth = 0;
-            this.UpdateAcdemictxt.Font = new System.Drawing.Font("Roboto", 12F);
+            this.UpdateAcdemictxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.UpdateAcdemictxt.Location = new System.Drawing.Point(41, 352);
             this.UpdateAcdemictxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateAcdemictxt.MaxLength = 50;
@@ -2522,7 +2517,7 @@ namespace Time_Table_managemnt
             // 
             this.UpdateProgrammeTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UpdateProgrammeTxt.Depth = 0;
-            this.UpdateProgrammeTxt.Font = new System.Drawing.Font("Roboto", 12F);
+            this.UpdateProgrammeTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.UpdateProgrammeTxt.Location = new System.Drawing.Point(42, 466);
             this.UpdateProgrammeTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateProgrammeTxt.MaxLength = 50;
@@ -2587,7 +2582,7 @@ namespace Time_Table_managemnt
             // 
             this.UpdateGroupID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UpdateGroupID.Depth = 0;
-            this.UpdateGroupID.Font = new System.Drawing.Font("Roboto", 12F);
+            this.UpdateGroupID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.UpdateGroupID.Location = new System.Drawing.Point(459, 466);
             this.UpdateGroupID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateGroupID.MaxLength = 50;
@@ -2614,7 +2609,7 @@ namespace Time_Table_managemnt
             // 
             this.UpdateSubGroup.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UpdateSubGroup.Depth = 0;
-            this.UpdateSubGroup.Font = new System.Drawing.Font("Roboto", 12F);
+            this.UpdateSubGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.UpdateSubGroup.Location = new System.Drawing.Point(459, 352);
             this.UpdateSubGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateSubGroup.MaxLength = 50;
@@ -2697,8 +2692,8 @@ namespace Time_Table_managemnt
             this.UpdateStudentdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateStudentdataGridView1.Name = "UpdateStudentdataGridView1";
             this.UpdateStudentdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Red;
-            this.UpdateStudentdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Red;
+            this.UpdateStudentdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.UpdateStudentdataGridView1.RowTemplate.Height = 24;
             this.UpdateStudentdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.UpdateStudentdataGridView1.Size = new System.Drawing.Size(733, 183);
@@ -2750,7 +2745,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector4.BaseTabControl = this.materialTabControl5;
             this.materialTabSelector4.Depth = 0;
             this.materialTabSelector4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector4.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelector4.MouseState = MaterialSkin.MouseState.HOVER;
@@ -2886,7 +2881,7 @@ namespace Time_Table_managemnt
             // 
             this.SubGroupsID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SubGroupsID.Depth = 0;
-            this.SubGroupsID.Font = new System.Drawing.Font("Roboto", 12F);
+            this.SubGroupsID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.SubGroupsID.Location = new System.Drawing.Point(438, 176);
             this.SubGroupsID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubGroupsID.MaxLength = 50;
@@ -2913,7 +2908,7 @@ namespace Time_Table_managemnt
             // 
             this.GroupID1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GroupID1.Depth = 0;
-            this.GroupID1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.GroupID1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.GroupID1.Location = new System.Drawing.Point(439, 72);
             this.GroupID1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GroupID1.MaxLength = 50;
@@ -3240,7 +3235,7 @@ namespace Time_Table_managemnt
             // 
             this.offerdSem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.offerdSem.Depth = 0;
-            this.offerdSem.Font = new System.Drawing.Font("Roboto", 12F);
+            this.offerdSem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.offerdSem.Location = new System.Drawing.Point(5, 243);
             this.offerdSem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.offerdSem.MaxLength = 50;
@@ -3255,7 +3250,7 @@ namespace Time_Table_managemnt
             // 
             this.OfferdYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OfferdYear.Depth = 0;
-            this.OfferdYear.Font = new System.Drawing.Font("Roboto", 12F);
+            this.OfferdYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.OfferdYear.Location = new System.Drawing.Point(6, 155);
             this.OfferdYear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.OfferdYear.MaxLength = 50;
@@ -3274,8 +3269,8 @@ namespace Time_Table_managemnt
             this.SubjectGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjectGridView1.Name = "SubjectGridView1";
             this.SubjectGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Red;
-            this.SubjectGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Red;
+            this.SubjectGridView1.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.SubjectGridView1.RowTemplate.Height = 24;
             this.SubjectGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SubjectGridView1.Size = new System.Drawing.Size(657, 89);
@@ -3331,7 +3326,6 @@ namespace Time_Table_managemnt
             this.materialButtonManage.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButtonManage.UseAccentColor = false;
             this.materialButtonManage.UseVisualStyleBackColor = true;
-            this.materialButtonManage.Click += new System.EventHandler(this.materialButtonManage_Click);
             // 
             // materialLabel60
             // 
@@ -3373,7 +3367,7 @@ namespace Time_Table_managemnt
             // 
             this.SubjectCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SubjectCode.Depth = 0;
-            this.SubjectCode.Font = new System.Drawing.Font("Roboto", 12F);
+            this.SubjectCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.SubjectCode.Location = new System.Drawing.Point(7, 431);
             this.SubjectCode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjectCode.MaxLength = 50;
@@ -3450,7 +3444,7 @@ namespace Time_Table_managemnt
             // 
             this.Subjectname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Subjectname.Depth = 0;
-            this.Subjectname.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Subjectname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Subjectname.Location = new System.Drawing.Point(5, 334);
             this.Subjectname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Subjectname.MaxLength = 50;
@@ -3512,7 +3506,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTabSelectormanagesub.BaseTabControl = this.materialTabControlmanagesub;
             this.materialTabSelectormanagesub.Depth = 0;
-            this.materialTabSelectormanagesub.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelectormanagesub.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelectormanagesub.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelectormanagesub.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelectormanagesub.MouseState = MaterialSkin.MouseState.HOVER;
@@ -3701,7 +3695,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox30.Depth = 0;
-            this.materialTextBox30.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox30.Location = new System.Drawing.Point(4, 327);
             this.materialTextBox30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox30.MaxLength = 50;
@@ -3778,7 +3772,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox27.Depth = 0;
-            this.materialTextBox27.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox27.Location = new System.Drawing.Point(3, 230);
             this.materialTextBox27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox27.MaxLength = 50;
@@ -3840,7 +3834,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTabSelectorAddsubject.BaseTabControl = this.materialTabControlAddSubject;
             this.materialTabSelectorAddsubject.Depth = 0;
-            this.materialTabSelectorAddsubject.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelectorAddsubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelectorAddsubject.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelectorAddsubject.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelectorAddsubject.MouseState = MaterialSkin.MouseState.HOVER;
@@ -3988,7 +3982,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector5.BaseTabControl = this.materialTabControl6;
             this.materialTabSelector5.Depth = 0;
             this.materialTabSelector5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector5.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelector5.MouseState = MaterialSkin.MouseState.HOVER;
@@ -4061,7 +4055,7 @@ namespace Time_Table_managemnt
             // 
             this.SearchTags.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SearchTags.Depth = 0;
-            this.SearchTags.Font = new System.Drawing.Font("Roboto", 12F);
+            this.SearchTags.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.SearchTags.Location = new System.Drawing.Point(217, 69);
             this.SearchTags.MaxLength = 50;
             this.SearchTags.MouseState = MaterialSkin.MouseState.OUT;
@@ -4105,8 +4099,8 @@ namespace Time_Table_managemnt
             this.TagdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TagdataGridView.Name = "TagdataGridView";
             this.TagdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Red;
-            this.TagdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Red;
+            this.TagdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.TagdataGridView.RowTemplate.Height = 24;
             this.TagdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TagdataGridView.Size = new System.Drawing.Size(615, 183);
@@ -4198,7 +4192,7 @@ namespace Time_Table_managemnt
             // 
             this.UpdateCodeTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UpdateCodeTxtBox.Depth = 0;
-            this.UpdateCodeTxtBox.Font = new System.Drawing.Font("Roboto", 12F);
+            this.UpdateCodeTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.UpdateCodeTxtBox.Location = new System.Drawing.Point(81, 491);
             this.UpdateCodeTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateCodeTxtBox.MaxLength = 50;
@@ -4213,7 +4207,7 @@ namespace Time_Table_managemnt
             // 
             this.UpdateTagTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UpdateTagTextbox.Depth = 0;
-            this.UpdateTagTextbox.Font = new System.Drawing.Font("Roboto", 12F);
+            this.UpdateTagTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.UpdateTagTextbox.Location = new System.Drawing.Point(81, 376);
             this.UpdateTagTextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateTagTextbox.MaxLength = 50;
@@ -4262,7 +4256,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector6.BaseTabControl = this.materialTabControl7;
             this.materialTabSelector6.Depth = 0;
             this.materialTabSelector6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector6.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelector6.MouseState = MaterialSkin.MouseState.HOVER;
@@ -4616,7 +4610,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTabSelectorManageSession.BaseTabControl = this.materialTabControlManageSession;
             this.materialTabSelectorManageSession.Depth = 0;
-            this.materialTabSelectorManageSession.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelectorManageSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelectorManageSession.Location = new System.Drawing.Point(0, 2);
             this.materialTabSelectorManageSession.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelectorManageSession.MouseState = MaterialSkin.MouseState.HOVER;
@@ -4770,7 +4764,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox24.Depth = 0;
-            this.materialTextBox24.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox24.Location = new System.Drawing.Point(24, 37);
             this.materialTextBox24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox24.MaxLength = 50;
@@ -4843,7 +4837,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTabSelectorAddSession.BaseTabControl = this.materialTabControlAddSession;
             this.materialTabSelectorAddSession.Depth = 0;
-            this.materialTabSelectorAddSession.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelectorAddSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelectorAddSession.Location = new System.Drawing.Point(0, 2);
             this.materialTabSelectorAddSession.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelectorAddSession.MouseState = MaterialSkin.MouseState.HOVER;
@@ -4899,7 +4893,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox20.Depth = 0;
-            this.materialTextBox20.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox20.Location = new System.Drawing.Point(356, 414);
             this.materialTextBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox20.MaxLength = 50;
@@ -5042,7 +5036,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox19.Depth = 0;
-            this.materialTextBox19.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox19.Location = new System.Drawing.Point(356, 315);
             this.materialTextBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox19.MaxLength = 50;
@@ -5153,7 +5147,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox21.Depth = 0;
-            this.materialTextBox21.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox21.Location = new System.Drawing.Point(27, 181);
             this.materialTextBox21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox21.MaxLength = 50;
@@ -5316,7 +5310,7 @@ namespace Time_Table_managemnt
             this.manageworkpanel.BackColor = System.Drawing.Color.White;
             this.manageworkpanel.Controls.Add(this.manageworkTabControl);
             this.manageworkpanel.Controls.Add(this.manageworkTabSelector);
-            this.manageworkpanel.Location = new System.Drawing.Point(51, 614);
+            this.manageworkpanel.Location = new System.Drawing.Point(26, 743);
             this.manageworkpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.manageworkpanel.Name = "manageworkpanel";
             this.manageworkpanel.Size = new System.Drawing.Size(815, 519);
@@ -5620,7 +5614,7 @@ namespace Time_Table_managemnt
             this.manageworkTabSelector.BaseTabControl = this.manageworkTabControl;
             this.manageworkTabSelector.Depth = 0;
             this.manageworkTabSelector.Dock = System.Windows.Forms.DockStyle.Top;
-            this.manageworkTabSelector.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.manageworkTabSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.manageworkTabSelector.Location = new System.Drawing.Point(0, 0);
             this.manageworkTabSelector.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.manageworkTabSelector.MouseState = MaterialSkin.MouseState.HOVER;
@@ -5634,7 +5628,7 @@ namespace Time_Table_managemnt
             this.addworkpanel.BackColor = System.Drawing.Color.White;
             this.addworkpanel.Controls.Add(this.addworkTabControl);
             this.addworkpanel.Controls.Add(this.addTabSelector);
-            this.addworkpanel.Location = new System.Drawing.Point(856, 423);
+            this.addworkpanel.Location = new System.Drawing.Point(291, 210);
             this.addworkpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addworkpanel.Name = "addworkpanel";
             this.addworkpanel.Size = new System.Drawing.Size(868, 519);
@@ -5655,7 +5649,7 @@ namespace Time_Table_managemnt
             // 
             // addworktabPage
             // 
-            this.addworktabPage.Controls.Add(this.materialCard15);
+            this.addworktabPage.Controls.Add(this.HoursMinitsCombo);
             this.addworktabPage.Controls.Add(this.addworkclearbut);
             this.addworktabPage.Controls.Add(this.addworkpicBox);
             this.addworktabPage.Controls.Add(this.addworksavebut);
@@ -5667,10 +5661,7 @@ namespace Time_Table_managemnt
             this.addworktabPage.Controls.Add(this.AWmaterialCheckbox3);
             this.addworktabPage.Controls.Add(this.AWmaterialCheckbox2);
             this.addworktabPage.Controls.Add(this.AWmaterialCheckbox1);
-            this.addworktabPage.Controls.Add(this.AWnumericUpDown6);
-            this.addworktabPage.Controls.Add(this.AWnumericUpDown5);
             this.addworktabPage.Controls.Add(this.materialLabel30);
-            this.addworktabPage.Controls.Add(this.materialLabel31);
             this.addworktabPage.Controls.Add(this.materialLabel32);
             this.addworktabPage.Controls.Add(this.materialLabel42);
             this.addworktabPage.Controls.Add(this.materialLabel43);
@@ -5682,19 +5673,6 @@ namespace Time_Table_managemnt
             this.addworktabPage.TabIndex = 0;
             this.addworktabPage.Text = "add working days/hours";
             this.addworktabPage.UseVisualStyleBackColor = true;
-            // 
-            // materialCard15
-            // 
-            this.materialCard15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard15.Depth = 0;
-            this.materialCard15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard15.Location = new System.Drawing.Point(561, 112);
-            this.materialCard15.Margin = new System.Windows.Forms.Padding(19, 17, 19, 17);
-            this.materialCard15.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard15.Name = "materialCard15";
-            this.materialCard15.Padding = new System.Windows.Forms.Padding(19, 17, 19, 17);
-            this.materialCard15.Size = new System.Drawing.Size(267, 123);
-            this.materialCard15.TabIndex = 18;
             // 
             // addworkclearbut
             // 
@@ -5742,6 +5720,7 @@ namespace Time_Table_managemnt
             this.addworksavebut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.addworksavebut.UseAccentColor = false;
             this.addworksavebut.UseVisualStyleBackColor = true;
+            this.addworksavebut.Click += new System.EventHandler(this.addworksavebut_Click);
             // 
             // AWmaterialComboBox10
             // 
@@ -5757,6 +5736,17 @@ namespace Time_Table_managemnt
             this.AWmaterialComboBox10.FormattingEnabled = true;
             this.AWmaterialComboBox10.IntegralHeight = false;
             this.AWmaterialComboBox10.ItemHeight = 43;
+            this.AWmaterialComboBox10.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.AWmaterialComboBox10.Location = new System.Drawing.Point(40, 52);
             this.AWmaterialComboBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AWmaterialComboBox10.MaxDropDownItems = 4;
@@ -5871,22 +5861,6 @@ namespace Time_Table_managemnt
             this.AWmaterialCheckbox1.Text = "Monday";
             this.AWmaterialCheckbox1.UseVisualStyleBackColor = true;
             // 
-            // AWnumericUpDown6
-            // 
-            this.AWnumericUpDown6.Location = new System.Drawing.Point(375, 305);
-            this.AWnumericUpDown6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.AWnumericUpDown6.Name = "AWnumericUpDown6";
-            this.AWnumericUpDown6.Size = new System.Drawing.Size(120, 22);
-            this.AWnumericUpDown6.TabIndex = 6;
-            // 
-            // AWnumericUpDown5
-            // 
-            this.AWnumericUpDown5.Location = new System.Drawing.Point(43, 305);
-            this.AWnumericUpDown5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.AWnumericUpDown5.Name = "AWnumericUpDown5";
-            this.AWnumericUpDown5.Size = new System.Drawing.Size(120, 22);
-            this.AWnumericUpDown5.TabIndex = 5;
-            // 
             // materialLabel30
             // 
             this.materialLabel30.AutoSize = true;
@@ -5898,18 +5872,6 @@ namespace Time_Table_managemnt
             this.materialLabel30.Size = new System.Drawing.Size(58, 19);
             this.materialLabel30.TabIndex = 4;
             this.materialLabel30.Text = "Minutes";
-            // 
-            // materialLabel31
-            // 
-            this.materialLabel31.AutoSize = true;
-            this.materialLabel31.Depth = 0;
-            this.materialLabel31.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel31.Location = new System.Drawing.Point(213, 308);
-            this.materialLabel31.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel31.Name = "materialLabel31";
-            this.materialLabel31.Size = new System.Drawing.Size(43, 19);
-            this.materialLabel31.TabIndex = 3;
-            this.materialLabel31.Text = "Hours";
             // 
             // materialLabel32
             // 
@@ -5952,7 +5914,7 @@ namespace Time_Table_managemnt
             this.addTabSelector.BaseTabControl = this.addworkTabControl;
             this.addTabSelector.Depth = 0;
             this.addTabSelector.Dock = System.Windows.Forms.DockStyle.Top;
-            this.addTabSelector.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.addTabSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.addTabSelector.Location = new System.Drawing.Point(0, 0);
             this.addTabSelector.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addTabSelector.MouseState = MaterialSkin.MouseState.HOVER;
@@ -6101,7 +6063,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector8.BaseTabControl = this.LocationmaterialTabControl8;
             this.materialTabSelector8.Depth = 0;
             this.materialTabSelector8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector8.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelector8.MouseState = MaterialSkin.MouseState.HOVER;
@@ -6233,7 +6195,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox15.Depth = 0;
-            this.materialTextBox15.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox15.Location = new System.Drawing.Point(43, 582);
             this.materialTextBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox15.MaxLength = 50;
@@ -6260,7 +6222,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox16.Depth = 0;
-            this.materialTextBox16.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox16.Location = new System.Drawing.Point(43, 446);
             this.materialTextBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox16.MaxLength = 50;
@@ -6287,7 +6249,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox17.Depth = 0;
-            this.materialTextBox17.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox17.Location = new System.Drawing.Point(43, 327);
             this.materialTextBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox17.MaxLength = 50;
@@ -6495,7 +6457,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox1.Location = new System.Drawing.Point(33, 368);
             this.materialTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox1.MaxLength = 50;
@@ -6522,7 +6484,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox6.Depth = 0;
-            this.materialTextBox6.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox6.Location = new System.Drawing.Point(33, 239);
             this.materialTextBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox6.MaxLength = 50;
@@ -6549,7 +6511,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox14.Depth = 0;
-            this.materialTextBox14.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox14.Location = new System.Drawing.Point(33, 117);
             this.materialTextBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTextBox14.MaxLength = 50;
@@ -6587,7 +6549,7 @@ namespace Time_Table_managemnt
             // 
             this.AddLocTab1.BaseTabControl = this.AddLocTab2;
             this.AddLocTab1.Depth = 0;
-            this.AddLocTab1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.AddLocTab1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.AddLocTab1.Location = new System.Drawing.Point(0, 0);
             this.AddLocTab1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddLocTab1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -6737,7 +6699,7 @@ namespace Time_Table_managemnt
             this.RoomsBlue1.BaseTabControl = this.Rooms2;
             this.RoomsBlue1.Depth = 0;
             this.RoomsBlue1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.RoomsBlue1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.RoomsBlue1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.RoomsBlue1.Location = new System.Drawing.Point(0, 0);
             this.RoomsBlue1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RoomsBlue1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -7630,7 +7592,7 @@ namespace Time_Table_managemnt
             // 
             this.ManageSessionRmBlue.BaseTabControl = this.MangeSessionRm1;
             this.ManageSessionRmBlue.Depth = 0;
-            this.ManageSessionRmBlue.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ManageSessionRmBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.ManageSessionRmBlue.Location = new System.Drawing.Point(0, 0);
             this.ManageSessionRmBlue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ManageSessionRmBlue.MouseState = MaterialSkin.MouseState.HOVER;
@@ -7771,7 +7733,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector1.BaseTabControl = this.materialTabControl2;
             this.materialTabSelector1.Depth = 0;
             this.materialTabSelector1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector1.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -7842,7 +7804,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox2.Depth = 0;
-            this.materialTextBox2.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox2.Location = new System.Drawing.Point(187, 18);
             this.materialTextBox2.MaxLength = 50;
             this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
@@ -7944,7 +7906,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox3.Depth = 0;
-            this.materialTextBox3.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox3.Location = new System.Drawing.Point(191, 20);
             this.materialTextBox3.MaxLength = 50;
             this.materialTextBox3.MouseState = MaterialSkin.MouseState.OUT;
@@ -8045,7 +8007,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox4.Depth = 0;
-            this.materialTextBox4.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox4.Location = new System.Drawing.Point(190, 26);
             this.materialTextBox4.MaxLength = 50;
             this.materialTextBox4.MouseState = MaterialSkin.MouseState.OUT;
@@ -9115,7 +9077,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector2.BaseTabControl = this.materialTabControl3;
             this.materialTabSelector2.Depth = 0;
             this.materialTabSelector2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector2.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelector2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -9369,6 +9331,34 @@ namespace Time_Table_managemnt
             this.elipseControl47.CornerRadius = 70;
             this.elipseControl47.TargetControl = this.GenarateIDPanel;
             // 
+            // HoursMinitsCombo
+            // 
+            this.HoursMinitsCombo.AutoResize = false;
+            this.HoursMinitsCombo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.HoursMinitsCombo.Depth = 0;
+            this.HoursMinitsCombo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.HoursMinitsCombo.DropDownHeight = 174;
+            this.HoursMinitsCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.HoursMinitsCombo.DropDownWidth = 121;
+            this.HoursMinitsCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.HoursMinitsCombo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.HoursMinitsCombo.FormattingEnabled = true;
+            this.HoursMinitsCombo.IntegralHeight = false;
+            this.HoursMinitsCombo.ItemHeight = 43;
+            this.HoursMinitsCombo.Items.AddRange(new object[] {
+            "00.30",
+            "01.00",
+            "01.30",
+            "2.00"});
+            this.HoursMinitsCombo.Location = new System.Drawing.Point(40, 308);
+            this.HoursMinitsCombo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HoursMinitsCombo.MaxDropDownItems = 4;
+            this.HoursMinitsCombo.MouseState = MaterialSkin.MouseState.OUT;
+            this.HoursMinitsCombo.Name = "HoursMinitsCombo";
+            this.HoursMinitsCombo.Size = new System.Drawing.Size(289, 49);
+            this.HoursMinitsCombo.StartIndex = 0;
+            this.HoursMinitsCombo.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -9538,8 +9528,6 @@ namespace Time_Table_managemnt
             this.addworktabPage.ResumeLayout(false);
             this.addworktabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.addworkpicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AWnumericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AWnumericUpDown5)).EndInit();
             this.WorkflowLayoutPanel6.ResumeLayout(false);
             this.materialCard7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
@@ -10008,10 +9996,7 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialCheckbox AWmaterialCheckbox3;
         private MaterialSkin.Controls.MaterialCheckbox AWmaterialCheckbox2;
         private MaterialSkin.Controls.MaterialCheckbox AWmaterialCheckbox1;
-        private System.Windows.Forms.NumericUpDown AWnumericUpDown6;
-        private System.Windows.Forms.NumericUpDown AWnumericUpDown5;
         private MaterialSkin.Controls.MaterialLabel materialLabel30;
-        private MaterialSkin.Controls.MaterialLabel materialLabel31;
         private MaterialSkin.Controls.MaterialLabel materialLabel32;
         private MaterialSkin.Controls.MaterialLabel materialLabel42;
         private MaterialSkin.Controls.MaterialLabel materialLabel43;
@@ -10123,7 +10108,6 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialComboBox materialComboBox19;
         private MaterialSkin.Controls.MaterialComboBox materialComboBox18;
         private MaterialSkin.Controls.MaterialComboBox materialComboBox17;
-        private MaterialSkin.Controls.MaterialCard materialCard15;
         private System.Windows.Forms.NumericUpDown numericUpDown10;
         private System.Windows.Forms.NumericUpDown numericUpDown13;
         private System.Windows.Forms.NumericUpDown numericUpDown12;
@@ -10244,6 +10228,7 @@ namespace Time_Table_managemnt
         private System.Windows.Forms.DataGridView SubjectGridView1;
         private MaterialSkin.Controls.MaterialTextBox offerdSem;
         private MaterialSkin.Controls.MaterialTextBox OfferdYear;
+        private MaterialSkin.Controls.MaterialComboBox HoursMinitsCombo;
     }
 }
 

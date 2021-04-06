@@ -722,6 +722,34 @@ namespace Time_Table_managemnt
 
 
 
+        /*============================================= Add Working Days Hours =============================================================================== */
+
+
+        private void addworksavebut_Click(object sender, EventArgs e)
+        {
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("INSERT INTO Subject(offerdYear,offerdSemester,subjectname,subjectCode,lecHours,labHours,TuteHours,evhours) values (@offerdYear,@offerdSemester,@subjectname,@subjectCode,@lecHours,@labHours,@TuteHours,@evhours)", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@offerdYear", materialComboBox24.Text.ToString());
+            cmd.Parameters.AddWithValue("@offerdSemester", materialComboBox25.Text.ToString());
+            cmd.Parameters.AddWithValue("@subjectname", materialTextBox27.Text);
+            cmd.Parameters.AddWithValue("@subjectCode", materialTextBox30.Text);
+            cmd.Parameters.AddWithValue("@lecHours", numericUpDown14.Value);
+            cmd.Parameters.AddWithValue("@labHours", numericUpDown15.Value);
+            cmd.Parameters.AddWithValue("@TuteHours", numericUpDown16.Value);
+            cmd.Parameters.AddWithValue("@evhours", numericUpDown17.Value);
+
+            con.Open();
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            MessageBox.Show("added");
+
+        }
+
+
 
         //-----------panels and buttons navigations-------------------------------------------------------------------------------------------------
 
