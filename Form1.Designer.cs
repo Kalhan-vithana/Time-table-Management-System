@@ -34,13 +34,13 @@ namespace Time_Table_managemnt
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Logopanel2 = new System.Windows.Forms.Panel();
@@ -75,6 +75,13 @@ namespace Time_Table_managemnt
             this.materialTabSelectorManageLec = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControlManageLec = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.Lec1UP8 = new MaterialSkin.Controls.MaterialTextBox();
+            this.Lec1UP7 = new MaterialSkin.Controls.MaterialTextBox();
+            this.Lec1UP6 = new MaterialSkin.Controls.MaterialTextBox();
+            this.Lec1UP5 = new MaterialSkin.Controls.MaterialTextBox();
+            this.Lec1UP4 = new MaterialSkin.Controls.MaterialTextBox();
+            this.Lec1UP3 = new MaterialSkin.Controls.MaterialTextBox();
+            this.LecdataGridView = new System.Windows.Forms.DataGridView();
             this.Clearlec = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel50 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel51 = new MaterialSkin.Controls.MaterialLabel();
@@ -247,6 +254,10 @@ namespace Time_Table_managemnt
             this.materialCard11 = new MaterialSkin.Controls.MaterialCard();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.Tag1panel = new System.Windows.Forms.Panel();
+            this.materialTabSelector6 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.materialTabControl7 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabPage22 = new System.Windows.Forms.TabPage();
             this.tagpanel2 = new System.Windows.Forms.Panel();
             this.materialTabSelector5 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl6 = new MaterialSkin.Controls.MaterialTabControl();
@@ -264,10 +275,6 @@ namespace Time_Table_managemnt
             this.UpdateTagTextbox = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.Tag1panel = new System.Windows.Forms.Panel();
-            this.materialTabSelector6 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.materialTabControl7 = new MaterialSkin.Controls.MaterialTabControl();
-            this.tabPage22 = new System.Windows.Forms.TabPage();
             this.AddTagCombo1 = new MaterialSkin.Controls.MaterialComboBox();
             this.ADDTagCodeComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
@@ -634,13 +641,6 @@ namespace Time_Table_managemnt
             this.elipseControl45 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl46 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl47 = new Time_Table_managemnt.ElipseControl();
-            this.LecdataGridView = new System.Windows.Forms.DataGridView();
-            this.Lec1UP3 = new MaterialSkin.Controls.MaterialTextBox();
-            this.Lec1UP4 = new MaterialSkin.Controls.MaterialTextBox();
-            this.Lec1UP5 = new MaterialSkin.Controls.MaterialTextBox();
-            this.Lec1UP6 = new MaterialSkin.Controls.MaterialTextBox();
-            this.Lec1UP7 = new MaterialSkin.Controls.MaterialTextBox();
-            this.Lec1UP8 = new MaterialSkin.Controls.MaterialTextBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.Logopanel2.SuspendLayout();
@@ -663,6 +663,7 @@ namespace Time_Table_managemnt
             this.paneManageLec.SuspendLayout();
             this.materialTabControlManageLec.SuspendLayout();
             this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LecdataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.managelecpic)).BeginInit();
             this.Lecpanel2.SuspendLayout();
             this.AddLecWhite.SuspendLayout();
@@ -728,14 +729,14 @@ namespace Time_Table_managemnt
             this.materialCard11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             this.tabPage5.SuspendLayout();
+            this.Tag1panel.SuspendLayout();
+            this.materialTabControl7.SuspendLayout();
+            this.tabPage22.SuspendLayout();
             this.tagpanel2.SuspendLayout();
             this.materialTabControl6.SuspendLayout();
             this.tabPage14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TagdataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            this.Tag1panel.SuspendLayout();
-            this.materialTabControl7.SuspendLayout();
-            this.tabPage22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.flowLayoutPanel5.SuspendLayout();
             this.materialCard5.SuspendLayout();
@@ -851,7 +852,6 @@ namespace Time_Table_managemnt
             this.tabPage21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LecdataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -1324,6 +1324,112 @@ namespace Time_Table_managemnt
             this.tabPage8.TabIndex = 0;
             this.tabPage8.Text = "Manage Lectures";
             // 
+            // Lec1UP8
+            // 
+            this.Lec1UP8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Lec1UP8.Depth = 0;
+            this.Lec1UP8.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Lec1UP8.Location = new System.Drawing.Point(330, 446);
+            this.Lec1UP8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Lec1UP8.MaxLength = 50;
+            this.Lec1UP8.MouseState = MaterialSkin.MouseState.OUT;
+            this.Lec1UP8.Multiline = false;
+            this.Lec1UP8.Name = "Lec1UP8";
+            this.Lec1UP8.Size = new System.Drawing.Size(252, 50);
+            this.Lec1UP8.TabIndex = 60;
+            this.Lec1UP8.Text = "";
+            // 
+            // Lec1UP7
+            // 
+            this.Lec1UP7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Lec1UP7.Depth = 0;
+            this.Lec1UP7.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Lec1UP7.Location = new System.Drawing.Point(330, 347);
+            this.Lec1UP7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Lec1UP7.MaxLength = 50;
+            this.Lec1UP7.MouseState = MaterialSkin.MouseState.OUT;
+            this.Lec1UP7.Multiline = false;
+            this.Lec1UP7.Name = "Lec1UP7";
+            this.Lec1UP7.Size = new System.Drawing.Size(252, 50);
+            this.Lec1UP7.TabIndex = 59;
+            this.Lec1UP7.Text = "";
+            // 
+            // Lec1UP6
+            // 
+            this.Lec1UP6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Lec1UP6.Depth = 0;
+            this.Lec1UP6.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Lec1UP6.Location = new System.Drawing.Point(330, 254);
+            this.Lec1UP6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Lec1UP6.MaxLength = 50;
+            this.Lec1UP6.MouseState = MaterialSkin.MouseState.OUT;
+            this.Lec1UP6.Multiline = false;
+            this.Lec1UP6.Name = "Lec1UP6";
+            this.Lec1UP6.Size = new System.Drawing.Size(252, 50);
+            this.Lec1UP6.TabIndex = 58;
+            this.Lec1UP6.Text = "";
+            // 
+            // Lec1UP5
+            // 
+            this.Lec1UP5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Lec1UP5.Depth = 0;
+            this.Lec1UP5.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Lec1UP5.Location = new System.Drawing.Point(335, 164);
+            this.Lec1UP5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Lec1UP5.MaxLength = 50;
+            this.Lec1UP5.MouseState = MaterialSkin.MouseState.OUT;
+            this.Lec1UP5.Multiline = false;
+            this.Lec1UP5.Name = "Lec1UP5";
+            this.Lec1UP5.Size = new System.Drawing.Size(252, 50);
+            this.Lec1UP5.TabIndex = 57;
+            this.Lec1UP5.Text = "";
+            // 
+            // Lec1UP4
+            // 
+            this.Lec1UP4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Lec1UP4.Depth = 0;
+            this.Lec1UP4.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Lec1UP4.Location = new System.Drawing.Point(11, 446);
+            this.Lec1UP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Lec1UP4.MaxLength = 50;
+            this.Lec1UP4.MouseState = MaterialSkin.MouseState.OUT;
+            this.Lec1UP4.Multiline = false;
+            this.Lec1UP4.Name = "Lec1UP4";
+            this.Lec1UP4.Size = new System.Drawing.Size(252, 50);
+            this.Lec1UP4.TabIndex = 56;
+            this.Lec1UP4.Text = "";
+            // 
+            // Lec1UP3
+            // 
+            this.Lec1UP3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Lec1UP3.Depth = 0;
+            this.Lec1UP3.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Lec1UP3.Location = new System.Drawing.Point(9, 354);
+            this.Lec1UP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Lec1UP3.MaxLength = 50;
+            this.Lec1UP3.MouseState = MaterialSkin.MouseState.OUT;
+            this.Lec1UP3.Multiline = false;
+            this.Lec1UP3.Name = "Lec1UP3";
+            this.Lec1UP3.Size = new System.Drawing.Size(252, 50);
+            this.Lec1UP3.TabIndex = 55;
+            this.Lec1UP3.Text = "";
+            // 
+            // LecdataGridView
+            // 
+            this.LecdataGridView.BackgroundColor = System.Drawing.Color.MintCream;
+            this.LecdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.LecdataGridView.Location = new System.Drawing.Point(10, 8);
+            this.LecdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LecdataGridView.Name = "LecdataGridView";
+            this.LecdataGridView.RowHeadersWidth = 51;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Red;
+            this.LecdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.LecdataGridView.RowTemplate.Height = 24;
+            this.LecdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.LecdataGridView.Size = new System.Drawing.Size(572, 110);
+            this.LecdataGridView.TabIndex = 54;
+            this.LecdataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.LecdataGridView_CellClick);
+            // 
             // Clearlec
             // 
             this.Clearlec.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -1753,7 +1859,6 @@ namespace Time_Table_managemnt
             this.Rank.Size = new System.Drawing.Size(252, 50);
             this.Rank.TabIndex = 40;
             this.Rank.Text = "";
-            //this.Rank.TextChanged += new System.EventHandler(this.Rank_TextChanged);
             // 
             // materialLabel47
             // 
@@ -3843,11 +3948,69 @@ namespace Time_Table_managemnt
             this.tabPage5.Text = "Tags";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // Tag1panel
+            // 
+            this.Tag1panel.Controls.Add(this.materialTabSelector6);
+            this.Tag1panel.Controls.Add(this.materialTabControl7);
+            this.Tag1panel.Location = new System.Drawing.Point(197, 26);
+            this.Tag1panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Tag1panel.Name = "Tag1panel";
+            this.Tag1panel.Size = new System.Drawing.Size(751, 562);
+            this.Tag1panel.TabIndex = 11;
+            // 
+            // materialTabSelector6
+            // 
+            this.materialTabSelector6.BaseTabControl = this.materialTabControl7;
+            this.materialTabSelector6.Depth = 0;
+            this.materialTabSelector6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.materialTabSelector6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector6.Location = new System.Drawing.Point(0, 0);
+            this.materialTabSelector6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.materialTabSelector6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector6.Name = "materialTabSelector6";
+            this.materialTabSelector6.Size = new System.Drawing.Size(751, 48);
+            this.materialTabSelector6.TabIndex = 1;
+            this.materialTabSelector6.Text = "materialTabSelector6";
+            // 
+            // materialTabControl7
+            // 
+            this.materialTabControl7.Controls.Add(this.tabPage22);
+            this.materialTabControl7.Depth = 0;
+            this.materialTabControl7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialTabControl7.Location = new System.Drawing.Point(0, 0);
+            this.materialTabControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.materialTabControl7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabControl7.Multiline = true;
+            this.materialTabControl7.Name = "materialTabControl7";
+            this.materialTabControl7.SelectedIndex = 0;
+            this.materialTabControl7.Size = new System.Drawing.Size(751, 562);
+            this.materialTabControl7.TabIndex = 0;
+            // 
+            // tabPage22
+            // 
+            this.tabPage22.Controls.Add(this.AddTagCombo1);
+            this.tabPage22.Controls.Add(this.ADDTagCodeComboBox1);
+            this.tabPage22.Controls.Add(this.materialLabel13);
+            this.tabPage22.Controls.Add(this.VeiwRelateTagComboBox3);
+            this.tabPage22.Controls.Add(this.materialLabel14);
+            this.tabPage22.Controls.Add(this.ClearTag);
+            this.tabPage22.Controls.Add(this.materialLabel15);
+            this.tabPage22.Controls.Add(this.pictureBox9);
+            this.tabPage22.Controls.Add(this.SaveTag);
+            this.tabPage22.Location = new System.Drawing.Point(4, 25);
+            this.tabPage22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage22.Name = "tabPage22";
+            this.tabPage22.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage22.Size = new System.Drawing.Size(743, 533);
+            this.tabPage22.TabIndex = 0;
+            this.tabPage22.Text = "Add Tags";
+            this.tabPage22.UseVisualStyleBackColor = true;
+            // 
             // tagpanel2
             // 
             this.tagpanel2.Controls.Add(this.materialTabSelector5);
             this.tagpanel2.Controls.Add(this.materialTabControl6);
-            this.tagpanel2.Location = new System.Drawing.Point(101, 126);
+            this.tagpanel2.Location = new System.Drawing.Point(83, 432);
             this.tagpanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tagpanel2.Name = "tagpanel2";
             this.tagpanel2.Size = new System.Drawing.Size(748, 771);
@@ -4117,64 +4280,6 @@ namespace Time_Table_managemnt
             this.pictureBox11.TabStop = false;
             this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click_2);
             // 
-            // Tag1panel
-            // 
-            this.Tag1panel.Controls.Add(this.materialTabSelector6);
-            this.Tag1panel.Controls.Add(this.materialTabControl7);
-            this.Tag1panel.Location = new System.Drawing.Point(197, 26);
-            this.Tag1panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Tag1panel.Name = "Tag1panel";
-            this.Tag1panel.Size = new System.Drawing.Size(751, 562);
-            this.Tag1panel.TabIndex = 11;
-            // 
-            // materialTabSelector6
-            // 
-            this.materialTabSelector6.BaseTabControl = this.materialTabControl7;
-            this.materialTabSelector6.Depth = 0;
-            this.materialTabSelector6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTabSelector6.Location = new System.Drawing.Point(0, 0);
-            this.materialTabSelector6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialTabSelector6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabSelector6.Name = "materialTabSelector6";
-            this.materialTabSelector6.Size = new System.Drawing.Size(751, 48);
-            this.materialTabSelector6.TabIndex = 1;
-            this.materialTabSelector6.Text = "materialTabSelector6";
-            // 
-            // materialTabControl7
-            // 
-            this.materialTabControl7.Controls.Add(this.tabPage22);
-            this.materialTabControl7.Depth = 0;
-            this.materialTabControl7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialTabControl7.Location = new System.Drawing.Point(0, 0);
-            this.materialTabControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialTabControl7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabControl7.Multiline = true;
-            this.materialTabControl7.Name = "materialTabControl7";
-            this.materialTabControl7.SelectedIndex = 0;
-            this.materialTabControl7.Size = new System.Drawing.Size(751, 562);
-            this.materialTabControl7.TabIndex = 0;
-            // 
-            // tabPage22
-            // 
-            this.tabPage22.Controls.Add(this.AddTagCombo1);
-            this.tabPage22.Controls.Add(this.ADDTagCodeComboBox1);
-            this.tabPage22.Controls.Add(this.materialLabel13);
-            this.tabPage22.Controls.Add(this.VeiwRelateTagComboBox3);
-            this.tabPage22.Controls.Add(this.materialLabel14);
-            this.tabPage22.Controls.Add(this.ClearTag);
-            this.tabPage22.Controls.Add(this.materialLabel15);
-            this.tabPage22.Controls.Add(this.pictureBox9);
-            this.tabPage22.Controls.Add(this.SaveTag);
-            this.tabPage22.Location = new System.Drawing.Point(4, 25);
-            this.tabPage22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage22.Name = "tabPage22";
-            this.tabPage22.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage22.Size = new System.Drawing.Size(743, 533);
-            this.tabPage22.TabIndex = 0;
-            this.tabPage22.Text = "Add Tags";
-            this.tabPage22.UseVisualStyleBackColor = true;
-            // 
             // AddTagCombo1
             // 
             this.AddTagCombo1.AutoResize = false;
@@ -4295,6 +4400,7 @@ namespace Time_Table_managemnt
             this.ClearTag.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.ClearTag.UseAccentColor = false;
             this.ClearTag.UseVisualStyleBackColor = true;
+            this.ClearTag.Click += new System.EventHandler(this.ClearTag_Click);
             // 
             // materialLabel15
             // 
@@ -9251,112 +9357,6 @@ namespace Time_Table_managemnt
             this.elipseControl47.CornerRadius = 70;
             this.elipseControl47.TargetControl = this.GenarateIDPanel;
             // 
-            // LecdataGridView
-            // 
-            this.LecdataGridView.BackgroundColor = System.Drawing.Color.MintCream;
-            this.LecdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.LecdataGridView.Location = new System.Drawing.Point(10, 8);
-            this.LecdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.LecdataGridView.Name = "LecdataGridView";
-            this.LecdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Red;
-            this.LecdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.LecdataGridView.RowTemplate.Height = 24;
-            this.LecdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.LecdataGridView.Size = new System.Drawing.Size(572, 110);
-            this.LecdataGridView.TabIndex = 54;
-            this.LecdataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.LecdataGridView_CellClick);
-            // 
-            // Lec1UP3
-            // 
-            this.Lec1UP3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Lec1UP3.Depth = 0;
-            this.Lec1UP3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Lec1UP3.Location = new System.Drawing.Point(9, 354);
-            this.Lec1UP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Lec1UP3.MaxLength = 50;
-            this.Lec1UP3.MouseState = MaterialSkin.MouseState.OUT;
-            this.Lec1UP3.Multiline = false;
-            this.Lec1UP3.Name = "Lec1UP3";
-            this.Lec1UP3.Size = new System.Drawing.Size(252, 50);
-            this.Lec1UP3.TabIndex = 55;
-            this.Lec1UP3.Text = "";
-            // 
-            // Lec1UP4
-            // 
-            this.Lec1UP4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Lec1UP4.Depth = 0;
-            this.Lec1UP4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Lec1UP4.Location = new System.Drawing.Point(11, 446);
-            this.Lec1UP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Lec1UP4.MaxLength = 50;
-            this.Lec1UP4.MouseState = MaterialSkin.MouseState.OUT;
-            this.Lec1UP4.Multiline = false;
-            this.Lec1UP4.Name = "Lec1UP4";
-            this.Lec1UP4.Size = new System.Drawing.Size(252, 50);
-            this.Lec1UP4.TabIndex = 56;
-            this.Lec1UP4.Text = "";
-            // 
-            // Lec1UP5
-            // 
-            this.Lec1UP5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Lec1UP5.Depth = 0;
-            this.Lec1UP5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Lec1UP5.Location = new System.Drawing.Point(335, 164);
-            this.Lec1UP5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Lec1UP5.MaxLength = 50;
-            this.Lec1UP5.MouseState = MaterialSkin.MouseState.OUT;
-            this.Lec1UP5.Multiline = false;
-            this.Lec1UP5.Name = "Lec1UP5";
-            this.Lec1UP5.Size = new System.Drawing.Size(252, 50);
-            this.Lec1UP5.TabIndex = 57;
-            this.Lec1UP5.Text = "";
-            // 
-            // Lec1UP6
-            // 
-            this.Lec1UP6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Lec1UP6.Depth = 0;
-            this.Lec1UP6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Lec1UP6.Location = new System.Drawing.Point(330, 254);
-            this.Lec1UP6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Lec1UP6.MaxLength = 50;
-            this.Lec1UP6.MouseState = MaterialSkin.MouseState.OUT;
-            this.Lec1UP6.Multiline = false;
-            this.Lec1UP6.Name = "Lec1UP6";
-            this.Lec1UP6.Size = new System.Drawing.Size(252, 50);
-            this.Lec1UP6.TabIndex = 58;
-            this.Lec1UP6.Text = "";
-            // 
-            // Lec1UP7
-            // 
-            this.Lec1UP7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Lec1UP7.Depth = 0;
-            this.Lec1UP7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Lec1UP7.Location = new System.Drawing.Point(330, 347);
-            this.Lec1UP7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Lec1UP7.MaxLength = 50;
-            this.Lec1UP7.MouseState = MaterialSkin.MouseState.OUT;
-            this.Lec1UP7.Multiline = false;
-            this.Lec1UP7.Name = "Lec1UP7";
-            this.Lec1UP7.Size = new System.Drawing.Size(252, 50);
-            this.Lec1UP7.TabIndex = 59;
-            this.Lec1UP7.Text = "";
-            // 
-            // Lec1UP8
-            // 
-            this.Lec1UP8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Lec1UP8.Depth = 0;
-            this.Lec1UP8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Lec1UP8.Location = new System.Drawing.Point(330, 446);
-            this.Lec1UP8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Lec1UP8.MaxLength = 50;
-            this.Lec1UP8.MouseState = MaterialSkin.MouseState.OUT;
-            this.Lec1UP8.Multiline = false;
-            this.Lec1UP8.Name = "Lec1UP8";
-            this.Lec1UP8.Size = new System.Drawing.Size(252, 50);
-            this.Lec1UP8.TabIndex = 60;
-            this.Lec1UP8.Text = "";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -9399,6 +9399,7 @@ namespace Time_Table_managemnt
             this.materialTabControlManageLec.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LecdataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.managelecpic)).EndInit();
             this.Lecpanel2.ResumeLayout(false);
             this.AddLecWhite.ResumeLayout(false);
@@ -9474,16 +9475,16 @@ namespace Time_Table_managemnt
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            this.Tag1panel.ResumeLayout(false);
+            this.materialTabControl7.ResumeLayout(false);
+            this.tabPage22.ResumeLayout(false);
+            this.tabPage22.PerformLayout();
             this.tagpanel2.ResumeLayout(false);
             this.materialTabControl6.ResumeLayout(false);
             this.tabPage14.ResumeLayout(false);
             this.tabPage14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TagdataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            this.Tag1panel.ResumeLayout(false);
-            this.materialTabControl7.ResumeLayout(false);
-            this.tabPage22.ResumeLayout(false);
-            this.tabPage22.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.flowLayoutPanel5.ResumeLayout(false);
             this.materialCard5.ResumeLayout(false);
@@ -9622,7 +9623,6 @@ namespace Time_Table_managemnt
             this.tabPage21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LecdataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }

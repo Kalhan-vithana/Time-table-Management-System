@@ -571,6 +571,18 @@ namespace Time_Table_managemnt
             UpdateTagTextbox.Focus();
         }
 
+        private void ClearTag_Click(object sender, EventArgs e)
+        {
+            ClearAddedTags();
+
+        }
+
+        private void ClearAddedTags()
+        {
+            AddTagCombo1.SelectedIndex = -1;
+            ADDTagCodeComboBox1.SelectedIndex = -1;
+            VeiwRelateTagComboBox3.SelectedIndex = -1;
+        }
 
         /*=============================================Addd Subjects =============================================================================== */
 
