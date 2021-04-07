@@ -27,6 +27,7 @@ namespace Time_Table_managemnt
 
             ManagePanelSize();
 
+            pictureBox18.Show();
         }
 
       
