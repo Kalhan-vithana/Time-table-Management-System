@@ -67,31 +67,6 @@ namespace Time_Table_managemnt
 
         }
 
-
-        //hide Panel method
-        private void HidePanel()
-        {
-            panel1.Hide();
-            Updatepanel2.Hide();
-            Tag1panel.Hide();
-            tagpanel2.Hide();
-            Lecpanel2.Hide();
-            paneManageLec.Hide();
-            SubjectPanalAddSubject.Hide();
-            SubjectManageSubpanal.Hide();
-            manageworkpanel.Hide();
-            addworkpanel.Hide();
-            SessionRoomPanel3.Hide();
-            panelManageSessionsRooms.Hide();
-            AddLocationPanel1.Hide();
-            DisplayLocationPanel.Hide();
-            addSssionpanel.Hide();
-            panelManageSession.Hide();
-            GenarateIDPanel.Hide();
-        }
-
-
-
         /*=============================================Get Students to Table =============================================================================== */
 
 
@@ -189,24 +164,7 @@ namespace Time_Table_managemnt
             }
         }
 
-        private void materialButton27_Click(object sender, EventArgs e)
-        {
-            GenarateIDPanel.Show();
-            GenarateIDPanel.BringToFront();
-        }
-
-        private void pictureBox31_Click(object sender, EventArgs e)
-        {
-            GenarateIDPanel.Hide();
-           
-
-        }
-
-        private void pictureBox32_Click(object sender, EventArgs e)
-        {
-            GenarateIDPanel.Hide();
-        }
-       
+     
         private void GenGroupmaterialButton7_Click(object sender, EventArgs e)
         {
             ClearGroupID();
@@ -1528,6 +1486,48 @@ namespace Time_Table_managemnt
             panelManageSession.Hide();
         }
 
-      
+
+        private void materialButton27_Click(object sender, EventArgs e)
+        {
+            GenarateIDPanel.Show();
+            GenarateIDPanel.BringToFront();
+        }
+
+        private void pictureBox31_Click(object sender, EventArgs e)
+        {
+            GenarateIDPanel.Hide();
+
+
+        }
+
+        private void pictureBox32_Click(object sender, EventArgs e)
+        {
+            GenarateIDPanel.Hide();
+        }
+
+        //hide Panel method
+        private void HidePanel()
+        {
+            panel1.Hide();
+            Updatepanel2.Hide();
+            Tag1panel.Hide();
+            tagpanel2.Hide();
+            Lecpanel2.Hide();
+            paneManageLec.Hide();
+            SubjectPanalAddSubject.Hide();
+            SubjectManageSubpanal.Hide();
+            manageworkpanel.Hide();
+            addworkpanel.Hide();
+            SessionRoomPanel3.Hide();
+            panelManageSessionsRooms.Hide();
+            AddLocationPanel1.Hide();
+            DisplayLocationPanel.Hide();
+            addSssionpanel.Hide();
+            panelManageSession.Hide();
+            GenarateIDPanel.Hide();
+        }
+
+
+
     }
 }

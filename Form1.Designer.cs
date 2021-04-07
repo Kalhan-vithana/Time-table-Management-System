@@ -30,18 +30,18 @@ namespace Time_Table_managemnt
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Logopanel2 = new System.Windows.Forms.Panel();
@@ -1200,17 +1200,17 @@ namespace Time_Table_managemnt
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(3, 46);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "StudentsGroups";
-            this.chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Legend = "Legend1";
+            series2.Name = "StudentsGroups";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(679, 337);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -1422,8 +1422,8 @@ namespace Time_Table_managemnt
             this.LecdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LecdataGridView.Name = "LecdataGridView";
             this.LecdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Red;
-            this.LecdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Red;
+            this.LecdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.LecdataGridView.RowTemplate.Height = 24;
             this.LecdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.LecdataGridView.Size = new System.Drawing.Size(572, 110);
@@ -2239,8 +2239,8 @@ namespace Time_Table_managemnt
             this.GropIDdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GropIDdataGridView1.Name = "GropIDdataGridView1";
             this.GropIDdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Red;
-            this.GropIDdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Red;
+            this.GropIDdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.GropIDdataGridView1.RowTemplate.Height = 24;
             this.GropIDdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GropIDdataGridView1.Size = new System.Drawing.Size(300, 160);
@@ -2300,8 +2300,8 @@ namespace Time_Table_managemnt
             this.SubdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubdataGridView1.Name = "SubdataGridView1";
             this.SubdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Red;
-            this.SubdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Red;
+            this.SubdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle11;
             this.SubdataGridView1.RowTemplate.Height = 24;
             this.SubdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SubdataGridView1.Size = new System.Drawing.Size(293, 166);
@@ -2675,8 +2675,8 @@ namespace Time_Table_managemnt
             this.UpdateStudentdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateStudentdataGridView1.Name = "UpdateStudentdataGridView1";
             this.UpdateStudentdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Red;
-            this.UpdateStudentdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Red;
+            this.UpdateStudentdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.UpdateStudentdataGridView1.RowTemplate.Height = 24;
             this.UpdateStudentdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.UpdateStudentdataGridView1.Size = new System.Drawing.Size(733, 183);
@@ -3252,8 +3252,8 @@ namespace Time_Table_managemnt
             this.SubjectGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjectGridView1.Name = "SubjectGridView1";
             this.SubjectGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Red;
-            this.SubjectGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Red;
+            this.SubjectGridView1.RowsDefaultCellStyle = dataGridViewCellStyle13;
             this.SubjectGridView1.RowTemplate.Height = 24;
             this.SubjectGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SubjectGridView1.Size = new System.Drawing.Size(657, 89);
@@ -4086,8 +4086,8 @@ namespace Time_Table_managemnt
             this.TagdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TagdataGridView.Name = "TagdataGridView";
             this.TagdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Red;
-            this.TagdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Red;
+            this.TagdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle14;
             this.TagdataGridView.RowTemplate.Height = 24;
             this.TagdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TagdataGridView.Size = new System.Drawing.Size(615, 183);
@@ -5355,8 +5355,8 @@ namespace Time_Table_managemnt
             this.WorkingDatdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.WorkingDatdataGridView.Name = "WorkingDatdataGridView";
             this.WorkingDatdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Red;
-            this.WorkingDatdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Red;
+            this.WorkingDatdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.WorkingDatdataGridView.RowTemplate.Height = 24;
             this.WorkingDatdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.WorkingDatdataGridView.Size = new System.Drawing.Size(253, 89);
@@ -6150,8 +6150,8 @@ namespace Time_Table_managemnt
             this.ManagedataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ManagedataGridView.Name = "ManagedataGridView";
             this.ManagedataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Red;
-            this.ManagedataGridView.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Red;
+            this.ManagedataGridView.RowsDefaultCellStyle = dataGridViewCellStyle16;
             this.ManagedataGridView.RowTemplate.Height = 24;
             this.ManagedataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ManagedataGridView.Size = new System.Drawing.Size(697, 182);
@@ -6696,10 +6696,10 @@ namespace Time_Table_managemnt
             this.SessionRoomPanel3.Controls.Add(this.materialButton31);
             this.SessionRoomPanel3.Controls.Add(this.numericUpDown7);
             this.SessionRoomPanel3.Controls.Add(this.materialButton32);
-            this.SessionRoomPanel3.Location = new System.Drawing.Point(42, 503);
+            this.SessionRoomPanel3.Location = new System.Drawing.Point(45, 458);
             this.SessionRoomPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SessionRoomPanel3.Name = "SessionRoomPanel3";
-            this.SessionRoomPanel3.Size = new System.Drawing.Size(828, 498);
+            this.SessionRoomPanel3.Size = new System.Drawing.Size(823, 494);
             this.SessionRoomPanel3.TabIndex = 24;
             // 
             // RoomsBlue1
@@ -6712,7 +6712,7 @@ namespace Time_Table_managemnt
             this.RoomsBlue1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RoomsBlue1.MouseState = MaterialSkin.MouseState.HOVER;
             this.RoomsBlue1.Name = "RoomsBlue1";
-            this.RoomsBlue1.Size = new System.Drawing.Size(828, 48);
+            this.RoomsBlue1.Size = new System.Drawing.Size(823, 48);
             this.RoomsBlue1.TabIndex = 29;
             this.RoomsBlue1.Text = "materialTabSelector7";
             // 
@@ -7416,10 +7416,10 @@ namespace Time_Table_managemnt
             this.panelManageSessionsRooms.BackColor = System.Drawing.Color.White;
             this.panelManageSessionsRooms.Controls.Add(this.MangeSessionRm1);
             this.panelManageSessionsRooms.Controls.Add(this.ManageSessionRmBlue);
-            this.panelManageSessionsRooms.Location = new System.Drawing.Point(909, 353);
+            this.panelManageSessionsRooms.Location = new System.Drawing.Point(889, 353);
             this.panelManageSessionsRooms.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelManageSessionsRooms.Name = "panelManageSessionsRooms";
-            this.panelManageSessionsRooms.Size = new System.Drawing.Size(792, 575);
+            this.panelManageSessionsRooms.Size = new System.Drawing.Size(812, 575);
             this.panelManageSessionsRooms.TabIndex = 23;
             // 
             // MangeSessionRm1
