@@ -57,14 +57,22 @@ namespace Time_Table_managemnt
             
             getStudents();
             GetTags();
-           
-           
+
+            //enable false Genrare ID and Sub Group ID
+            EnableGropIDs();
 
 
 
 
 
 
+
+        }
+
+        private void EnableGropIDs()
+        {
+            GroupID1.Enabled = false;
+            SubGroupsID.Enabled = false;
         }
 
         /*=============================================Get Students to Table =============================================================================== */
@@ -104,6 +112,8 @@ namespace Time_Table_managemnt
             cmd.Parameters.AddWithValue("@SubGroup", numericUpDown2.Value);
             cmd.Parameters.AddWithValue("@GroupID", GroupID1.Text );
             cmd.Parameters.AddWithValue("@subGroupID", SubGroupsID.Text);
+          
+
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
@@ -128,7 +138,10 @@ namespace Time_Table_managemnt
             Programme_combo.SelectedIndex = -1;
             numericUpDown1.ResetText();
             numericUpDown2.ResetText();
-            
+            GroupID1.Clear();
+            SubGroupsID.Clear();
+
+
 
         }
 
@@ -199,7 +212,8 @@ namespace Time_Table_managemnt
         {
             studentID = Convert.ToInt32(GropIDdataGridView1.SelectedRows[0].Cells[0].Value);
             GenarateIDGroup.Text = GropIDdataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-           
+            GroupID1.Text = GropIDdataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+
         }
 
 
@@ -270,6 +284,7 @@ namespace Time_Table_managemnt
         {
             studentID = Convert.ToInt32(SubdataGridView1.SelectedRows[0].Cells[0].Value);
             SubGroupmaterial.Text = SubdataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            SubGroupsID.Text = SubdataGridView1.SelectedRows[0].Cells[1].Value.ToString();
         }
 
 
@@ -283,6 +298,7 @@ namespace Time_Table_managemnt
             UpdateStudentGroupnumericUpDown3.Text = UpdateStudentdataGridView1.SelectedRows[0].Cells[4].Value.ToString();
             UpdateSubGroup.Text = UpdateStudentdataGridView1.SelectedRows[0].Cells[5].Value.ToString();
             UpdateGroupID.Text = UpdateStudentdataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+          
 
         }
 
