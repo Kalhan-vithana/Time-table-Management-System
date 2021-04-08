@@ -31,17 +31,17 @@ namespace Time_Table_managemnt
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Logopanel2 = new System.Windows.Forms.Panel();
@@ -56,10 +56,16 @@ namespace Time_Table_managemnt
             this.materialLabel27 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel26 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCardHomepage = new MaterialSkin.Controls.MaterialCard();
+            this.materialTextBox8 = new MaterialSkin.Controls.MaterialTextBox();
+            this.materialLabel22 = new MaterialSkin.Controls.MaterialLabel();
             this.Homepage5materialCard7 = new MaterialSkin.Controls.MaterialCard();
+            this.materialTextBox7 = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel25 = new MaterialSkin.Controls.MaterialLabel();
             this.HomepagematerialCard6 = new MaterialSkin.Controls.MaterialCard();
+            this.materialTextBox5 = new MaterialSkin.Controls.MaterialTextBox();
+            this.materialLabel24 = new MaterialSkin.Controls.MaterialLabel();
             this.Homepage2materialCard3 = new MaterialSkin.Controls.MaterialCard();
+            this.materialTextBox9 = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel23 = new MaterialSkin.Controls.MaterialLabel();
             this.Dashboardpanel2 = new System.Windows.Forms.Panel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -253,6 +259,8 @@ namespace Time_Table_managemnt
             this.materialTabSelector5 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl6 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.UpdateComboBox10 = new MaterialSkin.Controls.MaterialComboBox();
+            this.UpdateComboBox9 = new MaterialSkin.Controls.MaterialComboBox();
             this.UpdateRelatedTags = new MaterialSkin.Controls.MaterialComboBox();
             this.SearchTags = new MaterialSkin.Controls.MaterialTextBox();
             this.SearchTagsCombo1 = new MaterialSkin.Controls.MaterialComboBox();
@@ -262,8 +270,6 @@ namespace Time_Table_managemnt
             this.UpdateTagButton = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
-            this.UpdateCodeTxtBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.UpdateTagTextbox = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.Tag1panel = new System.Windows.Forms.Panel();
@@ -338,9 +344,8 @@ namespace Time_Table_managemnt
             this.manageworkpanel = new System.Windows.Forms.Panel();
             this.manageworkTabControl = new MaterialSkin.Controls.MaterialTabControl();
             this.manageworktabPage = new System.Windows.Forms.TabPage();
+            this.materialComboBox8 = new MaterialSkin.Controls.MaterialComboBox();
             this.WorkingDatdataGridView = new System.Windows.Forms.DataGridView();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.MWmaterialCheckbox7 = new MaterialSkin.Controls.MaterialCheckbox();
             this.MWmaterialCheckbox6 = new MaterialSkin.Controls.MaterialCheckbox();
             this.MWmaterialCheckbox5 = new MaterialSkin.Controls.MaterialCheckbox();
@@ -349,8 +354,6 @@ namespace Time_Table_managemnt
             this.MWmaterialCheckbox2 = new MaterialSkin.Controls.MaterialCheckbox();
             this.MWmaterialCheckbox1 = new MaterialSkin.Controls.MaterialCheckbox();
             this.MWmaterialComboBox10 = new MaterialSkin.Controls.MaterialComboBox();
-            this.MWmaterialLabel39 = new MaterialSkin.Controls.MaterialLabel();
-            this.MWmaterialLabel38 = new MaterialSkin.Controls.MaterialLabel();
             this.MWmaterialLabel37 = new MaterialSkin.Controls.MaterialLabel();
             this.MWmaterialLabel36 = new MaterialSkin.Controls.MaterialLabel();
             this.MWmaterialLabel35 = new MaterialSkin.Controls.MaterialLabel();
@@ -373,7 +376,6 @@ namespace Time_Table_managemnt
             this.AWmaterialCheckbox3 = new MaterialSkin.Controls.MaterialCheckbox();
             this.AWmaterialCheckbox2 = new MaterialSkin.Controls.MaterialCheckbox();
             this.AWmaterialCheckbox1 = new MaterialSkin.Controls.MaterialCheckbox();
-            this.materialLabel30 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel32 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel42 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel43 = new MaterialSkin.Controls.MaterialLabel();
@@ -635,12 +637,6 @@ namespace Time_Table_managemnt
             this.elipseControl45 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl46 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl47 = new Time_Table_managemnt.ElipseControl();
-            this.materialTextBox9 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox8 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox7 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox5 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialLabel24 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel22 = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.Logopanel2.SuspendLayout();
@@ -762,8 +758,6 @@ namespace Time_Table_managemnt
             this.manageworkTabControl.SuspendLayout();
             this.manageworktabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WorkingDatdataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.manageworkpicBox)).BeginInit();
             this.addworkpanel.SuspendLayout();
             this.addworkTabControl.SuspendLayout();
@@ -1051,6 +1045,33 @@ namespace Time_Table_managemnt
             this.materialCardHomepage.Size = new System.Drawing.Size(216, 174);
             this.materialCardHomepage.TabIndex = 2;
             // 
+            // materialTextBox8
+            // 
+            this.materialTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.materialTextBox8.Depth = 0;
+            this.materialTextBox8.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox8.Hint = "6";
+            this.materialTextBox8.Location = new System.Drawing.Point(33, 34);
+            this.materialTextBox8.MaxLength = 50;
+            this.materialTextBox8.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox8.Multiline = false;
+            this.materialTextBox8.Name = "materialTextBox8";
+            this.materialTextBox8.Size = new System.Drawing.Size(100, 50);
+            this.materialTextBox8.TabIndex = 5;
+            this.materialTextBox8.Text = "";
+            // 
+            // materialLabel22
+            // 
+            this.materialLabel22.AutoSize = true;
+            this.materialLabel22.Depth = 0;
+            this.materialLabel22.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel22.Location = new System.Drawing.Point(17, 113);
+            this.materialLabel22.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel22.Name = "materialLabel22";
+            this.materialLabel22.Size = new System.Drawing.Size(134, 19);
+            this.materialLabel22.TabIndex = 1;
+            this.materialLabel22.Text = "Registered lectures";
+            // 
             // Homepage5materialCard7
             // 
             this.Homepage5materialCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -1065,6 +1086,21 @@ namespace Time_Table_managemnt
             this.Homepage5materialCard7.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.Homepage5materialCard7.Size = new System.Drawing.Size(213, 169);
             this.Homepage5materialCard7.TabIndex = 5;
+            // 
+            // materialTextBox7
+            // 
+            this.materialTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.materialTextBox7.Depth = 0;
+            this.materialTextBox7.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox7.Hint = "4";
+            this.materialTextBox7.Location = new System.Drawing.Point(31, 53);
+            this.materialTextBox7.MaxLength = 50;
+            this.materialTextBox7.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox7.Multiline = false;
+            this.materialTextBox7.Name = "materialTextBox7";
+            this.materialTextBox7.Size = new System.Drawing.Size(100, 50);
+            this.materialTextBox7.TabIndex = 4;
+            this.materialTextBox7.Text = "";
             // 
             // materialLabel25
             // 
@@ -1093,6 +1129,33 @@ namespace Time_Table_managemnt
             this.HomepagematerialCard6.Size = new System.Drawing.Size(216, 169);
             this.HomepagematerialCard6.TabIndex = 4;
             // 
+            // materialTextBox5
+            // 
+            this.materialTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.materialTextBox5.Depth = 0;
+            this.materialTextBox5.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox5.Hint = "5";
+            this.materialTextBox5.Location = new System.Drawing.Point(42, 53);
+            this.materialTextBox5.MaxLength = 50;
+            this.materialTextBox5.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox5.Multiline = false;
+            this.materialTextBox5.Name = "materialTextBox5";
+            this.materialTextBox5.Size = new System.Drawing.Size(100, 50);
+            this.materialTextBox5.TabIndex = 4;
+            this.materialTextBox5.Text = "";
+            // 
+            // materialLabel24
+            // 
+            this.materialLabel24.AutoSize = true;
+            this.materialLabel24.Depth = 0;
+            this.materialLabel24.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel24.Location = new System.Drawing.Point(17, 122);
+            this.materialLabel24.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel24.Name = "materialLabel24";
+            this.materialLabel24.Size = new System.Drawing.Size(140, 19);
+            this.materialLabel24.TabIndex = 3;
+            this.materialLabel24.Text = "Registered Subjects";
+            // 
             // Homepage2materialCard3
             // 
             this.Homepage2materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -1107,6 +1170,21 @@ namespace Time_Table_managemnt
             this.Homepage2materialCard3.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.Homepage2materialCard3.Size = new System.Drawing.Size(213, 174);
             this.Homepage2materialCard3.TabIndex = 3;
+            // 
+            // materialTextBox9
+            // 
+            this.materialTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.materialTextBox9.Depth = 0;
+            this.materialTextBox9.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox9.Hint = "3";
+            this.materialTextBox9.Location = new System.Drawing.Point(31, 34);
+            this.materialTextBox9.MaxLength = 50;
+            this.materialTextBox9.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox9.Multiline = false;
+            this.materialTextBox9.Name = "materialTextBox9";
+            this.materialTextBox9.Size = new System.Drawing.Size(100, 50);
+            this.materialTextBox9.TabIndex = 6;
+            this.materialTextBox9.Text = "";
             // 
             // materialLabel23
             // 
@@ -1132,17 +1210,17 @@ namespace Time_Table_managemnt
             // 
             // chart1
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(49, 46);
             this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series4.Legend = "Legend1";
-            series4.Name = "StudentsGroups";
-            this.chart1.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "StudentsGroups";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(612, 304);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -1354,8 +1432,8 @@ namespace Time_Table_managemnt
             this.LecdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LecdataGridView.Name = "LecdataGridView";
             this.LecdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Red;
-            this.LecdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Red;
+            this.LecdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.LecdataGridView.RowTemplate.Height = 24;
             this.LecdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.LecdataGridView.Size = new System.Drawing.Size(572, 110);
@@ -2171,8 +2249,8 @@ namespace Time_Table_managemnt
             this.GropIDdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GropIDdataGridView1.Name = "GropIDdataGridView1";
             this.GropIDdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Red;
-            this.GropIDdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Red;
+            this.GropIDdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.GropIDdataGridView1.RowTemplate.Height = 24;
             this.GropIDdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GropIDdataGridView1.Size = new System.Drawing.Size(300, 160);
@@ -2232,8 +2310,8 @@ namespace Time_Table_managemnt
             this.SubdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubdataGridView1.Name = "SubdataGridView1";
             this.SubdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Red;
-            this.SubdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Red;
+            this.SubdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.SubdataGridView1.RowTemplate.Height = 24;
             this.SubdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SubdataGridView1.Size = new System.Drawing.Size(293, 166);
@@ -2635,8 +2713,8 @@ namespace Time_Table_managemnt
             this.UpdateStudentdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateStudentdataGridView1.Name = "UpdateStudentdataGridView1";
             this.UpdateStudentdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Red;
-            this.UpdateStudentdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Red;
+            this.UpdateStudentdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.UpdateStudentdataGridView1.RowTemplate.Height = 24;
             this.UpdateStudentdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.UpdateStudentdataGridView1.Size = new System.Drawing.Size(733, 183);
@@ -3212,8 +3290,8 @@ namespace Time_Table_managemnt
             this.SubjectGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjectGridView1.Name = "SubjectGridView1";
             this.SubjectGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Red;
-            this.SubjectGridView1.RowsDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Red;
+            this.SubjectGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.SubjectGridView1.RowTemplate.Height = 24;
             this.SubjectGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SubjectGridView1.Size = new System.Drawing.Size(657, 89);
@@ -3914,7 +3992,7 @@ namespace Time_Table_managemnt
             // 
             this.tagpanel2.Controls.Add(this.materialTabSelector5);
             this.tagpanel2.Controls.Add(this.materialTabControl6);
-            this.tagpanel2.Location = new System.Drawing.Point(72, 286);
+            this.tagpanel2.Location = new System.Drawing.Point(70, 110);
             this.tagpanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tagpanel2.Name = "tagpanel2";
             this.tagpanel2.Size = new System.Drawing.Size(748, 771);
@@ -3950,6 +4028,8 @@ namespace Time_Table_managemnt
             // 
             // tabPage14
             // 
+            this.tabPage14.Controls.Add(this.UpdateComboBox10);
+            this.tabPage14.Controls.Add(this.UpdateComboBox9);
             this.tabPage14.Controls.Add(this.UpdateRelatedTags);
             this.tabPage14.Controls.Add(this.SearchTags);
             this.tabPage14.Controls.Add(this.SearchTagsCombo1);
@@ -3959,8 +4039,6 @@ namespace Time_Table_managemnt
             this.tabPage14.Controls.Add(this.UpdateTagButton);
             this.tabPage14.Controls.Add(this.materialLabel16);
             this.tabPage14.Controls.Add(this.materialLabel17);
-            this.tabPage14.Controls.Add(this.UpdateCodeTxtBox);
-            this.tabPage14.Controls.Add(this.UpdateTagTextbox);
             this.tabPage14.Controls.Add(this.materialLabel18);
             this.tabPage14.Controls.Add(this.pictureBox11);
             this.tabPage14.Location = new System.Drawing.Point(4, 25);
@@ -3971,6 +4049,58 @@ namespace Time_Table_managemnt
             this.tabPage14.TabIndex = 0;
             this.tabPage14.Text = "Manage Tags";
             this.tabPage14.UseVisualStyleBackColor = true;
+            // 
+            // UpdateComboBox10
+            // 
+            this.UpdateComboBox10.AutoResize = false;
+            this.UpdateComboBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UpdateComboBox10.Depth = 0;
+            this.UpdateComboBox10.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.UpdateComboBox10.DropDownHeight = 174;
+            this.UpdateComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.UpdateComboBox10.DropDownWidth = 121;
+            this.UpdateComboBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.UpdateComboBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UpdateComboBox10.FormattingEnabled = true;
+            this.UpdateComboBox10.IntegralHeight = false;
+            this.UpdateComboBox10.ItemHeight = 43;
+            this.UpdateComboBox10.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.UpdateComboBox10.Location = new System.Drawing.Point(73, 494);
+            this.UpdateComboBox10.MaxDropDownItems = 4;
+            this.UpdateComboBox10.MouseState = MaterialSkin.MouseState.OUT;
+            this.UpdateComboBox10.Name = "UpdateComboBox10";
+            this.UpdateComboBox10.Size = new System.Drawing.Size(481, 49);
+            this.UpdateComboBox10.StartIndex = 0;
+            this.UpdateComboBox10.TabIndex = 40;
+            // 
+            // UpdateComboBox9
+            // 
+            this.UpdateComboBox9.AutoResize = false;
+            this.UpdateComboBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UpdateComboBox9.Depth = 0;
+            this.UpdateComboBox9.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.UpdateComboBox9.DropDownHeight = 174;
+            this.UpdateComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.UpdateComboBox9.DropDownWidth = 121;
+            this.UpdateComboBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.UpdateComboBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UpdateComboBox9.FormattingEnabled = true;
+            this.UpdateComboBox9.IntegralHeight = false;
+            this.UpdateComboBox9.ItemHeight = 43;
+            this.UpdateComboBox9.Items.AddRange(new object[] {
+            "Lecture",
+            "Tutorial",
+            "Lab"});
+            this.UpdateComboBox9.Location = new System.Drawing.Point(73, 377);
+            this.UpdateComboBox9.MaxDropDownItems = 4;
+            this.UpdateComboBox9.MouseState = MaterialSkin.MouseState.OUT;
+            this.UpdateComboBox9.Name = "UpdateComboBox9";
+            this.UpdateComboBox9.Size = new System.Drawing.Size(481, 49);
+            this.UpdateComboBox9.StartIndex = 0;
+            this.UpdateComboBox9.TabIndex = 39;
             // 
             // UpdateRelatedTags
             // 
@@ -3990,7 +4120,7 @@ namespace Time_Table_managemnt
             "Lecture",
             "Tutorial",
             "Lab"});
-            this.UpdateRelatedTags.Location = new System.Drawing.Point(81, 616);
+            this.UpdateRelatedTags.Location = new System.Drawing.Point(73, 606);
             this.UpdateRelatedTags.MaxDropDownItems = 4;
             this.UpdateRelatedTags.MouseState = MaterialSkin.MouseState.OUT;
             this.UpdateRelatedTags.Name = "UpdateRelatedTags";
@@ -4046,8 +4176,8 @@ namespace Time_Table_managemnt
             this.TagdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TagdataGridView.Name = "TagdataGridView";
             this.TagdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Red;
-            this.TagdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Red;
+            this.TagdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.TagdataGridView.RowTemplate.Height = 24;
             this.TagdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TagdataGridView.Size = new System.Drawing.Size(615, 183);
@@ -4134,36 +4264,6 @@ namespace Time_Table_managemnt
             this.materialLabel17.Size = new System.Drawing.Size(69, 19);
             this.materialLabel17.TabIndex = 28;
             this.materialLabel17.Text = "Tag Code";
-            // 
-            // UpdateCodeTxtBox
-            // 
-            this.UpdateCodeTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UpdateCodeTxtBox.Depth = 0;
-            this.UpdateCodeTxtBox.Font = new System.Drawing.Font("Roboto", 12F);
-            this.UpdateCodeTxtBox.Location = new System.Drawing.Point(81, 491);
-            this.UpdateCodeTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.UpdateCodeTxtBox.MaxLength = 50;
-            this.UpdateCodeTxtBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.UpdateCodeTxtBox.Multiline = false;
-            this.UpdateCodeTxtBox.Name = "UpdateCodeTxtBox";
-            this.UpdateCodeTxtBox.Size = new System.Drawing.Size(481, 50);
-            this.UpdateCodeTxtBox.TabIndex = 27;
-            this.UpdateCodeTxtBox.Text = "";
-            // 
-            // UpdateTagTextbox
-            // 
-            this.UpdateTagTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UpdateTagTextbox.Depth = 0;
-            this.UpdateTagTextbox.Font = new System.Drawing.Font("Roboto", 12F);
-            this.UpdateTagTextbox.Location = new System.Drawing.Point(81, 376);
-            this.UpdateTagTextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.UpdateTagTextbox.MaxLength = 50;
-            this.UpdateTagTextbox.MouseState = MaterialSkin.MouseState.OUT;
-            this.UpdateTagTextbox.Multiline = false;
-            this.UpdateTagTextbox.Name = "UpdateTagTextbox";
-            this.UpdateTagTextbox.Size = new System.Drawing.Size(481, 50);
-            this.UpdateTagTextbox.TabIndex = 26;
-            this.UpdateTagTextbox.Text = "";
             // 
             // materialLabel18
             // 
@@ -5258,7 +5358,7 @@ namespace Time_Table_managemnt
             this.manageworkpanel.BackColor = System.Drawing.Color.White;
             this.manageworkpanel.Controls.Add(this.manageworkTabControl);
             this.manageworkpanel.Controls.Add(this.manageworkTabSelector);
-            this.manageworkpanel.Location = new System.Drawing.Point(29, 442);
+            this.manageworkpanel.Location = new System.Drawing.Point(29, 429);
             this.manageworkpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.manageworkpanel.Name = "manageworkpanel";
             this.manageworkpanel.Size = new System.Drawing.Size(815, 519);
@@ -5279,9 +5379,8 @@ namespace Time_Table_managemnt
             // 
             // manageworktabPage
             // 
+            this.manageworktabPage.Controls.Add(this.materialComboBox8);
             this.manageworktabPage.Controls.Add(this.WorkingDatdataGridView);
-            this.manageworktabPage.Controls.Add(this.numericUpDown6);
-            this.manageworktabPage.Controls.Add(this.numericUpDown5);
             this.manageworktabPage.Controls.Add(this.MWmaterialCheckbox7);
             this.manageworktabPage.Controls.Add(this.MWmaterialCheckbox6);
             this.manageworktabPage.Controls.Add(this.MWmaterialCheckbox5);
@@ -5290,8 +5389,6 @@ namespace Time_Table_managemnt
             this.manageworktabPage.Controls.Add(this.MWmaterialCheckbox2);
             this.manageworktabPage.Controls.Add(this.MWmaterialCheckbox1);
             this.manageworktabPage.Controls.Add(this.MWmaterialComboBox10);
-            this.manageworktabPage.Controls.Add(this.MWmaterialLabel39);
-            this.manageworktabPage.Controls.Add(this.MWmaterialLabel38);
             this.manageworktabPage.Controls.Add(this.MWmaterialLabel37);
             this.manageworktabPage.Controls.Add(this.MWmaterialLabel36);
             this.manageworktabPage.Controls.Add(this.MWmaterialLabel35);
@@ -5307,36 +5404,48 @@ namespace Time_Table_managemnt
             this.manageworktabPage.Text = "manage working days/hours";
             this.manageworktabPage.UseVisualStyleBackColor = true;
             // 
+            // materialComboBox8
+            // 
+            this.materialComboBox8.AutoResize = false;
+            this.materialComboBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialComboBox8.Depth = 0;
+            this.materialComboBox8.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.materialComboBox8.DropDownHeight = 174;
+            this.materialComboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.materialComboBox8.DropDownWidth = 121;
+            this.materialComboBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialComboBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialComboBox8.FormattingEnabled = true;
+            this.materialComboBox8.IntegralHeight = false;
+            this.materialComboBox8.ItemHeight = 43;
+            this.materialComboBox8.Items.AddRange(new object[] {
+            "00.30",
+            "01.00",
+            "01.30",
+            "2.00"});
+            this.materialComboBox8.Location = new System.Drawing.Point(40, 292);
+            this.materialComboBox8.MaxDropDownItems = 4;
+            this.materialComboBox8.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialComboBox8.Name = "materialComboBox8";
+            this.materialComboBox8.Size = new System.Drawing.Size(272, 49);
+            this.materialComboBox8.StartIndex = 0;
+            this.materialComboBox8.TabIndex = 54;
+            // 
             // WorkingDatdataGridView
             // 
             this.WorkingDatdataGridView.BackgroundColor = System.Drawing.Color.MintCream;
             this.WorkingDatdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.WorkingDatdataGridView.Location = new System.Drawing.Point(324, 14);
+            this.WorkingDatdataGridView.Location = new System.Drawing.Point(302, 14);
             this.WorkingDatdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.WorkingDatdataGridView.Name = "WorkingDatdataGridView";
             this.WorkingDatdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Red;
-            this.WorkingDatdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Red;
+            this.WorkingDatdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle7;
             this.WorkingDatdataGridView.RowTemplate.Height = 24;
             this.WorkingDatdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.WorkingDatdataGridView.Size = new System.Drawing.Size(253, 89);
+            this.WorkingDatdataGridView.Size = new System.Drawing.Size(429, 113);
             this.WorkingDatdataGridView.TabIndex = 53;
-            // 
-            // numericUpDown6
-            // 
-            this.numericUpDown6.Location = new System.Drawing.Point(363, 288);
-            this.numericUpDown6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown6.TabIndex = 50;
-            // 
-            // numericUpDown5
-            // 
-            this.numericUpDown5.Location = new System.Drawing.Point(48, 288);
-            this.numericUpDown5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown5.TabIndex = 49;
+            this.WorkingDatdataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.WorkingDatdataGridView_CellClick);
             // 
             // MWmaterialCheckbox7
             // 
@@ -5457,6 +5566,17 @@ namespace Time_Table_managemnt
             this.MWmaterialComboBox10.FormattingEnabled = true;
             this.MWmaterialComboBox10.IntegralHeight = false;
             this.MWmaterialComboBox10.ItemHeight = 43;
+            this.MWmaterialComboBox10.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.MWmaterialComboBox10.Location = new System.Drawing.Point(48, 44);
             this.MWmaterialComboBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MWmaterialComboBox10.MaxDropDownItems = 4;
@@ -5465,30 +5585,6 @@ namespace Time_Table_managemnt
             this.MWmaterialComboBox10.Size = new System.Drawing.Size(229, 49);
             this.MWmaterialComboBox10.StartIndex = 0;
             this.MWmaterialComboBox10.TabIndex = 41;
-            // 
-            // MWmaterialLabel39
-            // 
-            this.MWmaterialLabel39.AutoSize = true;
-            this.MWmaterialLabel39.Depth = 0;
-            this.MWmaterialLabel39.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.MWmaterialLabel39.Location = new System.Drawing.Point(519, 290);
-            this.MWmaterialLabel39.MouseState = MaterialSkin.MouseState.HOVER;
-            this.MWmaterialLabel39.Name = "MWmaterialLabel39";
-            this.MWmaterialLabel39.Size = new System.Drawing.Size(58, 19);
-            this.MWmaterialLabel39.TabIndex = 40;
-            this.MWmaterialLabel39.Text = "Minutes";
-            // 
-            // MWmaterialLabel38
-            // 
-            this.MWmaterialLabel38.AutoSize = true;
-            this.MWmaterialLabel38.Depth = 0;
-            this.MWmaterialLabel38.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.MWmaterialLabel38.Location = new System.Drawing.Point(203, 292);
-            this.MWmaterialLabel38.MouseState = MaterialSkin.MouseState.HOVER;
-            this.MWmaterialLabel38.Name = "MWmaterialLabel38";
-            this.MWmaterialLabel38.Size = new System.Drawing.Size(43, 19);
-            this.MWmaterialLabel38.TabIndex = 39;
-            this.MWmaterialLabel38.Text = "Hours";
             // 
             // MWmaterialLabel37
             // 
@@ -5554,6 +5650,7 @@ namespace Time_Table_managemnt
             this.manageworkdeletebut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.manageworkdeletebut.UseAccentColor = false;
             this.manageworkdeletebut.UseVisualStyleBackColor = true;
+            this.manageworkdeletebut.Click += new System.EventHandler(this.manageworkdeletebut_Click);
             // 
             // manageworkupdatebut
             // 
@@ -5572,6 +5669,7 @@ namespace Time_Table_managemnt
             this.manageworkupdatebut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.manageworkupdatebut.UseAccentColor = false;
             this.manageworkupdatebut.UseVisualStyleBackColor = true;
+            this.manageworkupdatebut.Click += new System.EventHandler(this.manageworkupdatebut_Click);
             // 
             // manageworkTabSelector
             // 
@@ -5625,7 +5723,6 @@ namespace Time_Table_managemnt
             this.addworktabPage.Controls.Add(this.AWmaterialCheckbox3);
             this.addworktabPage.Controls.Add(this.AWmaterialCheckbox2);
             this.addworktabPage.Controls.Add(this.AWmaterialCheckbox1);
-            this.addworktabPage.Controls.Add(this.materialLabel30);
             this.addworktabPage.Controls.Add(this.materialLabel32);
             this.addworktabPage.Controls.Add(this.materialLabel42);
             this.addworktabPage.Controls.Add(this.materialLabel43);
@@ -5683,6 +5780,7 @@ namespace Time_Table_managemnt
             this.addworkclearbut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.addworkclearbut.UseAccentColor = false;
             this.addworkclearbut.UseVisualStyleBackColor = true;
+            this.addworkclearbut.Click += new System.EventHandler(this.addworkclearbut_Click);
             // 
             // addworkpicBox
             // 
@@ -5852,18 +5950,6 @@ namespace Time_Table_managemnt
             this.AWmaterialCheckbox1.TabIndex = 7;
             this.AWmaterialCheckbox1.Text = "Monday";
             this.AWmaterialCheckbox1.UseVisualStyleBackColor = true;
-            // 
-            // materialLabel30
-            // 
-            this.materialLabel30.AutoSize = true;
-            this.materialLabel30.Depth = 0;
-            this.materialLabel30.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel30.Location = new System.Drawing.Point(529, 308);
-            this.materialLabel30.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel30.Name = "materialLabel30";
-            this.materialLabel30.Size = new System.Drawing.Size(58, 19);
-            this.materialLabel30.TabIndex = 4;
-            this.materialLabel30.Text = "Minutes";
             // 
             // materialLabel32
             // 
@@ -6135,8 +6221,8 @@ namespace Time_Table_managemnt
             this.ManagedataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ManagedataGridView.Name = "ManagedataGridView";
             this.ManagedataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Red;
-            this.ManagedataGridView.RowsDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Red;
+            this.ManagedataGridView.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.ManagedataGridView.RowTemplate.Height = 24;
             this.ManagedataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ManagedataGridView.Size = new System.Drawing.Size(697, 182);
@@ -9324,90 +9410,6 @@ namespace Time_Table_managemnt
             this.elipseControl47.CornerRadius = 70;
             this.elipseControl47.TargetControl = this.GenarateIDPanel;
             // 
-            // materialTextBox9
-            // 
-            this.materialTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox9.Depth = 0;
-            this.materialTextBox9.Font = new System.Drawing.Font("Roboto", 12F);
-            this.materialTextBox9.Hint = "3";
-            this.materialTextBox9.Location = new System.Drawing.Point(31, 34);
-            this.materialTextBox9.MaxLength = 50;
-            this.materialTextBox9.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox9.Multiline = false;
-            this.materialTextBox9.Name = "materialTextBox9";
-            this.materialTextBox9.Size = new System.Drawing.Size(100, 50);
-            this.materialTextBox9.TabIndex = 6;
-            this.materialTextBox9.Text = "";
-            // 
-            // materialTextBox8
-            // 
-            this.materialTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox8.Depth = 0;
-            this.materialTextBox8.Font = new System.Drawing.Font("Roboto", 12F);
-            this.materialTextBox8.Hint = "6";
-            this.materialTextBox8.Location = new System.Drawing.Point(33, 34);
-            this.materialTextBox8.MaxLength = 50;
-            this.materialTextBox8.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox8.Multiline = false;
-            this.materialTextBox8.Name = "materialTextBox8";
-            this.materialTextBox8.Size = new System.Drawing.Size(100, 50);
-            this.materialTextBox8.TabIndex = 5;
-            this.materialTextBox8.Text = "";
-            // 
-            // materialTextBox7
-            // 
-            this.materialTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox7.Depth = 0;
-            this.materialTextBox7.Font = new System.Drawing.Font("Roboto", 12F);
-            this.materialTextBox7.Hint = "4";
-            this.materialTextBox7.Location = new System.Drawing.Point(31, 53);
-            this.materialTextBox7.MaxLength = 50;
-            this.materialTextBox7.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox7.Multiline = false;
-            this.materialTextBox7.Name = "materialTextBox7";
-            this.materialTextBox7.Size = new System.Drawing.Size(100, 50);
-            this.materialTextBox7.TabIndex = 4;
-            this.materialTextBox7.Text = "";
-            // 
-            // materialTextBox5
-            // 
-            this.materialTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox5.Depth = 0;
-            this.materialTextBox5.Font = new System.Drawing.Font("Roboto", 12F);
-            this.materialTextBox5.Hint = "5";
-            this.materialTextBox5.Location = new System.Drawing.Point(42, 53);
-            this.materialTextBox5.MaxLength = 50;
-            this.materialTextBox5.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox5.Multiline = false;
-            this.materialTextBox5.Name = "materialTextBox5";
-            this.materialTextBox5.Size = new System.Drawing.Size(100, 50);
-            this.materialTextBox5.TabIndex = 4;
-            this.materialTextBox5.Text = "";
-            // 
-            // materialLabel24
-            // 
-            this.materialLabel24.AutoSize = true;
-            this.materialLabel24.Depth = 0;
-            this.materialLabel24.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel24.Location = new System.Drawing.Point(17, 122);
-            this.materialLabel24.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel24.Name = "materialLabel24";
-            this.materialLabel24.Size = new System.Drawing.Size(140, 19);
-            this.materialLabel24.TabIndex = 3;
-            this.materialLabel24.Text = "Registered Subjects";
-            // 
-            // materialLabel22
-            // 
-            this.materialLabel22.AutoSize = true;
-            this.materialLabel22.Depth = 0;
-            this.materialLabel22.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel22.Location = new System.Drawing.Point(17, 113);
-            this.materialLabel22.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel22.Name = "materialLabel22";
-            this.materialLabel22.Size = new System.Drawing.Size(134, 19);
-            this.materialLabel22.TabIndex = 1;
-            this.materialLabel22.Text = "Registered lectures";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -9566,8 +9568,6 @@ namespace Time_Table_managemnt
             this.manageworktabPage.ResumeLayout(false);
             this.manageworktabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WorkingDatdataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.manageworkpicBox)).EndInit();
             this.addworkpanel.ResumeLayout(false);
             this.addworkTabControl.ResumeLayout(false);
@@ -9801,7 +9801,6 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialButton UpdateTagButton;
         private MaterialSkin.Controls.MaterialLabel materialLabel16;
         private MaterialSkin.Controls.MaterialLabel materialLabel17;
-        private MaterialSkin.Controls.MaterialTextBox UpdateCodeTxtBox;
         private MaterialSkin.Controls.MaterialLabel materialLabel18;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -9994,8 +9993,6 @@ namespace Time_Table_managemnt
         private System.Windows.Forms.Panel manageworkpanel;
         private MaterialSkin.Controls.MaterialTabControl manageworkTabControl;
         private System.Windows.Forms.TabPage manageworktabPage;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
         private MaterialSkin.Controls.MaterialCheckbox MWmaterialCheckbox7;
         private MaterialSkin.Controls.MaterialCheckbox MWmaterialCheckbox6;
         private MaterialSkin.Controls.MaterialCheckbox MWmaterialCheckbox5;
@@ -10004,8 +10001,6 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialCheckbox MWmaterialCheckbox2;
         private MaterialSkin.Controls.MaterialCheckbox MWmaterialCheckbox1;
         private MaterialSkin.Controls.MaterialComboBox MWmaterialComboBox10;
-        private MaterialSkin.Controls.MaterialLabel MWmaterialLabel39;
-        private MaterialSkin.Controls.MaterialLabel MWmaterialLabel38;
         private MaterialSkin.Controls.MaterialLabel MWmaterialLabel37;
         private MaterialSkin.Controls.MaterialLabel MWmaterialLabel36;
         private MaterialSkin.Controls.MaterialLabel MWmaterialLabel35;
@@ -10027,7 +10022,6 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialCheckbox AWmaterialCheckbox3;
         private MaterialSkin.Controls.MaterialCheckbox AWmaterialCheckbox2;
         private MaterialSkin.Controls.MaterialCheckbox AWmaterialCheckbox1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel30;
         private MaterialSkin.Controls.MaterialLabel materialLabel32;
         private MaterialSkin.Controls.MaterialLabel materialLabel42;
         private MaterialSkin.Controls.MaterialLabel materialLabel43;
@@ -10242,7 +10236,6 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialTextBox materialTextBox2;
         private MaterialSkin.Controls.MaterialComboBox materialComboBox2;
         private MaterialSkin.Controls.MaterialTextBox materialTextBox3;
-        private MaterialSkin.Controls.MaterialTextBox UpdateTagTextbox;
         private MaterialSkin.Controls.MaterialComboBox UpdateRelatedTags;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
@@ -10275,6 +10268,9 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialTextBox materialTextBox9;
         private MaterialSkin.Controls.MaterialLabel materialLabel24;
         private MaterialSkin.Controls.MaterialLabel materialLabel22;
+        private MaterialSkin.Controls.MaterialComboBox materialComboBox8;
+        private MaterialSkin.Controls.MaterialComboBox UpdateComboBox10;
+        private MaterialSkin.Controls.MaterialComboBox UpdateComboBox9;
     }
 }
 

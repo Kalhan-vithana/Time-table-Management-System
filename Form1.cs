@@ -41,6 +41,7 @@ namespace Time_Table_managemnt
         public int SubjectID;
         public int LectureID;
         public int LocationID;
+        public int WorkDayID;
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -119,7 +120,7 @@ namespace Time_Table_managemnt
             cmd.ExecuteNonQuery();
             con.Close();
           
-            MessageBox.Show("added", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("added  sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
             getStudents();
             //Reset();
         }
@@ -182,7 +183,7 @@ namespace Time_Table_managemnt
         private void GenGroupmaterialButton7_Click(object sender, EventArgs e)
         {
             ClearGroupID();
-            SqlCommand cmd = new SqlCommand("select Id, CONCAT(AcdemicYear,'.',Programne,'.',GroupNumber) AS YEAR from Students ORDER BY Id DESC; ", con);
+            SqlCommand cmd = new SqlCommand("select Id, CONCAT(AcdemicYear,'.',Programne,'.',GroupNumber) AS Group from Students ORDER BY Id DESC; ", con);
             DataTable dt = new DataTable();
 
             con.Open();
@@ -234,7 +235,7 @@ namespace Time_Table_managemnt
 
                 cmd.ExecuteNonQuery();
                 con.Close();
-                MessageBox.Show("added", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("added sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 getStudents();
 
 
@@ -245,7 +246,7 @@ namespace Time_Table_managemnt
             else
             {
 
-                MessageBox.Show("notupdated", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("not updated", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -266,7 +267,7 @@ namespace Time_Table_managemnt
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
-                MessageBox.Show("added", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("added sucessfully ", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 getStudents();
 
 
@@ -274,7 +275,7 @@ namespace Time_Table_managemnt
             else
             {
 
-                MessageBox.Show("notupdated", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("not Added", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -326,7 +327,7 @@ namespace Time_Table_managemnt
 
                 cmd.ExecuteNonQuery();
                 con.Close();
-                MessageBox.Show("update", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("update sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 getStudents();
                 Reset();
@@ -334,7 +335,7 @@ namespace Time_Table_managemnt
             else
             {
 
-                MessageBox.Show("notupdated", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("not updated", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
@@ -355,11 +356,11 @@ namespace Time_Table_managemnt
 
                 getStudents();
                 clearStudents();
-                MessageBox.Show("deleted", "sucessfulluly", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("deleted sucessfully", "sucessfulluly", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("errpr", "sucessfulluly", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Not deleted", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }
@@ -404,7 +405,7 @@ namespace Time_Table_managemnt
             cmd.ExecuteNonQuery();
             con.Close();
           
-            MessageBox.Show("added", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("added sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             GetTags(); //get tags details
         }
@@ -461,15 +462,15 @@ namespace Time_Table_managemnt
         private void TagdataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             TagID = Convert.ToInt32(TagdataGridView.SelectedRows[0].Cells[0].Value);
-            UpdateTagTextbox.Text = TagdataGridView.SelectedRows[0].Cells[1].Value.ToString();
-            UpdateCodeTxtBox.Text = TagdataGridView.SelectedRows[0].Cells[2].Value.ToString();
-           // UpdateRelatedTags.Text = TagdataGridView.SelectedRows[0].Cells[3].Value.ToString();
+            UpdateComboBox9.Text = TagdataGridView.SelectedRows[0].Cells[1].Value.ToString();
+            UpdateComboBox10.Text = TagdataGridView.SelectedRows[0].Cells[2].Value.ToString();
+           UpdateRelatedTags.Text = TagdataGridView.SelectedRows[0].Cells[3].Value.ToString();
             
 
-            var val = TagdataGridView.SelectedRows[0].Cells[3].Value.ToString();
+            //var val = TagdataGridView.SelectedRows[0].Cells[3].Value.ToString();
            
-            UpdateRelatedTags.Items.Add(val);
-            UpdateRelatedTags.SelectedIndex = -1;
+            //UpdateRelatedTags.Items.Add(val);
+            //UpdateRelatedTags.SelectedIndex = -1;
 
         }
 
@@ -484,8 +485,8 @@ namespace Time_Table_managemnt
                 SqlCommand cmd = new SqlCommand("update Tags set SubjectName=@SubjectName,SubjectCode=@SubjectCode,RelatedTags=@RelatedTags where Id=@Id ", con);
                 cmd.CommandType = CommandType.Text;
 
-                cmd.Parameters.AddWithValue("@SubjectName", UpdateTagTextbox.Text);
-                cmd.Parameters.AddWithValue("@SubjectCode", UpdateCodeTxtBox.Text);
+                cmd.Parameters.AddWithValue("@SubjectName", UpdateComboBox9.Text);
+                cmd.Parameters.AddWithValue("@SubjectCode", UpdateComboBox10.Text);
                 cmd.Parameters.AddWithValue("@RelatedTags", UpdateRelatedTags.Text);
                 cmd.Parameters.AddWithValue("@Id", this.TagID);
 
@@ -497,7 +498,7 @@ namespace Time_Table_managemnt
 
                 cmd.ExecuteNonQuery();
                 con.Close();
-                MessageBox.Show("update", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("update sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
                 GetTags();
@@ -505,7 +506,7 @@ namespace Time_Table_managemnt
             else
             {
 
-                MessageBox.Show("error", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Deleted sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -525,11 +526,11 @@ namespace Time_Table_managemnt
 
                 GetTags();
                 clearStudents();
-                MessageBox.Show("deleted", "sucessfulluly", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("deleted sucessfully", "sucessfulluly", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("error", "sucessfulluly", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("not deleted", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }
@@ -540,11 +541,11 @@ namespace Time_Table_managemnt
         private void ClearTags()
         {
             TagID = 0;
-            UpdateTagTextbox.Clear();
-            UpdateCodeTxtBox.Clear();
+            UpdateComboBox9.SelectedIndex =-1;
+            UpdateComboBox10.SelectedIndex =-1;
             UpdateRelatedTags.SelectedIndex = -1;
 
-            UpdateTagTextbox.Focus();
+            UpdateComboBox9.Focus();
         }
 
         private void ClearTag_Click(object sender, EventArgs e)
@@ -921,7 +922,7 @@ namespace Time_Table_managemnt
             if (AWmaterialCheckbox5.Checked)
             {
 
-                Day = "Sunday";
+                Sun = "Sunday";
             }
             else
             {
@@ -971,6 +972,200 @@ namespace Time_Table_managemnt
             WorkingDatdataGridView.DataSource = dt;
         }
 
+
+        /*=============================================   Clear Working Days    =============================================================================== */
+
+
+        private void addworkclearbut_Click(object sender, EventArgs e)
+        {
+            AWmaterialComboBox10.SelectedIndex = -1;
+            HoursMinitsCombo.SelectedIndex = -1;
+            AWmaterialCheckbox1.Checked = false;
+            AWmaterialCheckbox2.Checked = false;
+            AWmaterialCheckbox3.Checked = false;
+            AWmaterialCheckbox4.Checked = false;
+            AWmaterialCheckbox5.Checked = false;
+            AWmaterialCheckbox6.Checked = false;
+            AWmaterialCheckbox7.Checked = false;
+
+        }
+
+
+
+
+
+
+        /*=============================================   Select work Days    =============================================================================== */
+
+        private void WorkingDatdataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            WorkDayID = Convert.ToInt32(WorkingDatdataGridView.SelectedRows[0].Cells[0].Value);
+            MWmaterialComboBox10.Text = WorkingDatdataGridView.SelectedRows[0].Cells[1].Value.ToString();
+            materialComboBox8.Text = WorkingDatdataGridView.SelectedRows[0].Cells[2].Value.ToString();
+            if (WorkingDatdataGridView.SelectedRows[0].Cells[3].Value.ToString() == "Monday")
+            {
+                MWmaterialCheckbox1.Checked = true;
+
+
+            }
+            if (WorkingDatdataGridView.SelectedRows[0].Cells[4].Value.ToString() == "Tuesday")
+            {
+                MWmaterialCheckbox7.Checked = true;
+
+
+            }
+            if (WorkingDatdataGridView.SelectedRows[0].Cells[5].Value.ToString() == "wednesday")
+            {
+                MWmaterialCheckbox6.Checked = true;
+
+
+            }
+            if (WorkingDatdataGridView.SelectedRows[0].Cells[6].Value.ToString() == "ThursDay")
+            {
+                MWmaterialCheckbox5.Checked = true;
+
+
+            }
+            if (WorkingDatdataGridView.SelectedRows[0].Cells[7].Value.ToString() == "Friday")
+            {
+                MWmaterialCheckbox4.Checked = true;
+
+
+            }
+            if (WorkingDatdataGridView.SelectedRows[0].Cells[8].Value.ToString() == "Saturday")
+            {
+                MWmaterialCheckbox2.Checked = true;
+
+
+            }
+            if (WorkingDatdataGridView.SelectedRows[0].Cells[9].Value.ToString() == "Sunday")
+            {
+                MWmaterialCheckbox3.Checked = true;
+
+
+            }
+            
+            
+            //MWmaterialCheckbox1.Text = WorkingDatdataGridView.SelectedRows[0].Cells[3].Value.ToString();
+           /* MWmaterialCheckbox7.Text = WorkingDatdataGridView.SelectedRows[0].Cells[4].Value.ToString();
+            MWmaterialCheckbox6.Text = WorkingDatdataGridView.SelectedRows[0].Cells[5].Value.ToString();
+            MWmaterialCheckbox5.Text = WorkingDatdataGridView.SelectedRows[0].Cells[6].Value.ToString();
+            MWmaterialCheckbox4.Text = WorkingDatdataGridView.SelectedRows[0].Cells[7].Value.ToString();
+            MWmaterialCheckbox2.Text = WorkingDatdataGridView.SelectedRows[0].Cells[8].Value.ToString();
+            MWmaterialCheckbox3.Text = WorkingDatdataGridView.SelectedRows[0].Cells[9].Value.ToString();*/
+
+        }
+
+
+
+        /*=============================================   Update Work Days    =============================================================================== */
+
+
+        private void manageworkupdatebut_Click(object sender, EventArgs e)
+        {
+
+            String Day = "";
+            String Mon = "";
+            String Tue = "";
+            String Wen = "";
+            String Thu = "";
+            String Fri = "";
+            String Sat = "";
+            String Sun = "";
+
+
+
+
+
+            if (MWmaterialCheckbox1.Checked)
+            {
+
+                Mon = "Monday";
+            }
+
+            if (MWmaterialCheckbox7.Checked)
+            {
+
+                Tue = "Tuesday";
+            }
+            if (MWmaterialCheckbox6.Checked)
+            {
+
+                Wen = "wednesday";
+            }
+            if (MWmaterialCheckbox5.Checked)
+            {
+
+                Thu = "ThursDay";
+            }
+            if (MWmaterialCheckbox4.Checked)
+            {
+
+                Fri = "Friday";
+            }
+            if (MWmaterialCheckbox2.Checked)
+            {
+
+                Sun = "Saturday";
+            }
+            if (MWmaterialCheckbox3.Checked)
+            {
+
+                Sun = "Sunday";
+            }
+            else
+            {
+                Day = "";
+            }
+
+
+            SqlCommand cmd = new SqlCommand("update  Work set NoWorkingDays=@NoWorkingDays,WorkingHours=@WorkingHours,Mon=@Mon,Tue=@Tue,Wen=@Wen,Thu=@Thu,Fri=@Fri,Sat=@Sat,Sun=@Sun where Id =@Id ", con);
+            cmd.CommandType = CommandType.Text;
+
+            cmd.Parameters.AddWithValue("@NoWorkingDays", MWmaterialComboBox10.Text.ToString());
+            cmd.Parameters.AddWithValue("@WorkingHours", materialComboBox8.Text.ToString());
+            cmd.Parameters.AddWithValue("@Mon", Mon);
+            cmd.Parameters.AddWithValue("@Tue", Tue);
+            cmd.Parameters.AddWithValue("@Wen", Wen);
+            cmd.Parameters.AddWithValue("@Thu", Thu);
+            cmd.Parameters.AddWithValue("@Fri", Fri);
+            cmd.Parameters.AddWithValue("@Sat", Sat);
+            cmd.Parameters.AddWithValue("@Sun", Sun);
+            cmd.Parameters.AddWithValue("@Id", WorkDayID);
+            con.Open();
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+
+            MessageBox.Show("Updated");
+
+            getWorkingDays();
+
+        }
+
+        /*=============================================   Delete Working Days    =============================================================================== */
+
+
+        private void manageworkdeletebut_Click(object sender, EventArgs e)
+        {
+
+
+
+            SqlCommand cmd = new SqlCommand("delete from Work  where Id=@Id", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@Id", WorkDayID);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+          
+
+            MessageBox.Show("Deleted ");
+            getWorkingDays();
+
+
+        }
 
 
         /*=============================================   Add Locations    =============================================================================== */
@@ -1544,7 +1739,6 @@ namespace Time_Table_managemnt
             GenarateIDPanel.Hide();
         }
 
-
-
+      
     }
 }
