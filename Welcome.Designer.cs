@@ -54,17 +54,17 @@ namespace Time_Table_managemnt
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 873);
+            this.panel1.Location = new System.Drawing.Point(0, 868);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1192, 19);
+            this.panel1.Size = new System.Drawing.Size(1192, 24);
             this.panel1.TabIndex = 1;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(109)))), ((int)(((byte)(137)))));
-            this.panel2.Location = new System.Drawing.Point(0, 868);
+            this.panel2.Location = new System.Drawing.Point(0, 859);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(115, 24);
+            this.panel2.Size = new System.Drawing.Size(115, 33);
             this.panel2.TabIndex = 2;
             // 
             // timer1
