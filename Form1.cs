@@ -63,6 +63,7 @@ namespace Time_Table_managemnt
             //enable false Genrare ID and Sub Group ID
             EnableGropIDs();
 
+            ComboIndexMatch();
 
 
 
@@ -75,6 +76,8 @@ namespace Time_Table_managemnt
         {
             GroupID1.Enabled = false;
             SubGroupsID.Enabled = false;
+            UpdateSubGroup.Enabled = false;
+            UpdateGroupID.Enabled = false;
         }
 
         /*=============================================Get Students to Table =============================================================================== */
@@ -105,24 +108,61 @@ namespace Time_Table_managemnt
         {
 
 
-            con.Close();
-           SqlCommand cmd = new SqlCommand("INSERT INTO Students(AcdemicYear,Programne,GroupNumber,SubGroup,GroupID,subGroupID) values (@AcdemicYear,@Programne,@GroupNumber,@SubGroup,@GroupID,@subGroupID)", con);
-            cmd.CommandType = CommandType.Text;
-            cmd.Parameters.AddWithValue("@AcdemicYear", AdecmicYear_ComboBox.Text.ToString());
-            cmd.Parameters.AddWithValue("@Programne", Programme_combo.Text.ToString());
-            cmd.Parameters.AddWithValue("@GroupNumber", numericUpDown1.Value);
-            cmd.Parameters.AddWithValue("@SubGroup", numericUpDown2.Value);
-            cmd.Parameters.AddWithValue("@GroupID", GroupID1.Text );
-            cmd.Parameters.AddWithValue("@subGroupID", SubGroupsID.Text);
-          
 
-            con.Open();
-            cmd.ExecuteNonQuery();
-            con.Close();
-          
-            MessageBox.Show("added  sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            getStudents();
-            //Reset();
+            if (IsValidStudentsGroup())
+            {
+
+                con.Close();
+                SqlCommand cmd = new SqlCommand("INSERT INTO Students(AcdemicYear,Programne,GroupNumber,SubGroup,GroupID,subGroupID) values (@AcdemicYear,@Programne,@GroupNumber,@SubGroup,@GroupID,@subGroupID)", con);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("@AcdemicYear", AdecmicYear_ComboBox.Text.ToString());
+                cmd.Parameters.AddWithValue("@Programne", Programme_combo.Text.ToString());
+                cmd.Parameters.AddWithValue("@GroupNumber", numericUpDown1.Value);
+                cmd.Parameters.AddWithValue("@SubGroup", numericUpDown2.Value);
+                cmd.Parameters.AddWithValue("@GroupID", GroupID1.Text);
+                cmd.Parameters.AddWithValue("@subGroupID", SubGroupsID.Text);
+
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                MessageBox.Show("added  sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                getStudents();
+                //Reset();
+
+            }
+
+
+        }
+
+        private bool IsValidStudentsGroup()
+        {
+            if(AdecmicYear_ComboBox.Text == String.Empty)
+            {
+
+
+                MessageBox.Show("All Details Must Field", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            return true;
+        }
+
+        private void ComboIndexMatch()
+        {
+            AdecmicYear_ComboBox.SelectedIndex = -1;
+            Programme_combo.SelectedIndex = -1;
+            AddTagCombo1.SelectedIndex = -1;
+            ADDTagCodeComboBox1.SelectedIndex = -1;
+            VeiwRelateTagComboBox3.SelectedIndex = -1;
+            UpdateComboBox9.SelectedIndex = -1;
+            UpdateTagCode.SelectedIndex = -1;
+            UpdateRelatedTags.SelectedIndex = -1;
+            UpdateAcdemictxt.SelectedIndex = -1;
+            UpdateProgrammeTxt.SelectedIndex = -1;
+            UpdateStudentsnumericUpDown4.ResetText();
+            UpdateStudentGroupnumericUpDown3.ResetText();
+
         }
 
         private void Clear_Click(object sender, EventArgs e)
@@ -183,7 +223,7 @@ namespace Time_Table_managemnt
         private void GenGroupmaterialButton7_Click(object sender, EventArgs e)
         {
             ClearGroupID();
-            SqlCommand cmd = new SqlCommand("select Id, CONCAT(AcdemicYear,'.',Programne,'.',GroupNumber) AS Group from Students ORDER BY Id DESC; ", con);
+            SqlCommand cmd = new SqlCommand("select Id, CONCAT(AcdemicYear,'.',Programne,'.',GroupNumber) AS GroupID from Students ORDER BY Id DESC; ", con);
             DataTable dt = new DataTable();
 
             con.Open();
@@ -346,7 +386,7 @@ namespace Time_Table_managemnt
         {
             if (studentID > 0)
             {
-
+                con.Close();
                 SqlCommand cmd = new SqlCommand("delete from Students  where Id=@Id", con);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id", this.studentID);
@@ -389,25 +429,53 @@ namespace Time_Table_managemnt
         }
 
 
+        /*=============================================   Match Updated ID ================================================================================ */
+
+
+        private void MatchUpdatedID_Click(object sender, EventArgs e)
+        {
+
+            UpdateSubGroup.Text = UpdateAcdemictxt.Text + '.' + UpdateProgrammeTxt.Text + '.' + UpdateStudentsnumericUpDown4.Value.ToString();
+            UpdateGroupID.Text = UpdateAcdemictxt.Text + '.' + UpdateProgrammeTxt.Text + '.' + UpdateStudentsnumericUpDown4.Value.ToString() + '.' + UpdateStudentGroupnumericUpDown3.Value.ToString();
+        }
+
+
         /*=============================================   Add Tags     =============================================================================== */
+      
         private void SaveTag_Click(object sender, EventArgs e)
         {
-            con.Close();
-            SqlCommand cmd = new SqlCommand("INSERT INTO Tags(SubjectName,SubjectCode,RelatedTags) values(@SubjectName,@SubjectCode,@RelatedTags)", con);
-            cmd.CommandType = CommandType.Text;
+            if (IsTagValid())
+            {
+                con.Close();
+                SqlCommand cmd = new SqlCommand("INSERT INTO Tags(SubjectName,SubjectCode,RelatedTags) values(@SubjectName,@SubjectCode,@RelatedTags)", con);
+                cmd.CommandType = CommandType.Text;
 
-            cmd.Parameters.AddWithValue("@SubjectName", AddTagCombo1.Text.ToString());
-            cmd.Parameters.AddWithValue("@SubjectCode", ADDTagCodeComboBox1.Text.ToString());
-            cmd.Parameters.AddWithValue("@RelatedTags", VeiwRelateTagComboBox3.Text.ToString());
+                cmd.Parameters.AddWithValue("@SubjectName", AddTagCombo1.Text.ToString());
+                cmd.Parameters.AddWithValue("@SubjectCode", ADDTagCodeComboBox1.Text.ToString());
+                cmd.Parameters.AddWithValue("@RelatedTags", VeiwRelateTagComboBox3.Text.ToString());
 
-            con.Open();
+                con.Open();
 
-            cmd.ExecuteNonQuery();
-            con.Close();
-          
-            MessageBox.Show("added sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                cmd.ExecuteNonQuery();
+                con.Close();
 
-            GetTags(); //get tags details
+                MessageBox.Show("added sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                GetTags(); //get tags details
+            }
+        }
+
+        private bool IsTagValid()
+        {
+
+            if (AddTagCombo1.Text == String.Empty)
+            {
+
+
+                MessageBox.Show("All Details Must Field", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            return true;
         }
 
 
@@ -463,7 +531,7 @@ namespace Time_Table_managemnt
         {
             TagID = Convert.ToInt32(TagdataGridView.SelectedRows[0].Cells[0].Value);
             UpdateComboBox9.Text = TagdataGridView.SelectedRows[0].Cells[1].Value.ToString();
-            UpdateComboBox10.Text = TagdataGridView.SelectedRows[0].Cells[2].Value.ToString();
+            UpdateTagCode.Text = TagdataGridView.SelectedRows[0].Cells[2].Value.ToString();
            UpdateRelatedTags.Text = TagdataGridView.SelectedRows[0].Cells[3].Value.ToString();
             
 
@@ -486,7 +554,7 @@ namespace Time_Table_managemnt
                 cmd.CommandType = CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@SubjectName", UpdateComboBox9.Text);
-                cmd.Parameters.AddWithValue("@SubjectCode", UpdateComboBox10.Text);
+                cmd.Parameters.AddWithValue("@SubjectCode", UpdateTagCode.Text);
                 cmd.Parameters.AddWithValue("@RelatedTags", UpdateRelatedTags.Text);
                 cmd.Parameters.AddWithValue("@Id", this.TagID);
 
@@ -526,6 +594,7 @@ namespace Time_Table_managemnt
 
                 GetTags();
                 clearStudents();
+                ClearTags();
                 MessageBox.Show("deleted sucessfully", "sucessfulluly", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -542,7 +611,7 @@ namespace Time_Table_managemnt
         {
             TagID = 0;
             UpdateComboBox9.SelectedIndex =-1;
-            UpdateComboBox10.SelectedIndex =-1;
+            UpdateTagCode.SelectedIndex =-1;
             UpdateRelatedTags.SelectedIndex = -1;
 
             UpdateComboBox9.Focus();
@@ -635,7 +704,7 @@ namespace Time_Table_managemnt
         {
 
             SubjectID = Convert.ToInt32(SubjectGridView1.SelectedRows[0].Cells[0].Value);
-            UpdateAcdemictxt.Text = SubjectGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            OfferdYear.Text = SubjectGridView1.SelectedRows[0].Cells[1].Value.ToString();
             offerdSem.Text = SubjectGridView1.SelectedRows[0].Cells[2].Value.ToString();
             Subjectname.Text = SubjectGridView1.SelectedRows[0].Cells[3].Value.ToString();
             SubjectCode.Text = SubjectGridView1.SelectedRows[0].Cells[4].Value.ToString();
@@ -1545,11 +1614,15 @@ namespace Time_Table_managemnt
         private void pictureBox9_Click_1(object sender, EventArgs e)
         {
             Tag1panel.Hide();
+            ClearAddedTags();
         }
-
+        
         private void pictureBox11_Click_2(object sender, EventArgs e)
         {
             tagpanel2.Hide();
+            ClearTags();
+
+            
         }
 
         //Clear Tags

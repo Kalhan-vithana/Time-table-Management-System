@@ -31,17 +31,17 @@ namespace Time_Table_managemnt
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Logopanel2 = new System.Windows.Forms.Panel();
@@ -149,6 +149,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector3 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl4 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.MatchUpdatedID = new MaterialSkin.Controls.MaterialButton();
             this.UpdateProgrammeTxt = new MaterialSkin.Controls.MaterialComboBox();
             this.UpdateAcdemictxt = new MaterialSkin.Controls.MaterialComboBox();
             this.SearchStudntGroup = new MaterialSkin.Controls.MaterialTextBox();
@@ -259,7 +260,6 @@ namespace Time_Table_managemnt
             this.materialTabSelector5 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl6 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage14 = new System.Windows.Forms.TabPage();
-            this.UpdateComboBox10 = new MaterialSkin.Controls.MaterialComboBox();
             this.UpdateComboBox9 = new MaterialSkin.Controls.MaterialComboBox();
             this.UpdateRelatedTags = new MaterialSkin.Controls.MaterialComboBox();
             this.SearchTags = new MaterialSkin.Controls.MaterialTextBox();
@@ -637,6 +637,7 @@ namespace Time_Table_managemnt
             this.elipseControl45 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl46 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl47 = new Time_Table_managemnt.ElipseControl();
+            this.UpdateTagCode = new MaterialSkin.Controls.MaterialComboBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.Logopanel2.SuspendLayout();
@@ -1210,17 +1211,17 @@ namespace Time_Table_managemnt
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart1.Legends.Add(legend4);
             this.chart1.Location = new System.Drawing.Point(49, 46);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "StudentsGroups";
-            this.chart1.Series.Add(series1);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series4.Legend = "Legend1";
+            series4.Name = "StudentsGroups";
+            this.chart1.Series.Add(series4);
             this.chart1.Size = new System.Drawing.Size(612, 304);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -1432,8 +1433,8 @@ namespace Time_Table_managemnt
             this.LecdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LecdataGridView.Name = "LecdataGridView";
             this.LecdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Red;
-            this.LecdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Red;
+            this.LecdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle25;
             this.LecdataGridView.RowTemplate.Height = 24;
             this.LecdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.LecdataGridView.Size = new System.Drawing.Size(572, 110);
@@ -2249,8 +2250,8 @@ namespace Time_Table_managemnt
             this.GropIDdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GropIDdataGridView1.Name = "GropIDdataGridView1";
             this.GropIDdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Red;
-            this.GropIDdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Red;
+            this.GropIDdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle26;
             this.GropIDdataGridView1.RowTemplate.Height = 24;
             this.GropIDdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GropIDdataGridView1.Size = new System.Drawing.Size(300, 160);
@@ -2310,8 +2311,8 @@ namespace Time_Table_managemnt
             this.SubdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubdataGridView1.Name = "SubdataGridView1";
             this.SubdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Red;
-            this.SubdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Red;
+            this.SubdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle27;
             this.SubdataGridView1.RowTemplate.Height = 24;
             this.SubdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SubdataGridView1.Size = new System.Drawing.Size(293, 166);
@@ -2421,6 +2422,7 @@ namespace Time_Table_managemnt
             // 
             // tabPage12
             // 
+            this.tabPage12.Controls.Add(this.MatchUpdatedID);
             this.tabPage12.Controls.Add(this.UpdateProgrammeTxt);
             this.tabPage12.Controls.Add(this.UpdateAcdemictxt);
             this.tabPage12.Controls.Add(this.SearchStudntGroup);
@@ -2448,6 +2450,25 @@ namespace Time_Table_managemnt
             this.tabPage12.TabIndex = 0;
             this.tabPage12.Text = "Manage Students Group";
             this.tabPage12.UseVisualStyleBackColor = true;
+            // 
+            // MatchUpdatedID
+            // 
+            this.MatchUpdatedID.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MatchUpdatedID.Depth = 0;
+            this.MatchUpdatedID.DrawShadows = true;
+            this.MatchUpdatedID.HighEmphasis = true;
+            this.MatchUpdatedID.Icon = null;
+            this.MatchUpdatedID.Location = new System.Drawing.Point(459, 548);
+            this.MatchUpdatedID.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.MatchUpdatedID.MouseState = MaterialSkin.MouseState.HOVER;
+            this.MatchUpdatedID.Name = "MatchUpdatedID";
+            this.MatchUpdatedID.Size = new System.Drawing.Size(160, 36);
+            this.MatchUpdatedID.TabIndex = 52;
+            this.MatchUpdatedID.Text = "Match Updated ID";
+            this.MatchUpdatedID.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.MatchUpdatedID.UseAccentColor = false;
+            this.MatchUpdatedID.UseVisualStyleBackColor = true;
+            this.MatchUpdatedID.Click += new System.EventHandler(this.MatchUpdatedID_Click);
             // 
             // UpdateProgrammeTxt
             // 
@@ -2713,8 +2734,8 @@ namespace Time_Table_managemnt
             this.UpdateStudentdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateStudentdataGridView1.Name = "UpdateStudentdataGridView1";
             this.UpdateStudentdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Red;
-            this.UpdateStudentdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Red;
+            this.UpdateStudentdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle28;
             this.UpdateStudentdataGridView1.RowTemplate.Height = 24;
             this.UpdateStudentdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.UpdateStudentdataGridView1.Size = new System.Drawing.Size(733, 183);
@@ -3290,8 +3311,8 @@ namespace Time_Table_managemnt
             this.SubjectGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjectGridView1.Name = "SubjectGridView1";
             this.SubjectGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Red;
-            this.SubjectGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Red;
+            this.SubjectGridView1.RowsDefaultCellStyle = dataGridViewCellStyle29;
             this.SubjectGridView1.RowTemplate.Height = 24;
             this.SubjectGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SubjectGridView1.Size = new System.Drawing.Size(657, 89);
@@ -4028,7 +4049,7 @@ namespace Time_Table_managemnt
             // 
             // tabPage14
             // 
-            this.tabPage14.Controls.Add(this.UpdateComboBox10);
+            this.tabPage14.Controls.Add(this.UpdateTagCode);
             this.tabPage14.Controls.Add(this.UpdateComboBox9);
             this.tabPage14.Controls.Add(this.UpdateRelatedTags);
             this.tabPage14.Controls.Add(this.SearchTags);
@@ -4050,32 +4071,6 @@ namespace Time_Table_managemnt
             this.tabPage14.Text = "Manage Tags";
             this.tabPage14.UseVisualStyleBackColor = true;
             // 
-            // UpdateComboBox10
-            // 
-            this.UpdateComboBox10.AutoResize = false;
-            this.UpdateComboBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.UpdateComboBox10.Depth = 0;
-            this.UpdateComboBox10.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.UpdateComboBox10.DropDownHeight = 174;
-            this.UpdateComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.UpdateComboBox10.DropDownWidth = 121;
-            this.UpdateComboBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.UpdateComboBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.UpdateComboBox10.FormattingEnabled = true;
-            this.UpdateComboBox10.IntegralHeight = false;
-            this.UpdateComboBox10.ItemHeight = 43;
-            this.UpdateComboBox10.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3"});
-            this.UpdateComboBox10.Location = new System.Drawing.Point(73, 494);
-            this.UpdateComboBox10.MaxDropDownItems = 4;
-            this.UpdateComboBox10.MouseState = MaterialSkin.MouseState.OUT;
-            this.UpdateComboBox10.Name = "UpdateComboBox10";
-            this.UpdateComboBox10.Size = new System.Drawing.Size(481, 49);
-            this.UpdateComboBox10.StartIndex = 0;
-            this.UpdateComboBox10.TabIndex = 40;
-            // 
             // UpdateComboBox9
             // 
             this.UpdateComboBox9.AutoResize = false;
@@ -4091,9 +4086,9 @@ namespace Time_Table_managemnt
             this.UpdateComboBox9.IntegralHeight = false;
             this.UpdateComboBox9.ItemHeight = 43;
             this.UpdateComboBox9.Items.AddRange(new object[] {
-            "Lecture",
-            "Tutorial",
-            "Lab"});
+            "Lab",
+            "tute",
+            "Lec"});
             this.UpdateComboBox9.Location = new System.Drawing.Point(73, 377);
             this.UpdateComboBox9.MaxDropDownItems = 4;
             this.UpdateComboBox9.MouseState = MaterialSkin.MouseState.OUT;
@@ -4176,8 +4171,8 @@ namespace Time_Table_managemnt
             this.TagdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TagdataGridView.Name = "TagdataGridView";
             this.TagdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Red;
-            this.TagdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Red;
+            this.TagdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle30;
             this.TagdataGridView.RowTemplate.Height = 24;
             this.TagdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TagdataGridView.Size = new System.Drawing.Size(615, 183);
@@ -5439,8 +5434,8 @@ namespace Time_Table_managemnt
             this.WorkingDatdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.WorkingDatdataGridView.Name = "WorkingDatdataGridView";
             this.WorkingDatdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Red;
-            this.WorkingDatdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Red;
+            this.WorkingDatdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle31;
             this.WorkingDatdataGridView.RowTemplate.Height = 24;
             this.WorkingDatdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.WorkingDatdataGridView.Size = new System.Drawing.Size(429, 113);
@@ -6221,8 +6216,8 @@ namespace Time_Table_managemnt
             this.ManagedataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ManagedataGridView.Name = "ManagedataGridView";
             this.ManagedataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Red;
-            this.ManagedataGridView.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Red;
+            this.ManagedataGridView.RowsDefaultCellStyle = dataGridViewCellStyle32;
             this.ManagedataGridView.RowTemplate.Height = 24;
             this.ManagedataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ManagedataGridView.Size = new System.Drawing.Size(697, 182);
@@ -9410,6 +9405,32 @@ namespace Time_Table_managemnt
             this.elipseControl47.CornerRadius = 70;
             this.elipseControl47.TargetControl = this.GenarateIDPanel;
             // 
+            // UpdateTagCode
+            // 
+            this.UpdateTagCode.AutoResize = false;
+            this.UpdateTagCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UpdateTagCode.Depth = 0;
+            this.UpdateTagCode.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.UpdateTagCode.DropDownHeight = 174;
+            this.UpdateTagCode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.UpdateTagCode.DropDownWidth = 121;
+            this.UpdateTagCode.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.UpdateTagCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UpdateTagCode.FormattingEnabled = true;
+            this.UpdateTagCode.IntegralHeight = false;
+            this.UpdateTagCode.ItemHeight = 43;
+            this.UpdateTagCode.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03"});
+            this.UpdateTagCode.Location = new System.Drawing.Point(73, 487);
+            this.UpdateTagCode.MaxDropDownItems = 4;
+            this.UpdateTagCode.MouseState = MaterialSkin.MouseState.OUT;
+            this.UpdateTagCode.Name = "UpdateTagCode";
+            this.UpdateTagCode.Size = new System.Drawing.Size(481, 49);
+            this.UpdateTagCode.StartIndex = 0;
+            this.UpdateTagCode.TabIndex = 40;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -10269,8 +10290,9 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialLabel materialLabel24;
         private MaterialSkin.Controls.MaterialLabel materialLabel22;
         private MaterialSkin.Controls.MaterialComboBox materialComboBox8;
-        private MaterialSkin.Controls.MaterialComboBox UpdateComboBox10;
         private MaterialSkin.Controls.MaterialComboBox UpdateComboBox9;
+        private MaterialSkin.Controls.MaterialButton MatchUpdatedID;
+        private MaterialSkin.Controls.MaterialComboBox UpdateTagCode;
     }
 }
 
