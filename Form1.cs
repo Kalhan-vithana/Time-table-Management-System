@@ -28,6 +28,7 @@ namespace Time_Table_managemnt
             ManagePanelSize();
 
             pictureBox18.Show();
+           
         }
 
       
@@ -42,6 +43,7 @@ namespace Time_Table_managemnt
         public int LectureID;
         public int LocationID;
         public int WorkDayID;
+        public int SessionID;
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -65,8 +67,13 @@ namespace Time_Table_managemnt
 
             ComboIndexMatch();
 
+            getConsectivedata();
 
 
+
+            checoboxrowConsectiveSession();
+            checkboxParrelSesssonCheckbox();
+            NonoverlappingCheckbox();
 
 
 
@@ -80,6 +87,38 @@ namespace Time_Table_managemnt
             UpdateGroupID.Enabled = false;
         }
 
+
+        void checoboxrowConsectiveSession()
+        {
+
+            DataGridViewCheckBoxColumn chkbox = new DataGridViewCheckBoxColumn();
+            chkbox.HeaderText = "";
+            chkbox.Width = 30;
+            chkbox.Name = "checkboxColum";
+            ConsecutiveDataGridView.Columns.Insert(0, chkbox);
+        }
+
+        void checkboxParrelSesssonCheckbox()
+        {
+
+
+            DataGridViewCheckBoxColumn chkbox = new DataGridViewCheckBoxColumn();
+            chkbox.HeaderText = "";
+            chkbox.Width = 30;
+            chkbox.Name = "parallelCheckboxcolumn";
+            ParellDatagridview.Columns.Insert(0, chkbox);
+        }
+
+        void NonoverlappingCheckbox()
+        {
+
+
+            DataGridViewCheckBoxColumn chkbox = new DataGridViewCheckBoxColumn();
+            chkbox.HeaderText = "";
+            chkbox.Width = 30;
+            chkbox.Name = "Nonchecheckbox";
+            datagridviewcoloum.Columns.Insert(0, chkbox);
+        }
         /*=============================================Get Students to Table =============================================================================== */
 
 
@@ -130,6 +169,7 @@ namespace Time_Table_managemnt
                 MessageBox.Show("added  sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 getStudents();
                 //Reset();
+                
 
             }
 
@@ -231,6 +271,7 @@ namespace Time_Table_managemnt
             dt.Load(sdr);
             con.Close();
             GropIDdataGridView1.DataSource = dt;
+            
         }
 
         
@@ -247,6 +288,7 @@ namespace Time_Table_managemnt
             con.Close();
 
             SubdataGridView1.DataSource = dt;
+           
 
         }
         //genarate Group ID gridveiw cell
@@ -462,6 +504,7 @@ namespace Time_Table_managemnt
                 MessageBox.Show("added sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 GetTags(); //get tags details
+                selectedtags();
             }
         }
 
@@ -630,6 +673,11 @@ namespace Time_Table_managemnt
             VeiwRelateTagComboBox3.SelectedIndex = -1;
         }
 
+
+
+
+        
+
         /*=============================================Addd Subjects =============================================================================== */
 
         private void SaveBtnSub_Click(object sender, EventArgs e)
@@ -654,6 +702,7 @@ namespace Time_Table_managemnt
             MessageBox.Show("added");
 
             getSubjects();
+            selectSubject();
 
 
 
@@ -806,8 +855,8 @@ namespace Time_Table_managemnt
 
             MessageBox.Show("Added ");
             getLecData();
-
-
+            SelectedLectrues();
+           
 
         }
 
@@ -1388,6 +1437,451 @@ namespace Time_Table_managemnt
         }
 
 
+        //----------- Section 2 add sessions -------------------------------------------------------------------------------------------------
+
+
+        void SelectedLectrues()
+        {
+
+
+            SqlCommand cmd = new SqlCommand("select * from  Lecture", con);
+            DataTable dt = new DataTable();
+
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                materialComboBox28.Items.Add(sdr.GetValue(1).ToString());
+
+                materialComboBox28.Text = "";
+                materialTextBox21.Text = materialComboBox28.Text;
+            }
+
+
+            con.Close();
+
+
+
+
+
+
+        }
+
+        void selectedtags()
+        {
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from  Tags", con);
+            DataTable dt = new DataTable();
+
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                materialComboBox31.Items.Add(sdr.GetValue(1).ToString());
+            }
+
+
+            con.Close();
+
+        }
+
+       
+        void selectSubject()
+        {
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from  Subject", con);
+            DataTable dt = new DataTable();
+
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                materialComboBox29.Items.Add(sdr.GetValue(5).ToString());
+            }
+
+
+            con.Close();
+
+        }
+
+        //add section2 ------------------------------------------------------------------
+
+        private void AddSessionSubmit_Click(object sender, EventArgs e)
+        {
+            
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("INSERT INTO session(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@Lecture", materialComboBox28.Text);
+            cmd.Parameters.AddWithValue("@Tags", materialComboBox31.Text);
+            cmd.Parameters.AddWithValue("@SubjectCode", materialTextBox10.Text);
+            cmd.Parameters.AddWithValue("@Groups", materialComboBox30.Text);
+            cmd.Parameters.AddWithValue("@Subject", materialComboBox29.Text);
+            cmd.Parameters.AddWithValue("@Duration", materialTextBox19.Text);
+            cmd.Parameters.AddWithValue("@NumofStudents", materialTextBox20.Text);
+            
+
+
+            con.Open();
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            MessageBox.Show("Added ");
+            getLecData();
+            SelectedLectrues();
+            sessiontable();
+            getConsectivedata();
+            GetParrallSessionData();
+            GetnonoverlappingSession();
+
+        }
+
+        void sessiontable()
+        {
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from session", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            dataGridView9.DataSource = dt;
+
+
+        }
+
+        private void dataGridView9_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            SessionID = Convert.ToInt32(dataGridView9.SelectedRows[0].Cells[0].Value);
+            materialTextBox18.Text = dataGridView9.SelectedRows[0].Cells[1].Value.ToString();
+            materialTextBox22.Text = dataGridView9.SelectedRows[0].Cells[2].Value.ToString();
+            materialTextBox23.Text = dataGridView9.SelectedRows[0].Cells[3].Value.ToString();
+            materialTextBox25.Text = dataGridView9.SelectedRows[0].Cells[4].Value.ToString();
+            materialTextBox26.Text = dataGridView9.SelectedRows[0].Cells[5].Value.ToString();
+            materialTextBox28.Text = dataGridView9.SelectedRows[0].Cells[6].Value.ToString();
+            materialTextBox29.Text = dataGridView9.SelectedRows[0].Cells[7].Value.ToString();
+            
+        }
+
+
+        private void ManageSessionUpdate_Click(object sender, EventArgs e)
+        {
+
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("update session set Lecture=@Lecture,Tags=@Tags,SubjectCode=@SubjectCode,Groups=@Groups,Subject=@Subject,Duration=@Duration,NumofStudents=@NumofStudents where Id =@Id", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@Lecture", materialTextBox18.Text);
+            cmd.Parameters.AddWithValue("@Tags", materialTextBox22.Text);
+            cmd.Parameters.AddWithValue("@SubjectCode", materialTextBox23.Text);
+            cmd.Parameters.AddWithValue("@Groups", materialTextBox25.Text);
+            cmd.Parameters.AddWithValue("@Subject", materialTextBox26.Text);
+            cmd.Parameters.AddWithValue("@Duration", materialTextBox28.Text);
+            cmd.Parameters.AddWithValue("@NumofStudents", materialTextBox29.Text);
+            cmd.Parameters.AddWithValue("@Id", SessionID);
+
+
+
+            con.Open();
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            MessageBox.Show("updated ");
+            sessiontable();
+        }
+
+
+        private void materialButtonDeleteSession_Click(object sender, EventArgs e)
+        {
+
+            SqlCommand cmd = new SqlCommand("delete from session  where Id=@Id", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@Id", SessionID);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+
+            MessageBox.Show("deleted");
+            sessiontable();
+
+        }
+
+
+        private void materialButtonRefresh_Click(object sender, EventArgs e)
+        {
+            materialTextBox18.Text = "";
+            materialTextBox22.Text = "";
+            materialTextBox23.Text = "";
+            materialTextBox25.Text = "";
+            materialTextBox26.Text = "";
+            materialTextBox28.Text = "";
+            materialTextBox29.Text = "";
+
+
+
+        }
+
+        //------------------------------------
+
+
+        private void materialTextBox24_TextChanged(object sender, EventArgs e)
+        {
+            if (materialComboBox27.Text == "Lecture")
+            {
+                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Lecture like '" + materialTextBox24.Text + "%'", con);
+                DataTable dt = new DataTable();
+
+
+                sda.Fill(dt);
+                dataGridView9.DataSource = dt;
+
+
+
+            }
+        }
+
+        public void getConsectivedata()
+        {
+
+           
+
+
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from session", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            ConsecutiveDataGridView.DataSource = dt;
+
+
+
+        }
+
+
+        //-----------Add Consective Sprint 2-------------------------------------------------------------------------------------------------
+
+
+        private void materialButton21_Click(object sender, EventArgs e)
+        {
+           foreach(DataGridViewRow dr in datagridviewcoloum.Rows)
+            {
+
+              
+                bool checkboxselected = Convert.ToBoolean(dr.Cells["checkboxColum"].Value);
+                if (checkboxselected)
+                {
+
+                    con.Close();
+                    SqlCommand cmd = new SqlCommand("INSERT INTO consective(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
+                    cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
+                    cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
+                    cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
+                    cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
+                    cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
+                    cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
+
+
+
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    loadconsectiverow();
+
+                }
+
+            }
+
+        }
+
+        public void loadconsectiverow()
+        {
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from consective", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            CondataGridView1.DataSource = dt;
+
+        }
+
+        //-----------Add Parelle= session Sprint 2-------------------------------------------------------------------------------------------------
+
+
+        public void insertParrellSession()
+        {
+
+            foreach (DataGridViewRow dr in ParellDatagridview.Rows)
+            {
+
+
+                bool checkboxselected = Convert.ToBoolean(dr.Cells["parallelCheckboxcolumn"].Value);
+                if (checkboxselected)
+                {
+
+                    con.Close();
+                    SqlCommand cmd = new SqlCommand("INSERT INTO parallelSession(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
+                    cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
+                    cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
+                    cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
+                    cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
+                    cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
+                    cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
+
+
+
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    loadParallelROw();
+
+                }
+
+            }
+
+        }
+
+        public void loadParallelROw()
+        {
+
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from parallelSession", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            PaldataGridView1.DataSource = dt;
+        }
+
+
+        public void GetParrallSessionData()
+        {
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from session", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            ParellDatagridview.DataSource = dt;
+
+        }
+
+
+        //-----------Non Overlapping Sprint 2-------------------------------------------------------------------------------------------------
+
+
+        public void insertNonoverlappingSession()
+        {
+
+            foreach (DataGridViewRow dr in datagridviewcoloum.Rows)
+            {
+
+
+                bool checkboxselected = Convert.ToBoolean(dr.Cells["Nonchecheckbox"].Value);
+                if (checkboxselected)
+                {
+
+                    con.Close();
+                    SqlCommand cmd = new SqlCommand("INSERT INTO nonoverlap(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
+                    cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
+                    cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
+                    cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
+                    cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
+                    cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
+                    cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
+
+
+
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    GetnonoverlappingData();
+
+                }
+
+            }
+
+        }
+        
+        public void GetnonoverlappingSession()
+        {
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from session", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            datagridviewcoloum.DataSource = dt;
+
+        }
+
+        public void GetnonoverlappingData()
+        {
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from nonoverlap", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            NondataGridView1.DataSource = dt;
+        }
+
+
+
+        private void materialButton23_Click(object sender, EventArgs e)
+        {
+            loadParallelROw();
+            Palpanel2.Show();
+            Palpanel2.BringToFront();
+
+        }
+        private void materialButton22_Click(object sender, EventArgs e)
+        {
+            consectivepanel.Show();
+            consectivepanel.BringToFront();
+        }
+
 
 
         //-----------panels and buttons navigations-------------------------------------------------------------------------------------------------
@@ -1810,8 +2304,48 @@ namespace Time_Table_managemnt
             addSssionpanel.Hide();
             panelManageSession.Hide();
             GenarateIDPanel.Hide();
+            consectivepanel.Hide();
+            Palpanel2.Hide();
+            Nonpanel3.Hide();
         }
 
-      
+        private void materialTextBox21_TextChanged(object sender, EventArgs e)
+        {
+
+            materialComboBox28.Text = "";
+            materialTextBox21.Text = materialComboBox28.Text;
+        }
+
+        private void ConpictureBox14_Click(object sender, EventArgs e)
+        {
+            consectivepanel.Hide();
+        }
+
+        private void PalpictureBox14_Click(object sender, EventArgs e)
+        {
+            Palpanel2.Hide();
+
+        }
+
+        private void NonpictureBox14_Click(object sender, EventArgs e)
+        {
+            Nonpanel3.Hide();
+        }
+
+        private void materialButton25_Click(object sender, EventArgs e)
+        {
+            Nonpanel3.Show();
+            Nonpanel3.BringToFront();
+        }
+
+        private void materialButton24_Click(object sender, EventArgs e)
+        {
+            insertParrellSession();
+        }
+
+        private void materialButton26_Click(object sender, EventArgs e)
+        {
+            insertNonoverlappingSession();
+        }
     }
 }
