@@ -270,3 +270,28 @@ C:\Users\ASUS\ansel\Desktop\New folder\Time-table-Management-System\obj\Debug\Ti
 C:\Users\ASUS\ansel\Desktop\New folder\Time-table-Management-System\obj\Debug\Time-Table-managemnt.csproj.CopyComplete
 C:\Users\ASUS\ansel\Desktop\New folder\Time-table-Management-System\obj\Debug\Time-Table-managemnt.exe
 C:\Users\ASUS\ansel\Desktop\New folder\Time-table-Management-System\obj\Debug\Time-Table-managemnt.pdb
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\bin\Debug\MYDatabase1.mdf
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\bin\Debug\MYDatabase1_log.ldf
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\bin\Debug\Time-Table-managemnt.exe.config
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\bin\Debug\Time-Table-managemnt.exe
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\bin\Debug\Time-Table-managemnt.pdb
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\bin\Debug\MaterialSkin.dll
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time-Table-managemnt.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time_Table_managemnt.Add_Tag.resources
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time_Table_managemnt.AddStudent.resources
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time_Table_managemnt.Delete_Tags.resources
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time_Table_managemnt.DeleteStudents.resources
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time_Table_managemnt.Form1.resources
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time_Table_managemnt.Home.resources
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time_Table_managemnt.Manage_Tags.resources
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time_Table_managemnt.Properties.Resources.resources
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time_Table_managemnt.StudentMenue.resources
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time_Table_managemnt.StudentUserControl1.resources
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time_Table_managemnt.updateStudents.resources
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time_Table_managemnt.UPdateUserControl1.resources
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time_Table_managemnt.Welcome.resources
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time-Table-managemnt.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time-Table-managemnt.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time-Table-managemnt.csproj.CopyComplete
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time-Table-managemnt.exe
+C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time-Table-managemnt.pdb

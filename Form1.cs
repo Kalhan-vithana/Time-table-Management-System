@@ -28,10 +28,10 @@ namespace Time_Table_managemnt
             ManagePanelSize();
 
             pictureBox18.Show();
-           
+
         }
 
-      
+
 
 
         //database connection
@@ -51,14 +51,14 @@ namespace Time_Table_managemnt
 
             fillChart();
             //method of hide all panels
-            HidePanel(); 
+            HidePanel();
 
 
             //change Tags and Add panale size 
             ChangeSizeTagPanel();
             //code
 
-            
+
             getStudents();
             GetTags();
 
@@ -135,7 +135,7 @@ namespace Time_Table_managemnt
 
             UpdateStudentdataGridView1.DataSource = dt;
 
-            
+
         }
 
 
@@ -169,7 +169,7 @@ namespace Time_Table_managemnt
                 MessageBox.Show("added  sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 getStudents();
                 //Reset();
-                
+
 
             }
 
@@ -178,7 +178,7 @@ namespace Time_Table_managemnt
 
         private bool IsValidStudentsGroup()
         {
-            if(AdecmicYear_ComboBox.Text == String.Empty)
+            if (AdecmicYear_ComboBox.Text == String.Empty)
             {
 
 
@@ -216,7 +216,7 @@ namespace Time_Table_managemnt
         private void Reset()
         {
             studentID = 0;
-            AdecmicYear_ComboBox.SelectedIndex =-1;
+            AdecmicYear_ComboBox.SelectedIndex = -1;
             Programme_combo.SelectedIndex = -1;
             numericUpDown1.ResetText();
             numericUpDown2.ResetText();
@@ -259,7 +259,7 @@ namespace Time_Table_managemnt
             }
         }
 
-     
+
         private void GenGroupmaterialButton7_Click(object sender, EventArgs e)
         {
             ClearGroupID();
@@ -271,13 +271,13 @@ namespace Time_Table_managemnt
             dt.Load(sdr);
             con.Close();
             GropIDdataGridView1.DataSource = dt;
-            
+
         }
 
-        
+
         private void materialButton7_Click(object sender, EventArgs e)
         {
-          
+
             ClearSubGroupID();
             SqlCommand cmd = new SqlCommand("select Id,CONCAT(AcdemicYear,'.',Programne,'.',GroupNumber,'.',SubGroup) AS SubGroup  from Students ORDER BY Id DESC ", con);
             DataTable dt = new DataTable();
@@ -288,7 +288,7 @@ namespace Time_Table_managemnt
             con.Close();
 
             SubdataGridView1.DataSource = dt;
-           
+
 
         }
         //genarate Group ID gridveiw cell
@@ -376,13 +376,13 @@ namespace Time_Table_managemnt
         private void UpdateStudentdataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             studentID = Convert.ToInt32(UpdateStudentdataGridView1.SelectedRows[0].Cells[0].Value);
-            UpdateAcdemictxt.Text= UpdateStudentdataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            UpdateAcdemictxt.Text = UpdateStudentdataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             UpdateProgrammeTxt.Text = UpdateStudentdataGridView1.SelectedRows[0].Cells[2].Value.ToString();
             UpdateStudentsnumericUpDown4.Text = UpdateStudentdataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             UpdateStudentGroupnumericUpDown3.Text = UpdateStudentdataGridView1.SelectedRows[0].Cells[4].Value.ToString();
             UpdateSubGroup.Text = UpdateStudentdataGridView1.SelectedRows[0].Cells[5].Value.ToString();
             UpdateGroupID.Text = UpdateStudentdataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-          
+
 
         }
 
@@ -463,7 +463,7 @@ namespace Time_Table_managemnt
             UpdateStudentsnumericUpDown4.ResetText();
             UpdateStudentGroupnumericUpDown3.ResetText();
             UpdateSubGroup.Clear();
-           
+
             UpdateGroupID.Clear();
 
             UpdateAcdemictxt.Focus();
@@ -483,7 +483,7 @@ namespace Time_Table_managemnt
 
 
         /*=============================================   Add Tags     =============================================================================== */
-      
+
         private void SaveTag_Click(object sender, EventArgs e)
         {
             if (IsTagValid())
@@ -531,8 +531,8 @@ namespace Time_Table_managemnt
             con.Open();
             SqlDataReader sdr = cmd.ExecuteReader();
             dt.Load(sdr);
-         
-            
+
+
 
             TagdataGridView.DataSource = dt;
         }
@@ -542,19 +542,19 @@ namespace Time_Table_managemnt
         private void SearchTags_TextChanged(object sender, EventArgs e)
         {
 
-            if(SearchTagsCombo1.Text == "ID")
+            if (SearchTagsCombo1.Text == "ID")
             {
-                SqlDataAdapter sda = new SqlDataAdapter("select * from Tags where Id like '"+SearchTags.Text +"%'", con);
+                SqlDataAdapter sda = new SqlDataAdapter("select * from Tags where Id like '" + SearchTags.Text + "%'", con);
                 DataTable dt = new DataTable();
 
-  
+
                 sda.Fill(dt);
                 TagdataGridView.DataSource = dt;
 
 
 
             }
-            else if(SearchTagsCombo1.Text == "Subject name")
+            else if (SearchTagsCombo1.Text == "Subject name")
             {
 
                 SqlDataAdapter sda = new SqlDataAdapter("select * from Tags where SubjectName like '" + SearchTags.Text + "%'", con);
@@ -575,11 +575,11 @@ namespace Time_Table_managemnt
             TagID = Convert.ToInt32(TagdataGridView.SelectedRows[0].Cells[0].Value);
             UpdateComboBox9.Text = TagdataGridView.SelectedRows[0].Cells[1].Value.ToString();
             UpdateTagCode.Text = TagdataGridView.SelectedRows[0].Cells[2].Value.ToString();
-           UpdateRelatedTags.Text = TagdataGridView.SelectedRows[0].Cells[3].Value.ToString();
-            
+            UpdateRelatedTags.Text = TagdataGridView.SelectedRows[0].Cells[3].Value.ToString();
+
 
             //var val = TagdataGridView.SelectedRows[0].Cells[3].Value.ToString();
-           
+
             //UpdateRelatedTags.Items.Add(val);
             //UpdateRelatedTags.SelectedIndex = -1;
 
@@ -590,7 +590,7 @@ namespace Time_Table_managemnt
         /*=============================================   Update Students Tags   =============================================================================== */
         private void UpdateTagButton_Click(object sender, EventArgs e)
         {
-            if(TagID > 0)
+            if (TagID > 0)
             {
 
                 SqlCommand cmd = new SqlCommand("update Tags set SubjectName=@SubjectName,SubjectCode=@SubjectCode,RelatedTags=@RelatedTags where Id=@Id ", con);
@@ -621,7 +621,7 @@ namespace Time_Table_managemnt
             }
         }
 
-  /*=============================================  Delete Students Tags   =============================================================================== */
+        /*=============================================  Delete Students Tags   =============================================================================== */
         private void DeleteTagButton_Click(object sender, EventArgs e)
         {
 
@@ -647,14 +647,14 @@ namespace Time_Table_managemnt
             }
         }
 
-       
+
         //Clear Tags  Method
 
         private void ClearTags()
         {
             TagID = 0;
-            UpdateComboBox9.SelectedIndex =-1;
-            UpdateTagCode.SelectedIndex =-1;
+            UpdateComboBox9.SelectedIndex = -1;
+            UpdateTagCode.SelectedIndex = -1;
             UpdateRelatedTags.SelectedIndex = -1;
 
             UpdateComboBox9.Focus();
@@ -676,7 +676,7 @@ namespace Time_Table_managemnt
 
 
 
-        
+
 
         /*=============================================Addd Subjects =============================================================================== */
 
@@ -741,7 +741,7 @@ namespace Time_Table_managemnt
             numericUpDown17.ResetText();
 
 
-           
+
         }
 
 
@@ -793,7 +793,7 @@ namespace Time_Table_managemnt
 
             cmd.ExecuteNonQuery();
             con.Close();
-           
+
             MessageBox.Show("updated");
             getSubjects();
         }
@@ -847,7 +847,7 @@ namespace Time_Table_managemnt
             cmd.Parameters.AddWithValue("@Leval", materialComboBox21.Text);
             cmd.Parameters.AddWithValue("@Rank", Rank.Text);
 
-           
+
             con.Open();
 
             cmd.ExecuteNonQuery();
@@ -856,15 +856,15 @@ namespace Time_Table_managemnt
             MessageBox.Show("Added ");
             getLecData();
             SelectedLectrues();
-           
+
 
         }
 
         private void getLecData()
         {
-           
 
-                 SqlCommand cmd = new SqlCommand("select * from  Lecture", con);
+
+            SqlCommand cmd = new SqlCommand("select * from  Lecture", con);
             DataTable dt = new DataTable();
 
             con.Open();
@@ -882,9 +882,9 @@ namespace Time_Table_managemnt
         {
 
 
-      
-            LecName.Text ="";
-            idLecs.Text ="";
+
+            LecName.Text = "";
+            idLecs.Text = "";
             materialComboBox17.SelectedIndex = -1;
             materialComboBox18.SelectedIndex = -1;
             materialComboBox19.SelectedIndex = -1;
@@ -984,7 +984,7 @@ namespace Time_Table_managemnt
             Rank.Text = idLecs.Text + '.' + materialComboBox21.Text;
 
         }
-       
+
 
 
 
@@ -993,7 +993,7 @@ namespace Time_Table_managemnt
 
         private void addworksavebut_Click(object sender, EventArgs e)
         {
-            String Day ="";
+            String Day = "";
             String Mon = "";
             String Tue = "";
             String Wen = "";
@@ -1003,15 +1003,15 @@ namespace Time_Table_managemnt
             String Sun = "";
 
 
-         
 
-           
+
+
             if (AWmaterialCheckbox1.Checked)
             {
 
                 Mon = "Monday";
             }
-            
+
             if (AWmaterialCheckbox2.Checked)
             {
 
@@ -1163,15 +1163,15 @@ namespace Time_Table_managemnt
 
 
             }
-            
-            
+
+
             //MWmaterialCheckbox1.Text = WorkingDatdataGridView.SelectedRows[0].Cells[3].Value.ToString();
-           /* MWmaterialCheckbox7.Text = WorkingDatdataGridView.SelectedRows[0].Cells[4].Value.ToString();
-            MWmaterialCheckbox6.Text = WorkingDatdataGridView.SelectedRows[0].Cells[5].Value.ToString();
-            MWmaterialCheckbox5.Text = WorkingDatdataGridView.SelectedRows[0].Cells[6].Value.ToString();
-            MWmaterialCheckbox4.Text = WorkingDatdataGridView.SelectedRows[0].Cells[7].Value.ToString();
-            MWmaterialCheckbox2.Text = WorkingDatdataGridView.SelectedRows[0].Cells[8].Value.ToString();
-            MWmaterialCheckbox3.Text = WorkingDatdataGridView.SelectedRows[0].Cells[9].Value.ToString();*/
+            /* MWmaterialCheckbox7.Text = WorkingDatdataGridView.SelectedRows[0].Cells[4].Value.ToString();
+             MWmaterialCheckbox6.Text = WorkingDatdataGridView.SelectedRows[0].Cells[5].Value.ToString();
+             MWmaterialCheckbox5.Text = WorkingDatdataGridView.SelectedRows[0].Cells[6].Value.ToString();
+             MWmaterialCheckbox4.Text = WorkingDatdataGridView.SelectedRows[0].Cells[7].Value.ToString();
+             MWmaterialCheckbox2.Text = WorkingDatdataGridView.SelectedRows[0].Cells[8].Value.ToString();
+             MWmaterialCheckbox3.Text = WorkingDatdataGridView.SelectedRows[0].Cells[9].Value.ToString();*/
 
         }
 
@@ -1277,7 +1277,7 @@ namespace Time_Table_managemnt
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
-          
+
 
             MessageBox.Show("Deleted ");
             getWorkingDays();
@@ -1293,14 +1293,14 @@ namespace Time_Table_managemnt
         {
             String Lab = "";
             String Lec = "";
-            String tute = ""; 
-            if(materialRadioButton1.Checked == true)
+            String tute = "";
+            if (materialRadioButton1.Checked == true)
             {
                 Lab = "Lecturehall ";
 
 
             }
-            if(materialRadioButton2.Checked == true)
+            if (materialRadioButton2.Checked == true)
             {
                 Lab = "Laboratory";
             }
@@ -1318,8 +1318,8 @@ namespace Time_Table_managemnt
             cmd.Parameters.AddWithValue("@Capacity", materialTextBox6.Text);
 
             cmd.Parameters.AddWithValue("@RoomType", Lab);
-           
-            
+
+
 
             con.Open();
 
@@ -1368,7 +1368,7 @@ namespace Time_Table_managemnt
             materialTextBox17.Text = ManagedataGridView.SelectedRows[0].Cells[2].Value.ToString();
             materialTextBox15.Text = ManagedataGridView.SelectedRows[0].Cells[3].Value.ToString();
             materialComboBox4.Text = ManagedataGridView.SelectedRows[0].Cells[4].Value.ToString();
-           
+
         }
 
         /*=============================================   Update Location     =============================================================================== */
@@ -1414,7 +1414,7 @@ namespace Time_Table_managemnt
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
-           
+
 
             MessageBox.Show("deleted");
             getLocationdata();
@@ -1432,7 +1432,7 @@ namespace Time_Table_managemnt
             materialTextBox17.Text = "";
             materialTextBox15.Text = "";
             materialComboBox4.Text = "";
-            
+
 
         }
 
@@ -1485,7 +1485,7 @@ namespace Time_Table_managemnt
 
         }
 
-       
+
         void selectSubject()
         {
             con.Close();
@@ -1508,7 +1508,7 @@ namespace Time_Table_managemnt
 
         private void AddSessionSubmit_Click(object sender, EventArgs e)
         {
-            
+
 
             con.Close();
             SqlCommand cmd = new SqlCommand("INSERT INTO session(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
@@ -1520,7 +1520,7 @@ namespace Time_Table_managemnt
             cmd.Parameters.AddWithValue("@Subject", materialComboBox29.Text);
             cmd.Parameters.AddWithValue("@Duration", materialTextBox19.Text);
             cmd.Parameters.AddWithValue("@NumofStudents", materialTextBox20.Text);
-            
+
 
 
             con.Open();
@@ -1566,7 +1566,7 @@ namespace Time_Table_managemnt
             materialTextBox26.Text = dataGridView9.SelectedRows[0].Cells[5].Value.ToString();
             materialTextBox28.Text = dataGridView9.SelectedRows[0].Cells[6].Value.ToString();
             materialTextBox29.Text = dataGridView9.SelectedRows[0].Cells[7].Value.ToString();
-            
+
         }
 
 
@@ -1651,7 +1651,7 @@ namespace Time_Table_managemnt
         public void getConsectivedata()
         {
 
-           
+
 
 
 
@@ -1676,10 +1676,10 @@ namespace Time_Table_managemnt
 
         private void materialButton21_Click(object sender, EventArgs e)
         {
-           foreach(DataGridViewRow dr in datagridviewcoloum.Rows)
+            foreach (DataGridViewRow dr in ConsecutiveDataGridView.Rows)
             {
 
-              
+
                 bool checkboxselected = Convert.ToBoolean(dr.Cells["checkboxColum"].Value);
                 if (checkboxselected)
                 {
@@ -1722,6 +1722,32 @@ namespace Time_Table_managemnt
 
             CondataGridView1.DataSource = dt;
 
+        }
+
+        private void materialTextBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (Searchconsectivecombo.Text == "ID")
+            {
+                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Id like '" + materialTextBox2.Text + "%'", con);
+                DataTable dt = new DataTable();
+
+
+                sda.Fill(dt);
+                ConsecutiveDataGridView.DataSource = dt;
+
+
+
+            }
+            else if (Searchconsectivecombo.Text == "Subject name")
+            {
+
+                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Subject like '" + materialTextBox2.Text + "%'", con);
+                DataTable dt = new DataTable();
+
+                sda.Fill(dt);
+
+                ConsecutiveDataGridView.DataSource = dt;
+            }
         }
 
         //-----------Add Parelle= session Sprint 2-------------------------------------------------------------------------------------------------
@@ -1797,6 +1823,37 @@ namespace Time_Table_managemnt
         }
 
 
+        private void materialTextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+            if (materialComboBox2.Text == "ID")
+            {
+                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Id like '" + materialTextBox3.Text + "%'", con);
+                DataTable dt = new DataTable();
+
+
+                sda.Fill(dt);
+                ParellDatagridview.DataSource = dt;
+
+
+
+            }
+            else if (materialComboBox2.Text == "Subject name")
+            {
+
+                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Subject like '" + materialTextBox3.Text + "%'", con);
+                DataTable dt = new DataTable();
+
+                sda.Fill(dt);
+
+                ParellDatagridview.DataSource = dt;
+            }
+        }
+
+
+
+
+
         //-----------Non Overlapping Sprint 2-------------------------------------------------------------------------------------------------
 
 
@@ -1835,7 +1892,7 @@ namespace Time_Table_managemnt
             }
 
         }
-        
+
         public void GetnonoverlappingSession()
         {
 
@@ -1868,6 +1925,32 @@ namespace Time_Table_managemnt
         }
 
 
+        private void materialTextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+            if (materialComboBox3.Text == "ID")
+            {
+                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Id like '" + materialTextBox4.Text + "%'", con);
+                DataTable dt = new DataTable();
+
+
+                sda.Fill(dt);
+                datagridviewcoloum.DataSource = dt;
+
+
+
+            }
+            else if (materialComboBox3.Text == "Subject name")
+            {
+
+                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Subject like '" + materialTextBox4.Text + "%'", con);
+                DataTable dt = new DataTable();
+
+                sda.Fill(dt);
+
+                datagridviewcoloum.DataSource = dt;
+            }
+        }
 
         private void materialButton23_Click(object sender, EventArgs e)
         {
@@ -1982,7 +2065,7 @@ namespace Time_Table_managemnt
             GenarateIDGroup.Clear();
             SubGroupmaterial.Clear();
 
-           
+
 
         }
 
@@ -1994,7 +2077,7 @@ namespace Time_Table_managemnt
         private void ClearGroupID()
         {
             GenarateIDGroup.Clear();
-            
+
         }
 
         private void materialButton1_Click(object sender, EventArgs e)
@@ -2110,13 +2193,13 @@ namespace Time_Table_managemnt
             Tag1panel.Hide();
             ClearAddedTags();
         }
-        
+
         private void pictureBox11_Click_2(object sender, EventArgs e)
         {
             tagpanel2.Hide();
             ClearTags();
 
-            
+
         }
 
         //Clear Tags
@@ -2347,5 +2430,8 @@ namespace Time_Table_managemnt
         {
             insertNonoverlappingSession();
         }
+
+
+    
     }
 }
