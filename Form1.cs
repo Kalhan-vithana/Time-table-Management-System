@@ -2569,6 +2569,7 @@ namespace Time_Table_managemnt
             consectivepanel.Hide();
             Palpanel2.Hide();
             Nonpanel3.Hide();
+            updatenotsessionpanel.Hide();
         }
 
         private void materialTextBox21_TextChanged(object sender, EventArgs e)
@@ -2610,6 +2611,15 @@ namespace Time_Table_managemnt
             insertNonoverlappingSession();
         }
 
-      
+        private void ANSviewbut_Click(object sender, EventArgs e)
+        {
+            updatenotsessionpanel.Show();
+            updatenotsessionpanel.BringToFront();
+        }
+
+        private void updatenotsessionpicBox_Click(object sender, EventArgs e)
+        {
+            updatenotsessionpanel.Hide();
+        }
     }
 }

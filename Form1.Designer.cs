@@ -559,27 +559,6 @@ namespace Time_Table_managemnt
             this.materialButton25 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton26 = new MaterialSkin.Controls.MaterialButton();
             this.addnotsessiontabPage = new System.Windows.Forms.TabPage();
-            this.updatenotsessionpanel = new System.Windows.Forms.Panel();
-            this.UNSmaterialComboBox12 = new MaterialSkin.Controls.MaterialComboBox();
-            this.updatenotsessionpicBox = new System.Windows.Forms.PictureBox();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.UNSmaterialLabel51 = new MaterialSkin.Controls.MaterialLabel();
-            this.UNSmaterialLabel50 = new MaterialSkin.Controls.MaterialLabel();
-            this.UNSmaterialComboBox14 = new MaterialSkin.Controls.MaterialComboBox();
-            this.UNSmaterialComboBox13 = new MaterialSkin.Controls.MaterialComboBox();
-            this.UNSmaterialComboBox11 = new MaterialSkin.Controls.MaterialComboBox();
-            this.UNSmaterialComboBox10 = new MaterialSkin.Controls.MaterialComboBox();
-            this.UNSmaterialLabel49 = new MaterialSkin.Controls.MaterialLabel();
-            this.UNSmaterialLabel48 = new MaterialSkin.Controls.MaterialLabel();
-            this.UNSmaterialLabel47 = new MaterialSkin.Controls.MaterialLabel();
-            this.UNSmaterialLabel46 = new MaterialSkin.Controls.MaterialLabel();
-            this.UNSmaterialLabel45 = new MaterialSkin.Controls.MaterialLabel();
-            this.UNSmaterialLabel44 = new MaterialSkin.Controls.MaterialLabel();
-            this.UNSdeletebut = new MaterialSkin.Controls.MaterialButton();
-            this.UNSupdatebut = new MaterialSkin.Controls.MaterialButton();
-            this.UNSdataGridView9 = new System.Windows.Forms.DataGridView();
-            this.UNSrefreshbut = new MaterialSkin.Controls.MaterialButton();
             this.ANSclearbut = new MaterialSkin.Controls.MaterialButton();
             this.ANSviewbut = new MaterialSkin.Controls.MaterialButton();
             this.ANSsubmitbut = new MaterialSkin.Controls.MaterialButton();
@@ -676,6 +655,27 @@ namespace Time_Table_managemnt
             this.conataGridView1 = new System.Windows.Forms.DataGridView();
             this.materialButton8 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton9 = new MaterialSkin.Controls.MaterialButton();
+            this.updatenotsessionpanel = new System.Windows.Forms.Panel();
+            this.UNSmaterialComboBox12 = new MaterialSkin.Controls.MaterialComboBox();
+            this.updatenotsessionpicBox = new System.Windows.Forms.PictureBox();
+            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.UNSmaterialLabel51 = new MaterialSkin.Controls.MaterialLabel();
+            this.UNSmaterialLabel50 = new MaterialSkin.Controls.MaterialLabel();
+            this.UNSmaterialComboBox14 = new MaterialSkin.Controls.MaterialComboBox();
+            this.UNSmaterialComboBox13 = new MaterialSkin.Controls.MaterialComboBox();
+            this.UNSmaterialComboBox11 = new MaterialSkin.Controls.MaterialComboBox();
+            this.UNSmaterialComboBox10 = new MaterialSkin.Controls.MaterialComboBox();
+            this.UNSmaterialLabel49 = new MaterialSkin.Controls.MaterialLabel();
+            this.UNSmaterialLabel48 = new MaterialSkin.Controls.MaterialLabel();
+            this.UNSmaterialLabel47 = new MaterialSkin.Controls.MaterialLabel();
+            this.UNSmaterialLabel46 = new MaterialSkin.Controls.MaterialLabel();
+            this.UNSmaterialLabel45 = new MaterialSkin.Controls.MaterialLabel();
+            this.UNSmaterialLabel44 = new MaterialSkin.Controls.MaterialLabel();
+            this.UNSdeletebut = new MaterialSkin.Controls.MaterialButton();
+            this.UNSupdatebut = new MaterialSkin.Controls.MaterialButton();
+            this.UNSdataGridView9 = new System.Windows.Forms.DataGridView();
+            this.UNSrefreshbut = new MaterialSkin.Controls.MaterialButton();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.Logopanel2.SuspendLayout();
@@ -873,11 +873,6 @@ namespace Time_Table_managemnt
             ((System.ComponentModel.ISupportInitialize)(this.NonpictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewcoloum)).BeginInit();
             this.addnotsessiontabPage.SuspendLayout();
-            this.updatenotsessionpanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.updatenotsessionpicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UNSdataGridView9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ANSnumericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ANSnumericUpDown7)).BeginInit();
             this.tabPage11.SuspendLayout();
@@ -892,6 +887,11 @@ namespace Time_Table_managemnt
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SessionGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.conataGridView1)).BeginInit();
+            this.updatenotsessionpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.updatenotsessionpicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UNSdataGridView9)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -8107,7 +8107,7 @@ namespace Time_Table_managemnt
             this.materialTabControl2.Multiline = true;
             this.materialTabControl2.Name = "materialTabControl2";
             this.materialTabControl2.SelectedIndex = 0;
-            this.materialTabControl2.Size = new System.Drawing.Size(815, 500);
+            this.materialTabControl2.Size = new System.Drawing.Size(827, 534);
             this.materialTabControl2.TabIndex = 0;
             // 
             // tabPage15
@@ -8122,7 +8122,7 @@ namespace Time_Table_managemnt
             this.tabPage15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage15.Size = new System.Drawing.Size(807, 471);
+            this.tabPage15.Size = new System.Drawing.Size(819, 505);
             this.tabPage15.TabIndex = 0;
             this.tabPage15.Text = "Consecutive";
             this.tabPage15.UseVisualStyleBackColor = true;
@@ -8258,7 +8258,6 @@ namespace Time_Table_managemnt
             // 
             // tabPage16
             // 
-            this.tabPage16.Controls.Add(this.ParellDatagridview);
             this.tabPage16.Controls.Add(this.Palpanel2);
             this.tabPage16.Controls.Add(this.materialComboBox2);
             this.tabPage16.Controls.Add(this.materialTextBox3);
@@ -8268,7 +8267,7 @@ namespace Time_Table_managemnt
             this.tabPage16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage16.Size = new System.Drawing.Size(807, 471);
+            this.tabPage16.Size = new System.Drawing.Size(819, 505);
             this.tabPage16.TabIndex = 1;
             this.tabPage16.Text = "Parallel";
             this.tabPage16.UseVisualStyleBackColor = true;
@@ -8277,7 +8276,7 @@ namespace Time_Table_managemnt
             // 
             this.ParellDatagridview.BackgroundColor = System.Drawing.Color.MintCream;
             this.ParellDatagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ParellDatagridview.Location = new System.Drawing.Point(27, 93);
+            this.ParellDatagridview.Location = new System.Drawing.Point(0, 0);
             this.ParellDatagridview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ParellDatagridview.Name = "ParellDatagridview";
             this.ParellDatagridview.RowHeadersWidth = 51;
@@ -8289,6 +8288,7 @@ namespace Time_Table_managemnt
             // 
             // Palpanel2
             // 
+            this.Palpanel2.Controls.Add(this.ParellDatagridview);
             this.Palpanel2.Controls.Add(this.PaldataGridView1);
             this.Palpanel2.Controls.Add(this.PalpictureBox14);
             this.Palpanel2.Location = new System.Drawing.Point(27, 89);
@@ -8410,7 +8410,7 @@ namespace Time_Table_managemnt
             this.tabPage17.Location = new System.Drawing.Point(4, 25);
             this.tabPage17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage17.Name = "tabPage17";
-            this.tabPage17.Size = new System.Drawing.Size(807, 471);
+            this.tabPage17.Size = new System.Drawing.Size(819, 505);
             this.tabPage17.TabIndex = 2;
             this.tabPage17.Text = "Non OverLapping";
             this.tabPage17.UseVisualStyleBackColor = true;
@@ -8565,342 +8565,10 @@ namespace Time_Table_managemnt
             this.addnotsessiontabPage.Location = new System.Drawing.Point(4, 25);
             this.addnotsessiontabPage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addnotsessiontabPage.Name = "addnotsessiontabPage";
-            this.addnotsessiontabPage.Size = new System.Drawing.Size(807, 471);
+            this.addnotsessiontabPage.Size = new System.Drawing.Size(819, 505);
             this.addnotsessiontabPage.TabIndex = 3;
             this.addnotsessiontabPage.Text = "Not Available Times";
             this.addnotsessiontabPage.UseVisualStyleBackColor = true;
-            // 
-            // updatenotsessionpanel
-            // 
-            this.updatenotsessionpanel.BackColor = System.Drawing.Color.White;
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialComboBox12);
-            this.updatenotsessionpanel.Controls.Add(this.updatenotsessionpicBox);
-            this.updatenotsessionpanel.Controls.Add(this.numericUpDown8);
-            this.updatenotsessionpanel.Controls.Add(this.numericUpDown9);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel51);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel50);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialComboBox14);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialComboBox13);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialComboBox11);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialComboBox10);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel49);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel48);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel47);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel46);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel45);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel44);
-            this.updatenotsessionpanel.Controls.Add(this.UNSdeletebut);
-            this.updatenotsessionpanel.Controls.Add(this.UNSupdatebut);
-            this.updatenotsessionpanel.Controls.Add(this.UNSdataGridView9);
-            this.updatenotsessionpanel.Controls.Add(this.UNSrefreshbut);
-            this.updatenotsessionpanel.Location = new System.Drawing.Point(0, 2);
-            this.updatenotsessionpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.updatenotsessionpanel.Name = "updatenotsessionpanel";
-            this.updatenotsessionpanel.Size = new System.Drawing.Size(801, 507);
-            this.updatenotsessionpanel.TabIndex = 38;
-            // 
-            // UNSmaterialComboBox12
-            // 
-            this.UNSmaterialComboBox12.AutoResize = false;
-            this.UNSmaterialComboBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.UNSmaterialComboBox12.Depth = 0;
-            this.UNSmaterialComboBox12.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.UNSmaterialComboBox12.DropDownHeight = 174;
-            this.UNSmaterialComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.UNSmaterialComboBox12.DropDownWidth = 121;
-            this.UNSmaterialComboBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialComboBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.UNSmaterialComboBox12.FormattingEnabled = true;
-            this.UNSmaterialComboBox12.IntegralHeight = false;
-            this.UNSmaterialComboBox12.ItemHeight = 43;
-            this.UNSmaterialComboBox12.Location = new System.Drawing.Point(77, 416);
-            this.UNSmaterialComboBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.UNSmaterialComboBox12.MaxDropDownItems = 4;
-            this.UNSmaterialComboBox12.MouseState = MaterialSkin.MouseState.OUT;
-            this.UNSmaterialComboBox12.Name = "UNSmaterialComboBox12";
-            this.UNSmaterialComboBox12.Size = new System.Drawing.Size(281, 49);
-            this.UNSmaterialComboBox12.StartIndex = 0;
-            this.UNSmaterialComboBox12.TabIndex = 12;
-            // 
-            // updatenotsessionpicBox
-            // 
-            this.updatenotsessionpicBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("updatenotsessionpicBox.BackgroundImage")));
-            this.updatenotsessionpicBox.Location = new System.Drawing.Point(759, 2);
-            this.updatenotsessionpicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.updatenotsessionpicBox.Name = "updatenotsessionpicBox";
-            this.updatenotsessionpicBox.Size = new System.Drawing.Size(43, 41);
-            this.updatenotsessionpicBox.TabIndex = 17;
-            this.updatenotsessionpicBox.TabStop = false;
-            // 
-            // numericUpDown8
-            // 
-            this.numericUpDown8.Location = new System.Drawing.Point(603, 431);
-            this.numericUpDown8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(68, 22);
-            this.numericUpDown8.TabIndex = 18;
-            // 
-            // numericUpDown9
-            // 
-            this.numericUpDown9.Location = new System.Drawing.Point(467, 431);
-            this.numericUpDown9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(69, 22);
-            this.numericUpDown9.TabIndex = 17;
-            // 
-            // UNSmaterialLabel51
-            // 
-            this.UNSmaterialLabel51.AutoSize = true;
-            this.UNSmaterialLabel51.Depth = 0;
-            this.UNSmaterialLabel51.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel51.Location = new System.Drawing.Point(684, 434);
-            this.UNSmaterialLabel51.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel51.Name = "UNSmaterialLabel51";
-            this.UNSmaterialLabel51.Size = new System.Drawing.Size(58, 19);
-            this.UNSmaterialLabel51.TabIndex = 16;
-            this.UNSmaterialLabel51.Text = "Minutes";
-            // 
-            // UNSmaterialLabel50
-            // 
-            this.UNSmaterialLabel50.AutoSize = true;
-            this.UNSmaterialLabel50.Depth = 0;
-            this.UNSmaterialLabel50.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel50.Location = new System.Drawing.Point(543, 434);
-            this.UNSmaterialLabel50.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel50.Name = "UNSmaterialLabel50";
-            this.UNSmaterialLabel50.Size = new System.Drawing.Size(43, 19);
-            this.UNSmaterialLabel50.TabIndex = 15;
-            this.UNSmaterialLabel50.Text = "Hours";
-            // 
-            // UNSmaterialComboBox14
-            // 
-            this.UNSmaterialComboBox14.AutoResize = false;
-            this.UNSmaterialComboBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.UNSmaterialComboBox14.Depth = 0;
-            this.UNSmaterialComboBox14.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.UNSmaterialComboBox14.DropDownHeight = 174;
-            this.UNSmaterialComboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.UNSmaterialComboBox14.DropDownWidth = 121;
-            this.UNSmaterialComboBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialComboBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.UNSmaterialComboBox14.FormattingEnabled = true;
-            this.UNSmaterialComboBox14.IntegralHeight = false;
-            this.UNSmaterialComboBox14.ItemHeight = 43;
-            this.UNSmaterialComboBox14.Location = new System.Drawing.Point(467, 327);
-            this.UNSmaterialComboBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.UNSmaterialComboBox14.MaxDropDownItems = 4;
-            this.UNSmaterialComboBox14.MouseState = MaterialSkin.MouseState.OUT;
-            this.UNSmaterialComboBox14.Name = "UNSmaterialComboBox14";
-            this.UNSmaterialComboBox14.Size = new System.Drawing.Size(276, 49);
-            this.UNSmaterialComboBox14.StartIndex = 0;
-            this.UNSmaterialComboBox14.TabIndex = 14;
-            // 
-            // UNSmaterialComboBox13
-            // 
-            this.UNSmaterialComboBox13.AutoResize = false;
-            this.UNSmaterialComboBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.UNSmaterialComboBox13.Depth = 0;
-            this.UNSmaterialComboBox13.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.UNSmaterialComboBox13.DropDownHeight = 174;
-            this.UNSmaterialComboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.UNSmaterialComboBox13.DropDownWidth = 121;
-            this.UNSmaterialComboBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialComboBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.UNSmaterialComboBox13.FormattingEnabled = true;
-            this.UNSmaterialComboBox13.IntegralHeight = false;
-            this.UNSmaterialComboBox13.ItemHeight = 43;
-            this.UNSmaterialComboBox13.Location = new System.Drawing.Point(467, 254);
-            this.UNSmaterialComboBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.UNSmaterialComboBox13.MaxDropDownItems = 4;
-            this.UNSmaterialComboBox13.MouseState = MaterialSkin.MouseState.OUT;
-            this.UNSmaterialComboBox13.Name = "UNSmaterialComboBox13";
-            this.UNSmaterialComboBox13.Size = new System.Drawing.Size(276, 49);
-            this.UNSmaterialComboBox13.StartIndex = 0;
-            this.UNSmaterialComboBox13.TabIndex = 13;
-            // 
-            // UNSmaterialComboBox11
-            // 
-            this.UNSmaterialComboBox11.AutoResize = false;
-            this.UNSmaterialComboBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.UNSmaterialComboBox11.Depth = 0;
-            this.UNSmaterialComboBox11.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.UNSmaterialComboBox11.DropDownHeight = 174;
-            this.UNSmaterialComboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.UNSmaterialComboBox11.DropDownWidth = 121;
-            this.UNSmaterialComboBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialComboBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.UNSmaterialComboBox11.FormattingEnabled = true;
-            this.UNSmaterialComboBox11.IntegralHeight = false;
-            this.UNSmaterialComboBox11.ItemHeight = 43;
-            this.UNSmaterialComboBox11.Location = new System.Drawing.Point(77, 327);
-            this.UNSmaterialComboBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.UNSmaterialComboBox11.MaxDropDownItems = 4;
-            this.UNSmaterialComboBox11.MouseState = MaterialSkin.MouseState.OUT;
-            this.UNSmaterialComboBox11.Name = "UNSmaterialComboBox11";
-            this.UNSmaterialComboBox11.Size = new System.Drawing.Size(281, 49);
-            this.UNSmaterialComboBox11.StartIndex = 0;
-            this.UNSmaterialComboBox11.TabIndex = 11;
-            // 
-            // UNSmaterialComboBox10
-            // 
-            this.UNSmaterialComboBox10.AutoResize = false;
-            this.UNSmaterialComboBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.UNSmaterialComboBox10.Depth = 0;
-            this.UNSmaterialComboBox10.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.UNSmaterialComboBox10.DropDownHeight = 174;
-            this.UNSmaterialComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.UNSmaterialComboBox10.DropDownWidth = 121;
-            this.UNSmaterialComboBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialComboBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.UNSmaterialComboBox10.FormattingEnabled = true;
-            this.UNSmaterialComboBox10.IntegralHeight = false;
-            this.UNSmaterialComboBox10.ItemHeight = 43;
-            this.UNSmaterialComboBox10.Location = new System.Drawing.Point(77, 254);
-            this.UNSmaterialComboBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.UNSmaterialComboBox10.MaxDropDownItems = 4;
-            this.UNSmaterialComboBox10.MouseState = MaterialSkin.MouseState.OUT;
-            this.UNSmaterialComboBox10.Name = "UNSmaterialComboBox10";
-            this.UNSmaterialComboBox10.Size = new System.Drawing.Size(281, 49);
-            this.UNSmaterialComboBox10.StartIndex = 0;
-            this.UNSmaterialComboBox10.TabIndex = 10;
-            // 
-            // UNSmaterialLabel49
-            // 
-            this.UNSmaterialLabel49.AutoSize = true;
-            this.UNSmaterialLabel49.Depth = 0;
-            this.UNSmaterialLabel49.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel49.Location = new System.Drawing.Point(451, 386);
-            this.UNSmaterialLabel49.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel49.Name = "UNSmaterialLabel49";
-            this.UNSmaterialLabel49.Size = new System.Drawing.Size(37, 19);
-            this.UNSmaterialLabel49.TabIndex = 9;
-            this.UNSmaterialLabel49.Text = "Time";
-            // 
-            // UNSmaterialLabel48
-            // 
-            this.UNSmaterialLabel48.AutoSize = true;
-            this.UNSmaterialLabel48.Depth = 0;
-            this.UNSmaterialLabel48.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel48.Location = new System.Drawing.Point(451, 305);
-            this.UNSmaterialLabel48.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel48.Name = "UNSmaterialLabel48";
-            this.UNSmaterialLabel48.Size = new System.Drawing.Size(29, 19);
-            this.UNSmaterialLabel48.TabIndex = 8;
-            this.UNSmaterialLabel48.Text = "Day";
-            // 
-            // UNSmaterialLabel47
-            // 
-            this.UNSmaterialLabel47.AutoSize = true;
-            this.UNSmaterialLabel47.Depth = 0;
-            this.UNSmaterialLabel47.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel47.Location = new System.Drawing.Point(451, 231);
-            this.UNSmaterialLabel47.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel47.Name = "UNSmaterialLabel47";
-            this.UNSmaterialLabel47.Size = new System.Drawing.Size(123, 19);
-            this.UNSmaterialLabel47.TabIndex = 7;
-            this.UNSmaterialLabel47.Text = "Select Session ID";
-            // 
-            // UNSmaterialLabel46
-            // 
-            this.UNSmaterialLabel46.AutoSize = true;
-            this.UNSmaterialLabel46.Depth = 0;
-            this.UNSmaterialLabel46.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel46.Location = new System.Drawing.Point(59, 386);
-            this.UNSmaterialLabel46.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel46.Name = "UNSmaterialLabel46";
-            this.UNSmaterialLabel46.Size = new System.Drawing.Size(123, 19);
-            this.UNSmaterialLabel46.TabIndex = 6;
-            this.UNSmaterialLabel46.Text = "Select Sub Group";
-            // 
-            // UNSmaterialLabel45
-            // 
-            this.UNSmaterialLabel45.AutoSize = true;
-            this.UNSmaterialLabel45.Depth = 0;
-            this.UNSmaterialLabel45.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel45.Location = new System.Drawing.Point(60, 305);
-            this.UNSmaterialLabel45.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel45.Name = "UNSmaterialLabel45";
-            this.UNSmaterialLabel45.Size = new System.Drawing.Size(91, 19);
-            this.UNSmaterialLabel45.TabIndex = 5;
-            this.UNSmaterialLabel45.Text = "Select Group";
-            // 
-            // UNSmaterialLabel44
-            // 
-            this.UNSmaterialLabel44.AutoSize = true;
-            this.UNSmaterialLabel44.Depth = 0;
-            this.UNSmaterialLabel44.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel44.Location = new System.Drawing.Point(60, 231);
-            this.UNSmaterialLabel44.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel44.Name = "UNSmaterialLabel44";
-            this.UNSmaterialLabel44.Size = new System.Drawing.Size(105, 19);
-            this.UNSmaterialLabel44.TabIndex = 4;
-            this.UNSmaterialLabel44.Text = "Select Lecturer";
-            // 
-            // UNSdeletebut
-            // 
-            this.UNSdeletebut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.UNSdeletebut.Depth = 0;
-            this.UNSdeletebut.DrawShadows = true;
-            this.UNSdeletebut.HighEmphasis = true;
-            this.UNSdeletebut.Icon = null;
-            this.UNSdeletebut.Location = new System.Drawing.Point(708, 158);
-            this.UNSdeletebut.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.UNSdeletebut.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSdeletebut.Name = "UNSdeletebut";
-            this.UNSdeletebut.Size = new System.Drawing.Size(73, 36);
-            this.UNSdeletebut.TabIndex = 3;
-            this.UNSdeletebut.Text = "Delete";
-            this.UNSdeletebut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.UNSdeletebut.UseAccentColor = false;
-            this.UNSdeletebut.UseVisualStyleBackColor = true;
-            // 
-            // UNSupdatebut
-            // 
-            this.UNSupdatebut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.UNSupdatebut.Depth = 0;
-            this.UNSupdatebut.DrawShadows = true;
-            this.UNSupdatebut.HighEmphasis = true;
-            this.UNSupdatebut.Icon = null;
-            this.UNSupdatebut.Location = new System.Drawing.Point(704, 110);
-            this.UNSupdatebut.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.UNSupdatebut.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSupdatebut.Name = "UNSupdatebut";
-            this.UNSupdatebut.Size = new System.Drawing.Size(77, 36);
-            this.UNSupdatebut.TabIndex = 2;
-            this.UNSupdatebut.Text = "Update";
-            this.UNSupdatebut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.UNSupdatebut.UseAccentColor = false;
-            this.UNSupdatebut.UseVisualStyleBackColor = true;
-            // 
-            // UNSdataGridView9
-            // 
-            this.UNSdataGridView9.BackgroundColor = System.Drawing.Color.Azure;
-            this.UNSdataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.UNSdataGridView9.Location = new System.Drawing.Point(3, 2);
-            this.UNSdataGridView9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.UNSdataGridView9.Name = "UNSdataGridView9";
-            this.UNSdataGridView9.RowHeadersWidth = 51;
-            this.UNSdataGridView9.RowTemplate.Height = 24;
-            this.UNSdataGridView9.Size = new System.Drawing.Size(687, 209);
-            this.UNSdataGridView9.TabIndex = 0;
-            // 
-            // UNSrefreshbut
-            // 
-            this.UNSrefreshbut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.UNSrefreshbut.Depth = 0;
-            this.UNSrefreshbut.DrawShadows = true;
-            this.UNSrefreshbut.HighEmphasis = true;
-            this.UNSrefreshbut.Icon = null;
-            this.UNSrefreshbut.Location = new System.Drawing.Point(697, 57);
-            this.UNSrefreshbut.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.UNSrefreshbut.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSrefreshbut.Name = "UNSrefreshbut";
-            this.UNSrefreshbut.Size = new System.Drawing.Size(84, 36);
-            this.UNSrefreshbut.TabIndex = 1;
-            this.UNSrefreshbut.Text = "Refresh";
-            this.UNSrefreshbut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.UNSrefreshbut.UseAccentColor = false;
-            this.UNSrefreshbut.UseVisualStyleBackColor = true;
             // 
             // ANSclearbut
             // 
@@ -8927,7 +8595,7 @@ namespace Time_Table_managemnt
             this.ANSviewbut.DrawShadows = true;
             this.ANSviewbut.HighEmphasis = true;
             this.ANSviewbut.Icon = null;
-            this.ANSviewbut.Location = new System.Drawing.Point(317, 420);
+            this.ANSviewbut.Location = new System.Drawing.Point(261, 420);
             this.ANSviewbut.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.ANSviewbut.MouseState = MaterialSkin.MouseState.HOVER;
             this.ANSviewbut.Name = "ANSviewbut";
@@ -8937,6 +8605,7 @@ namespace Time_Table_managemnt
             this.ANSviewbut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.ANSviewbut.UseAccentColor = false;
             this.ANSviewbut.UseVisualStyleBackColor = true;
+            this.ANSviewbut.Click += new System.EventHandler(this.ANSviewbut_Click);
             // 
             // ANSsubmitbut
             // 
@@ -9890,6 +9559,339 @@ namespace Time_Table_managemnt
             this.materialButton9.UseVisualStyleBackColor = true;
             this.materialButton9.Click += new System.EventHandler(this.materialButton9_Click);
             // 
+            // updatenotsessionpanel
+            // 
+            this.updatenotsessionpanel.BackColor = System.Drawing.Color.White;
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialComboBox12);
+            this.updatenotsessionpanel.Controls.Add(this.updatenotsessionpicBox);
+            this.updatenotsessionpanel.Controls.Add(this.numericUpDown8);
+            this.updatenotsessionpanel.Controls.Add(this.numericUpDown9);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel51);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel50);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialComboBox14);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialComboBox13);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialComboBox11);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialComboBox10);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel49);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel48);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel47);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel46);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel45);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel44);
+            this.updatenotsessionpanel.Controls.Add(this.UNSdeletebut);
+            this.updatenotsessionpanel.Controls.Add(this.UNSupdatebut);
+            this.updatenotsessionpanel.Controls.Add(this.UNSdataGridView9);
+            this.updatenotsessionpanel.Controls.Add(this.UNSrefreshbut);
+            this.updatenotsessionpanel.Location = new System.Drawing.Point(7, 8);
+            this.updatenotsessionpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.updatenotsessionpanel.Name = "updatenotsessionpanel";
+            this.updatenotsessionpanel.Size = new System.Drawing.Size(816, 501);
+            this.updatenotsessionpanel.TabIndex = 40;
+            // 
+            // UNSmaterialComboBox12
+            // 
+            this.UNSmaterialComboBox12.AutoResize = false;
+            this.UNSmaterialComboBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UNSmaterialComboBox12.Depth = 0;
+            this.UNSmaterialComboBox12.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.UNSmaterialComboBox12.DropDownHeight = 174;
+            this.UNSmaterialComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.UNSmaterialComboBox12.DropDownWidth = 121;
+            this.UNSmaterialComboBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialComboBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UNSmaterialComboBox12.FormattingEnabled = true;
+            this.UNSmaterialComboBox12.IntegralHeight = false;
+            this.UNSmaterialComboBox12.ItemHeight = 43;
+            this.UNSmaterialComboBox12.Location = new System.Drawing.Point(77, 416);
+            this.UNSmaterialComboBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.UNSmaterialComboBox12.MaxDropDownItems = 4;
+            this.UNSmaterialComboBox12.MouseState = MaterialSkin.MouseState.OUT;
+            this.UNSmaterialComboBox12.Name = "UNSmaterialComboBox12";
+            this.UNSmaterialComboBox12.Size = new System.Drawing.Size(281, 49);
+            this.UNSmaterialComboBox12.StartIndex = 0;
+            this.UNSmaterialComboBox12.TabIndex = 12;
+            // 
+            // updatenotsessionpicBox
+            // 
+            this.updatenotsessionpicBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("updatenotsessionpicBox.BackgroundImage")));
+            this.updatenotsessionpicBox.Location = new System.Drawing.Point(759, 2);
+            this.updatenotsessionpicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.updatenotsessionpicBox.Name = "updatenotsessionpicBox";
+            this.updatenotsessionpicBox.Size = new System.Drawing.Size(43, 41);
+            this.updatenotsessionpicBox.TabIndex = 17;
+            this.updatenotsessionpicBox.TabStop = false;
+            this.updatenotsessionpicBox.Click += new System.EventHandler(this.updatenotsessionpicBox_Click);
+            // 
+            // numericUpDown8
+            // 
+            this.numericUpDown8.Location = new System.Drawing.Point(603, 431);
+            this.numericUpDown8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.numericUpDown8.Name = "numericUpDown8";
+            this.numericUpDown8.Size = new System.Drawing.Size(68, 22);
+            this.numericUpDown8.TabIndex = 18;
+            // 
+            // numericUpDown9
+            // 
+            this.numericUpDown9.Location = new System.Drawing.Point(467, 431);
+            this.numericUpDown9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.numericUpDown9.Name = "numericUpDown9";
+            this.numericUpDown9.Size = new System.Drawing.Size(69, 22);
+            this.numericUpDown9.TabIndex = 17;
+            // 
+            // UNSmaterialLabel51
+            // 
+            this.UNSmaterialLabel51.AutoSize = true;
+            this.UNSmaterialLabel51.Depth = 0;
+            this.UNSmaterialLabel51.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel51.Location = new System.Drawing.Point(684, 434);
+            this.UNSmaterialLabel51.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel51.Name = "UNSmaterialLabel51";
+            this.UNSmaterialLabel51.Size = new System.Drawing.Size(58, 19);
+            this.UNSmaterialLabel51.TabIndex = 16;
+            this.UNSmaterialLabel51.Text = "Minutes";
+            // 
+            // UNSmaterialLabel50
+            // 
+            this.UNSmaterialLabel50.AutoSize = true;
+            this.UNSmaterialLabel50.Depth = 0;
+            this.UNSmaterialLabel50.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel50.Location = new System.Drawing.Point(543, 434);
+            this.UNSmaterialLabel50.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel50.Name = "UNSmaterialLabel50";
+            this.UNSmaterialLabel50.Size = new System.Drawing.Size(43, 19);
+            this.UNSmaterialLabel50.TabIndex = 15;
+            this.UNSmaterialLabel50.Text = "Hours";
+            // 
+            // UNSmaterialComboBox14
+            // 
+            this.UNSmaterialComboBox14.AutoResize = false;
+            this.UNSmaterialComboBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UNSmaterialComboBox14.Depth = 0;
+            this.UNSmaterialComboBox14.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.UNSmaterialComboBox14.DropDownHeight = 174;
+            this.UNSmaterialComboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.UNSmaterialComboBox14.DropDownWidth = 121;
+            this.UNSmaterialComboBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialComboBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UNSmaterialComboBox14.FormattingEnabled = true;
+            this.UNSmaterialComboBox14.IntegralHeight = false;
+            this.UNSmaterialComboBox14.ItemHeight = 43;
+            this.UNSmaterialComboBox14.Location = new System.Drawing.Point(467, 327);
+            this.UNSmaterialComboBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.UNSmaterialComboBox14.MaxDropDownItems = 4;
+            this.UNSmaterialComboBox14.MouseState = MaterialSkin.MouseState.OUT;
+            this.UNSmaterialComboBox14.Name = "UNSmaterialComboBox14";
+            this.UNSmaterialComboBox14.Size = new System.Drawing.Size(276, 49);
+            this.UNSmaterialComboBox14.StartIndex = 0;
+            this.UNSmaterialComboBox14.TabIndex = 14;
+            // 
+            // UNSmaterialComboBox13
+            // 
+            this.UNSmaterialComboBox13.AutoResize = false;
+            this.UNSmaterialComboBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UNSmaterialComboBox13.Depth = 0;
+            this.UNSmaterialComboBox13.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.UNSmaterialComboBox13.DropDownHeight = 174;
+            this.UNSmaterialComboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.UNSmaterialComboBox13.DropDownWidth = 121;
+            this.UNSmaterialComboBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialComboBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UNSmaterialComboBox13.FormattingEnabled = true;
+            this.UNSmaterialComboBox13.IntegralHeight = false;
+            this.UNSmaterialComboBox13.ItemHeight = 43;
+            this.UNSmaterialComboBox13.Location = new System.Drawing.Point(467, 254);
+            this.UNSmaterialComboBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.UNSmaterialComboBox13.MaxDropDownItems = 4;
+            this.UNSmaterialComboBox13.MouseState = MaterialSkin.MouseState.OUT;
+            this.UNSmaterialComboBox13.Name = "UNSmaterialComboBox13";
+            this.UNSmaterialComboBox13.Size = new System.Drawing.Size(276, 49);
+            this.UNSmaterialComboBox13.StartIndex = 0;
+            this.UNSmaterialComboBox13.TabIndex = 13;
+            // 
+            // UNSmaterialComboBox11
+            // 
+            this.UNSmaterialComboBox11.AutoResize = false;
+            this.UNSmaterialComboBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UNSmaterialComboBox11.Depth = 0;
+            this.UNSmaterialComboBox11.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.UNSmaterialComboBox11.DropDownHeight = 174;
+            this.UNSmaterialComboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.UNSmaterialComboBox11.DropDownWidth = 121;
+            this.UNSmaterialComboBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialComboBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UNSmaterialComboBox11.FormattingEnabled = true;
+            this.UNSmaterialComboBox11.IntegralHeight = false;
+            this.UNSmaterialComboBox11.ItemHeight = 43;
+            this.UNSmaterialComboBox11.Location = new System.Drawing.Point(77, 327);
+            this.UNSmaterialComboBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.UNSmaterialComboBox11.MaxDropDownItems = 4;
+            this.UNSmaterialComboBox11.MouseState = MaterialSkin.MouseState.OUT;
+            this.UNSmaterialComboBox11.Name = "UNSmaterialComboBox11";
+            this.UNSmaterialComboBox11.Size = new System.Drawing.Size(281, 49);
+            this.UNSmaterialComboBox11.StartIndex = 0;
+            this.UNSmaterialComboBox11.TabIndex = 11;
+            // 
+            // UNSmaterialComboBox10
+            // 
+            this.UNSmaterialComboBox10.AutoResize = false;
+            this.UNSmaterialComboBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.UNSmaterialComboBox10.Depth = 0;
+            this.UNSmaterialComboBox10.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.UNSmaterialComboBox10.DropDownHeight = 174;
+            this.UNSmaterialComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.UNSmaterialComboBox10.DropDownWidth = 121;
+            this.UNSmaterialComboBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialComboBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.UNSmaterialComboBox10.FormattingEnabled = true;
+            this.UNSmaterialComboBox10.IntegralHeight = false;
+            this.UNSmaterialComboBox10.ItemHeight = 43;
+            this.UNSmaterialComboBox10.Location = new System.Drawing.Point(77, 254);
+            this.UNSmaterialComboBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.UNSmaterialComboBox10.MaxDropDownItems = 4;
+            this.UNSmaterialComboBox10.MouseState = MaterialSkin.MouseState.OUT;
+            this.UNSmaterialComboBox10.Name = "UNSmaterialComboBox10";
+            this.UNSmaterialComboBox10.Size = new System.Drawing.Size(281, 49);
+            this.UNSmaterialComboBox10.StartIndex = 0;
+            this.UNSmaterialComboBox10.TabIndex = 10;
+            // 
+            // UNSmaterialLabel49
+            // 
+            this.UNSmaterialLabel49.AutoSize = true;
+            this.UNSmaterialLabel49.Depth = 0;
+            this.UNSmaterialLabel49.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel49.Location = new System.Drawing.Point(451, 386);
+            this.UNSmaterialLabel49.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel49.Name = "UNSmaterialLabel49";
+            this.UNSmaterialLabel49.Size = new System.Drawing.Size(37, 19);
+            this.UNSmaterialLabel49.TabIndex = 9;
+            this.UNSmaterialLabel49.Text = "Time";
+            // 
+            // UNSmaterialLabel48
+            // 
+            this.UNSmaterialLabel48.AutoSize = true;
+            this.UNSmaterialLabel48.Depth = 0;
+            this.UNSmaterialLabel48.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel48.Location = new System.Drawing.Point(451, 305);
+            this.UNSmaterialLabel48.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel48.Name = "UNSmaterialLabel48";
+            this.UNSmaterialLabel48.Size = new System.Drawing.Size(29, 19);
+            this.UNSmaterialLabel48.TabIndex = 8;
+            this.UNSmaterialLabel48.Text = "Day";
+            // 
+            // UNSmaterialLabel47
+            // 
+            this.UNSmaterialLabel47.AutoSize = true;
+            this.UNSmaterialLabel47.Depth = 0;
+            this.UNSmaterialLabel47.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel47.Location = new System.Drawing.Point(451, 231);
+            this.UNSmaterialLabel47.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel47.Name = "UNSmaterialLabel47";
+            this.UNSmaterialLabel47.Size = new System.Drawing.Size(123, 19);
+            this.UNSmaterialLabel47.TabIndex = 7;
+            this.UNSmaterialLabel47.Text = "Select Session ID";
+            // 
+            // UNSmaterialLabel46
+            // 
+            this.UNSmaterialLabel46.AutoSize = true;
+            this.UNSmaterialLabel46.Depth = 0;
+            this.UNSmaterialLabel46.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel46.Location = new System.Drawing.Point(59, 386);
+            this.UNSmaterialLabel46.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel46.Name = "UNSmaterialLabel46";
+            this.UNSmaterialLabel46.Size = new System.Drawing.Size(123, 19);
+            this.UNSmaterialLabel46.TabIndex = 6;
+            this.UNSmaterialLabel46.Text = "Select Sub Group";
+            // 
+            // UNSmaterialLabel45
+            // 
+            this.UNSmaterialLabel45.AutoSize = true;
+            this.UNSmaterialLabel45.Depth = 0;
+            this.UNSmaterialLabel45.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel45.Location = new System.Drawing.Point(60, 305);
+            this.UNSmaterialLabel45.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel45.Name = "UNSmaterialLabel45";
+            this.UNSmaterialLabel45.Size = new System.Drawing.Size(91, 19);
+            this.UNSmaterialLabel45.TabIndex = 5;
+            this.UNSmaterialLabel45.Text = "Select Group";
+            // 
+            // UNSmaterialLabel44
+            // 
+            this.UNSmaterialLabel44.AutoSize = true;
+            this.UNSmaterialLabel44.Depth = 0;
+            this.UNSmaterialLabel44.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel44.Location = new System.Drawing.Point(60, 231);
+            this.UNSmaterialLabel44.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel44.Name = "UNSmaterialLabel44";
+            this.UNSmaterialLabel44.Size = new System.Drawing.Size(105, 19);
+            this.UNSmaterialLabel44.TabIndex = 4;
+            this.UNSmaterialLabel44.Text = "Select Lecturer";
+            // 
+            // UNSdeletebut
+            // 
+            this.UNSdeletebut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.UNSdeletebut.Depth = 0;
+            this.UNSdeletebut.DrawShadows = true;
+            this.UNSdeletebut.HighEmphasis = true;
+            this.UNSdeletebut.Icon = null;
+            this.UNSdeletebut.Location = new System.Drawing.Point(708, 158);
+            this.UNSdeletebut.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.UNSdeletebut.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSdeletebut.Name = "UNSdeletebut";
+            this.UNSdeletebut.Size = new System.Drawing.Size(73, 36);
+            this.UNSdeletebut.TabIndex = 3;
+            this.UNSdeletebut.Text = "Delete";
+            this.UNSdeletebut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.UNSdeletebut.UseAccentColor = false;
+            this.UNSdeletebut.UseVisualStyleBackColor = true;
+            // 
+            // UNSupdatebut
+            // 
+            this.UNSupdatebut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.UNSupdatebut.Depth = 0;
+            this.UNSupdatebut.DrawShadows = true;
+            this.UNSupdatebut.HighEmphasis = true;
+            this.UNSupdatebut.Icon = null;
+            this.UNSupdatebut.Location = new System.Drawing.Point(704, 110);
+            this.UNSupdatebut.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.UNSupdatebut.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSupdatebut.Name = "UNSupdatebut";
+            this.UNSupdatebut.Size = new System.Drawing.Size(77, 36);
+            this.UNSupdatebut.TabIndex = 2;
+            this.UNSupdatebut.Text = "Update";
+            this.UNSupdatebut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.UNSupdatebut.UseAccentColor = false;
+            this.UNSupdatebut.UseVisualStyleBackColor = true;
+            // 
+            // UNSdataGridView9
+            // 
+            this.UNSdataGridView9.BackgroundColor = System.Drawing.Color.Azure;
+            this.UNSdataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.UNSdataGridView9.Location = new System.Drawing.Point(14, 20);
+            this.UNSdataGridView9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.UNSdataGridView9.Name = "UNSdataGridView9";
+            this.UNSdataGridView9.RowHeadersWidth = 51;
+            this.UNSdataGridView9.RowTemplate.Height = 24;
+            this.UNSdataGridView9.Size = new System.Drawing.Size(687, 209);
+            this.UNSdataGridView9.TabIndex = 0;
+            // 
+            // UNSrefreshbut
+            // 
+            this.UNSrefreshbut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.UNSrefreshbut.Depth = 0;
+            this.UNSrefreshbut.DrawShadows = true;
+            this.UNSrefreshbut.HighEmphasis = true;
+            this.UNSrefreshbut.Icon = null;
+            this.UNSrefreshbut.Location = new System.Drawing.Point(697, 57);
+            this.UNSrefreshbut.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.UNSrefreshbut.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSrefreshbut.Name = "UNSrefreshbut";
+            this.UNSrefreshbut.Size = new System.Drawing.Size(84, 36);
+            this.UNSrefreshbut.TabIndex = 1;
+            this.UNSrefreshbut.Text = "Refresh";
+            this.UNSrefreshbut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.UNSrefreshbut.UseAccentColor = false;
+            this.UNSrefreshbut.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -10139,12 +10141,6 @@ namespace Time_Table_managemnt
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewcoloum)).EndInit();
             this.addnotsessiontabPage.ResumeLayout(false);
             this.addnotsessiontabPage.PerformLayout();
-            this.updatenotsessionpanel.ResumeLayout(false);
-            this.updatenotsessionpanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.updatenotsessionpicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UNSdataGridView9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ANSnumericUpDown8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ANSnumericUpDown7)).EndInit();
             this.tabPage11.ResumeLayout(false);
@@ -10162,6 +10158,12 @@ namespace Time_Table_managemnt
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SessionGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.conataGridView1)).EndInit();
+            this.updatenotsessionpanel.ResumeLayout(false);
+            this.updatenotsessionpanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.updatenotsessionpicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UNSdataGridView9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -10529,27 +10531,6 @@ namespace Time_Table_managemnt
 		private MaterialSkin.Controls.MaterialLabel ANSmaterialLabel46;
 		private MaterialSkin.Controls.MaterialComboBox ANSmaterialComboBox10;
 		private MaterialSkin.Controls.MaterialLabel ANSmaterialLabel44;
-		private System.Windows.Forms.Panel updatenotsessionpanel;
-		private MaterialSkin.Controls.MaterialComboBox UNSmaterialComboBox12;
-		private System.Windows.Forms.PictureBox updatenotsessionpicBox;
-		private System.Windows.Forms.NumericUpDown numericUpDown8;
-		private System.Windows.Forms.NumericUpDown numericUpDown9;
-		private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel51;
-		private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel50;
-		private MaterialSkin.Controls.MaterialComboBox UNSmaterialComboBox14;
-		private MaterialSkin.Controls.MaterialComboBox UNSmaterialComboBox13;
-		private MaterialSkin.Controls.MaterialComboBox UNSmaterialComboBox11;
-		private MaterialSkin.Controls.MaterialComboBox UNSmaterialComboBox10;
-		private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel49;
-		private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel48;
-		private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel47;
-		private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel46;
-		private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel45;
-		private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel44;
-		private MaterialSkin.Controls.MaterialButton UNSdeletebut;
-		private MaterialSkin.Controls.MaterialButton UNSupdatebut;
-		private System.Windows.Forms.DataGridView UNSdataGridView9;
-		private MaterialSkin.Controls.MaterialButton UNSrefreshbut;
 		private MaterialSkin.Controls.MaterialLabel ANLmaterialLabel49;
 		private System.Windows.Forms.NumericUpDown ANLnumericUpDown10;
 		private MaterialSkin.Controls.MaterialLabel ANLmaterialLabel48;
@@ -10792,6 +10773,27 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialButton materialButton8;
         private MaterialSkin.Controls.MaterialButton materialButton9;
         private System.Windows.Forms.DataGridView conataGridView1;
+        private System.Windows.Forms.Panel updatenotsessionpanel;
+        private MaterialSkin.Controls.MaterialComboBox UNSmaterialComboBox12;
+        private System.Windows.Forms.PictureBox updatenotsessionpicBox;
+        private System.Windows.Forms.NumericUpDown numericUpDown8;
+        private System.Windows.Forms.NumericUpDown numericUpDown9;
+        private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel51;
+        private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel50;
+        private MaterialSkin.Controls.MaterialComboBox UNSmaterialComboBox14;
+        private MaterialSkin.Controls.MaterialComboBox UNSmaterialComboBox13;
+        private MaterialSkin.Controls.MaterialComboBox UNSmaterialComboBox11;
+        private MaterialSkin.Controls.MaterialComboBox UNSmaterialComboBox10;
+        private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel49;
+        private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel48;
+        private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel47;
+        private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel46;
+        private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel45;
+        private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel44;
+        private MaterialSkin.Controls.MaterialButton UNSdeletebut;
+        private MaterialSkin.Controls.MaterialButton UNSupdatebut;
+        private System.Windows.Forms.DataGridView UNSdataGridView9;
+        private MaterialSkin.Controls.MaterialButton UNSrefreshbut;
     }
 }
 
