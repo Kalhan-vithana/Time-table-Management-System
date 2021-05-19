@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Time_Table_managemnt.Tags;
 
 namespace Time_Table_managemnt
 {
@@ -139,38 +140,38 @@ namespace Time_Table_managemnt
         }
 
 
-
-
         /*=============================================  Add Students Group=============================================================================== */
+
+
+        Student s = new Student();
 
         private void AddStudents_Click(object sender, EventArgs e)
         {
 
-
-
             if (IsValidStudentsGroup())
             {
 
-                con.Close();
-                SqlCommand cmd = new SqlCommand("INSERT INTO Students(AcdemicYear,Programne,GroupNumber,SubGroup,GroupID,subGroupID) values (@AcdemicYear,@Programne,@GroupNumber,@SubGroup,@GroupID,@subGroupID)", con);
-                cmd.CommandType = CommandType.Text;
-                cmd.Parameters.AddWithValue("@AcdemicYear", AdecmicYear_ComboBox.Text.ToString());
-                cmd.Parameters.AddWithValue("@Programne", Programme_combo.Text.ToString());
-                cmd.Parameters.AddWithValue("@GroupNumber", numericUpDown1.Value);
-                cmd.Parameters.AddWithValue("@SubGroup", numericUpDown2.Value);
-                cmd.Parameters.AddWithValue("@GroupID", GroupID1.Text);
-                cmd.Parameters.AddWithValue("@subGroupID", SubGroupsID.Text);
+            
+                s.AcdemicYear = AdecmicYear_ComboBox.Text;
+                s.Programne = Programme_combo.Text;
+                s.GroupNumber = numericUpDown1.Text;
+                s.SubGroup = numericUpDown2.Text;
+                s.GroupID = GroupID1.Text;
+                s.subGroupID = GroupID1.Text;
+
+                int SID = s.AddStd(s);
+
+                if(SID > 0)
+                {
+                    MessageBox.Show("added!");
+                    Reset();
+                }
+                else
+                {
+                    MessageBox.Show("false!");
 
 
-                con.Open();
-                cmd.ExecuteNonQuery();
-                con.Close();
-
-                MessageBox.Show("added  sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                getStudents();
-                //Reset();
-
-
+                }
             }
 
 
@@ -193,7 +194,7 @@ namespace Time_Table_managemnt
             AdecmicYear_ComboBox.SelectedIndex = -1;
             Programme_combo.SelectedIndex = -1;
             AddTagCombo1.SelectedIndex = -1;
-            ADDTagCodeComboBox1.SelectedIndex = -1;
+            ADDCodeComboBox1.SelectedIndex = -1;
             VeiwRelateTagComboBox3.SelectedIndex = -1;
             UpdateComboBox9.SelectedIndex = -1;
             UpdateTagCode.SelectedIndex = -1;
@@ -304,33 +305,27 @@ namespace Time_Table_managemnt
         /*=============================================  Add Students GroupsID   =============================================================================== */
         private void AddGroupID_Click(object sender, EventArgs e)
         {
-            if (studentID > 0)
-            {
+            
 
-                SqlCommand cmd = new SqlCommand("update Students set GroupID = @GroupID  where Id =@Id", con);
-                cmd.CommandType = CommandType.Text;
+                s.GroupID = GenarateIDGroup.Text;
+                s.Id = this.studentID;
+                bool success = s.ADDGenarateID(s);
 
-                cmd.Parameters.AddWithValue("@GroupID", GenarateIDGroup.Text);
-                cmd.Parameters.AddWithValue("@Id", this.studentID);
+                if (success == true)
+                {
+                    MessageBox.Show("update sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    getStudents();
+                }
+                else
+                {
 
-                con.Open();
+                    MessageBox.Show("not sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("added sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                getStudents();
+                }
 
 
-
-
-
-            }
-            else
-            {
-
-                MessageBox.Show("not updated", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
+            
+           
         }
 
 
@@ -341,16 +336,22 @@ namespace Time_Table_managemnt
             if (studentID > 0)
             {
 
-                SqlCommand cmd = new SqlCommand("update Students set subGroupID = @subGroupID  where Id=@Id", con);
-                cmd.CommandType = CommandType.Text;
+               
+                s.subGroupID = SubGroupmaterial.Text;
+                s.Id = this.studentID;
+                bool success = s.ADDSubGenarateID(s);
 
-                cmd.Parameters.AddWithValue("@subGroupID", SubGroupmaterial.Text);
-                cmd.Parameters.AddWithValue("@Id", this.studentID);
-                con.Open();
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("added sucessfully ", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                getStudents();
+                if (success == true)
+                {
+                    MessageBox.Show("update sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    getStudents();
+                }
+                else
+                {
+
+                    MessageBox.Show("not sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
 
 
             }
@@ -390,36 +391,28 @@ namespace Time_Table_managemnt
         /*============================================= Update Students Groups  =============================================================================== */
         private void UpdateStudentsGroupmaterialButton11_Click(object sender, EventArgs e)
         {
+ 
+                s.AcdemicYear = UpdateAcdemictxt.Text;
+                s.Programne = UpdateProgrammeTxt.Text;
+                s.GroupNumber = UpdateStudentsnumericUpDown4.Text;
+                s.SubGroup = UpdateStudentGroupnumericUpDown3.Text;
+                s.GroupID = UpdateSubGroup.Text;
+                s.subGroupID = UpdateGroupID.Text;
+                s.Id = this.studentID;
+                bool success = s.update(s);
 
-            if (studentID > 0)
-            {
-
-                SqlCommand cmd = new SqlCommand("update Students set AcdemicYear=@AcdemicYear,Programne=@Programne,GroupNumber=@GroupNumber,SubGroup=@SubGroup,GroupID=@GroupID,subGroupID=@subGroupID where Id=@Id", con);
-                cmd.CommandType = CommandType.Text;
-                cmd.Parameters.AddWithValue("@AcdemicYear", UpdateAcdemictxt.Text.ToString());
-                cmd.Parameters.AddWithValue("@Programne", UpdateProgrammeTxt.Text.ToString());
-                cmd.Parameters.AddWithValue("@GroupNumber", UpdateStudentsnumericUpDown4.Value);
-                cmd.Parameters.AddWithValue("@SubGroup", UpdateStudentGroupnumericUpDown3.Value);
-                cmd.Parameters.AddWithValue("@GroupID", UpdateSubGroup.Text);
-                cmd.Parameters.AddWithValue("@subGroupID", UpdateGroupID.Text);
-                cmd.Parameters.AddWithValue("@Id", this.studentID);
-
-
-                con.Open();
-
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("update sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                getStudents();
-                Reset();
+                if(success == true)
+                {
+                    MessageBox.Show("Added ", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    getStudents();
+                     Reset();
             }
-            else
-            {
+                else
+                {
 
-                MessageBox.Show("not updated", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                    MessageBox.Show("not adedd", "error", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                }
 
         }
 
@@ -428,18 +421,29 @@ namespace Time_Table_managemnt
         {
             if (studentID > 0)
             {
-                con.Close();
-                SqlCommand cmd = new SqlCommand("delete from Students  where Id=@Id", con);
-                cmd.CommandType = CommandType.Text;
-                cmd.Parameters.AddWithValue("@Id", this.studentID);
-                con.Open();
-                cmd.ExecuteNonQuery();
-                con.Close();
+                bool success = false;
+                /* con.Close();
+                 SqlCommand cmd = new SqlCommand("delete from Students  where Id=@Id", con);
+                 cmd.CommandType = CommandType.Text;
+                 cmd.Parameters.AddWithValue("@Id", this.studentID);
+                 con.Open();
+                 cmd.ExecuteNonQuery();
+                 con.Close();
 
-                getStudents();
-                clearStudents();
-                MessageBox.Show("deleted sucessfully", "sucessfulluly", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                 getStudents();
+                 clearStudents();*/
+
+                s.Id = this.studentID;
+                success = s.delete(s);
+                if (success == true)
+                {
+                    MessageBox.Show("deleted sucessfully", "sucessfulluly", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    getStudents();
+                }
+
             }
+
+
             else
             {
                 MessageBox.Show("Not deleted", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -484,27 +488,33 @@ namespace Time_Table_managemnt
 
         /*=============================================   Add Tags     =============================================================================== */
 
+
+        Tag t = new Tag();
         private void SaveTag_Click(object sender, EventArgs e)
         {
             if (IsTagValid())
             {
-                con.Close();
-                SqlCommand cmd = new SqlCommand("INSERT INTO Tags(SubjectName,SubjectCode,RelatedTags) values(@SubjectName,@SubjectCode,@RelatedTags)", con);
-                cmd.CommandType = CommandType.Text;
 
-                cmd.Parameters.AddWithValue("@SubjectName", AddTagCombo1.Text.ToString());
-                cmd.Parameters.AddWithValue("@SubjectCode", ADDTagCodeComboBox1.Text.ToString());
-                cmd.Parameters.AddWithValue("@RelatedTags", VeiwRelateTagComboBox3.Text.ToString());
+                t.SubjectName = AddTagCombo1.Text.ToString();
+                t.SubjectCode = ADDCodeComboBox1.Text.ToString();
+                t.RelatedTags = VeiwRelateTagComboBox3.Text.ToString();
+               
 
-                con.Open();
+                int TID = t.addTag(t);
 
-                cmd.ExecuteNonQuery();
-                con.Close();
+                if (TID > 0)
+                {
+                    MessageBox.Show("added!");
+                    Reset();
+                    GetTags();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("false!");
 
-                MessageBox.Show("added sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
 
-                GetTags(); //get tags details
-                selectedtags();
             }
         }
 
@@ -590,61 +600,58 @@ namespace Time_Table_managemnt
         /*=============================================   Update Students Tags   =============================================================================== */
         private void UpdateTagButton_Click(object sender, EventArgs e)
         {
-            if (TagID > 0)
-            {
-
-                SqlCommand cmd = new SqlCommand("update Tags set SubjectName=@SubjectName,SubjectCode=@SubjectCode,RelatedTags=@RelatedTags where Id=@Id ", con);
-                cmd.CommandType = CommandType.Text;
-
-                cmd.Parameters.AddWithValue("@SubjectName", UpdateComboBox9.Text);
-                cmd.Parameters.AddWithValue("@SubjectCode", UpdateTagCode.Text);
-                cmd.Parameters.AddWithValue("@RelatedTags", UpdateRelatedTags.Text);
-                cmd.Parameters.AddWithValue("@Id", this.TagID);
-
-                //con.Open();
 
 
 
 
+            t.SubjectName = UpdateComboBox9.Text;
+            t.SubjectCode = UpdateTagCode.Text;
+            t.RelatedTags = UpdateRelatedTags.Text;
 
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("update sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                t.Id = this.TagID;
+                bool success = t.updateTag(t);
 
-
+                if (success == true)
+                {
+                    MessageBox.Show("update ", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+             
+                    Reset();
                 GetTags();
             }
-            else
-            {
+                else
+                {
 
-                MessageBox.Show("Deleted sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                    MessageBox.Show("not updated", "error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+          
         }
 
         /*=============================================  Delete Students Tags   =============================================================================== */
         private void DeleteTagButton_Click(object sender, EventArgs e)
         {
 
+            bool success = false;
+
             if (TagID > 0)
             {
+                t.Id = this.TagID;
+                success = t.deleteTag(t);
+                if (success == true)
+                {
+                    MessageBox.Show("deleted sucessfully", "sucessfulluly", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    GetTags();
+                }
 
-                SqlCommand cmd = new SqlCommand("delete from Tags  where Id=@Id", con);
-                cmd.CommandType = CommandType.Text;
-                cmd.Parameters.AddWithValue("@Id", this.TagID);
-
-                cmd.ExecuteNonQuery();
-                con.Close();
-
-                GetTags();
-                clearStudents();
-                ClearTags();
-                MessageBox.Show("deleted sucessfully", "sucessfulluly", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
             else
             {
-                MessageBox.Show("not deleted", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Not deleted", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+
+         
         }
 
 
@@ -669,7 +676,7 @@ namespace Time_Table_managemnt
         private void ClearAddedTags()
         {
             AddTagCombo1.SelectedIndex = -1;
-            ADDTagCodeComboBox1.SelectedIndex = -1;
+            ADDCodeComboBox1.SelectedIndex = -1;
             VeiwRelateTagComboBox3.SelectedIndex = -1;
         }
 

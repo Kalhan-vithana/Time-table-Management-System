@@ -118,6 +118,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student\Student.cs" />
     <Compile Include="StudentMenue.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +131,7 @@
     <Compile Include="StudentUserControl1.Designer.cs">
       <DependentUpon>StudentUserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tags\Tag.cs" />
     <Compile Include="updateStudents.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,5 +241,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
