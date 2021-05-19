@@ -40,9 +40,7 @@ namespace Time_Table_managemnt
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
-            AddStudent std = new AddStudent();
-            std.Show();
-            this.Visible = false;
+           
         }
     }
 }

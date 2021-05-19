@@ -142,7 +142,7 @@ namespace Time_Table_managemnt
 
         /*=============================================  Add Students Group=============================================================================== */
 
-
+        //call method
         Student s = new Student();
 
         private void AddStudents_Click(object sender, EventArgs e)
@@ -306,7 +306,6 @@ namespace Time_Table_managemnt
         private void AddGroupID_Click(object sender, EventArgs e)
         {
             
-
                 s.GroupID = GenarateIDGroup.Text;
                 s.Id = this.studentID;
                 bool success = s.ADDGenarateID(s);
@@ -321,10 +320,7 @@ namespace Time_Table_managemnt
 
                     MessageBox.Show("not sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                }
-
-
-            
+                }  
            
         }
 
@@ -2130,9 +2126,8 @@ namespace Time_Table_managemnt
 
         private void materialButton3_Click(object sender, EventArgs e)
         {
-            DeleteStudents dlt = new DeleteStudents();
-            dlt.Show();
-            this.Visible = false;
+           
+          
 
 
         }
@@ -2141,9 +2136,7 @@ namespace Time_Table_managemnt
 
         private void materialButton4_Click(object sender, EventArgs e)
         {
-            Add_Tag tag = new Add_Tag();
-            tag.Show();
-            this.Visible = false;
+           
         }
 
         private void pictureBox10_Click_1(object sender, EventArgs e)
