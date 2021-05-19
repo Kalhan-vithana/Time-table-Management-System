@@ -35,20 +35,23 @@ namespace Time_Table_managemnt
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Logopanel2 = new System.Windows.Forms.Panel();
@@ -137,21 +140,6 @@ namespace Time_Table_managemnt
             this.materialCard9 = new MaterialSkin.Controls.MaterialCard();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.GenarateIDPanel = new System.Windows.Forms.Panel();
-            this.materialTabSelector9 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.GenarateIDmaterialTabControl8 = new MaterialSkin.Controls.MaterialTabControl();
-            this.tabPage28 = new System.Windows.Forms.TabPage();
-            this.AddGroupID = new MaterialSkin.Controls.MaterialButton();
-            this.GenarateIDGroup = new MaterialSkin.Controls.MaterialTextBox();
-            this.GropIDdataGridView1 = new System.Windows.Forms.DataGridView();
-            this.GenGroupmaterialButton7 = new MaterialSkin.Controls.MaterialButton();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.tabPage29 = new System.Windows.Forms.TabPage();
-            this.SubdataGridView1 = new System.Windows.Forms.DataGridView();
-            this.SubGroupIDmaterialButton8 = new MaterialSkin.Controls.MaterialButton();
-            this.SubGroupmaterial = new MaterialSkin.Controls.MaterialTextBox();
-            this.GenarateSubGroupButton = new MaterialSkin.Controls.MaterialButton();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.Updatepanel2 = new System.Windows.Forms.Panel();
             this.materialTabSelector3 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl4 = new MaterialSkin.Controls.MaterialTabControl();
@@ -180,6 +168,21 @@ namespace Time_Table_managemnt
             this.materialTabSelector4 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl5 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.GenarateIDPanel = new System.Windows.Forms.Panel();
+            this.materialTabSelector9 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.GenarateIDmaterialTabControl8 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabPage28 = new System.Windows.Forms.TabPage();
+            this.AddGroupID = new MaterialSkin.Controls.MaterialButton();
+            this.GenarateIDGroup = new MaterialSkin.Controls.MaterialTextBox();
+            this.GropIDdataGridView1 = new System.Windows.Forms.DataGridView();
+            this.GenGroupmaterialButton7 = new MaterialSkin.Controls.MaterialButton();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.tabPage29 = new System.Windows.Forms.TabPage();
+            this.SubdataGridView1 = new System.Windows.Forms.DataGridView();
+            this.SubGroupIDmaterialButton8 = new MaterialSkin.Controls.MaterialButton();
+            this.SubGroupmaterial = new MaterialSkin.Controls.MaterialTextBox();
+            this.GenarateSubGroupButton = new MaterialSkin.Controls.MaterialButton();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.AdecmicYear_ComboBox = new MaterialSkin.Controls.MaterialComboBox();
             this.materialButton27 = new MaterialSkin.Controls.MaterialButton();
             this.Clear = new MaterialSkin.Controls.MaterialButton();
@@ -457,9 +460,9 @@ namespace Time_Table_managemnt
             this.RoomsBlue1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.Rooms2 = new MaterialSkin.Controls.MaterialTabControl();
             this.Rooms3 = new System.Windows.Forms.TabPage();
+            this.SessionridView1 = new System.Windows.Forms.DataGridView();
             this.RefreshRoomBtn2 = new MaterialSkin.Controls.MaterialButton();
             this.AddRoomBtn2 = new MaterialSkin.Controls.MaterialButton();
-            this.dataGridViewRooms = new System.Windows.Forms.DataGridView();
             this.pictureBoxRooms = new System.Windows.Forms.PictureBox();
             this.tabPage26 = new System.Windows.Forms.TabPage();
             this.addnotavailsesstabPage = new System.Windows.Forms.TabPage();
@@ -507,13 +510,12 @@ namespace Time_Table_managemnt
             this.panelManageSessionsRooms = new System.Windows.Forms.Panel();
             this.MangeSessionRm1 = new MaterialSkin.Controls.MaterialTabControl();
             this.MangeSessionRm2 = new System.Windows.Forms.TabPage();
-            this.dataGridView10 = new System.Windows.Forms.DataGridView();
-            this.materialComboBox10 = new MaterialSkin.Controls.MaterialComboBox();
+            this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
+            this.materialTextBox32 = new MaterialSkin.Controls.MaterialTextBox();
+            this.materialTextBox31 = new MaterialSkin.Controls.MaterialTextBox();
+            this.materialButton7 = new MaterialSkin.Controls.MaterialButton();
+            this.consective = new MaterialSkin.Controls.MaterialButton();
             this.MSRClearBtn = new MaterialSkin.Controls.MaterialButton();
-            this.materialLabel72 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialComboBox11 = new MaterialSkin.Controls.MaterialComboBox();
-            this.materialLabel73 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel74 = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBoxMSRooms = new System.Windows.Forms.PictureBox();
             this.MSRSubmitBtn = new MaterialSkin.Controls.MaterialButton();
             this.ManageSessionRmBlue = new MaterialSkin.Controls.MaterialTabSelector();
@@ -670,6 +672,10 @@ namespace Time_Table_managemnt
             this.elipseControl48 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl49 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl50 = new Time_Table_managemnt.ElipseControl();
+            this.SessionGridView1 = new System.Windows.Forms.DataGridView();
+            this.conataGridView1 = new System.Windows.Forms.DataGridView();
+            this.materialButton8 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton9 = new MaterialSkin.Controls.MaterialButton();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.Logopanel2.SuspendLayout();
@@ -701,14 +707,6 @@ namespace Time_Table_managemnt
             this.materialCard9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             this.tabPage3.SuspendLayout();
-            this.GenarateIDPanel.SuspendLayout();
-            this.GenarateIDmaterialTabControl8.SuspendLayout();
-            this.tabPage28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GropIDdataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            this.tabPage29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SubdataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             this.Updatepanel2.SuspendLayout();
             this.materialTabControl4.SuspendLayout();
             this.tabPage12.SuspendLayout();
@@ -719,6 +717,14 @@ namespace Time_Table_managemnt
             this.panel1.SuspendLayout();
             this.materialTabControl5.SuspendLayout();
             this.tabPage13.SuspendLayout();
+            this.GenarateIDPanel.SuspendLayout();
+            this.GenarateIDmaterialTabControl8.SuspendLayout();
+            this.tabPage28.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GropIDdataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            this.tabPage29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SubdataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -822,8 +828,9 @@ namespace Time_Table_managemnt
             this.SessionRoomPanel3.SuspendLayout();
             this.Rooms2.SuspendLayout();
             this.Rooms3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRooms)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SessionridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRooms)).BeginInit();
+            this.tabPage26.SuspendLayout();
             this.addnotavailsesstabPage.SuspendLayout();
             this.locnotavailpanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.locnotavailpicbox)).BeginInit();
@@ -840,7 +847,6 @@ namespace Time_Table_managemnt
             this.panelManageSessionsRooms.SuspendLayout();
             this.MangeSessionRm1.SuspendLayout();
             this.MangeSessionRm2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMSRooms)).BeginInit();
             this.AddRoomSticker.SuspendLayout();
             this.materialCard14.SuspendLayout();
@@ -884,6 +890,8 @@ namespace Time_Table_managemnt
             this.tabPage21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SessionGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -2197,231 +2205,6 @@ namespace Time_Table_managemnt
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Students";
             // 
-            // GenarateIDPanel
-            // 
-            this.GenarateIDPanel.BackColor = System.Drawing.Color.White;
-            this.GenarateIDPanel.Controls.Add(this.materialTabSelector9);
-            this.GenarateIDPanel.Controls.Add(this.GenarateIDmaterialTabControl8);
-            this.GenarateIDPanel.Location = new System.Drawing.Point(336, 0);
-            this.GenarateIDPanel.Name = "GenarateIDPanel";
-            this.GenarateIDPanel.Size = new System.Drawing.Size(510, 360);
-            this.GenarateIDPanel.TabIndex = 32;
-            // 
-            // materialTabSelector9
-            // 
-            this.materialTabSelector9.BaseTabControl = this.GenarateIDmaterialTabControl8;
-            this.materialTabSelector9.Depth = 0;
-            this.materialTabSelector9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTabSelector9.Location = new System.Drawing.Point(0, 0);
-            this.materialTabSelector9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabSelector9.Name = "materialTabSelector9";
-            this.materialTabSelector9.Size = new System.Drawing.Size(510, 48);
-            this.materialTabSelector9.TabIndex = 1;
-            this.materialTabSelector9.Text = "GenarateIDmaterialTabSelector9";
-            // 
-            // GenarateIDmaterialTabControl8
-            // 
-            this.GenarateIDmaterialTabControl8.Controls.Add(this.tabPage28);
-            this.GenarateIDmaterialTabControl8.Controls.Add(this.tabPage29);
-            this.GenarateIDmaterialTabControl8.Depth = 0;
-            this.GenarateIDmaterialTabControl8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.GenarateIDmaterialTabControl8.Location = new System.Drawing.Point(0, 54);
-            this.GenarateIDmaterialTabControl8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.GenarateIDmaterialTabControl8.Multiline = true;
-            this.GenarateIDmaterialTabControl8.Name = "GenarateIDmaterialTabControl8";
-            this.GenarateIDmaterialTabControl8.SelectedIndex = 0;
-            this.GenarateIDmaterialTabControl8.Size = new System.Drawing.Size(510, 306);
-            this.GenarateIDmaterialTabControl8.TabIndex = 0;
-            // 
-            // tabPage28
-            // 
-            this.tabPage28.Controls.Add(this.AddGroupID);
-            this.tabPage28.Controls.Add(this.GenarateIDGroup);
-            this.tabPage28.Controls.Add(this.GropIDdataGridView1);
-            this.tabPage28.Controls.Add(this.GenGroupmaterialButton7);
-            this.tabPage28.Controls.Add(this.pictureBox31);
-            this.tabPage28.Location = new System.Drawing.Point(4, 25);
-            this.tabPage28.Name = "tabPage28";
-            this.tabPage28.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage28.Size = new System.Drawing.Size(502, 277);
-            this.tabPage28.TabIndex = 0;
-            this.tabPage28.Text = "GroupID";
-            this.tabPage28.UseVisualStyleBackColor = true;
-            // 
-            // AddGroupID
-            // 
-            this.AddGroupID.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.AddGroupID.Depth = 0;
-            this.AddGroupID.DrawShadows = true;
-            this.AddGroupID.HighEmphasis = true;
-            this.AddGroupID.Icon = null;
-            this.AddGroupID.Location = new System.Drawing.Point(35, 194);
-            this.AddGroupID.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.AddGroupID.MouseState = MaterialSkin.MouseState.HOVER;
-            this.AddGroupID.Name = "AddGroupID";
-            this.AddGroupID.Size = new System.Drawing.Size(58, 36);
-            this.AddGroupID.TabIndex = 33;
-            this.AddGroupID.Text = "Save";
-            this.AddGroupID.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.AddGroupID.UseAccentColor = false;
-            this.AddGroupID.UseVisualStyleBackColor = true;
-            this.AddGroupID.Click += new System.EventHandler(this.AddGroupID_Click);
-            // 
-            // GenarateIDGroup
-            // 
-            this.GenarateIDGroup.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.GenarateIDGroup.Depth = 0;
-            this.GenarateIDGroup.Font = new System.Drawing.Font("Roboto", 12F);
-            this.GenarateIDGroup.Location = new System.Drawing.Point(18, 98);
-            this.GenarateIDGroup.MaxLength = 50;
-            this.GenarateIDGroup.MouseState = MaterialSkin.MouseState.OUT;
-            this.GenarateIDGroup.Multiline = false;
-            this.GenarateIDGroup.Name = "GenarateIDGroup";
-            this.GenarateIDGroup.Size = new System.Drawing.Size(160, 50);
-            this.GenarateIDGroup.TabIndex = 32;
-            this.GenarateIDGroup.Text = "";
-            // 
-            // GropIDdataGridView1
-            // 
-            this.GropIDdataGridView1.BackgroundColor = System.Drawing.Color.MintCream;
-            this.GropIDdataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GropIDdataGridView1.Location = new System.Drawing.Point(192, 80);
-            this.GropIDdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.GropIDdataGridView1.Name = "GropIDdataGridView1";
-            this.GropIDdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Red;
-            this.GropIDdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.GropIDdataGridView1.RowTemplate.Height = 24;
-            this.GropIDdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GropIDdataGridView1.Size = new System.Drawing.Size(300, 160);
-            this.GropIDdataGridView1.TabIndex = 31;
-            this.GropIDdataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GropIDdataGridView1_CellClick);
-            // 
-            // GenGroupmaterialButton7
-            // 
-            this.GenGroupmaterialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.GenGroupmaterialButton7.Depth = 0;
-            this.GenGroupmaterialButton7.DrawShadows = true;
-            this.GenGroupmaterialButton7.HighEmphasis = true;
-            this.GenGroupmaterialButton7.Icon = null;
-            this.GenGroupmaterialButton7.Location = new System.Drawing.Point(18, 22);
-            this.GenGroupmaterialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.GenGroupmaterialButton7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.GenGroupmaterialButton7.Name = "GenGroupmaterialButton7";
-            this.GenGroupmaterialButton7.Size = new System.Drawing.Size(166, 36);
-            this.GenGroupmaterialButton7.TabIndex = 18;
-            this.GenGroupmaterialButton7.Text = "Genarate Group ID";
-            this.GenGroupmaterialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.GenGroupmaterialButton7.UseAccentColor = false;
-            this.GenGroupmaterialButton7.UseVisualStyleBackColor = true;
-            this.GenGroupmaterialButton7.Click += new System.EventHandler(this.GenGroupmaterialButton7_Click);
-            // 
-            // pictureBox31
-            // 
-            this.pictureBox31.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox31.BackgroundImage")));
-            this.pictureBox31.Location = new System.Drawing.Point(453, 2);
-            this.pictureBox31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox31.TabIndex = 17;
-            this.pictureBox31.TabStop = false;
-            this.pictureBox31.Click += new System.EventHandler(this.pictureBox31_Click);
-            // 
-            // tabPage29
-            // 
-            this.tabPage29.Controls.Add(this.SubdataGridView1);
-            this.tabPage29.Controls.Add(this.SubGroupIDmaterialButton8);
-            this.tabPage29.Controls.Add(this.SubGroupmaterial);
-            this.tabPage29.Controls.Add(this.GenarateSubGroupButton);
-            this.tabPage29.Controls.Add(this.pictureBox32);
-            this.tabPage29.Location = new System.Drawing.Point(4, 25);
-            this.tabPage29.Name = "tabPage29";
-            this.tabPage29.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage29.Size = new System.Drawing.Size(502, 277);
-            this.tabPage29.TabIndex = 1;
-            this.tabPage29.Text = "SubGroupID";
-            this.tabPage29.UseVisualStyleBackColor = true;
-            // 
-            // SubdataGridView1
-            // 
-            this.SubdataGridView1.BackgroundColor = System.Drawing.Color.MintCream;
-            this.SubdataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.SubdataGridView1.Location = new System.Drawing.Point(190, 90);
-            this.SubdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SubdataGridView1.Name = "SubdataGridView1";
-            this.SubdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Red;
-            this.SubdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.SubdataGridView1.RowTemplate.Height = 24;
-            this.SubdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.SubdataGridView1.Size = new System.Drawing.Size(293, 166);
-            this.SubdataGridView1.TabIndex = 35;
-            this.SubdataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SubdataGridView1_CellClick);
-            // 
-            // SubGroupIDmaterialButton8
-            // 
-            this.SubGroupIDmaterialButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.SubGroupIDmaterialButton8.Depth = 0;
-            this.SubGroupIDmaterialButton8.DrawShadows = true;
-            this.SubGroupIDmaterialButton8.HighEmphasis = true;
-            this.SubGroupIDmaterialButton8.Icon = null;
-            this.SubGroupIDmaterialButton8.Location = new System.Drawing.Point(23, 189);
-            this.SubGroupIDmaterialButton8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.SubGroupIDmaterialButton8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.SubGroupIDmaterialButton8.Name = "SubGroupIDmaterialButton8";
-            this.SubGroupIDmaterialButton8.Size = new System.Drawing.Size(58, 36);
-            this.SubGroupIDmaterialButton8.TabIndex = 34;
-            this.SubGroupIDmaterialButton8.Text = "Save";
-            this.SubGroupIDmaterialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.SubGroupIDmaterialButton8.UseAccentColor = false;
-            this.SubGroupIDmaterialButton8.UseVisualStyleBackColor = true;
-            this.SubGroupIDmaterialButton8.Click += new System.EventHandler(this.SubGroupIDmaterialButton8_Click);
-            // 
-            // SubGroupmaterial
-            // 
-            this.SubGroupmaterial.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SubGroupmaterial.Depth = 0;
-            this.SubGroupmaterial.Font = new System.Drawing.Font("Roboto", 12F);
-            this.SubGroupmaterial.Location = new System.Drawing.Point(7, 90);
-            this.SubGroupmaterial.MaxLength = 50;
-            this.SubGroupmaterial.MouseState = MaterialSkin.MouseState.OUT;
-            this.SubGroupmaterial.Multiline = false;
-            this.SubGroupmaterial.Name = "SubGroupmaterial";
-            this.SubGroupmaterial.Size = new System.Drawing.Size(170, 50);
-            this.SubGroupmaterial.TabIndex = 33;
-            this.SubGroupmaterial.Text = "";
-            // 
-            // GenarateSubGroupButton
-            // 
-            this.GenarateSubGroupButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.GenarateSubGroupButton.Depth = 0;
-            this.GenarateSubGroupButton.DrawShadows = true;
-            this.GenarateSubGroupButton.HighEmphasis = true;
-            this.GenarateSubGroupButton.Icon = null;
-            this.GenarateSubGroupButton.Location = new System.Drawing.Point(7, 30);
-            this.GenarateSubGroupButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.GenarateSubGroupButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.GenarateSubGroupButton.Name = "GenarateSubGroupButton";
-            this.GenarateSubGroupButton.Size = new System.Drawing.Size(197, 36);
-            this.GenarateSubGroupButton.TabIndex = 19;
-            this.GenarateSubGroupButton.Text = "Genarate Sub Group ID";
-            this.GenarateSubGroupButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.GenarateSubGroupButton.UseAccentColor = false;
-            this.GenarateSubGroupButton.UseVisualStyleBackColor = true;
-            this.GenarateSubGroupButton.Click += new System.EventHandler(this.materialButton7_Click);
-            // 
-            // pictureBox32
-            // 
-            this.pictureBox32.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox32.BackgroundImage")));
-            this.pictureBox32.Location = new System.Drawing.Point(440, 5);
-            this.pictureBox32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(43, 41);
-            this.pictureBox32.TabIndex = 18;
-            this.pictureBox32.TabStop = false;
-            this.pictureBox32.Click += new System.EventHandler(this.pictureBox32_Click);
-            // 
             // Updatepanel2
             // 
             this.Updatepanel2.Controls.Add(this.materialTabSelector3);
@@ -2816,10 +2599,10 @@ namespace Time_Table_managemnt
             // 
             this.panel1.Controls.Add(this.materialTabSelector4);
             this.panel1.Controls.Add(this.materialTabControl5);
-            this.panel1.Location = new System.Drawing.Point(310, 42);
+            this.panel1.Location = new System.Drawing.Point(131, 12);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(792, 604);
+            this.panel1.Size = new System.Drawing.Size(921, 604);
             this.panel1.TabIndex = 9;
             // 
             // materialTabSelector4
@@ -2832,7 +2615,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialTabSelector4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabSelector4.Name = "materialTabSelector4";
-            this.materialTabSelector4.Size = new System.Drawing.Size(792, 48);
+            this.materialTabSelector4.Size = new System.Drawing.Size(921, 48);
             this.materialTabSelector4.TabIndex = 1;
             this.materialTabSelector4.Text = "materialTabSelector4";
             // 
@@ -2847,7 +2630,7 @@ namespace Time_Table_managemnt
             this.materialTabControl5.Multiline = true;
             this.materialTabControl5.Name = "materialTabControl5";
             this.materialTabControl5.SelectedIndex = 0;
-            this.materialTabControl5.Size = new System.Drawing.Size(792, 550);
+            this.materialTabControl5.Size = new System.Drawing.Size(921, 550);
             this.materialTabControl5.TabIndex = 0;
             // 
             // tabPage13
@@ -2873,10 +2656,235 @@ namespace Time_Table_managemnt
             this.tabPage13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage13.Size = new System.Drawing.Size(784, 521);
+            this.tabPage13.Size = new System.Drawing.Size(913, 521);
             this.tabPage13.TabIndex = 0;
             this.tabPage13.Text = "Add Students Groups";
             this.tabPage13.UseVisualStyleBackColor = true;
+            // 
+            // GenarateIDPanel
+            // 
+            this.GenarateIDPanel.BackColor = System.Drawing.Color.White;
+            this.GenarateIDPanel.Controls.Add(this.materialTabSelector9);
+            this.GenarateIDPanel.Controls.Add(this.GenarateIDmaterialTabControl8);
+            this.GenarateIDPanel.Location = new System.Drawing.Point(336, 0);
+            this.GenarateIDPanel.Name = "GenarateIDPanel";
+            this.GenarateIDPanel.Size = new System.Drawing.Size(510, 360);
+            this.GenarateIDPanel.TabIndex = 32;
+            // 
+            // materialTabSelector9
+            // 
+            this.materialTabSelector9.BaseTabControl = this.GenarateIDmaterialTabControl8;
+            this.materialTabSelector9.Depth = 0;
+            this.materialTabSelector9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.materialTabSelector9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector9.Location = new System.Drawing.Point(0, 0);
+            this.materialTabSelector9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector9.Name = "materialTabSelector9";
+            this.materialTabSelector9.Size = new System.Drawing.Size(510, 48);
+            this.materialTabSelector9.TabIndex = 1;
+            this.materialTabSelector9.Text = "GenarateIDmaterialTabSelector9";
+            // 
+            // GenarateIDmaterialTabControl8
+            // 
+            this.GenarateIDmaterialTabControl8.Controls.Add(this.tabPage28);
+            this.GenarateIDmaterialTabControl8.Controls.Add(this.tabPage29);
+            this.GenarateIDmaterialTabControl8.Depth = 0;
+            this.GenarateIDmaterialTabControl8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.GenarateIDmaterialTabControl8.Location = new System.Drawing.Point(0, 54);
+            this.GenarateIDmaterialTabControl8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.GenarateIDmaterialTabControl8.Multiline = true;
+            this.GenarateIDmaterialTabControl8.Name = "GenarateIDmaterialTabControl8";
+            this.GenarateIDmaterialTabControl8.SelectedIndex = 0;
+            this.GenarateIDmaterialTabControl8.Size = new System.Drawing.Size(510, 306);
+            this.GenarateIDmaterialTabControl8.TabIndex = 0;
+            // 
+            // tabPage28
+            // 
+            this.tabPage28.Controls.Add(this.AddGroupID);
+            this.tabPage28.Controls.Add(this.GenarateIDGroup);
+            this.tabPage28.Controls.Add(this.GropIDdataGridView1);
+            this.tabPage28.Controls.Add(this.GenGroupmaterialButton7);
+            this.tabPage28.Controls.Add(this.pictureBox31);
+            this.tabPage28.Location = new System.Drawing.Point(4, 25);
+            this.tabPage28.Name = "tabPage28";
+            this.tabPage28.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage28.Size = new System.Drawing.Size(502, 277);
+            this.tabPage28.TabIndex = 0;
+            this.tabPage28.Text = "GroupID";
+            this.tabPage28.UseVisualStyleBackColor = true;
+            // 
+            // AddGroupID
+            // 
+            this.AddGroupID.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AddGroupID.Depth = 0;
+            this.AddGroupID.DrawShadows = true;
+            this.AddGroupID.HighEmphasis = true;
+            this.AddGroupID.Icon = null;
+            this.AddGroupID.Location = new System.Drawing.Point(35, 194);
+            this.AddGroupID.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.AddGroupID.MouseState = MaterialSkin.MouseState.HOVER;
+            this.AddGroupID.Name = "AddGroupID";
+            this.AddGroupID.Size = new System.Drawing.Size(58, 36);
+            this.AddGroupID.TabIndex = 33;
+            this.AddGroupID.Text = "Save";
+            this.AddGroupID.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.AddGroupID.UseAccentColor = false;
+            this.AddGroupID.UseVisualStyleBackColor = true;
+            this.AddGroupID.Click += new System.EventHandler(this.AddGroupID_Click);
+            // 
+            // GenarateIDGroup
+            // 
+            this.GenarateIDGroup.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GenarateIDGroup.Depth = 0;
+            this.GenarateIDGroup.Font = new System.Drawing.Font("Roboto", 12F);
+            this.GenarateIDGroup.Location = new System.Drawing.Point(18, 98);
+            this.GenarateIDGroup.MaxLength = 50;
+            this.GenarateIDGroup.MouseState = MaterialSkin.MouseState.OUT;
+            this.GenarateIDGroup.Multiline = false;
+            this.GenarateIDGroup.Name = "GenarateIDGroup";
+            this.GenarateIDGroup.Size = new System.Drawing.Size(160, 50);
+            this.GenarateIDGroup.TabIndex = 32;
+            this.GenarateIDGroup.Text = "";
+            // 
+            // GropIDdataGridView1
+            // 
+            this.GropIDdataGridView1.BackgroundColor = System.Drawing.Color.MintCream;
+            this.GropIDdataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GropIDdataGridView1.Location = new System.Drawing.Point(192, 80);
+            this.GropIDdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.GropIDdataGridView1.Name = "GropIDdataGridView1";
+            this.GropIDdataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Red;
+            this.GropIDdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.GropIDdataGridView1.RowTemplate.Height = 24;
+            this.GropIDdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GropIDdataGridView1.Size = new System.Drawing.Size(300, 160);
+            this.GropIDdataGridView1.TabIndex = 31;
+            this.GropIDdataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GropIDdataGridView1_CellClick);
+            // 
+            // GenGroupmaterialButton7
+            // 
+            this.GenGroupmaterialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.GenGroupmaterialButton7.Depth = 0;
+            this.GenGroupmaterialButton7.DrawShadows = true;
+            this.GenGroupmaterialButton7.HighEmphasis = true;
+            this.GenGroupmaterialButton7.Icon = null;
+            this.GenGroupmaterialButton7.Location = new System.Drawing.Point(18, 22);
+            this.GenGroupmaterialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.GenGroupmaterialButton7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.GenGroupmaterialButton7.Name = "GenGroupmaterialButton7";
+            this.GenGroupmaterialButton7.Size = new System.Drawing.Size(166, 36);
+            this.GenGroupmaterialButton7.TabIndex = 18;
+            this.GenGroupmaterialButton7.Text = "Genarate Group ID";
+            this.GenGroupmaterialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.GenGroupmaterialButton7.UseAccentColor = false;
+            this.GenGroupmaterialButton7.UseVisualStyleBackColor = true;
+            this.GenGroupmaterialButton7.Click += new System.EventHandler(this.GenGroupmaterialButton7_Click);
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox31.BackgroundImage")));
+            this.pictureBox31.Location = new System.Drawing.Point(453, 2);
+            this.pictureBox31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox31.TabIndex = 17;
+            this.pictureBox31.TabStop = false;
+            this.pictureBox31.Click += new System.EventHandler(this.pictureBox31_Click);
+            // 
+            // tabPage29
+            // 
+            this.tabPage29.Controls.Add(this.SubdataGridView1);
+            this.tabPage29.Controls.Add(this.SubGroupIDmaterialButton8);
+            this.tabPage29.Controls.Add(this.SubGroupmaterial);
+            this.tabPage29.Controls.Add(this.GenarateSubGroupButton);
+            this.tabPage29.Controls.Add(this.pictureBox32);
+            this.tabPage29.Location = new System.Drawing.Point(4, 25);
+            this.tabPage29.Name = "tabPage29";
+            this.tabPage29.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage29.Size = new System.Drawing.Size(502, 277);
+            this.tabPage29.TabIndex = 1;
+            this.tabPage29.Text = "SubGroupID";
+            this.tabPage29.UseVisualStyleBackColor = true;
+            // 
+            // SubdataGridView1
+            // 
+            this.SubdataGridView1.BackgroundColor = System.Drawing.Color.MintCream;
+            this.SubdataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SubdataGridView1.Location = new System.Drawing.Point(190, 90);
+            this.SubdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SubdataGridView1.Name = "SubdataGridView1";
+            this.SubdataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Red;
+            this.SubdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.SubdataGridView1.RowTemplate.Height = 24;
+            this.SubdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.SubdataGridView1.Size = new System.Drawing.Size(293, 166);
+            this.SubdataGridView1.TabIndex = 35;
+            this.SubdataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SubdataGridView1_CellClick);
+            // 
+            // SubGroupIDmaterialButton8
+            // 
+            this.SubGroupIDmaterialButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.SubGroupIDmaterialButton8.Depth = 0;
+            this.SubGroupIDmaterialButton8.DrawShadows = true;
+            this.SubGroupIDmaterialButton8.HighEmphasis = true;
+            this.SubGroupIDmaterialButton8.Icon = null;
+            this.SubGroupIDmaterialButton8.Location = new System.Drawing.Point(23, 189);
+            this.SubGroupIDmaterialButton8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.SubGroupIDmaterialButton8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.SubGroupIDmaterialButton8.Name = "SubGroupIDmaterialButton8";
+            this.SubGroupIDmaterialButton8.Size = new System.Drawing.Size(58, 36);
+            this.SubGroupIDmaterialButton8.TabIndex = 34;
+            this.SubGroupIDmaterialButton8.Text = "Save";
+            this.SubGroupIDmaterialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.SubGroupIDmaterialButton8.UseAccentColor = false;
+            this.SubGroupIDmaterialButton8.UseVisualStyleBackColor = true;
+            this.SubGroupIDmaterialButton8.Click += new System.EventHandler(this.SubGroupIDmaterialButton8_Click);
+            // 
+            // SubGroupmaterial
+            // 
+            this.SubGroupmaterial.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SubGroupmaterial.Depth = 0;
+            this.SubGroupmaterial.Font = new System.Drawing.Font("Roboto", 12F);
+            this.SubGroupmaterial.Location = new System.Drawing.Point(7, 90);
+            this.SubGroupmaterial.MaxLength = 50;
+            this.SubGroupmaterial.MouseState = MaterialSkin.MouseState.OUT;
+            this.SubGroupmaterial.Multiline = false;
+            this.SubGroupmaterial.Name = "SubGroupmaterial";
+            this.SubGroupmaterial.Size = new System.Drawing.Size(170, 50);
+            this.SubGroupmaterial.TabIndex = 33;
+            this.SubGroupmaterial.Text = "";
+            // 
+            // GenarateSubGroupButton
+            // 
+            this.GenarateSubGroupButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.GenarateSubGroupButton.Depth = 0;
+            this.GenarateSubGroupButton.DrawShadows = true;
+            this.GenarateSubGroupButton.HighEmphasis = true;
+            this.GenarateSubGroupButton.Icon = null;
+            this.GenarateSubGroupButton.Location = new System.Drawing.Point(7, 30);
+            this.GenarateSubGroupButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.GenarateSubGroupButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.GenarateSubGroupButton.Name = "GenarateSubGroupButton";
+            this.GenarateSubGroupButton.Size = new System.Drawing.Size(197, 36);
+            this.GenarateSubGroupButton.TabIndex = 19;
+            this.GenarateSubGroupButton.Text = "Genarate Sub Group ID";
+            this.GenarateSubGroupButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.GenarateSubGroupButton.UseAccentColor = false;
+            this.GenarateSubGroupButton.UseVisualStyleBackColor = true;
+            this.GenarateSubGroupButton.Click += new System.EventHandler(this.materialButton7_Click);
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox32.BackgroundImage")));
+            this.pictureBox32.Location = new System.Drawing.Point(440, 5);
+            this.pictureBox32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(43, 41);
+            this.pictureBox32.TabIndex = 18;
+            this.pictureBox32.TabStop = false;
+            this.pictureBox32.Click += new System.EventHandler(this.pictureBox32_Click);
             // 
             // AdecmicYear_ComboBox
             // 
@@ -4710,7 +4718,7 @@ namespace Time_Table_managemnt
             this.panelManageSession.BackColor = System.Drawing.Color.White;
             this.panelManageSession.Controls.Add(this.materialTabSelectorManageSession);
             this.panelManageSession.Controls.Add(this.materialTabControlManageSession);
-            this.panelManageSession.Location = new System.Drawing.Point(160, 92);
+            this.panelManageSession.Location = new System.Drawing.Point(113, 667);
             this.panelManageSession.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelManageSession.Name = "panelManageSession";
             this.panelManageSession.Size = new System.Drawing.Size(792, 705);
@@ -7034,7 +7042,7 @@ namespace Time_Table_managemnt
             this.SessionRoomPanel3.Controls.Add(this.materialButton31);
             this.SessionRoomPanel3.Controls.Add(this.numericUpDown7);
             this.SessionRoomPanel3.Controls.Add(this.materialButton32);
-            this.SessionRoomPanel3.Location = new System.Drawing.Point(45, 458);
+            this.SessionRoomPanel3.Location = new System.Drawing.Point(32, 525);
             this.SessionRoomPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SessionRoomPanel3.Name = "SessionRoomPanel3";
             this.SessionRoomPanel3.Size = new System.Drawing.Size(823, 494);
@@ -7050,7 +7058,7 @@ namespace Time_Table_managemnt
             this.RoomsBlue1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RoomsBlue1.MouseState = MaterialSkin.MouseState.HOVER;
             this.RoomsBlue1.Name = "RoomsBlue1";
-            this.RoomsBlue1.Size = new System.Drawing.Size(823, 48);
+            this.RoomsBlue1.Size = new System.Drawing.Size(823, 27);
             this.RoomsBlue1.TabIndex = 29;
             this.RoomsBlue1.Text = "materialTabSelector7";
             // 
@@ -7071,9 +7079,9 @@ namespace Time_Table_managemnt
             // 
             // Rooms3
             // 
+            this.Rooms3.Controls.Add(this.SessionridView1);
             this.Rooms3.Controls.Add(this.RefreshRoomBtn2);
             this.Rooms3.Controls.Add(this.AddRoomBtn2);
-            this.Rooms3.Controls.Add(this.dataGridViewRooms);
             this.Rooms3.Controls.Add(this.pictureBoxRooms);
             this.Rooms3.Location = new System.Drawing.Point(4, 25);
             this.Rooms3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -7083,6 +7091,21 @@ namespace Time_Table_managemnt
             this.Rooms3.TabIndex = 0;
             this.Rooms3.Text = "Session";
             this.Rooms3.UseVisualStyleBackColor = true;
+            // 
+            // SessionridView1
+            // 
+            this.SessionridView1.BackgroundColor = System.Drawing.Color.MintCream;
+            this.SessionridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SessionridView1.Location = new System.Drawing.Point(27, 25);
+            this.SessionridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SessionridView1.Name = "SessionridView1";
+            this.SessionridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Red;
+            this.SessionridView1.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.SessionridView1.RowTemplate.Height = 24;
+            this.SessionridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.SessionridView1.Size = new System.Drawing.Size(675, 211);
+            this.SessionridView1.TabIndex = 34;
             // 
             // RefreshRoomBtn2
             // 
@@ -7101,6 +7124,7 @@ namespace Time_Table_managemnt
             this.RefreshRoomBtn2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.RefreshRoomBtn2.UseAccentColor = false;
             this.RefreshRoomBtn2.UseVisualStyleBackColor = true;
+            this.RefreshRoomBtn2.Click += new System.EventHandler(this.RefreshRoomBtn2_Click);
             // 
             // AddRoomBtn2
             // 
@@ -7119,18 +7143,7 @@ namespace Time_Table_managemnt
             this.AddRoomBtn2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.AddRoomBtn2.UseAccentColor = false;
             this.AddRoomBtn2.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewRooms
-            // 
-            this.dataGridViewRooms.BackgroundColor = System.Drawing.Color.MintCream;
-            this.dataGridViewRooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewRooms.Location = new System.Drawing.Point(25, 39);
-            this.dataGridViewRooms.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridViewRooms.Name = "dataGridViewRooms";
-            this.dataGridViewRooms.RowHeadersWidth = 51;
-            this.dataGridViewRooms.RowTemplate.Height = 24;
-            this.dataGridViewRooms.Size = new System.Drawing.Size(603, 190);
-            this.dataGridViewRooms.TabIndex = 31;
+            this.AddRoomBtn2.Click += new System.EventHandler(this.AddRoomBtn2_Click);
             // 
             // pictureBoxRooms
             // 
@@ -7145,6 +7158,9 @@ namespace Time_Table_managemnt
             // 
             // tabPage26
             // 
+            this.tabPage26.Controls.Add(this.materialButton8);
+            this.tabPage26.Controls.Add(this.materialButton9);
+            this.tabPage26.Controls.Add(this.conataGridView1);
             this.tabPage26.Location = new System.Drawing.Point(4, 25);
             this.tabPage26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage26.Name = "tabPage26";
@@ -7754,7 +7770,7 @@ namespace Time_Table_managemnt
             this.panelManageSessionsRooms.BackColor = System.Drawing.Color.White;
             this.panelManageSessionsRooms.Controls.Add(this.MangeSessionRm1);
             this.panelManageSessionsRooms.Controls.Add(this.ManageSessionRmBlue);
-            this.panelManageSessionsRooms.Location = new System.Drawing.Point(889, 353);
+            this.panelManageSessionsRooms.Location = new System.Drawing.Point(347, 22);
             this.panelManageSessionsRooms.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelManageSessionsRooms.Name = "panelManageSessionsRooms";
             this.panelManageSessionsRooms.Size = new System.Drawing.Size(812, 575);
@@ -7775,13 +7791,13 @@ namespace Time_Table_managemnt
             // 
             // MangeSessionRm2
             // 
-            this.MangeSessionRm2.Controls.Add(this.dataGridView10);
-            this.MangeSessionRm2.Controls.Add(this.materialComboBox10);
+            this.MangeSessionRm2.Controls.Add(this.SessionGridView1);
+            this.MangeSessionRm2.Controls.Add(this.materialButton6);
+            this.MangeSessionRm2.Controls.Add(this.materialTextBox32);
+            this.MangeSessionRm2.Controls.Add(this.materialTextBox31);
+            this.MangeSessionRm2.Controls.Add(this.materialButton7);
+            this.MangeSessionRm2.Controls.Add(this.consective);
             this.MangeSessionRm2.Controls.Add(this.MSRClearBtn);
-            this.MangeSessionRm2.Controls.Add(this.materialLabel72);
-            this.MangeSessionRm2.Controls.Add(this.materialComboBox11);
-            this.MangeSessionRm2.Controls.Add(this.materialLabel73);
-            this.MangeSessionRm2.Controls.Add(this.materialLabel74);
             this.MangeSessionRm2.Controls.Add(this.pictureBoxMSRooms);
             this.MangeSessionRm2.Controls.Add(this.MSRSubmitBtn);
             this.MangeSessionRm2.Location = new System.Drawing.Point(4, 25);
@@ -7793,40 +7809,89 @@ namespace Time_Table_managemnt
             this.MangeSessionRm2.Text = "Manage Session Rooms";
             this.MangeSessionRm2.UseVisualStyleBackColor = true;
             // 
-            // dataGridView10
+            // materialButton6
             // 
-            this.dataGridView10.BackgroundColor = System.Drawing.Color.MintCream;
-            this.dataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView10.Location = new System.Drawing.Point(27, 304);
-            this.dataGridView10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView10.Name = "dataGridView10";
-            this.dataGridView10.RowHeadersWidth = 51;
-            this.dataGridView10.RowTemplate.Height = 24;
-            this.dataGridView10.Size = new System.Drawing.Size(321, 121);
-            this.dataGridView10.TabIndex = 25;
+            this.materialButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton6.Depth = 0;
+            this.materialButton6.DrawShadows = true;
+            this.materialButton6.HighEmphasis = true;
+            this.materialButton6.Icon = null;
+            this.materialButton6.Location = new System.Drawing.Point(476, 317);
+            this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton6.Name = "materialButton6";
+            this.materialButton6.Size = new System.Drawing.Size(158, 36);
+            this.materialButton6.TabIndex = 30;
+            this.materialButton6.Text = "materialButton6";
+            this.materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton6.UseAccentColor = false;
+            this.materialButton6.UseVisualStyleBackColor = true;
             // 
-            // materialComboBox10
+            // materialTextBox32
             // 
-            this.materialComboBox10.AutoResize = false;
-            this.materialComboBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox10.Depth = 0;
-            this.materialComboBox10.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox10.DropDownHeight = 174;
-            this.materialComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox10.DropDownWidth = 121;
-            this.materialComboBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox10.FormattingEnabled = true;
-            this.materialComboBox10.IntegralHeight = false;
-            this.materialComboBox10.ItemHeight = 43;
-            this.materialComboBox10.Location = new System.Drawing.Point(27, 114);
-            this.materialComboBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialComboBox10.MaxDropDownItems = 4;
-            this.materialComboBox10.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialComboBox10.Name = "materialComboBox10";
-            this.materialComboBox10.Size = new System.Drawing.Size(281, 49);
-            this.materialComboBox10.StartIndex = 0;
-            this.materialComboBox10.TabIndex = 24;
+            this.materialTextBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.materialTextBox32.Depth = 0;
+            this.materialTextBox32.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox32.Location = new System.Drawing.Point(239, 312);
+            this.materialTextBox32.MaxLength = 50;
+            this.materialTextBox32.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox32.Multiline = false;
+            this.materialTextBox32.Name = "materialTextBox32";
+            this.materialTextBox32.Size = new System.Drawing.Size(206, 50);
+            this.materialTextBox32.TabIndex = 29;
+            this.materialTextBox32.Text = "";
+            // 
+            // materialTextBox31
+            // 
+            this.materialTextBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.materialTextBox31.Depth = 0;
+            this.materialTextBox31.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox31.Location = new System.Drawing.Point(71, 317);
+            this.materialTextBox31.MaxLength = 50;
+            this.materialTextBox31.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox31.Multiline = false;
+            this.materialTextBox31.Name = "materialTextBox31";
+            this.materialTextBox31.Size = new System.Drawing.Size(130, 50);
+            this.materialTextBox31.TabIndex = 28;
+            this.materialTextBox31.Text = "";
+            // 
+            // materialButton7
+            // 
+            this.materialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton7.Depth = 0;
+            this.materialButton7.DrawShadows = true;
+            this.materialButton7.HighEmphasis = true;
+            this.materialButton7.Icon = null;
+            this.materialButton7.Location = new System.Drawing.Point(577, 157);
+            this.materialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton7.Name = "materialButton7";
+            this.materialButton7.Size = new System.Drawing.Size(81, 36);
+            this.materialButton7.TabIndex = 27;
+            this.materialButton7.Text = "session";
+            this.materialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton7.UseAccentColor = false;
+            this.materialButton7.UseVisualStyleBackColor = true;
+            this.materialButton7.Click += new System.EventHandler(this.materialButton7_Click_1);
+            // 
+            // consective
+            // 
+            this.consective.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.consective.Depth = 0;
+            this.consective.DrawShadows = true;
+            this.consective.HighEmphasis = true;
+            this.consective.Icon = null;
+            this.consective.Location = new System.Drawing.Point(577, 95);
+            this.consective.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.consective.MouseState = MaterialSkin.MouseState.HOVER;
+            this.consective.Name = "consective";
+            this.consective.Size = new System.Drawing.Size(110, 36);
+            this.consective.TabIndex = 26;
+            this.consective.Text = "consective";
+            this.consective.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.consective.UseAccentColor = false;
+            this.consective.UseVisualStyleBackColor = true;
+            this.consective.Click += new System.EventHandler(this.consective_Click);
             // 
             // MSRClearBtn
             // 
@@ -7845,65 +7910,6 @@ namespace Time_Table_managemnt
             this.MSRClearBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.MSRClearBtn.UseAccentColor = false;
             this.MSRClearBtn.UseVisualStyleBackColor = true;
-            // 
-            // materialLabel72
-            // 
-            this.materialLabel72.AutoSize = true;
-            this.materialLabel72.Depth = 0;
-            this.materialLabel72.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel72.Location = new System.Drawing.Point(32, 279);
-            this.materialLabel72.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel72.Name = "materialLabel72";
-            this.materialLabel72.Size = new System.Drawing.Size(121, 19);
-            this.materialLabel72.TabIndex = 22;
-            this.materialLabel72.Text = "Selected Session";
-            // 
-            // materialComboBox11
-            // 
-            this.materialComboBox11.AutoResize = false;
-            this.materialComboBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox11.Depth = 0;
-            this.materialComboBox11.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox11.DropDownHeight = 174;
-            this.materialComboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox11.DropDownWidth = 121;
-            this.materialComboBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox11.FormattingEnabled = true;
-            this.materialComboBox11.IntegralHeight = false;
-            this.materialComboBox11.ItemHeight = 43;
-            this.materialComboBox11.Location = new System.Drawing.Point(35, 210);
-            this.materialComboBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialComboBox11.MaxDropDownItems = 4;
-            this.materialComboBox11.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialComboBox11.Name = "materialComboBox11";
-            this.materialComboBox11.Size = new System.Drawing.Size(281, 49);
-            this.materialComboBox11.StartIndex = 0;
-            this.materialComboBox11.TabIndex = 21;
-            // 
-            // materialLabel73
-            // 
-            this.materialLabel73.AutoSize = true;
-            this.materialLabel73.Depth = 0;
-            this.materialLabel73.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel73.Location = new System.Drawing.Point(32, 190);
-            this.materialLabel73.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel73.Name = "materialLabel73";
-            this.materialLabel73.Size = new System.Drawing.Size(90, 19);
-            this.materialLabel73.TabIndex = 20;
-            this.materialLabel73.Text = "Select Room";
-            // 
-            // materialLabel74
-            // 
-            this.materialLabel74.AutoSize = true;
-            this.materialLabel74.Depth = 0;
-            this.materialLabel74.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel74.Location = new System.Drawing.Point(32, 82);
-            this.materialLabel74.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel74.Name = "materialLabel74";
-            this.materialLabel74.Size = new System.Drawing.Size(108, 19);
-            this.materialLabel74.TabIndex = 19;
-            this.materialLabel74.Text = " Select Session";
             // 
             // pictureBoxMSRooms
             // 
@@ -8138,8 +8144,8 @@ namespace Time_Table_managemnt
             this.CondataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CondataGridView1.Name = "CondataGridView1";
             this.CondataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Red;
-            this.CondataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Red;
+            this.CondataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle13;
             this.CondataGridView1.RowTemplate.Height = 24;
             this.CondataGridView1.Size = new System.Drawing.Size(447, 187);
             this.CondataGridView1.TabIndex = 33;
@@ -8163,8 +8169,8 @@ namespace Time_Table_managemnt
             this.ConsecutiveDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ConsecutiveDataGridView.Name = "ConsecutiveDataGridView";
             this.ConsecutiveDataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Red;
-            this.ConsecutiveDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Red;
+            this.ConsecutiveDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle14;
             this.ConsecutiveDataGridView.RowTemplate.Height = 24;
             this.ConsecutiveDataGridView.Size = new System.Drawing.Size(748, 283);
             this.ConsecutiveDataGridView.TabIndex = 31;
@@ -8275,8 +8281,8 @@ namespace Time_Table_managemnt
             this.ParellDatagridview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ParellDatagridview.Name = "ParellDatagridview";
             this.ParellDatagridview.RowHeadersWidth = 51;
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Red;
-            this.ParellDatagridview.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Red;
+            this.ParellDatagridview.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.ParellDatagridview.RowTemplate.Height = 24;
             this.ParellDatagridview.Size = new System.Drawing.Size(748, 283);
             this.ParellDatagridview.TabIndex = 34;
@@ -8298,8 +8304,8 @@ namespace Time_Table_managemnt
             this.PaldataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PaldataGridView1.Name = "PaldataGridView1";
             this.PaldataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Red;
-            this.PaldataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Red;
+            this.PaldataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle16;
             this.PaldataGridView1.RowTemplate.Height = 24;
             this.PaldataGridView1.Size = new System.Drawing.Size(447, 187);
             this.PaldataGridView1.TabIndex = 33;
@@ -8426,8 +8432,8 @@ namespace Time_Table_managemnt
             this.NondataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NondataGridView1.Name = "NondataGridView1";
             this.NondataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Red;
-            this.NondataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Red;
+            this.NondataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle17;
             this.NondataGridView1.RowTemplate.Height = 24;
             this.NondataGridView1.Size = new System.Drawing.Size(447, 187);
             this.NondataGridView1.TabIndex = 33;
@@ -8451,8 +8457,8 @@ namespace Time_Table_managemnt
             this.datagridviewcoloum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datagridviewcoloum.Name = "datagridviewcoloum";
             this.datagridviewcoloum.RowHeadersWidth = 51;
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Red;
-            this.datagridviewcoloum.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Red;
+            this.datagridviewcoloum.RowsDefaultCellStyle = dataGridViewCellStyle18;
             this.datagridviewcoloum.RowTemplate.Height = 24;
             this.datagridviewcoloum.Size = new System.Drawing.Size(748, 283);
             this.datagridviewcoloum.TabIndex = 35;
@@ -9438,7 +9444,7 @@ namespace Time_Table_managemnt
             // 
             this.dataGridView5.BackgroundColor = System.Drawing.Color.Azure;
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(61, 222);
+            this.dataGridView5.Location = new System.Drawing.Point(62, 155);
             this.dataGridView5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowHeadersWidth = 51;
@@ -9562,7 +9568,7 @@ namespace Time_Table_managemnt
             this.pictureBox12.Location = new System.Drawing.Point(836, 55);
             this.pictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(43, 44);
+            this.pictureBox12.Size = new System.Drawing.Size(43, 47);
             this.pictureBox12.TabIndex = 2;
             this.pictureBox12.TabStop = false;
             // 
@@ -9816,6 +9822,74 @@ namespace Time_Table_managemnt
             this.elipseControl50.CornerRadius = 30;
             this.elipseControl50.TargetControl = this.Nonpanel3;
             // 
+            // SessionGridView1
+            // 
+            this.SessionGridView1.BackgroundColor = System.Drawing.Color.MintCream;
+            this.SessionGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SessionGridView1.Location = new System.Drawing.Point(21, 15);
+            this.SessionGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SessionGridView1.Name = "SessionGridView1";
+            this.SessionGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Red;
+            this.SessionGridView1.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            this.SessionGridView1.RowTemplate.Height = 24;
+            this.SessionGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.SessionGridView1.Size = new System.Drawing.Size(508, 262);
+            this.SessionGridView1.TabIndex = 36;
+            // 
+            // conataGridView1
+            // 
+            this.conataGridView1.BackgroundColor = System.Drawing.Color.MintCream;
+            this.conataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.conataGridView1.Location = new System.Drawing.Point(26, 27);
+            this.conataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.conataGridView1.Name = "conataGridView1";
+            this.conataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Red;
+            this.conataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle11;
+            this.conataGridView1.RowTemplate.Height = 24;
+            this.conataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.conataGridView1.Size = new System.Drawing.Size(708, 243);
+            this.conataGridView1.TabIndex = 35;
+            // 
+            // materialButton8
+            // 
+            this.materialButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton8.Depth = 0;
+            this.materialButton8.DrawShadows = true;
+            this.materialButton8.HighEmphasis = true;
+            this.materialButton8.Icon = null;
+            this.materialButton8.Location = new System.Drawing.Point(386, 314);
+            this.materialButton8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton8.Name = "materialButton8";
+            this.materialButton8.Size = new System.Drawing.Size(84, 36);
+            this.materialButton8.TabIndex = 37;
+            this.materialButton8.Text = "Refresh";
+            this.materialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton8.UseAccentColor = false;
+            this.materialButton8.UseVisualStyleBackColor = true;
+            this.materialButton8.Click += new System.EventHandler(this.materialButton8_Click);
+            // 
+            // materialButton9
+            // 
+            this.materialButton9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton9.Depth = 0;
+            this.materialButton9.DrawShadows = true;
+            this.materialButton9.HighEmphasis = true;
+            this.materialButton9.Icon = null;
+            this.materialButton9.Location = new System.Drawing.Point(104, 314);
+            this.materialButton9.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton9.Name = "materialButton9";
+            this.materialButton9.Size = new System.Drawing.Size(96, 36);
+            this.materialButton9.TabIndex = 36;
+            this.materialButton9.Text = "Add Room";
+            this.materialButton9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton9.UseAccentColor = false;
+            this.materialButton9.UseVisualStyleBackColor = true;
+            this.materialButton9.Click += new System.EventHandler(this.materialButton9_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -9869,16 +9943,6 @@ namespace Time_Table_managemnt
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.GenarateIDPanel.ResumeLayout(false);
-            this.GenarateIDmaterialTabControl8.ResumeLayout(false);
-            this.tabPage28.ResumeLayout(false);
-            this.tabPage28.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GropIDdataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            this.tabPage29.ResumeLayout(false);
-            this.tabPage29.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SubdataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             this.Updatepanel2.ResumeLayout(false);
             this.materialTabControl4.ResumeLayout(false);
             this.tabPage12.ResumeLayout(false);
@@ -9891,6 +9955,16 @@ namespace Time_Table_managemnt
             this.materialTabControl5.ResumeLayout(false);
             this.tabPage13.ResumeLayout(false);
             this.tabPage13.PerformLayout();
+            this.GenarateIDPanel.ResumeLayout(false);
+            this.GenarateIDmaterialTabControl8.ResumeLayout(false);
+            this.tabPage28.ResumeLayout(false);
+            this.tabPage28.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GropIDdataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            this.tabPage29.ResumeLayout(false);
+            this.tabPage29.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SubdataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -10012,8 +10086,10 @@ namespace Time_Table_managemnt
             this.Rooms2.ResumeLayout(false);
             this.Rooms3.ResumeLayout(false);
             this.Rooms3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRooms)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SessionridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRooms)).EndInit();
+            this.tabPage26.ResumeLayout(false);
+            this.tabPage26.PerformLayout();
             this.addnotavailsesstabPage.ResumeLayout(false);
             this.addnotavailsesstabPage.PerformLayout();
             this.locnotavailpanel2.ResumeLayout(false);
@@ -10033,7 +10109,6 @@ namespace Time_Table_managemnt
             this.MangeSessionRm1.ResumeLayout(false);
             this.MangeSessionRm2.ResumeLayout(false);
             this.MangeSessionRm2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMSRooms)).EndInit();
             this.AddRoomSticker.ResumeLayout(false);
             this.materialCard14.ResumeLayout(false);
@@ -10085,6 +10160,8 @@ namespace Time_Table_managemnt
             this.tabPage21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SessionGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -10373,7 +10450,6 @@ namespace Time_Table_managemnt
         private System.Windows.Forms.TabPage Rooms3;
         private MaterialSkin.Controls.MaterialButton RefreshRoomBtn2;
         private MaterialSkin.Controls.MaterialButton AddRoomBtn2;
-        private System.Windows.Forms.DataGridView dataGridViewRooms;
         private System.Windows.Forms.PictureBox pictureBoxRooms;
         private System.Windows.Forms.TabPage tabPage26;
         private System.Windows.Forms.TabPage addnotavailsesstabPage;
@@ -10384,13 +10460,7 @@ namespace Time_Table_managemnt
         private System.Windows.Forms.Panel panelManageSessionsRooms;
         private MaterialSkin.Controls.MaterialTabControl MangeSessionRm1;
         private System.Windows.Forms.TabPage MangeSessionRm2;
-        private System.Windows.Forms.DataGridView dataGridView10;
-        private MaterialSkin.Controls.MaterialComboBox materialComboBox10;
         private MaterialSkin.Controls.MaterialButton MSRClearBtn;
-        private MaterialSkin.Controls.MaterialLabel materialLabel72;
-        private MaterialSkin.Controls.MaterialComboBox materialComboBox11;
-        private MaterialSkin.Controls.MaterialLabel materialLabel73;
-        private MaterialSkin.Controls.MaterialLabel materialLabel74;
         private System.Windows.Forms.PictureBox pictureBoxMSRooms;
         private MaterialSkin.Controls.MaterialButton MSRSubmitBtn;
         private MaterialSkin.Controls.MaterialTabSelector ManageSessionRmBlue;
@@ -10712,6 +10782,16 @@ namespace Time_Table_managemnt
         private ElipseControl elipseControl50;
         private System.Windows.Forms.DataGridView ParellDatagridview;
         private System.Windows.Forms.DataGridView datagridviewcoloum;
+        private MaterialSkin.Controls.MaterialTextBox materialTextBox32;
+        private MaterialSkin.Controls.MaterialTextBox materialTextBox31;
+        private MaterialSkin.Controls.MaterialButton materialButton7;
+        private MaterialSkin.Controls.MaterialButton consective;
+        private MaterialSkin.Controls.MaterialButton materialButton6;
+        private System.Windows.Forms.DataGridView SessionridView1;
+        private System.Windows.Forms.DataGridView SessionGridView1;
+        private MaterialSkin.Controls.MaterialButton materialButton8;
+        private MaterialSkin.Controls.MaterialButton materialButton9;
+        private System.Windows.Forms.DataGridView conataGridView1;
     }
 }
 

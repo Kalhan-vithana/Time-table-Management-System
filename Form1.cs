@@ -75,7 +75,8 @@ namespace Time_Table_managemnt
             checoboxrowConsectiveSession();
             checkboxParrelSesssonCheckbox();
             NonoverlappingCheckbox();
-
+            AddLectureLocation();
+            GetLocationCpnsective();
 
 
         }
@@ -120,6 +121,28 @@ namespace Time_Table_managemnt
             chkbox.Name = "Nonchecheckbox";
             datagridviewcoloum.Columns.Insert(0, chkbox);
         }
+
+
+        void AddLectureLocation()
+        {
+            DataGridViewCheckBoxColumn chkbox = new DataGridViewCheckBoxColumn();
+            chkbox.HeaderText = "";
+            chkbox.Width = 30;
+            chkbox.Name = "Locationcheckbox";
+            SessionridView1.Columns.Insert(0, chkbox);
+
+        }
+
+
+        void GetLocationCpnsective()
+        {
+            DataGridViewCheckBoxColumn chkbox = new DataGridViewCheckBoxColumn();
+            chkbox.HeaderText = "";
+            chkbox.Width = 30;
+            chkbox.Name = "Locationcheckbox1";
+            conataGridView1.Columns.Insert(0, chkbox);
+
+        }
         /*=============================================Get Students to Table =============================================================================== */
 
 
@@ -163,12 +186,12 @@ namespace Time_Table_managemnt
 
                 if(SID > 0)
                 {
-                    MessageBox.Show("added!");
-                    Reset();
+                    MessageBox.Show("added", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("genarate your ID", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
-                    MessageBox.Show("false!");
+                    MessageBox.Show("not added", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 
                 }
@@ -399,7 +422,7 @@ namespace Time_Table_managemnt
 
                 if(success == true)
                 {
-                    MessageBox.Show("Added ", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("updated  ", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     getStudents();
                      Reset();
             }
@@ -500,7 +523,7 @@ namespace Time_Table_managemnt
 
                 if (TID > 0)
                 {
-                    MessageBox.Show("added!");
+                    MessageBox.Show("added", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Reset();
                     GetTags();
                     
@@ -1709,6 +1732,7 @@ namespace Time_Table_managemnt
                 }
 
             }
+            MessageBox.Show("added", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 
@@ -1789,6 +1813,7 @@ namespace Time_Table_managemnt
                 }
 
             }
+            MessageBox.Show("added", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 
@@ -1893,6 +1918,7 @@ namespace Time_Table_managemnt
                 }
 
             }
+            MessageBox.Show("added", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 
@@ -1926,8 +1952,158 @@ namespace Time_Table_managemnt
 
             NondataGridView1.DataSource = dt;
         }
+        //------------------------------Location ADD Sprint2-------------------------------------------------------------
+        private void RefreshRoomBtn2_Click(object sender, EventArgs e)
+        {
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from session", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            SessionridView1.DataSource = dt;
+        }
 
 
+        public void LectuesRLocation()
+        {
+
+            foreach (DataGridViewRow dr in SessionridView1.Rows)
+            {
+
+
+                bool checkboxselected = Convert.ToBoolean(dr.Cells["Locationcheckbox"].Value);
+                if (checkboxselected)
+                {
+
+                    con.Close();
+                    SqlCommand cmd = new SqlCommand("INSERT INTO SessionLocation(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
+                    cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
+                    cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
+                    cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
+                    cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
+                    cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
+                    cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
+                    
+
+
+
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    selectsession();
+
+                    MessageBox.Show("sucss");
+                }
+
+            }
+        }
+
+        public void ConsectiveLectuesRLocation()
+        {
+
+            foreach (DataGridViewRow dr in conataGridView1.Rows)
+            {
+
+
+                bool checkboxselected = Convert.ToBoolean(dr.Cells["Locationcheckbox1"].Value);
+                if (checkboxselected)
+                {
+
+                    con.Close();
+                    SqlCommand cmd = new SqlCommand("INSERT INTO consectvelocation(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
+                    cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
+                    cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
+                    cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
+                    cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
+                    cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
+                    cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
+
+
+
+
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                   
+
+                    MessageBox.Show("sucss");
+                }
+
+            }
+        }
+
+        private void consective_Click(object sender, EventArgs e)
+        {
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from consectvelocation", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            SessionGridView1.DataSource = dt;
+        }
+
+        private void selectsession()
+        {
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from SessionLocation", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            SessionGridView1.DataSource = dt;
+        }
+
+
+        private void materialButton7_Click_1(object sender, EventArgs e)
+        {
+            selectsession();
+        }
+
+
+        private void AddRoomBtn2_Click(object sender, EventArgs e)
+        {
+            LectuesRLocation();
+        }
+
+
+        private void materialButton8_Click(object sender, EventArgs e)
+        {
+
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from consective", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            conataGridView1.DataSource = dt;
+        }
+
+        private void materialButton9_Click(object sender, EventArgs e)
+        {
+            ConsectiveLectuesRLocation();
+        }
+        // ------------------------------------------------------------------------------------------------------
         private void materialTextBox4_TextChanged(object sender, EventArgs e)
         {
 
@@ -1955,6 +2131,8 @@ namespace Time_Table_managemnt
             }
         }
 
+
+
         private void materialButton23_Click(object sender, EventArgs e)
         {
             loadParallelROw();
@@ -1967,6 +2145,7 @@ namespace Time_Table_managemnt
             consectivepanel.Show();
             consectivepanel.BringToFront();
         }
+
 
 
 
@@ -2431,7 +2610,6 @@ namespace Time_Table_managemnt
             insertNonoverlappingSession();
         }
 
-
-    
+      
     }
 }
