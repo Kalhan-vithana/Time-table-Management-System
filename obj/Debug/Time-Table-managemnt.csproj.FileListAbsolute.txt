@@ -286,3 +286,19 @@ C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time-
 C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time-Table-managemnt.csproj.CopyComplete
 C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time-Table-managemnt.exe
 C:\Users\HP\Desktop\New folder (10)\Time-table-Management-System\obj\Debug\Time-Table-managemnt.pdb
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\bin\Debug\MYDatabase1.mdf
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\bin\Debug\MYDatabase1_log.ldf
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\bin\Debug\Time-Table-managemnt.exe.config
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\bin\Debug\Time-Table-managemnt.exe
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\bin\Debug\Time-Table-managemnt.pdb
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\bin\Debug\MaterialSkin.dll
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\obj\Debug\Time-Table-managemnt.csprojAssemblyReference.cache
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\obj\Debug\Time_Table_managemnt.Form1.resources
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\obj\Debug\Time_Table_managemnt.Home.resources
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\obj\Debug\Time_Table_managemnt.Properties.Resources.resources
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\obj\Debug\Time_Table_managemnt.Welcome.resources
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\obj\Debug\Time-Table-managemnt.csproj.GenerateResource.cache
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\obj\Debug\Time-Table-managemnt.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\obj\Debug\Time-Table-managemnt.csproj.CopyComplete
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\obj\Debug\Time-Table-managemnt.exe
+C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\obj\Debug\Time-Table-managemnt.pdb
