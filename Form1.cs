@@ -186,8 +186,8 @@ namespace Time_Table_managemnt
 
                 if(SID > 0)
                 {
-                    MessageBox.Show("added", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    MessageBox.Show("genarate your ID", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("added sucesss", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("please genarate your ID", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -202,7 +202,7 @@ namespace Time_Table_managemnt
 
         private bool IsValidStudentsGroup()
         {
-            if (AdecmicYear_ComboBox.Text == String.Empty)
+            if (AdecmicYear_ComboBox.Text == String.Empty || Programme_combo.Text == String.Empty || numericUpDown1.Value == 0|| numericUpDown2.Value == 0)
             {
 
 
@@ -362,13 +362,13 @@ namespace Time_Table_managemnt
 
                 if (success == true)
                 {
-                    MessageBox.Show("update sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("added sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     getStudents();
                 }
                 else
                 {
 
-                    MessageBox.Show("not sucessfully", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("not added error", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
 
@@ -377,7 +377,7 @@ namespace Time_Table_managemnt
             else
             {
 
-                MessageBox.Show("not Added", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("not added", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -422,14 +422,14 @@ namespace Time_Table_managemnt
 
                 if(success == true)
                 {
-                    MessageBox.Show("updated  ", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("addded sucessfully  ", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     getStudents();
                      Reset();
             }
                 else
                 {
 
-                    MessageBox.Show("not adedd", "error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("not adedd", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
 
@@ -523,24 +523,24 @@ namespace Time_Table_managemnt
 
                 if (TID > 0)
                 {
-                    MessageBox.Show("added", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("added sucess", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Reset();
                     GetTags();
                     
                 }
                 else
                 {
-                    MessageBox.Show("false!");
+                     MessageBox.Show("not added", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
 
             }
         }
-
+        //validation
         private bool IsTagValid()
         {
 
-            if (AddTagCombo1.Text == String.Empty)
+            if (AddTagCombo1.Text == String.Empty || ADDCodeComboBox1.Text == String.Empty || VeiwRelateTagComboBox3.Text == String.Empty)
             {
 
 
@@ -632,7 +632,7 @@ namespace Time_Table_managemnt
 
                 if (success == true)
                 {
-                    MessageBox.Show("update ", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("update  sucessfull", "sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
              
                     Reset();
                 GetTags();
@@ -640,7 +640,7 @@ namespace Time_Table_managemnt
                 else
                 {
 
-                    MessageBox.Show("not updated", "error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("not updated", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
           
@@ -699,8 +699,377 @@ namespace Time_Table_managemnt
             VeiwRelateTagComboBox3.SelectedIndex = -1;
         }
 
+        //====================================================Mebmer 1 Sprint2 =================================================
 
 
+
+        //====================================================-Add Consective Sprint 2====================================================
+        public void getConsectivedata()
+        {
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from session", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            ConsecutiveDataGridView.DataSource = dt;
+
+
+
+        }
+
+
+        //====================================================-Add Consective session====================================================
+        private void materialButton21_Click(object sender, EventArgs e)
+        {
+
+
+            if (selectcheckbox())
+            {
+                foreach (DataGridViewRow dr in ConsecutiveDataGridView.Rows)
+                {
+
+
+                    bool checkboxselected = Convert.ToBoolean(dr.Cells["checkboxColum"].Value);
+                    if (checkboxselected)
+                    {
+
+                        con.Close();
+                        SqlCommand cmd = new SqlCommand("INSERT INTO consective(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
+                        cmd.CommandType = CommandType.Text;
+                        cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
+                        cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
+                        cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
+                        cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
+                        cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
+                        cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
+                        cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
+
+
+
+                        con.Open();
+
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        loadconsectiverow();
+
+                    }
+
+
+                }
+
+
+            }
+
+        }
+
+
+        //check the checkbox------------------------------------------------------------------------------------------
+
+        private bool selectcheckbox()
+        {
+
+
+            foreach (DataGridViewRow row in ConsecutiveDataGridView.Rows)
+            {
+                DataGridViewCheckBoxCell cell = (DataGridViewCheckBoxCell)row.Cells["checkboxColum"];
+
+                if (Convert.ToBoolean(cell.Value))
+                {
+                    MessageBox.Show("added consective session", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    return true;
+                }
+            }
+            MessageBox.Show("check the checkbox", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return false;
+
+        }
+
+        //load session------------------------------------------------------------------
+
+        public void loadconsectiverow()
+        {
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from consective", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            CondataGridView1.DataSource = dt;
+
+        }
+
+        //search session----------------------------------
+
+        private void materialTextBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (Searchconsectivecombo.Text == "ID")
+            {
+                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Id like '" + materialTextBox2.Text + "%'", con);
+                DataTable dt = new DataTable();
+
+
+                sda.Fill(dt);
+                ConsecutiveDataGridView.DataSource = dt;
+
+
+
+            }
+            else if (Searchconsectivecombo.Text == "Subject name")
+            {
+
+                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Subject like '" + materialTextBox2.Text + "%'", con);
+                DataTable dt = new DataTable();
+
+                sda.Fill(dt);
+
+                ConsecutiveDataGridView.DataSource = dt;
+            }
+        }
+
+
+        //====================================================-Add Parelle Sprint 2====================================================
+
+
+       
+        public void insertParrellSession()
+        {
+            if (checkselectcheckboxParelll())
+            {
+                foreach (DataGridViewRow dr in ParellDatagridview.Rows)
+                {
+
+
+                    bool checkboxselected = Convert.ToBoolean(dr.Cells["parallelCheckboxcolumn"].Value);
+                    if (checkboxselected)
+                    {
+
+                        con.Close();
+                        SqlCommand cmd = new SqlCommand("INSERT INTO parallelSession(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
+                        cmd.CommandType = CommandType.Text;
+                        cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
+                        cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
+                        cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
+                        cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
+                        cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
+                        cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
+                        cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
+
+
+
+                        con.Open();
+
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        loadParallelROw();
+
+                    }
+
+                }
+            }
+
+        }
+
+
+        //check parealll session-------------------------------------------------
+        private bool checkselectcheckboxParelll()
+        {
+
+
+            foreach (DataGridViewRow row in ParellDatagridview.Rows)
+            {
+                DataGridViewCheckBoxCell cell = (DataGridViewCheckBoxCell)row.Cells["parallelCheckboxcolumn"];
+
+                if (Convert.ToBoolean(cell.Value))
+                {
+                    MessageBox.Show("added Parallel session", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    return true;
+                }
+            }
+            MessageBox.Show("check the checkbox", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return false;
+
+        }
+
+        //load parell session
+
+        public void loadParallelROw()
+        {
+
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from parallelSession", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            PaldataGridView1.DataSource = dt;
+        }
+
+        //loadd sessions------------------------------------------
+        public void GetParrallSessionData()
+        {
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from session", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            ParellDatagridview.DataSource = dt;
+
+        }
+
+        //-------------------------------search parell session---------------------------------------
+        private void materialTextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+            if (materialComboBox2.Text == "ID")
+            {
+                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Id like '" + materialTextBox3.Text + "%'", con);
+                DataTable dt = new DataTable();
+
+
+                sda.Fill(dt);
+                ParellDatagridview.DataSource = dt;
+
+
+
+            }
+            else if (materialComboBox2.Text == "Subject name")
+            {
+
+                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Subject like '" + materialTextBox3.Text + "%'", con);
+                DataTable dt = new DataTable();
+
+                sda.Fill(dt);
+
+                ParellDatagridview.DataSource = dt;
+            }
+        }
+
+
+
+
+        //====================================================-Add -Non Overlapping Sprint 2====================================================
+
+       
+
+        public void insertNonoverlappingSession()
+        {
+            if (checkselectcheckboxNonooverlap())
+            {
+                foreach (DataGridViewRow dr in datagridviewcoloum.Rows)
+                {
+
+
+                    bool checkboxselected = Convert.ToBoolean(dr.Cells["Nonchecheckbox"].Value);
+                    if (checkboxselected)
+                    {
+
+                        con.Close();
+                        SqlCommand cmd = new SqlCommand("INSERT INTO nonoverlap(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
+                        cmd.CommandType = CommandType.Text;
+                        cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
+                        cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
+                        cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
+                        cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
+                        cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
+                        cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
+                        cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
+
+
+
+                        con.Open();
+
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        GetnonoverlappingData();
+
+                    }
+
+                }
+
+
+            }
+
+        }
+        //-----------check box check Non Overlapping  -------------------------------------------------------------------------------------------------
+
+
+        private bool checkselectcheckboxNonooverlap()
+        {
+
+
+            foreach (DataGridViewRow row in datagridviewcoloum.Rows)
+            {
+                DataGridViewCheckBoxCell cell = (DataGridViewCheckBoxCell)row.Cells["Nonchecheckbox"];
+
+                if (Convert.ToBoolean(cell.Value))
+                {
+                    MessageBox.Show("added overlapping session", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    return true;
+                }
+            }
+            MessageBox.Show("check the checkbox", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return false;
+
+        }
+
+        //----------load session Sprint 2-------------------------------------------------------------------------------------------------
+
+
+        public void GetnonoverlappingSession()
+        {
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from session", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            datagridviewcoloum.DataSource = dt;
+
+        }
+
+
+        //-----------retrive Non Overlapping ------------------------------------------------------------------------------------------------
+
+
+        public void GetnonoverlappingData()
+        {
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from nonoverlap", con);
+            DataTable dt = new DataTable();
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+
+            dt.Load(sdr);
+            con.Close();
+
+            NondataGridView1.DataSource = dt;
+        }
+        //--------------
 
 
 
@@ -1674,285 +2043,9 @@ namespace Time_Table_managemnt
             }
         }
 
-        public void getConsectivedata()
-        {
 
 
-
-
-
-            con.Close();
-            SqlCommand cmd = new SqlCommand("select * from session", con);
-            DataTable dt = new DataTable();
-            con.Open();
-            SqlDataReader sdr = cmd.ExecuteReader();
-
-            dt.Load(sdr);
-            con.Close();
-
-            ConsecutiveDataGridView.DataSource = dt;
-
-
-
-        }
-
-
-        //-----------Add Consective Sprint 2-------------------------------------------------------------------------------------------------
-
-
-        private void materialButton21_Click(object sender, EventArgs e)
-        {
-            foreach (DataGridViewRow dr in ConsecutiveDataGridView.Rows)
-            {
-
-
-                bool checkboxselected = Convert.ToBoolean(dr.Cells["checkboxColum"].Value);
-                if (checkboxselected)
-                {
-
-                    con.Close();
-                    SqlCommand cmd = new SqlCommand("INSERT INTO consective(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
-                    cmd.CommandType = CommandType.Text;
-                    cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
-                    cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
-                    cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
-                    cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
-                    cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
-                    cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
-                    cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
-
-
-
-                    con.Open();
-
-                    cmd.ExecuteNonQuery();
-                    con.Close();
-                    loadconsectiverow();
-
-                }
-
-            }
-            MessageBox.Show("added", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-        }
-
-        public void loadconsectiverow()
-        {
-            con.Close();
-            SqlCommand cmd = new SqlCommand("select * from consective", con);
-            DataTable dt = new DataTable();
-            con.Open();
-            SqlDataReader sdr = cmd.ExecuteReader();
-
-            dt.Load(sdr);
-            con.Close();
-
-            CondataGridView1.DataSource = dt;
-
-        }
-
-        private void materialTextBox2_TextChanged(object sender, EventArgs e)
-        {
-            if (Searchconsectivecombo.Text == "ID")
-            {
-                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Id like '" + materialTextBox2.Text + "%'", con);
-                DataTable dt = new DataTable();
-
-
-                sda.Fill(dt);
-                ConsecutiveDataGridView.DataSource = dt;
-
-
-
-            }
-            else if (Searchconsectivecombo.Text == "Subject name")
-            {
-
-                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Subject like '" + materialTextBox2.Text + "%'", con);
-                DataTable dt = new DataTable();
-
-                sda.Fill(dt);
-
-                ConsecutiveDataGridView.DataSource = dt;
-            }
-        }
-
-        //-----------Add Parelle= session Sprint 2-------------------------------------------------------------------------------------------------
-
-
-        public void insertParrellSession()
-        {
-
-            foreach (DataGridViewRow dr in ParellDatagridview.Rows)
-            {
-
-
-                bool checkboxselected = Convert.ToBoolean(dr.Cells["parallelCheckboxcolumn"].Value);
-                if (checkboxselected)
-                {
-
-                    con.Close();
-                    SqlCommand cmd = new SqlCommand("INSERT INTO parallelSession(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
-                    cmd.CommandType = CommandType.Text;
-                    cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
-                    cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
-                    cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
-                    cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
-                    cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
-                    cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
-                    cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
-
-
-
-                    con.Open();
-
-                    cmd.ExecuteNonQuery();
-                    con.Close();
-                    loadParallelROw();
-
-                }
-
-            }
-            MessageBox.Show("added", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-        }
-
-        public void loadParallelROw()
-        {
-
-
-            con.Close();
-            SqlCommand cmd = new SqlCommand("select * from parallelSession", con);
-            DataTable dt = new DataTable();
-            con.Open();
-            SqlDataReader sdr = cmd.ExecuteReader();
-
-            dt.Load(sdr);
-            con.Close();
-
-            PaldataGridView1.DataSource = dt;
-        }
-
-
-        public void GetParrallSessionData()
-        {
-
-            con.Close();
-            SqlCommand cmd = new SqlCommand("select * from session", con);
-            DataTable dt = new DataTable();
-            con.Open();
-            SqlDataReader sdr = cmd.ExecuteReader();
-
-            dt.Load(sdr);
-            con.Close();
-
-            ParellDatagridview.DataSource = dt;
-
-        }
-
-
-        private void materialTextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-            if (materialComboBox2.Text == "ID")
-            {
-                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Id like '" + materialTextBox3.Text + "%'", con);
-                DataTable dt = new DataTable();
-
-
-                sda.Fill(dt);
-                ParellDatagridview.DataSource = dt;
-
-
-
-            }
-            else if (materialComboBox2.Text == "Subject name")
-            {
-
-                SqlDataAdapter sda = new SqlDataAdapter("select * from session where Subject like '" + materialTextBox3.Text + "%'", con);
-                DataTable dt = new DataTable();
-
-                sda.Fill(dt);
-
-                ParellDatagridview.DataSource = dt;
-            }
-        }
-
-
-
-
-
-        //-----------Non Overlapping Sprint 2-------------------------------------------------------------------------------------------------
-
-
-        public void insertNonoverlappingSession()
-        {
-
-            foreach (DataGridViewRow dr in datagridviewcoloum.Rows)
-            {
-
-
-                bool checkboxselected = Convert.ToBoolean(dr.Cells["Nonchecheckbox"].Value);
-                if (checkboxselected)
-                {
-
-                    con.Close();
-                    SqlCommand cmd = new SqlCommand("INSERT INTO nonoverlap(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
-                    cmd.CommandType = CommandType.Text;
-                    cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
-                    cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
-                    cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
-                    cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
-                    cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
-                    cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
-                    cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
-
-
-
-                    con.Open();
-
-                    cmd.ExecuteNonQuery();
-                    con.Close();
-                    GetnonoverlappingData();
-
-                }
-
-            }
-            MessageBox.Show("added", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-        }
-
-        public void GetnonoverlappingSession()
-        {
-
-            con.Close();
-            SqlCommand cmd = new SqlCommand("select * from session", con);
-            DataTable dt = new DataTable();
-            con.Open();
-            SqlDataReader sdr = cmd.ExecuteReader();
-
-            dt.Load(sdr);
-            con.Close();
-
-            datagridviewcoloum.DataSource = dt;
-
-        }
-
-        public void GetnonoverlappingData()
-        {
-
-            con.Close();
-            SqlCommand cmd = new SqlCommand("select * from nonoverlap", con);
-            DataTable dt = new DataTable();
-            con.Open();
-            SqlDataReader sdr = cmd.ExecuteReader();
-
-            dt.Load(sdr);
-            con.Close();
-
-            NondataGridView1.DataSource = dt;
-        }
-        //------------------------------Location ADD Sprint2-------------------------------------------------------------
+//----------------Location ADD Sprint2-------------------------------------------------------------
         private void RefreshRoomBtn2_Click(object sender, EventArgs e)
         {
             con.Close();
@@ -2054,6 +2147,8 @@ namespace Time_Table_managemnt
             con.Close();
 
             SessionGridView1.DataSource = dt;
+
+            
         }
 
         private void selectsession()
@@ -2070,10 +2165,53 @@ namespace Time_Table_managemnt
             SessionGridView1.DataSource = dt;
         }
 
+        //session
+        private void materialButton6_Click(object sender, EventArgs e)
+        {
+            con.Close();
+            SqlCommand cmd = new SqlCommand("update SessionLocation set room = @room  where Id =@Id", con);
+            cmd.CommandType = CommandType.Text;
+
+            cmd.Parameters.AddWithValue("@room", materialTextBox32.Text);
+            cmd.Parameters.AddWithValue("@Id", this.SessionID);
+            con.Open();
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            MessageBox.Show("updated ");
+        }
+
+        //consective
+        private void materialButton10_Click(object sender, EventArgs e)
+        {
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("update consectvelocation set room = @room  where Id =@Id", con);
+            cmd.CommandType = CommandType.Text;
+
+            cmd.Parameters.AddWithValue("@room", materialTextBox32.Text);
+            cmd.Parameters.AddWithValue("@Id", this.SessionID);
+            con.Open();
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            MessageBox.Show("added ");
+
+        }
+        private void SessionGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SessionID = Convert.ToInt32(SessionGridView1.SelectedRows[0].Cells[0].Value);
+            materialTextBox31.Text = SessionGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            materialTextBox32.Text = SessionGridView1.SelectedRows[0].Cells[2].Value.ToString();
+
+        }
 
         private void materialButton7_Click_1(object sender, EventArgs e)
         {
             selectsession();
+            
         }
 
 
@@ -2389,7 +2527,7 @@ namespace Time_Table_managemnt
 
 
 
-
+       
         private void ManageLec_Click(object sender, EventArgs e)
         {
             paneManageLec.Show();
@@ -2405,6 +2543,7 @@ namespace Time_Table_managemnt
             Lecpanel2.Hide();
         }
 
+       
         private void managelecpic_Click(object sender, EventArgs e)
         {
             paneManageLec.Hide();
@@ -2621,5 +2760,7 @@ namespace Time_Table_managemnt
         {
             updatenotsessionpanel.Hide();
         }
+
+       
     }
 }
