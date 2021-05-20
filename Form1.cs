@@ -78,7 +78,10 @@ namespace Time_Table_managemnt
             AddLectureLocation();
             GetLocationCpnsective();
 
-
+            Getnootavalibletime();
+            loadComboLectureNames();
+            loadComboSessionID();
+            loadComboGroups();
         }
 
         private void EnableGropIDs()
@@ -197,7 +200,7 @@ namespace Time_Table_managemnt
                 }
             }
 
-
+            loadComboGroups();
         }
 
         private bool IsValidStudentsGroup()
@@ -1251,7 +1254,7 @@ namespace Time_Table_managemnt
             MessageBox.Show("Added ");
             getLecData();
             SelectedLectrues();
-
+            loadComboLectureNames();
 
         }
 
@@ -1930,7 +1933,7 @@ namespace Time_Table_managemnt
             getConsectivedata();
             GetParrallSessionData();
             GetnonoverlappingSession();
-
+            loadComboSessionID();
         }
 
         void sessiontable()
@@ -2761,6 +2764,197 @@ namespace Time_Table_managemnt
             updatenotsessionpanel.Hide();
         }
 
-       
-    }
+        //non overlap
+
+
+        private void loadComboLectureNames()
+        {
+            try
+            {
+                con.Open();
+                SqlDataAdapter da = new SqlDataAdapter("SELECT Lecname FROM Lecture", con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                //Console.WriteLine(dt.Rows.Count);
+                ANSmaterialComboBox10.Items.Clear();
+                foreach (DataRow row in dt.Rows)
+                {
+                    //Console.WriteLine(row[0].ToString());
+                    ANSmaterialComboBox10.Items.Add(row[0].ToString());
+                }
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void loadComboGroups()
+        {
+            try
+            {
+                con.Open();
+                SqlDataAdapter da = new SqlDataAdapter("SELECT GroupNumber,SubGroup FROM Students", con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                //Console.WriteLine(dt.Rows.Count);
+                ANSmaterialComboBox11.Items.Clear();
+                ANSmaterialComboBox12.Items.Clear();
+                foreach (DataRow row in dt.Rows)
+                {
+                    //Console.WriteLine(row[0].ToString());
+                    ANSmaterialComboBox11.Items.Add(row[0].ToString());
+                    ANSmaterialComboBox12.Items.Add(row[0].ToString());
+
+                }
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+
+        private void loadComboSessionID()
+        {
+            try
+            {
+                con.Open();
+                SqlDataAdapter da = new SqlDataAdapter("SELECT Id FROM session", con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                //Console.WriteLine(dt.Rows.Count);
+                ANSmaterialComboBox13.Items.Clear();
+                foreach (DataRow row in dt.Rows)
+                {
+                    //Console.WriteLine(row[0].ToString());
+                    ANSmaterialComboBox13.Items.Add(row[0].ToString());
+
+                }
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void ANSsubmitbut_Click(object sender, EventArgs e)
+		{
+            con.Close();
+            SqlCommand cmd = new SqlCommand("INSERT INTO SessionNotAvailable VALUES(@Lecturer, @Groups, @SubGroup, @SessionID, @Day, @Time)", con);
+            cmd.CommandType = CommandType.Text;
+
+            cmd.Parameters.AddWithValue("@Lecturer", ANSmaterialComboBox10.Text.ToString());
+            cmd.Parameters.AddWithValue("@Groups", ANSmaterialComboBox11.Text.ToString());
+            cmd.Parameters.AddWithValue("@SubGroup", ANSmaterialComboBox12.Text.ToString());
+            cmd.Parameters.AddWithValue("@SessionID", ANSmaterialComboBox13.Text.ToString());
+            cmd.Parameters.AddWithValue("@Day", ANSmaterialComboBox14.Text.ToString());
+            cmd.Parameters.AddWithValue("@Time", ANSmaterialComboBox26.Text.ToString());
+            con.Open();
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+
+            MessageBox.Show("added");
+            Getnootavalibletime();
+
+        }
+
+		private void Getnootavalibletime()
+        {
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from SessionNotAvailable", con);
+            DataTable dt = new DataTable();
+
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+
+
+            UNSdataGridView9.DataSource = dt;
+        }
+
+		private void ANSclearbut_Click(object sender, EventArgs e)
+		{
+            ANSmaterialComboBox10.SelectedIndex = -1;
+            ANSmaterialComboBox11.SelectedIndex = -1;
+            ANSmaterialComboBox12.SelectedIndex = -1;
+            ANSmaterialComboBox13.SelectedIndex = -1;
+            ANSmaterialComboBox14.SelectedIndex = -1;
+            ANSmaterialComboBox26.SelectedIndex = -1;
+        }
+
+		private void UNSupdatebut_Click(object sender, EventArgs e)
+		{
+            SqlCommand cmd = new SqlCommand("update   SessionNotAvailable set Lecturer=@Lecturer,Groups=@Groups,SubGroup=@SubGroup,SessionID=@SessionID,Day=@Day,Time=@Time where Id =@Id ", con);
+            cmd.CommandType = CommandType.Text;
+
+            cmd.Parameters.AddWithValue("@Lecturer", UNSmaterialTextBox33.Text.ToString());
+            cmd.Parameters.AddWithValue("@Groups", UNSmaterialTextBox36.Text.ToString());
+            cmd.Parameters.AddWithValue("@SubGroup", UNSmaterialTextBox35.Text.ToString());
+            cmd.Parameters.AddWithValue("@SessionID", UNSmaterialTextBox34.Text.ToString());
+            cmd.Parameters.AddWithValue("@Day", UNSmaterialTextBox37.Text.ToString());
+            cmd.Parameters.AddWithValue("@Time", UNSmaterialTextBox38.Text.ToString());
+            cmd.Parameters.AddWithValue("@Id", this.SessionID);
+            con.Open();
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+
+            MessageBox.Show("Update Successfully");
+
+            Getnootavalibletime();
+        }
+
+		private void UNSdataGridView9_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+            SessionID = Convert.ToInt32(UNSdataGridView9.SelectedRows[0].Cells[0].Value);
+            UNSmaterialTextBox33.Text = UNSdataGridView9.SelectedRows[0].Cells[1].Value.ToString();
+            UNSmaterialTextBox36.Text = UNSdataGridView9.SelectedRows[0].Cells[2].Value.ToString();
+            UNSmaterialTextBox35.Text = UNSdataGridView9.SelectedRows[0].Cells[3].Value.ToString();
+            UNSmaterialTextBox34.Text = UNSdataGridView9.SelectedRows[0].Cells[4].Value.ToString();
+            UNSmaterialTextBox37.Text = UNSdataGridView9.SelectedRows[0].Cells[5].Value.ToString();
+            UNSmaterialTextBox38.Text = UNSdataGridView9.SelectedRows[0].Cells[6].Value.ToString();
+        }
+
+		private void UNSrefreshbut_Click(object sender, EventArgs e)
+		{
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from SessionNotAvailable", con);
+            DataTable dt = new DataTable();
+
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+
+
+            UNSdataGridView9.DataSource = dt;
+        }
+
+		private void UNSdeletebut_Click(object sender, EventArgs e)
+		{
+            SqlCommand cmd = new SqlCommand("delete from SessionNotAvailable  where Id=@Id", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@Id", SessionID);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+
+            MessageBox.Show("deleted");
+        }
+	}
 }
