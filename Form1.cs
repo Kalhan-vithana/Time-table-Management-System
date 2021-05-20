@@ -2956,5 +2956,11 @@ namespace Time_Table_managemnt
 
             MessageBox.Show("deleted");
         }
-	}
+
+        private void materialButton11_Click(object sender, EventArgs e)
+        {
+            GroupID1.Text = AdecmicYear_ComboBox.Text + '.' + Programme_combo.Text + '.' + numericUpDown1.Value.ToString();
+            SubGroupsID.Text = AdecmicYear_ComboBox.Text + '.' + Programme_combo.Text + '.' + numericUpDown1.Value.ToString()+'.'+ numericUpDown2.Value.ToString();
+        }
+    }
 }
