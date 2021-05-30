@@ -220,22 +220,6 @@ C:\Users\HP\Desktop\New folder (6)\TIme-table-managemnt-System\obj\Debug\Time-Ta
 C:\Users\HP\Desktop\New folder (6)\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.csproj.CopyComplete
 C:\Users\HP\Desktop\New folder (6)\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.exe
 C:\Users\HP\Desktop\New folder (6)\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.pdb
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\bin\Debug\MYDatabase1.mdf
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\bin\Debug\MYDatabase1_log.ldf
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\bin\Debug\Time-Table-managemnt.exe.config
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\bin\Debug\Time-Table-managemnt.exe
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\bin\Debug\Time-Table-managemnt.pdb
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\bin\Debug\MaterialSkin.dll
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.csprojAssemblyReference.cache
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time_Table_managemnt.Form1.resources
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time_Table_managemnt.Home.resources
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time_Table_managemnt.Properties.Resources.resources
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time_Table_managemnt.Welcome.resources
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.csproj.GenerateResource.cache
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.csproj.CoreCompileInputs.cache
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.csproj.CopyComplete
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.exe
-C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.pdb
 C:\Users\ASUS\ansel\Desktop\New folder\Time-table-Management-System\bin\Debug\MYDatabase1.mdf
 C:\Users\ASUS\ansel\Desktop\New folder\Time-table-Management-System\bin\Debug\MYDatabase1_log.ldf
 C:\Users\ASUS\ansel\Desktop\New folder\Time-table-Management-System\bin\Debug\Time-Table-managemnt.exe.config
@@ -302,3 +286,23 @@ C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\obj\Debug\Time
 C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\obj\Debug\Time-Table-managemnt.csproj.CopyComplete
 C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\obj\Debug\Time-Table-managemnt.exe
 C:\Users\ASUS\ansel\Desktop\itpm TMS\Time-table-Management-System\obj\Debug\Time-Table-managemnt.pdb
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\bin\Debug\MYDatabase1.mdf
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\bin\Debug\MYDatabase1_log.ldf
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\bin\Debug\Time-Table-managemnt.exe.config
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\bin\Debug\Time-Table-managemnt.exe.manifest
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\bin\Debug\Time-Table-managemnt.application
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\bin\Debug\Time-Table-managemnt.exe
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\bin\Debug\Time-Table-managemnt.pdb
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\bin\Debug\MaterialSkin.dll
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time_Table_managemnt.Form1.resources
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time_Table_managemnt.Home.resources
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time_Table_managemnt.Properties.Resources.resources
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time_Table_managemnt.Welcome.resources
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.exe.manifest
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.application
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.csproj.CopyComplete
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.exe
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.pdb
+C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\obj\Debug\Time-Table-managemnt.csprojAssemblyReference.cache

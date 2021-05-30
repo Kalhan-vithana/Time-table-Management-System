@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
+using Time_Table_managemnt.Print;
 using Time_Table_managemnt.Tags;
 
 namespace Time_Table_managemnt
@@ -19,6 +21,8 @@ namespace Time_Table_managemnt
         public Form1()
         {
             InitializeComponent();
+
+          // Chart();
             materialskinmanager = MaterialSkin.MaterialSkinManager.Instance;
             materialskinmanager.EnforceBackcolorOnAllComponents = true;
             materialskinmanager.AddFormToManage(this);
@@ -33,10 +37,15 @@ namespace Time_Table_managemnt
         }
 
 
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\MYDatabase1.mdf;Integrated Security=True;");
 
 
         //database connection
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\MYDatabase1.mdf;Integrated Security=True");
+        // SqlConnection con = new SqlConnection(" Server=tcp:mysqlserver071.database.windows.net,1433;Initial Catalog = TimetableDB; Persist Security Info=False;User ID = azureuser; Password={your_password}; MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30");
+        //SqlConnection con = new SqlConnection("Server=tcp:mysqlserver071.database.windows.net,1433;Initial Catalog=TimetableDB;Persist Security Info=False;User ID=azureuser;Password=password@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+       // SqlConnection con = new SqlConnection("Server=tcp:itpmdbserver.database.windows.net,1433;Initial Catalog=itpmDB;Persist Security Info=False;User ID=user;Password=password@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
+
 
         public int studentID;
         public int TagID;
@@ -50,10 +59,11 @@ namespace Time_Table_managemnt
 
 
 
-            fillChart();
+            //fillChart();
             //method of hide all panels
             HidePanel();
-
+            Chart();
+            totalStdGrpCount();
 
             //change Tags and Add panale size 
             ChangeSizeTagPanel();
@@ -82,8 +92,222 @@ namespace Time_Table_managemnt
             loadComboLectureNames();
             loadComboSessionID();
             loadComboGroups();
+
+            SelectedLectrues();
+            selectSubject();
+            Getnotavaliblelocation();
+            selectedtags();
+
+
+
+            //Chart lec
+            totalLecGrpCount();
+            totalLecGrpRooms();
+            totalSub();
+            totalLec();
+            lettotalSub();
+            stdtotalSub();
+         
         }
 
+
+
+
+       private void Chart()
+        {
+
+            con.Close();
+            SqlCommand command = new SqlCommand();
+            command.Connection = con;
+
+            DataSet ds = new DataSet();
+            con.Open();
+            SqlDataAdapter adapt = new SqlDataAdapter("Select Lecname,COUNT(Id) as count from Lecture GROUP BY Lecname", con);
+            adapt.Fill(ds, "count");
+            chart1.DataSource = ds.Tables["count"];
+
+            chart1.Series["StudentsGroups"].XValueMember = "Lecname";
+            chart1.Series["StudentsGroups"].YValueMembers = "count";
+            chart1.Series["StudentsGroups"].ChartType = SeriesChartType.Pie;
+
+
+            chart1.DataBind();
+            con.Close();
+
+        }
+
+        private void totalStdGrpCount()
+        {
+
+
+            con.Close();
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT Lecname as grpcount FROM Lecture";
+            cmd.ExecuteNonQuery();
+            SqlDataReader dr;
+            dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                string grp_count = (string)dr["grpcount"].ToString();
+                materialTextBox9.Text = grp_count;
+
+
+            }
+            con.Close();
+
+        }
+
+
+        private void totalLecGrpCount()
+        {
+
+            con.Close();
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT COUNT(Id) as grpcount FROM Subject";
+            cmd.ExecuteNonQuery();
+            SqlDataReader dr;
+            dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                string grp_count = (string)dr["grpcount"].ToString();
+                materialTextBox5.Text = grp_count;
+
+
+            }
+            con.Close();
+
+        }
+
+
+        private void totalLecGrpRooms()
+        {
+
+       
+            con.Close();
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT COUNT(Id) as grpcount FROM SessionLocation";
+            cmd.ExecuteNonQuery();
+            SqlDataReader dr;
+            dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                string grp_count = (string)dr["grpcount"].ToString();
+                materialTextBox7.Text = grp_count;
+
+
+            }
+            con.Close();
+
+        }
+
+
+        private void totalSub()
+        {
+
+            
+
+            con.Close();
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT COUNT(Id) as grpcount FROM Lecture";
+            cmd.ExecuteNonQuery();
+            SqlDataReader dr;
+            dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                string grp_count = (string)dr["grpcount"].ToString();
+                materialTextBox8.Text = grp_count;
+
+
+            }
+            con.Close();
+
+        }
+
+        private void totalLec()
+        {
+
+
+
+            con.Close();
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT Lecname as grpcount FROM Lecture";
+            cmd.ExecuteNonQuery();
+            SqlDataReader dr;
+            dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                string grp_count = (string)dr["grpcount"].ToString();
+                materialTextBox11.Text = grp_count;
+
+
+            }
+            con.Close();
+
+        }
+
+        private void lettotalSub()
+        {
+
+
+
+            con.Close();
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT subjectname as grpcount FROM Subject";
+            cmd.ExecuteNonQuery();
+            SqlDataReader dr;
+            dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                string grp_count = (string)dr["grpcount"].ToString();
+                materialTextBox13.Text = grp_count;
+
+
+            }
+            con.Close();
+
+        }
+
+        private void stdtotalSub()
+        {
+
+          
+            con.Close();
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT GroupID as grpcount FROM students";
+            cmd.ExecuteNonQuery();
+            SqlDataReader dr;
+            dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                string grp_count = (string)dr["grpcount"].ToString();
+                materialTextBox12.Text = grp_count;
+
+
+            }
+            con.Close();
+
+        }
         private void EnableGropIDs()
         {
             GroupID1.Enabled = false;
@@ -151,6 +375,7 @@ namespace Time_Table_managemnt
 
         private void getStudents()
         {
+            con.Close();
             SqlCommand cmd = new SqlCommand("select * from Students", con);
             DataTable dt = new DataTable();
 
@@ -161,8 +386,6 @@ namespace Time_Table_managemnt
             con.Close();
 
             UpdateStudentdataGridView1.DataSource = dt;
-
-
         }
 
 
@@ -190,7 +413,7 @@ namespace Time_Table_managemnt
                 if(SID > 0)
                 {
                     MessageBox.Show("added sucesss", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    MessageBox.Show("please genarate your ID", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("you can see genarated ID in the view button", "sucessfull", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
@@ -201,6 +424,7 @@ namespace Time_Table_managemnt
             }
 
             loadComboGroups();
+           
         }
 
         private bool IsValidStudentsGroup()
@@ -742,15 +966,17 @@ namespace Time_Table_managemnt
                     {
 
                         con.Close();
-                        SqlCommand cmd = new SqlCommand("INSERT INTO consective(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
+                        SqlCommand cmd = new SqlCommand("INSERT INTO consective(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents,day) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents,@day)", con);
                         cmd.CommandType = CommandType.Text;
                         cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
                         cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
                         cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
                         cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
                         cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
-                        cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
-                        cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
+                        cmd.Parameters.AddWithValue("@Duration", dr.Cells[8].Value);
+                        cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[7].Value);
+                        cmd.Parameters.AddWithValue("@day", dr.Cells[9].Value);
+
 
 
 
@@ -856,15 +1082,16 @@ namespace Time_Table_managemnt
                     {
 
                         con.Close();
-                        SqlCommand cmd = new SqlCommand("INSERT INTO parallelSession(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
+                        SqlCommand cmd = new SqlCommand("INSERT INTO parallelSession(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents,day) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents,@day)", con);
                         cmd.CommandType = CommandType.Text;
                         cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
                         cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
                         cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
                         cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
                         cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
-                        cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
-                        cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
+                        cmd.Parameters.AddWithValue("@Duration", dr.Cells[8].Value);
+                        cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[7].Value);
+                        cmd.Parameters.AddWithValue("@day", dr.Cells[9].Value);
 
 
 
@@ -986,16 +1213,16 @@ namespace Time_Table_managemnt
                     {
 
                         con.Close();
-                        SqlCommand cmd = new SqlCommand("INSERT INTO nonoverlap(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
+                        SqlCommand cmd = new SqlCommand("INSERT INTO nonoverlap(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents,day) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents,@day)", con);
                         cmd.CommandType = CommandType.Text;
                         cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
                         cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
                         cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
                         cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
                         cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
-                        cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
-                        cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
-
+                        cmd.Parameters.AddWithValue("@Duration", dr.Cells[8].Value);
+                        cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[7].Value);
+                        cmd.Parameters.AddWithValue("@day", dr.Cells[9].Value);
 
 
                         con.Open();
@@ -1142,6 +1369,18 @@ namespace Time_Table_managemnt
 
         }
 
+
+
+        private void materialButtonManage_Click_2(object sender, EventArgs e)
+        {
+            OfferdYear.Text = "";
+            offerdSem.Text = "";
+            Subjectname.Text = "";
+            SubjectCode.Text = "";
+
+
+
+        }
 
         /*============================================  select Subjects =============================================================================== */
 
@@ -1712,11 +1951,11 @@ namespace Time_Table_managemnt
             cmd.CommandType = CommandType.Text;
 
             cmd.Parameters.AddWithValue("@BuildingName", materialTextBox14.Text);
-            cmd.Parameters.AddWithValue("@RoomName", materialTextBox1.Text);
-            cmd.Parameters.AddWithValue("@Capacity", materialTextBox6.Text);
+            cmd.Parameters.AddWithValue("@RoomName", materialTextBox6.Text);
+            cmd.Parameters.AddWithValue("@Capacity", materialTextBox1.Text);
+           
 
             cmd.Parameters.AddWithValue("@RoomType", Lab);
-
 
 
             con.Open();
@@ -1725,7 +1964,7 @@ namespace Time_Table_managemnt
             con.Close();
 
             getLocationdata();
-
+            MessageBox.Show("added");
 
         }
 
@@ -1761,9 +2000,10 @@ namespace Time_Table_managemnt
 
         private void ManagedataGridView_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
+            
             LocationID = Convert.ToInt32(ManagedataGridView.SelectedRows[0].Cells[0].Value);
-            materialTextBox16.Text = ManagedataGridView.SelectedRows[0].Cells[1].Value.ToString();
-            materialTextBox17.Text = ManagedataGridView.SelectedRows[0].Cells[2].Value.ToString();
+            materialTextBox17.Text = ManagedataGridView.SelectedRows[0].Cells[1].Value.ToString();
+            materialTextBox16.Text = ManagedataGridView.SelectedRows[0].Cells[2].Value.ToString();
             materialTextBox15.Text = ManagedataGridView.SelectedRows[0].Cells[3].Value.ToString();
             materialComboBox4.Text = ManagedataGridView.SelectedRows[0].Cells[4].Value.ToString();
 
@@ -1779,8 +2019,8 @@ namespace Time_Table_managemnt
             SqlCommand cmd = new SqlCommand("update  Location set  BuildingName=@BuildingName,RoomName=@RoomName,Capacity=@Capacity,RoomType=@RoomType where Id=@Id", con);
             cmd.CommandType = CommandType.Text;
 
-            cmd.Parameters.AddWithValue("@BuildingName", materialTextBox16.Text);
-            cmd.Parameters.AddWithValue("@RoomName", materialTextBox17.Text);
+            cmd.Parameters.AddWithValue("@BuildingName", materialTextBox17.Text);
+            cmd.Parameters.AddWithValue("@RoomName", materialTextBox16.Text);
             cmd.Parameters.AddWithValue("@Capacity", materialTextBox15.Text);
 
             cmd.Parameters.AddWithValue("@RoomType", materialComboBox4.Text);
@@ -1808,7 +2048,7 @@ namespace Time_Table_managemnt
 
             SqlCommand cmd = new SqlCommand("delete from Location  where Id=@Id", con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.AddWithValue("@Id", SubjectID);
+            cmd.Parameters.AddWithValue("@Id", LocationID);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
@@ -1842,17 +2082,21 @@ namespace Time_Table_managemnt
         {
 
 
-            SqlCommand cmd = new SqlCommand("select * from  Lecture", con);
+            SqlCommand cmd = new SqlCommand("select distinct Lecname from  Lecture", con);
             DataTable dt = new DataTable();
 
             con.Open();
             SqlDataReader sdr = cmd.ExecuteReader();
+
+            materialComboBox28.Items.Clear();
+            materialComboBox5.Items.Clear();
             while (sdr.Read())
             {
-                materialComboBox28.Items.Add(sdr.GetValue(1).ToString());
+                materialComboBox28.Items.Add(sdr.GetValue(0).ToString());
+                materialComboBox5.Items.Add(sdr.GetValue(0).ToString());
 
-                materialComboBox28.Text = "";
-                materialTextBox21.Text = materialComboBox28.Text;
+                //materialComboBox28.Text = "";
+                //materialTextBox21.Text = materialComboBox28.Text;
             }
 
 
@@ -1868,14 +2112,15 @@ namespace Time_Table_managemnt
         void selectedtags()
         {
             con.Close();
-            SqlCommand cmd = new SqlCommand("select * from  Tags", con);
+            SqlCommand cmd = new SqlCommand("select distinct SubjectName from  Tags", con);
             DataTable dt = new DataTable();
 
             con.Open();
             SqlDataReader sdr = cmd.ExecuteReader();
+            materialComboBox31.Items.Clear();
             while (sdr.Read())
             {
-                materialComboBox31.Items.Add(sdr.GetValue(1).ToString());
+                materialComboBox31.Items.Add(sdr.GetValue(0).ToString());
             }
 
 
@@ -1887,14 +2132,17 @@ namespace Time_Table_managemnt
         void selectSubject()
         {
             con.Close();
-            SqlCommand cmd = new SqlCommand("select * from  Subject", con);
+            SqlCommand cmd = new SqlCommand("select distinct subjectname from  Subject", con);
             DataTable dt = new DataTable();
-
-            con.Open();
+           // distinct subjectname from Subject
+           con.Open();
             SqlDataReader sdr = cmd.ExecuteReader();
+
+            materialComboBox29.Items.Clear();
             while (sdr.Read())
             {
-                materialComboBox29.Items.Add(sdr.GetValue(5).ToString());
+                materialComboBox29.Items.Add(sdr.GetValue(0).ToString());
+
             }
 
 
@@ -1909,16 +2157,16 @@ namespace Time_Table_managemnt
 
 
             con.Close();
-            SqlCommand cmd = new SqlCommand("INSERT INTO session(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
+            SqlCommand cmd = new SqlCommand("INSERT INTO session(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents,day) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents,@day)", con);
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@Lecture", materialComboBox28.Text);
             cmd.Parameters.AddWithValue("@Tags", materialComboBox31.Text);
             cmd.Parameters.AddWithValue("@SubjectCode", materialTextBox10.Text);
             cmd.Parameters.AddWithValue("@Groups", materialComboBox30.Text);
-            cmd.Parameters.AddWithValue("@Subject", materialComboBox29.Text);
-            cmd.Parameters.AddWithValue("@Duration", materialTextBox19.Text);
-            cmd.Parameters.AddWithValue("@NumofStudents", materialTextBox20.Text);
-
+            cmd.Parameters.AddWithValue("@Subject", materialComboBox29.Text); 
+            cmd.Parameters.AddWithValue("@Duration", DumaterialComboBox1.Text);
+            cmd.Parameters.AddWithValue("@NumofStudents", materialTextBox19.Text);
+            cmd.Parameters.AddWithValue("@day", DaymaterialComboBox9.Text);
 
 
             con.Open();
@@ -1964,6 +2212,8 @@ namespace Time_Table_managemnt
             materialTextBox26.Text = dataGridView9.SelectedRows[0].Cells[5].Value.ToString();
             materialTextBox28.Text = dataGridView9.SelectedRows[0].Cells[6].Value.ToString();
             materialTextBox29.Text = dataGridView9.SelectedRows[0].Cells[7].Value.ToString();
+            materialTextBox20.Text = dataGridView9.SelectedRows[0].Cells[8].Value.ToString();
+
 
         }
 
@@ -1973,7 +2223,7 @@ namespace Time_Table_managemnt
 
 
             con.Close();
-            SqlCommand cmd = new SqlCommand("update session set Lecture=@Lecture,Tags=@Tags,SubjectCode=@SubjectCode,Groups=@Groups,Subject=@Subject,Duration=@Duration,NumofStudents=@NumofStudents where Id =@Id", con);
+            SqlCommand cmd = new SqlCommand("update session set Lecture=@Lecture,Tags=@Tags,SubjectCode=@SubjectCode,Groups=@Groups,Subject=@Subject,Duration=@Duration,NumofStudents=@NumofStudents,day=@day where Id =@Id", con);
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@Lecture", materialTextBox18.Text);
             cmd.Parameters.AddWithValue("@Tags", materialTextBox22.Text);
@@ -1982,6 +2232,7 @@ namespace Time_Table_managemnt
             cmd.Parameters.AddWithValue("@Subject", materialTextBox26.Text);
             cmd.Parameters.AddWithValue("@Duration", materialTextBox28.Text);
             cmd.Parameters.AddWithValue("@NumofStudents", materialTextBox29.Text);
+            cmd.Parameters.AddWithValue("@day", materialTextBox20.Text);
             cmd.Parameters.AddWithValue("@Id", SessionID);
 
 
@@ -2046,9 +2297,29 @@ namespace Time_Table_managemnt
             }
         }
 
+        //---------------session clear------------------------
+
+        private void AddSessionClear_Click(object sender, EventArgs e)
+        {
+
+            materialComboBox28.SelectedIndex = -1;
+            materialComboBox31.SelectedIndex = -1;
+            materialTextBox10.Text = "";
+            materialComboBox30.SelectedIndex = -1;
+            materialComboBox29.SelectedIndex = -1;
+            DumaterialComboBox1.SelectedIndex = -1;
+            materialTextBox19.Text = "";
+            DaymaterialComboBox9.SelectedIndex = -1;
 
 
-//----------------Location ADD Sprint2-------------------------------------------------------------
+
+        }
+
+
+
+
+
+        //----------------Location ADD Sprint2-------------------------------------------------------------
         private void RefreshRoomBtn2_Click(object sender, EventArgs e)
         {
             con.Close();
@@ -2076,16 +2347,18 @@ namespace Time_Table_managemnt
                 {
 
                     con.Close();
-                    SqlCommand cmd = new SqlCommand("INSERT INTO SessionLocation(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents)", con);
+                    SqlCommand cmd = new SqlCommand("INSERT INTO SessionLocation(Lecture,Tags,SubjectCode,Groups,Subject,Duration,NumofStudents,day) values(@Lecture,@Tags,@SubjectCode,@Groups,@Subject,@Duration,@NumofStudents,@day)", con);
                     cmd.CommandType = CommandType.Text;
                     cmd.Parameters.AddWithValue("@Lecture", dr.Cells[2].Value);
                     cmd.Parameters.AddWithValue("@Tags", dr.Cells[3].Value);
                     cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
                     cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
                     cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
-                    cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
-                    cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
-                    
+                    cmd.Parameters.AddWithValue("@Duration", dr.Cells[8].Value);
+                    cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[7].Value);
+                    cmd.Parameters.AddWithValue("@day", dr.Cells[9].Value);
+
+
 
 
 
@@ -2120,8 +2393,8 @@ namespace Time_Table_managemnt
                     cmd.Parameters.AddWithValue("@SubjectCode", dr.Cells[4].Value);
                     cmd.Parameters.AddWithValue("@Groups", dr.Cells[5].Value);
                     cmd.Parameters.AddWithValue("@Subject", dr.Cells[6].Value);
-                    cmd.Parameters.AddWithValue("@Duration", dr.Cells[7].Value);
-                    cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[8].Value);
+                    cmd.Parameters.AddWithValue("@Duration", dr.Cells[8].Value);
+                    cmd.Parameters.AddWithValue("@NumofStudents", dr.Cells[7].Value);
 
 
 
@@ -2712,13 +2985,14 @@ namespace Time_Table_managemnt
             Palpanel2.Hide();
             Nonpanel3.Hide();
             updatenotsessionpanel.Hide();
+            locnotavailpanel2.Hide();
         }
 
         private void materialTextBox21_TextChanged(object sender, EventArgs e)
         {
 
             materialComboBox28.Text = "";
-            materialTextBox21.Text = materialComboBox28.Text;
+            //materialTextBox21.Text = materialComboBox28.Text;
         }
 
         private void ConpictureBox14_Click(object sender, EventArgs e)
@@ -2881,7 +3155,7 @@ namespace Time_Table_managemnt
             con.Close();
 
 
-            UNSdataGridView9.DataSource = dt;
+            UNSdataGridView91.DataSource = dt;
         }
 
 		private void ANSclearbut_Click(object sender, EventArgs e)
@@ -2920,13 +3194,13 @@ namespace Time_Table_managemnt
 		private void UNSdataGridView9_CellClick(object sender, DataGridViewCellEventArgs e)
 		{
 
-            SessionID = Convert.ToInt32(UNSdataGridView9.SelectedRows[0].Cells[0].Value);
-            UNSmaterialTextBox33.Text = UNSdataGridView9.SelectedRows[0].Cells[1].Value.ToString();
-            UNSmaterialTextBox36.Text = UNSdataGridView9.SelectedRows[0].Cells[2].Value.ToString();
-            UNSmaterialTextBox35.Text = UNSdataGridView9.SelectedRows[0].Cells[3].Value.ToString();
-            UNSmaterialTextBox34.Text = UNSdataGridView9.SelectedRows[0].Cells[4].Value.ToString();
-            UNSmaterialTextBox37.Text = UNSdataGridView9.SelectedRows[0].Cells[5].Value.ToString();
-            UNSmaterialTextBox38.Text = UNSdataGridView9.SelectedRows[0].Cells[6].Value.ToString();
+            SessionID = Convert.ToInt32(UNSdataGridView91.SelectedRows[0].Cells[0].Value);
+            UNSmaterialTextBox33.Text = UNSdataGridView91.SelectedRows[0].Cells[1].Value.ToString();
+            UNSmaterialTextBox36.Text = UNSdataGridView91.SelectedRows[0].Cells[2].Value.ToString();
+            UNSmaterialTextBox35.Text = UNSdataGridView91.SelectedRows[0].Cells[3].Value.ToString();
+            UNSmaterialTextBox34.Text = UNSdataGridView91.SelectedRows[0].Cells[4].Value.ToString();
+            UNSmaterialTextBox37.Text = UNSdataGridView91.SelectedRows[0].Cells[5].Value.ToString();
+            UNSmaterialTextBox38.Text = UNSdataGridView91.SelectedRows[0].Cells[6].Value.ToString();
         }
 
 		private void UNSrefreshbut_Click(object sender, EventArgs e)
@@ -2941,7 +3215,7 @@ namespace Time_Table_managemnt
             con.Close();
 
 
-            UNSdataGridView9.DataSource = dt;
+            UNSdataGridView91.DataSource = dt;
         }
 
 		private void UNSdeletebut_Click(object sender, EventArgs e)
@@ -2962,5 +3236,494 @@ namespace Time_Table_managemnt
             GroupID1.Text = AdecmicYear_ComboBox.Text + '.' + Programme_combo.Text + '.' + numericUpDown1.Value.ToString();
             SubGroupsID.Text = AdecmicYear_ComboBox.Text + '.' + Programme_combo.Text + '.' + numericUpDown1.Value.ToString()+'.'+ numericUpDown2.Value.ToString();
         }
+
+        private void materialButton3_Click_1(object sender, EventArgs e)
+        {
+            genTimeTable(null);
+           
+
+        }
+
+        private void genTimeTable(string value)
+        {
+
+            
+            string query1 = null;
+            if (value == null)
+            {
+                query1 = "select Lecture,Tags,Groups,Subject,Duration,day,Subject from session order by Duration ";
+            }
+            else
+            {
+                query1 = "select Lecture,Tags,Groups,Subject,Duration,day,Subject from session where Lecture LIKE '%" + value + "%' order by Duration";
+            }
+
+            SqlCommand cmd = new SqlCommand(query1, con);
+            con.Open();
+            DataTable dt = new DataTable();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+
+            con.Close();
+
+           
+
+            DataTable newData = new DataTable();
+
+            newData.Columns.Add("Time", typeof(String));
+            newData.Columns.Add("Monday", typeof(String));
+            newData.Columns.Add("Tuesday", typeof(String));
+            newData.Columns.Add("Wednesday", typeof(String));
+            newData.Columns.Add("Thursday", typeof(String));
+            newData.Columns.Add("Friday", typeof(String));
+            newData.Columns.Add("Saturday", typeof(String));
+            newData.Columns.Add("Sunday", typeof(String));
+
+            String[] timeSlot = new String[] { "08.30-09.30", "09.30-10.30", "10.30-11.30", "11.30-12.30", "12.30-1.30", "01.30-02.30", "02.30-03.30", "03.30-04.30", "04.30-05.30" };
+
+            for (int i = 0; i < timeSlot.Length; i++)
+            {
+                newData.Rows.Add(new object[] { timeSlot[i], "--", "--", "--", "--", "--", "--", "--" });
+            }
+
+            foreach (DataRow row in dt.Rows)
+            {
+                string ss = row[0] + ":" + row[1] + ":" + row[2] + ":" + row[3] + ":" + row[4] + ":" + row[5];
+                string col = null;
+
+                if (row[5].Equals("Monday"))
+                {
+                    col = "Monday";
+                }
+                else if (row[5].Equals("Tuesday"))
+                {
+                    col = "Tuesday";
+                }
+                else if (row[5].Equals("Wednesday"))
+                {
+                    col = "Wednesday";
+                }
+                else if (row[5].Equals("Thursday"))
+                {
+                    col = "Thursday";
+           }
+                else if (row[5].Equals("Friday"))
+                {
+                    col = "Friday";
+                }
+
+                else if (row[5].Equals("Saturday"))
+                {
+                    col = "Saturday";
+                }
+
+
+                else if (row[5].Equals("Sunday"))
+                {
+                    col = "Sunday";
+                }
+
+
+                for (int i = 0; i < timeSlot.Length; i++)
+                {
+                    if (row[4].Equals(timeSlot[i]))
+                    {
+                        newData.Rows[i][col] = ss;
+                        break;
+                    }
+                }
+            }
+
+            LecGridView1.DataSource = newData;
+            
+           
+        }
+
+        private void materialButton18_Click(object sender, EventArgs e)
+        {
+            genGroupTime(null);
+            
+        }
+
+        private void genGroupTime(string value)
+        {
+            String query1;
+            if (value == null)
+            {
+                query1 = "select Lecture,Tags,Groups,Subject,Duration,day,Subject from session order by Duration ";
+            }
+            else
+            {
+                query1 = "select Lecture,Tags,Groups,Subject,Duration,day,Subject from session where Groups = '" + value+"' order by Duration";
+            }  
+
+
+
+            SqlCommand cmd = new SqlCommand(query1, con);
+            con.Open();
+            DataTable dt = new DataTable();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+
+            con.Close();
+
+            DataTable newData = new DataTable();
+
+            newData.Columns.Add("Time", typeof(String));
+            newData.Columns.Add("Monday", typeof(String));
+            newData.Columns.Add("Tuesday", typeof(String));
+            newData.Columns.Add("Wednesday", typeof(String));
+            newData.Columns.Add("Thursday", typeof(String));
+            newData.Columns.Add("Friday", typeof(String));
+            newData.Columns.Add("Saturday", typeof(String));
+            newData.Columns.Add("Sunday", typeof(String));
+
+            String[] timeSlot = new String[] { "08.30-09.30", "09.30-10.30", "10.30-11.30", "11.30-12.30", "12.30-1.30", "01.30-02.30", "02.30-03.30", "03.30-04.30", "04.30-05.30" };
+
+            for (int i = 0; i < timeSlot.Length; i++)
+            {
+                newData.Rows.Add(new object[] { timeSlot[i], "--", "--", "--", "--", "--", "--", "--" });
+            }
+
+            foreach (DataRow row in dt.Rows)
+            {
+                string ss = row[0] + ":" + row[1] + ":" + row[2] + ":" + row[3] + ":" + row[4] + ":" + row[5];
+                string col = null;
+
+                if (row[5].Equals("Monday"))
+                {
+                    col = "Monday";
+                }
+                else if (row[5].Equals("Tuesday"))
+                {
+                    col = "Tuesday";
+                }
+                else if (row[5].Equals("Wednesday"))
+                {
+                    col = "Wednesday";
+                }
+                else if (row[5].Equals("Thursday"))
+                {
+                    col = "Thursday";
+                }
+                else if (row[5].Equals("Friday"))
+                {
+                    col = "Friday";
+                }
+
+                else if (row[5].Equals("Saturday"))
+                {
+                    col = "Saturday";
+                }
+
+
+                else if (row[5].Equals("Sunday"))
+                {
+                    col = "Sunday";
+                }
+
+                for (int i = 0; i < timeSlot.Length; i++)
+                {
+                    if (row[4].Equals(timeSlot[i]))
+                    {
+                        newData.Rows[i][col] = ss;
+                        break;
+                    }
+                }
+            }
+
+            StudentsdataGridView1.DataSource = newData;
+        }
+
+
+        private void materialButton20_Click(object sender, EventArgs e)
+        {
+            genSubjectTime(null);
+            
+        }
+
+        private void genSubjectTime(string value)
+        {
+            String query1;
+            if (value == null)
+            {
+                query1 = "select Lecture,Tags,Groups,Subject,Duration,day,Subject from session order by Duration ";
+            }
+            else
+            {
+                query1 = "select Lecture,Tags,Groups,Subject,Duration,day,Subject from session where Subject ='" + value+"' order by Duration ";
+            }
+
+
+            SqlCommand cmd = new SqlCommand(query1, con);
+            con.Open();
+            DataTable dt = new DataTable();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+
+            con.Close();
+
+            DataTable newData = new DataTable();
+
+            newData.Columns.Add("Time", typeof(String));
+            newData.Columns.Add("Monday", typeof(String));
+            newData.Columns.Add("Tuesday", typeof(String));
+            newData.Columns.Add("Wednesday", typeof(String));
+            newData.Columns.Add("Thursday", typeof(String));
+            newData.Columns.Add("Friday", typeof(String));
+            newData.Columns.Add("Saturday", typeof(String));
+            newData.Columns.Add("Sunday", typeof(String));
+
+            String[] timeSlot = new String[] { "08.30-09.30", "09.30-10.30", "10.30-11.30", "11.30-12.30", "12.30-1.30", "01.30-02.30", "02.30-03.30", "03.30-04.30", "04.30-05.30" };
+
+            for (int i = 0; i < timeSlot.Length; i++)
+            {
+                newData.Rows.Add(new object[] { timeSlot[i], "--", "--", "--", "--", "--", "--", "--" });
+            }
+
+            foreach (DataRow row in dt.Rows)
+            {
+                string ss = row[0] + ":" + row[1] + ":" + row[2] + ":" + row[3] + ":" + row[4] + ":" + row[5];
+                string col = null;
+
+                if (row[5].Equals("Monday"))
+                {
+                    col = "Monday";
+                }
+                else if (row[5].Equals("Tuesday"))
+                {
+                    col = "Tuesday";
+                }
+                else if (row[5].Equals("Wednesday"))
+                {
+                    col = "Wednesday";
+                }
+                else if (row[5].Equals("Thursday"))
+                {
+                    col = "Thursday";
+                }
+                else if (row[5].Equals("Friday"))
+                {
+                    col = "Friday";
+                }
+                else if (row[5].Equals("Saturday"))
+                {
+                    col = "Saturday";
+                }
+
+
+                else if (row[5].Equals("Sunday"))
+                {
+                    col = "Sunday";
+                }
+
+                for (int i = 0; i < timeSlot.Length; i++)
+                {
+                    if (row[4].Equals(timeSlot[i]))
+                    {
+                        newData.Rows[i][col] = ss;
+                        break;
+                    }
+                }
+            }
+
+            LoacadataGridView1.DataSource = newData;
+        }
+
+        private void materialComboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            genTimeTable(materialComboBox5.Items[materialComboBox5.SelectedIndex].ToString());
+        }
+
+        private void materialComboBox6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            genGroupTime(materialComboBox6.Items[materialComboBox6.SelectedIndex].ToString());
+        }
+
+        private void materialComboBox7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            genSubjectTime(materialComboBox7.Items[materialComboBox7.SelectedIndex].ToString());
+        }
+
+        private void locnotavailviewbut_Click(object sender, EventArgs e)
+        {
+            locnotavailpanel2.Show();
+            locnotavailpanel2.BringToFront();
+            
+
+        }
+        //add not avalibe time
+        private void locnotavailaddbut_Click(object sender, EventArgs e)
+        {
+            
+            con.Close();
+            SqlCommand cmd = new SqlCommand("INSERT INTO NotAvailableLocation(Room,Day,StartTime,EndTime) VALUES(@Room,@Day,@StartTime,@EndTime)", con);
+            cmd.CommandType = CommandType.Text;
+
+            cmd.Parameters.AddWithValue("@Room", ANLmaterialComboBox12.Text.ToString());
+            cmd.Parameters.AddWithValue("@Day", ANLmaterialComboBox13.Text.ToString());
+            cmd.Parameters.AddWithValue("@StartTime", ANLmaterialComboBox1.Text.ToString());
+            cmd.Parameters.AddWithValue("@EndTime", ANLmaterialComboBox9.Text.ToString());
+            con.Open();
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+
+            MessageBox.Show("Successfully Added");
+           
+
+
+        }
+
+        private void locnotavailupdatebut_Click(object sender, EventArgs e)
+        {
+
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("update NotAvailableLocation set Room=@Room,Day=@Day,StartTime=@StartTime,EndTime=@EndTime where Id =@Id ", con);
+            cmd.CommandType = CommandType.Text;
+
+            cmd.Parameters.AddWithValue("@Room", INAmaterialTextBox33.Text.ToString());
+            cmd.Parameters.AddWithValue("@Day", INAmaterialTextBox34.Text.ToString());
+            cmd.Parameters.AddWithValue("@StartTime", INAmaterialTextBox35.Text.ToString());
+            cmd.Parameters.AddWithValue("@EndTime", INAmaterialTextBox36.Text.ToString());
+            cmd.Parameters.AddWithValue("@Id", this.LocationID);
+            con.Open();
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+
+            MessageBox.Show("Update Successfully");
+
+            Getnotavaliblelocation();
+        }
+
+        private void locnotavailrefreshbut_Click(object sender, EventArgs e)
+        {
+
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from NotAvailableLocation", con);
+            DataTable dt = new DataTable();
+
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+
+
+            reqdataGridView9.DataSource = dt;
+        }
+
+        private void locnotavaildeletebut_Click(object sender, EventArgs e)
+        {
+            con.Close();
+            SqlCommand cmd = new SqlCommand("delete from NotAvailableLocation where Id=@Id", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@Id", LocationID);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+
+            MessageBox.Show("Deleted");
+
+        }
+
+        private void reqdataGridView9_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+
+            LocationID = Convert.ToInt32(reqdataGridView9.SelectedRows[0].Cells[0].Value);
+            INAmaterialTextBox33.Text = reqdataGridView9.SelectedRows[0].Cells[1].Value.ToString();
+            INAmaterialTextBox34.Text = reqdataGridView9.SelectedRows[0].Cells[2].Value.ToString();
+            INAmaterialTextBox35.Text = reqdataGridView9.SelectedRows[0].Cells[3].Value.ToString();
+            INAmaterialTextBox36.Text = reqdataGridView9.SelectedRows[0].Cells[3].Value.ToString();
+        }
+
+        private void UNSdataGridView91_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SessionID = Convert.ToInt32(UNSdataGridView91.SelectedRows[0].Cells[0].Value);
+            UNSmaterialTextBox33.Text = UNSdataGridView91.SelectedRows[0].Cells[1].Value.ToString();
+            UNSmaterialTextBox36.Text = UNSdataGridView91.SelectedRows[0].Cells[2].Value.ToString();
+            UNSmaterialTextBox35.Text = UNSdataGridView91.SelectedRows[0].Cells[3].Value.ToString();
+            UNSmaterialTextBox34.Text = UNSdataGridView91.SelectedRows[0].Cells[4].Value.ToString();
+            UNSmaterialTextBox37.Text = UNSdataGridView91.SelectedRows[0].Cells[5].Value.ToString();
+            UNSmaterialTextBox38.Text = UNSdataGridView91.SelectedRows[0].Cells[6].Value.ToString();
+        }
+
+        private void loadComboNotRoom()
+        {
+            try
+            {
+                con.Close();
+                con.Open();
+                SqlDataAdapter da = new SqlDataAdapter("SELECT RoomName FROM Location", con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                //Console.WriteLine(dt.Rows.Count);
+                ANLmaterialComboBox12.Items.Clear();
+                foreach (DataRow row in dt.Rows)
+                {
+                    //Console.WriteLine(row[0].ToString());
+                    ANLmaterialComboBox12.Items.Add(row[0].ToString());
+                }
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void Getnotavaliblelocation()
+        {
+          
+           con.Close();
+            SqlCommand cmd = new SqlCommand("select * from NotAvailableLocation", con);
+            DataTable dt = new DataTable();
+
+            con.Open();
+            SqlDataReader sdr = cmd.ExecuteReader();
+            dt.Load(sdr);
+            con.Close();
+
+            reqdataGridView9.DataSource = dt;
+        }
+
+        private void locnotavailpicbox_Click(object sender, EventArgs e)
+        {
+            locnotavailpanel2.Hide();
+        }
+
+        private void materialButton16_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Time Table";
+          //  printer.SubTitle = string.Format("Date: {0}", DateTime.Now.Date.ToString("MM/dd/yyyy"));
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "SLIIT";
+            printer.FooterSpacing = 15;
+            printer.printDocument.DefaultPageSettings.Landscape = true;
+            printer.PrintDataGridView(LecdataGridView);
+        }
+
+        private void materialButtonManage_Click_1(object sender, EventArgs e)
+        {
+            offerdSem.Text = "";
+            Subjectname.Text = "";
+            SubjectCode.Text = "";
+           
+        }
+
+       
     }
+
 }

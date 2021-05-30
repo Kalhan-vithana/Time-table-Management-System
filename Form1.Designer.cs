@@ -31,27 +31,33 @@ namespace Time_Table_managemnt
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Logopanel2 = new System.Windows.Forms.Panel();
@@ -168,6 +174,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector4 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl5 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.materialButton11 = new MaterialSkin.Controls.MaterialButton();
             this.GenarateIDPanel = new System.Windows.Forms.Panel();
             this.materialTabSelector9 = new MaterialSkin.Controls.MaterialTabSelector();
             this.GenarateIDmaterialTabControl8 = new MaterialSkin.Controls.MaterialTabControl();
@@ -310,6 +317,8 @@ namespace Time_Table_managemnt
             this.materialTabSelectorManageSession = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControlManageSession = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage27 = new System.Windows.Forms.TabPage();
+            this.materialLabel72 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialTextBox20 = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel88 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel87 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel86 = new MaterialSkin.Controls.MaterialLabel();
@@ -336,8 +345,9 @@ namespace Time_Table_managemnt
             this.materialTabSelectorAddSession = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControlAddSession = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage25 = new System.Windows.Forms.TabPage();
+            this.DaymaterialComboBox9 = new MaterialSkin.Controls.MaterialComboBox();
+            this.DumaterialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
             this.materialTextBox10 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox20 = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel83 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel78 = new MaterialSkin.Controls.MaterialLabel();
             this.materialComboBox31 = new MaterialSkin.Controls.MaterialComboBox();
@@ -353,7 +363,6 @@ namespace Time_Table_managemnt
             this.AddSessionClear = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel80 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel81 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialTextBox21 = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel82 = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBoxAddSession = new System.Windows.Forms.PictureBox();
             this.managesebtn = new MaterialSkin.Controls.MaterialButton();
@@ -469,42 +478,30 @@ namespace Time_Table_managemnt
             this.materialButton9 = new MaterialSkin.Controls.MaterialButton();
             this.conataGridView1 = new System.Windows.Forms.DataGridView();
             this.addnotavailsesstabPage = new System.Windows.Forms.TabPage();
+            this.ANLmaterialComboBox9 = new MaterialSkin.Controls.MaterialComboBox();
+            this.ANLmaterialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
             this.locnotavailpanel2 = new System.Windows.Forms.Panel();
+            this.reqdataGridView9 = new System.Windows.Forms.DataGridView();
+            this.materialLabel73 = new MaterialSkin.Controls.MaterialLabel();
+            this.INAmaterialTextBox36 = new MaterialSkin.Controls.MaterialTextBox();
+            this.INAmaterialTextBox35 = new MaterialSkin.Controls.MaterialTextBox();
+            this.INAmaterialTextBox34 = new MaterialSkin.Controls.MaterialTextBox();
+            this.INAmaterialTextBox33 = new MaterialSkin.Controls.MaterialTextBox();
             this.locnotavailpicbox = new System.Windows.Forms.PictureBox();
             this.locnotavaildeletebut = new MaterialSkin.Controls.MaterialButton();
             this.locnotavailupdatebut = new MaterialSkin.Controls.MaterialButton();
             this.locnotavailrefreshbut = new MaterialSkin.Controls.MaterialButton();
-            this.locnotavaildataGridView9 = new System.Windows.Forms.DataGridView();
-            this.INAnumericUpDown12 = new System.Windows.Forms.NumericUpDown();
-            this.INAnumericUpDown11 = new System.Windows.Forms.NumericUpDown();
-            this.INAnumericUpDown10 = new System.Windows.Forms.NumericUpDown();
-            this.INAnumericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.INAmaterialComboBox13 = new MaterialSkin.Controls.MaterialComboBox();
-            this.INAmaterialComboBox12 = new MaterialSkin.Controls.MaterialComboBox();
-            this.INAmaterialLabel51 = new MaterialSkin.Controls.MaterialLabel();
-            this.INAmaterialLabel50 = new MaterialSkin.Controls.MaterialLabel();
-            this.INAmaterialLabel49 = new MaterialSkin.Controls.MaterialLabel();
-            this.INAmaterialLabel48 = new MaterialSkin.Controls.MaterialLabel();
-            this.INAmaterialLabel47 = new MaterialSkin.Controls.MaterialLabel();
             this.INAmaterialLabel46 = new MaterialSkin.Controls.MaterialLabel();
             this.INAmaterialLabel45 = new MaterialSkin.Controls.MaterialLabel();
             this.lNAmaterialLabel44 = new MaterialSkin.Controls.MaterialLabel();
             this.locnotavailclearbut = new MaterialSkin.Controls.MaterialButton();
             this.locnotavailviewbut = new MaterialSkin.Controls.MaterialButton();
             this.locnotavailaddbut = new MaterialSkin.Controls.MaterialButton();
-            this.ANLmaterialLabel51 = new MaterialSkin.Controls.MaterialLabel();
-            this.ANLnumericUpDown12 = new System.Windows.Forms.NumericUpDown();
-            this.ANLmaterialLabel50 = new MaterialSkin.Controls.MaterialLabel();
-            this.ANLnumericUpDown11 = new System.Windows.Forms.NumericUpDown();
             this.ANLmaterialLabel47 = new MaterialSkin.Controls.MaterialLabel();
-            this.ANLmaterialLabel49 = new MaterialSkin.Controls.MaterialLabel();
-            this.ANLnumericUpDown10 = new System.Windows.Forms.NumericUpDown();
-            this.ANLmaterialLabel48 = new MaterialSkin.Controls.MaterialLabel();
-            this.ANLnumericUpDown9 = new System.Windows.Forms.NumericUpDown();
             this.ANLmaterialLabel46 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialComboBox13 = new MaterialSkin.Controls.MaterialComboBox();
+            this.ANLmaterialComboBox13 = new MaterialSkin.Controls.MaterialComboBox();
             this.ANLmaterialLabel45 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialComboBox12 = new MaterialSkin.Controls.MaterialComboBox();
+            this.ANLmaterialComboBox12 = new MaterialSkin.Controls.MaterialComboBox();
             this.ANLmaterialLabel44 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton30 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton31 = new MaterialSkin.Controls.MaterialButton();
@@ -565,22 +562,8 @@ namespace Time_Table_managemnt
             this.materialButton26 = new MaterialSkin.Controls.MaterialButton();
             this.addnotsessiontabPage = new System.Windows.Forms.TabPage();
             this.ANSmaterialComboBox26 = new MaterialSkin.Controls.MaterialComboBox();
-            this.ANSclearbut = new MaterialSkin.Controls.MaterialButton();
-            this.ANSviewbut = new MaterialSkin.Controls.MaterialButton();
-            this.ANSsubmitbut = new MaterialSkin.Controls.MaterialButton();
-            this.ANSmaterialLabel50 = new MaterialSkin.Controls.MaterialLabel();
-            this.ANSmaterialLabel49 = new MaterialSkin.Controls.MaterialLabel();
-            this.ANSmaterialComboBox14 = new MaterialSkin.Controls.MaterialComboBox();
-            this.ANSmaterialLabel48 = new MaterialSkin.Controls.MaterialLabel();
-            this.ANSmaterialComboBox13 = new MaterialSkin.Controls.MaterialComboBox();
-            this.ANSmaterialLabel47 = new MaterialSkin.Controls.MaterialLabel();
-            this.ANSmaterialComboBox12 = new MaterialSkin.Controls.MaterialComboBox();
-            this.ANSmaterialLabel45 = new MaterialSkin.Controls.MaterialLabel();
-            this.ANSmaterialComboBox11 = new MaterialSkin.Controls.MaterialComboBox();
-            this.ANSmaterialLabel46 = new MaterialSkin.Controls.MaterialLabel();
-            this.ANSmaterialComboBox10 = new MaterialSkin.Controls.MaterialComboBox();
-            this.ANSmaterialLabel44 = new MaterialSkin.Controls.MaterialLabel();
             this.updatenotsessionpanel = new System.Windows.Forms.Panel();
+            this.UNSdataGridView91 = new System.Windows.Forms.DataGridView();
             this.UNSmaterialTextBox38 = new MaterialSkin.Controls.MaterialTextBox();
             this.UNSmaterialTextBox37 = new MaterialSkin.Controls.MaterialTextBox();
             this.UNSmaterialTextBox36 = new MaterialSkin.Controls.MaterialTextBox();
@@ -597,25 +580,39 @@ namespace Time_Table_managemnt
             this.UNSmaterialLabel44 = new MaterialSkin.Controls.MaterialLabel();
             this.UNSdeletebut = new MaterialSkin.Controls.MaterialButton();
             this.UNSupdatebut = new MaterialSkin.Controls.MaterialButton();
-            this.UNSdataGridView9 = new System.Windows.Forms.DataGridView();
             this.UNSrefreshbut = new MaterialSkin.Controls.MaterialButton();
+            this.ANSclearbut = new MaterialSkin.Controls.MaterialButton();
+            this.ANSviewbut = new MaterialSkin.Controls.MaterialButton();
+            this.ANSsubmitbut = new MaterialSkin.Controls.MaterialButton();
+            this.ANSmaterialLabel50 = new MaterialSkin.Controls.MaterialLabel();
+            this.ANSmaterialLabel49 = new MaterialSkin.Controls.MaterialLabel();
+            this.ANSmaterialComboBox14 = new MaterialSkin.Controls.MaterialComboBox();
+            this.ANSmaterialLabel48 = new MaterialSkin.Controls.MaterialLabel();
+            this.ANSmaterialComboBox13 = new MaterialSkin.Controls.MaterialComboBox();
+            this.ANSmaterialLabel47 = new MaterialSkin.Controls.MaterialLabel();
+            this.ANSmaterialComboBox12 = new MaterialSkin.Controls.MaterialComboBox();
+            this.ANSmaterialLabel45 = new MaterialSkin.Controls.MaterialLabel();
+            this.ANSmaterialComboBox11 = new MaterialSkin.Controls.MaterialComboBox();
+            this.ANSmaterialLabel46 = new MaterialSkin.Controls.MaterialLabel();
+            this.ANSmaterialComboBox10 = new MaterialSkin.Controls.MaterialComboBox();
+            this.ANSmaterialLabel44 = new MaterialSkin.Controls.MaterialLabel();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.Tab1panel2 = new System.Windows.Forms.Panel();
             this.materialTabControl3 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage19 = new System.Windows.Forms.TabPage();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.LecGridView1 = new System.Windows.Forms.DataGridView();
             this.materialButton16 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
             this.materialComboBox5 = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel19 = new MaterialSkin.Controls.MaterialLabel();
             this.tabPage20 = new System.Windows.Forms.TabPage();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.StudentsdataGridView1 = new System.Windows.Forms.DataGridView();
             this.materialButton17 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton18 = new MaterialSkin.Controls.MaterialButton();
             this.materialComboBox6 = new MaterialSkin.Controls.MaterialComboBox();
             this.materialLabel20 = new MaterialSkin.Controls.MaterialLabel();
             this.tabPage21 = new System.Windows.Forms.TabPage();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.LoacadataGridView1 = new System.Windows.Forms.DataGridView();
             this.materialButton19 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton20 = new MaterialSkin.Controls.MaterialButton();
             this.materialComboBox7 = new MaterialSkin.Controls.MaterialComboBox();
@@ -623,7 +620,6 @@ namespace Time_Table_managemnt
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.materialTabSelector2 = new MaterialSkin.Controls.MaterialTabSelector();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.materialButton11 = new MaterialSkin.Controls.MaterialButton();
             this.elipseControl1 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl2 = new Time_Table_managemnt.ElipseControl();
             this.elipseControl3 = new Time_Table_managemnt.ElipseControl();
@@ -832,16 +828,8 @@ namespace Time_Table_managemnt
             ((System.ComponentModel.ISupportInitialize)(this.conataGridView1)).BeginInit();
             this.addnotavailsesstabPage.SuspendLayout();
             this.locnotavailpanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reqdataGridView9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.locnotavailpicbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.locnotavaildataGridView9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.INAnumericUpDown12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.INAnumericUpDown11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.INAnumericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.INAnumericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ANLnumericUpDown12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ANLnumericUpDown11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ANLnumericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ANLnumericUpDown9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
             this.panelManageSessionsRooms.SuspendLayout();
             this.MangeSessionRm1.SuspendLayout();
@@ -874,17 +862,17 @@ namespace Time_Table_managemnt
             ((System.ComponentModel.ISupportInitialize)(this.datagridviewcoloum)).BeginInit();
             this.addnotsessiontabPage.SuspendLayout();
             this.updatenotsessionpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UNSdataGridView91)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.updatenotsessionpicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UNSdataGridView9)).BeginInit();
             this.tabPage11.SuspendLayout();
             this.Tab1panel2.SuspendLayout();
             this.materialTabControl3.SuspendLayout();
             this.tabPage19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LecGridView1)).BeginInit();
             this.tabPage20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentsdataGridView1)).BeginInit();
             this.tabPage21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoacadataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1094,7 +1082,6 @@ namespace Time_Table_managemnt
             this.materialTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox8.Depth = 0;
             this.materialTextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.materialTextBox8.Hint = "6";
             this.materialTextBox8.Location = new System.Drawing.Point(33, 34);
             this.materialTextBox8.MaxLength = 50;
             this.materialTextBox8.MouseState = MaterialSkin.MouseState.OUT;
@@ -1136,7 +1123,6 @@ namespace Time_Table_managemnt
             this.materialTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox7.Depth = 0;
             this.materialTextBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.materialTextBox7.Hint = "4";
             this.materialTextBox7.Location = new System.Drawing.Point(31, 53);
             this.materialTextBox7.MaxLength = 50;
             this.materialTextBox7.MouseState = MaterialSkin.MouseState.OUT;
@@ -1178,7 +1164,6 @@ namespace Time_Table_managemnt
             this.materialTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox5.Depth = 0;
             this.materialTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.materialTextBox5.Hint = "5";
             this.materialTextBox5.Location = new System.Drawing.Point(42, 53);
             this.materialTextBox5.MaxLength = 50;
             this.materialTextBox5.MouseState = MaterialSkin.MouseState.OUT;
@@ -1220,7 +1205,6 @@ namespace Time_Table_managemnt
             this.materialTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox9.Depth = 0;
             this.materialTextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.materialTextBox9.Hint = "3";
             this.materialTextBox9.Location = new System.Drawing.Point(31, 34);
             this.materialTextBox9.MaxLength = 50;
             this.materialTextBox9.MouseState = MaterialSkin.MouseState.OUT;
@@ -1254,17 +1238,17 @@ namespace Time_Table_managemnt
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(49, 46);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series2.Legend = "Legend1";
-            series2.Name = "StudentsGroups";
-            this.chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "StudentsGroups";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(612, 304);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -1314,7 +1298,7 @@ namespace Time_Table_managemnt
             this.paneManageLec.BackColor = System.Drawing.Color.White;
             this.paneManageLec.Controls.Add(this.materialTabSelectorManageLec);
             this.paneManageLec.Controls.Add(this.materialTabControlManageLec);
-            this.paneManageLec.Location = new System.Drawing.Point(24, 425);
+            this.paneManageLec.Location = new System.Drawing.Point(49, 566);
             this.paneManageLec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.paneManageLec.Name = "paneManageLec";
             this.paneManageLec.Size = new System.Drawing.Size(792, 599);
@@ -1476,8 +1460,8 @@ namespace Time_Table_managemnt
             this.LecdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LecdataGridView.Name = "LecdataGridView";
             this.LecdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Red;
-            this.LecdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Red;
+            this.LecdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.LecdataGridView.RowTemplate.Height = 24;
             this.LecdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.LecdataGridView.Size = new System.Drawing.Size(572, 110);
@@ -1683,7 +1667,7 @@ namespace Time_Table_managemnt
             this.Lecpanel2.BackColor = System.Drawing.Color.White;
             this.Lecpanel2.Controls.Add(this.materialTabSelector7);
             this.Lecpanel2.Controls.Add(this.AddLecWhite);
-            this.Lecpanel2.Location = new System.Drawing.Point(597, 119);
+            this.Lecpanel2.Location = new System.Drawing.Point(321, 35);
             this.Lecpanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Lecpanel2.Name = "Lecpanel2";
             this.Lecpanel2.Size = new System.Drawing.Size(829, 599);
@@ -1788,6 +1772,23 @@ namespace Time_Table_managemnt
             this.materialComboBox20.FormattingEnabled = true;
             this.materialComboBox20.IntegralHeight = false;
             this.materialComboBox20.ItemHeight = 43;
+            this.materialComboBox20.Items.AddRange(new object[] {
+            "301",
+            "302",
+            "401",
+            "402",
+            "403",
+            "404",
+            "405",
+            "411",
+            "501",
+            "502",
+            "503",
+            "601",
+            "602",
+            "603",
+            "604",
+            "605"});
             this.materialComboBox20.Location = new System.Drawing.Point(347, 133);
             this.materialComboBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialComboBox20.MaxDropDownItems = 4;
@@ -1811,6 +1812,11 @@ namespace Time_Table_managemnt
             this.materialComboBox19.FormattingEnabled = true;
             this.materialComboBox19.IntegralHeight = false;
             this.materialComboBox19.ItemHeight = 43;
+            this.materialComboBox19.Items.AddRange(new object[] {
+            "Malabe",
+            "Matara",
+            "Kandy",
+            "Jaffana"});
             this.materialComboBox19.Location = new System.Drawing.Point(347, 39);
             this.materialComboBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialComboBox19.MaxDropDownItems = 4;
@@ -1834,6 +1840,10 @@ namespace Time_Table_managemnt
             this.materialComboBox18.FormattingEnabled = true;
             this.materialComboBox18.IntegralHeight = false;
             this.materialComboBox18.ItemHeight = 43;
+            this.materialComboBox18.Items.AddRange(new object[] {
+            "Computing",
+            "Engineering",
+            "Management "});
             this.materialComboBox18.Location = new System.Drawing.Point(3, 324);
             this.materialComboBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialComboBox18.MaxDropDownItems = 4;
@@ -1858,7 +1868,9 @@ namespace Time_Table_managemnt
             this.materialComboBox17.IntegralHeight = false;
             this.materialComboBox17.ItemHeight = 43;
             this.materialComboBox17.Items.AddRange(new object[] {
-            "a"});
+            "Faculty of Computing",
+            "Faculty of Engineering ",
+            "Faculty of Management "});
             this.materialComboBox17.Location = new System.Drawing.Point(3, 230);
             this.materialComboBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialComboBox17.MaxDropDownItems = 4;
@@ -2551,8 +2563,8 @@ namespace Time_Table_managemnt
             this.UpdateStudentdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateStudentdataGridView1.Name = "UpdateStudentdataGridView1";
             this.UpdateStudentdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Red;
-            this.UpdateStudentdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Red;
+            this.UpdateStudentdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.UpdateStudentdataGridView1.RowTemplate.Height = 24;
             this.UpdateStudentdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.UpdateStudentdataGridView1.Size = new System.Drawing.Size(733, 183);
@@ -2656,6 +2668,25 @@ namespace Time_Table_managemnt
             this.tabPage13.Text = "Add Students Groups";
             this.tabPage13.UseVisualStyleBackColor = true;
             // 
+            // materialButton11
+            // 
+            this.materialButton11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton11.Depth = 0;
+            this.materialButton11.DrawShadows = true;
+            this.materialButton11.HighEmphasis = true;
+            this.materialButton11.Icon = null;
+            this.materialButton11.Location = new System.Drawing.Point(429, 258);
+            this.materialButton11.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton11.Name = "materialButton11";
+            this.materialButton11.Size = new System.Drawing.Size(114, 36);
+            this.materialButton11.TabIndex = 33;
+            this.materialButton11.Text = "genarate ID";
+            this.materialButton11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton11.UseAccentColor = false;
+            this.materialButton11.UseVisualStyleBackColor = true;
+            this.materialButton11.Click += new System.EventHandler(this.materialButton11_Click);
+            // 
             // GenarateIDPanel
             // 
             this.GenarateIDPanel.BackColor = System.Drawing.Color.White;
@@ -2749,8 +2780,8 @@ namespace Time_Table_managemnt
             this.GropIDdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GropIDdataGridView1.Name = "GropIDdataGridView1";
             this.GropIDdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Red;
-            this.GropIDdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Red;
+            this.GropIDdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.GropIDdataGridView1.RowTemplate.Height = 24;
             this.GropIDdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GropIDdataGridView1.Size = new System.Drawing.Size(300, 160);
@@ -2810,8 +2841,8 @@ namespace Time_Table_managemnt
             this.SubdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubdataGridView1.Name = "SubdataGridView1";
             this.SubdataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Red;
-            this.SubdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Red;
+            this.SubdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.SubdataGridView1.RowTemplate.Height = 24;
             this.SubdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SubdataGridView1.Size = new System.Drawing.Size(293, 166);
@@ -3322,7 +3353,7 @@ namespace Time_Table_managemnt
             this.offerdSem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.offerdSem.Depth = 0;
             this.offerdSem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.offerdSem.Location = new System.Drawing.Point(5, 243);
+            this.offerdSem.Location = new System.Drawing.Point(15, 242);
             this.offerdSem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.offerdSem.MaxLength = 50;
             this.offerdSem.MouseState = MaterialSkin.MouseState.OUT;
@@ -3337,7 +3368,7 @@ namespace Time_Table_managemnt
             this.OfferdYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OfferdYear.Depth = 0;
             this.OfferdYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.OfferdYear.Location = new System.Drawing.Point(6, 155);
+            this.OfferdYear.Location = new System.Drawing.Point(16, 154);
             this.OfferdYear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.OfferdYear.MaxLength = 50;
             this.OfferdYear.MouseState = MaterialSkin.MouseState.OUT;
@@ -3351,12 +3382,12 @@ namespace Time_Table_managemnt
             // 
             this.SubjectGridView1.BackgroundColor = System.Drawing.Color.MintCream;
             this.SubjectGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.SubjectGridView1.Location = new System.Drawing.Point(14, 16);
+            this.SubjectGridView1.Location = new System.Drawing.Point(24, 15);
             this.SubjectGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjectGridView1.Name = "SubjectGridView1";
             this.SubjectGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Red;
-            this.SubjectGridView1.RowsDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Red;
+            this.SubjectGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.SubjectGridView1.RowTemplate.Height = 24;
             this.SubjectGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SubjectGridView1.Size = new System.Drawing.Size(657, 89);
@@ -3365,7 +3396,7 @@ namespace Time_Table_managemnt
             // 
             // numericUpDown13
             // 
-            this.numericUpDown13.Location = new System.Drawing.Point(327, 448);
+            this.numericUpDown13.Location = new System.Drawing.Point(337, 447);
             this.numericUpDown13.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown13.Name = "numericUpDown13";
             this.numericUpDown13.Size = new System.Drawing.Size(261, 22);
@@ -3373,7 +3404,7 @@ namespace Time_Table_managemnt
             // 
             // numericUpDown12
             // 
-            this.numericUpDown12.Location = new System.Drawing.Point(327, 352);
+            this.numericUpDown12.Location = new System.Drawing.Point(337, 351);
             this.numericUpDown12.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown12.Name = "numericUpDown12";
             this.numericUpDown12.Size = new System.Drawing.Size(261, 22);
@@ -3381,7 +3412,7 @@ namespace Time_Table_managemnt
             // 
             // numericUpDown11
             // 
-            this.numericUpDown11.Location = new System.Drawing.Point(327, 267);
+            this.numericUpDown11.Location = new System.Drawing.Point(337, 266);
             this.numericUpDown11.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown11.Name = "numericUpDown11";
             this.numericUpDown11.Size = new System.Drawing.Size(261, 22);
@@ -3389,7 +3420,7 @@ namespace Time_Table_managemnt
             // 
             // numericUpDown10
             // 
-            this.numericUpDown10.Location = new System.Drawing.Point(328, 164);
+            this.numericUpDown10.Location = new System.Drawing.Point(338, 163);
             this.numericUpDown10.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown10.Name = "numericUpDown10";
             this.numericUpDown10.Size = new System.Drawing.Size(261, 22);
@@ -3402,7 +3433,7 @@ namespace Time_Table_managemnt
             this.materialButtonManage.DrawShadows = true;
             this.materialButtonManage.HighEmphasis = true;
             this.materialButtonManage.Icon = null;
-            this.materialButtonManage.Location = new System.Drawing.Point(654, 331);
+            this.materialButtonManage.Location = new System.Drawing.Point(664, 330);
             this.materialButtonManage.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButtonManage.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButtonManage.Name = "materialButtonManage";
@@ -3412,13 +3443,14 @@ namespace Time_Table_managemnt
             this.materialButtonManage.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButtonManage.UseAccentColor = false;
             this.materialButtonManage.UseVisualStyleBackColor = true;
+            this.materialButtonManage.Click += new System.EventHandler(this.materialButtonManage_Click_2);
             // 
             // materialLabel60
             // 
             this.materialLabel60.AutoSize = true;
             this.materialLabel60.Depth = 0;
             this.materialLabel60.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel60.Location = new System.Drawing.Point(323, 405);
+            this.materialLabel60.Location = new System.Drawing.Point(333, 404);
             this.materialLabel60.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel60.Name = "materialLabel60";
             this.materialLabel60.Size = new System.Drawing.Size(201, 19);
@@ -3430,7 +3462,7 @@ namespace Time_Table_managemnt
             this.materialLabel62.AutoSize = true;
             this.materialLabel62.Depth = 0;
             this.materialLabel62.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel62.Location = new System.Drawing.Point(327, 308);
+            this.materialLabel62.Location = new System.Drawing.Point(337, 307);
             this.materialLabel62.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel62.Name = "materialLabel62";
             this.materialLabel62.Size = new System.Drawing.Size(153, 19);
@@ -3442,7 +3474,7 @@ namespace Time_Table_managemnt
             this.materialLabel66.AutoSize = true;
             this.materialLabel66.Depth = 0;
             this.materialLabel66.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel66.Location = new System.Drawing.Point(325, 217);
+            this.materialLabel66.Location = new System.Drawing.Point(335, 216);
             this.materialLabel66.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel66.Name = "materialLabel66";
             this.materialLabel66.Size = new System.Drawing.Size(181, 19);
@@ -3454,7 +3486,7 @@ namespace Time_Table_managemnt
             this.SubjectCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SubjectCode.Depth = 0;
             this.SubjectCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.SubjectCode.Location = new System.Drawing.Point(7, 431);
+            this.SubjectCode.Location = new System.Drawing.Point(17, 430);
             this.SubjectCode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjectCode.MaxLength = 50;
             this.SubjectCode.MouseState = MaterialSkin.MouseState.OUT;
@@ -3469,7 +3501,7 @@ namespace Time_Table_managemnt
             this.materialLabel67.AutoSize = true;
             this.materialLabel67.Depth = 0;
             this.materialLabel67.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel67.Location = new System.Drawing.Point(5, 405);
+            this.materialLabel67.Location = new System.Drawing.Point(15, 404);
             this.materialLabel67.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel67.Name = "materialLabel67";
             this.materialLabel67.Size = new System.Drawing.Size(94, 19);
@@ -3483,7 +3515,7 @@ namespace Time_Table_managemnt
             this.materialButtonSaveManage.DrawShadows = true;
             this.materialButtonSaveManage.HighEmphasis = true;
             this.materialButtonSaveManage.Icon = null;
-            this.materialButtonSaveManage.Location = new System.Drawing.Point(654, 184);
+            this.materialButtonSaveManage.Location = new System.Drawing.Point(664, 183);
             this.materialButtonSaveManage.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButtonSaveManage.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButtonSaveManage.Name = "materialButtonSaveManage";
@@ -3502,7 +3534,7 @@ namespace Time_Table_managemnt
             this.materialButtonManagesub.DrawShadows = true;
             this.materialButtonManagesub.HighEmphasis = true;
             this.materialButtonManagesub.Icon = null;
-            this.materialButtonManagesub.Location = new System.Drawing.Point(654, 257);
+            this.materialButtonManagesub.Location = new System.Drawing.Point(664, 256);
             this.materialButtonManagesub.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButtonManagesub.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButtonManagesub.Name = "materialButtonManagesub";
@@ -3519,7 +3551,7 @@ namespace Time_Table_managemnt
             this.materialLabel68.AutoSize = true;
             this.materialLabel68.Depth = 0;
             this.materialLabel68.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel68.Location = new System.Drawing.Point(11, 308);
+            this.materialLabel68.Location = new System.Drawing.Point(21, 307);
             this.materialLabel68.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel68.Name = "materialLabel68";
             this.materialLabel68.Size = new System.Drawing.Size(100, 19);
@@ -3531,7 +3563,7 @@ namespace Time_Table_managemnt
             this.Subjectname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Subjectname.Depth = 0;
             this.Subjectname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Subjectname.Location = new System.Drawing.Point(5, 334);
+            this.Subjectname.Location = new System.Drawing.Point(15, 333);
             this.Subjectname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Subjectname.MaxLength = 50;
             this.Subjectname.MouseState = MaterialSkin.MouseState.OUT;
@@ -3546,7 +3578,7 @@ namespace Time_Table_managemnt
             this.materialLabel69.AutoSize = true;
             this.materialLabel69.Depth = 0;
             this.materialLabel69.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel69.Location = new System.Drawing.Point(8, 217);
+            this.materialLabel69.Location = new System.Drawing.Point(18, 216);
             this.materialLabel69.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel69.Name = "materialLabel69";
             this.materialLabel69.Size = new System.Drawing.Size(116, 19);
@@ -3558,7 +3590,7 @@ namespace Time_Table_managemnt
             this.materialLabel70.AutoSize = true;
             this.materialLabel70.Depth = 0;
             this.materialLabel70.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel70.Location = new System.Drawing.Point(323, 119);
+            this.materialLabel70.Location = new System.Drawing.Point(333, 118);
             this.materialLabel70.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel70.Name = "materialLabel70";
             this.materialLabel70.Size = new System.Drawing.Size(178, 19);
@@ -3570,7 +3602,7 @@ namespace Time_Table_managemnt
             this.materialLabel71.AutoSize = true;
             this.materialLabel71.Depth = 0;
             this.materialLabel71.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel71.Location = new System.Drawing.Point(11, 119);
+            this.materialLabel71.Location = new System.Drawing.Point(21, 118);
             this.materialLabel71.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel71.Name = "materialLabel71";
             this.materialLabel71.Size = new System.Drawing.Size(82, 19);
@@ -3580,7 +3612,7 @@ namespace Time_Table_managemnt
             // pictureBoxManagesub
             // 
             this.pictureBoxManagesub.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxManagesub.BackgroundImage")));
-            this.pictureBoxManagesub.Location = new System.Drawing.Point(711, 16);
+            this.pictureBoxManagesub.Location = new System.Drawing.Point(721, 15);
             this.pictureBoxManagesub.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxManagesub.Name = "pictureBoxManagesub";
             this.pictureBoxManagesub.Size = new System.Drawing.Size(43, 41);
@@ -3606,7 +3638,7 @@ namespace Time_Table_managemnt
             this.SubjectPanalAddSubject.BackColor = System.Drawing.Color.White;
             this.SubjectPanalAddSubject.Controls.Add(this.materialTabControlAddSubject);
             this.SubjectPanalAddSubject.Controls.Add(this.materialTabSelectorAddsubject);
-            this.SubjectPanalAddSubject.Location = new System.Drawing.Point(36, 474);
+            this.SubjectPanalAddSubject.Location = new System.Drawing.Point(64, 349);
             this.SubjectPanalAddSubject.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubjectPanalAddSubject.Name = "SubjectPanalAddSubject";
             this.SubjectPanalAddSubject.Size = new System.Drawing.Size(792, 599);
@@ -4241,8 +4273,8 @@ namespace Time_Table_managemnt
             this.TagdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TagdataGridView.Name = "TagdataGridView";
             this.TagdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Red;
-            this.TagdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Red;
+            this.TagdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.TagdataGridView.RowTemplate.Height = 24;
             this.TagdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.TagdataGridView.Size = new System.Drawing.Size(615, 183);
@@ -4713,7 +4745,7 @@ namespace Time_Table_managemnt
             this.panelManageSession.BackColor = System.Drawing.Color.White;
             this.panelManageSession.Controls.Add(this.materialTabSelectorManageSession);
             this.panelManageSession.Controls.Add(this.materialTabControlManageSession);
-            this.panelManageSession.Location = new System.Drawing.Point(105, 491);
+            this.panelManageSession.Location = new System.Drawing.Point(173, 373);
             this.panelManageSession.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelManageSession.Name = "panelManageSession";
             this.panelManageSession.Size = new System.Drawing.Size(792, 705);
@@ -4748,6 +4780,8 @@ namespace Time_Table_managemnt
             // tabPage27
             // 
             this.tabPage27.BackColor = System.Drawing.Color.White;
+            this.tabPage27.Controls.Add(this.materialLabel72);
+            this.tabPage27.Controls.Add(this.materialTextBox20);
             this.tabPage27.Controls.Add(this.materialLabel88);
             this.tabPage27.Controls.Add(this.materialLabel87);
             this.tabPage27.Controls.Add(this.materialLabel86);
@@ -4778,6 +4812,32 @@ namespace Time_Table_managemnt
             this.tabPage27.TabIndex = 0;
             this.tabPage27.Text = "Manage Session";
             // 
+            // materialLabel72
+            // 
+            this.materialLabel72.AutoSize = true;
+            this.materialLabel72.Depth = 0;
+            this.materialLabel72.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel72.Location = new System.Drawing.Point(272, 534);
+            this.materialLabel72.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel72.Name = "materialLabel72";
+            this.materialLabel72.Size = new System.Drawing.Size(27, 19);
+            this.materialLabel72.TabIndex = 75;
+            this.materialLabel72.Text = "day";
+            // 
+            // materialTextBox20
+            // 
+            this.materialTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.materialTextBox20.Depth = 0;
+            this.materialTextBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.materialTextBox20.Location = new System.Drawing.Point(255, 556);
+            this.materialTextBox20.MaxLength = 50;
+            this.materialTextBox20.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox20.Multiline = false;
+            this.materialTextBox20.Name = "materialTextBox20";
+            this.materialTextBox20.Size = new System.Drawing.Size(202, 50);
+            this.materialTextBox20.TabIndex = 74;
+            this.materialTextBox20.Text = "";
+            // 
             // materialLabel88
             // 
             this.materialLabel88.AutoSize = true;
@@ -4786,9 +4846,9 @@ namespace Time_Table_managemnt
             this.materialLabel88.Location = new System.Drawing.Point(36, 528);
             this.materialLabel88.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel88.Name = "materialLabel88";
-            this.materialLabel88.Size = new System.Drawing.Size(116, 19);
+            this.materialLabel88.Size = new System.Drawing.Size(60, 19);
             this.materialLabel88.TabIndex = 73;
-            this.materialLabel88.Text = "materialLabel88";
+            this.materialLabel88.Text = "duration";
             // 
             // materialLabel87
             // 
@@ -4798,9 +4858,9 @@ namespace Time_Table_managemnt
             this.materialLabel87.Location = new System.Drawing.Point(504, 437);
             this.materialLabel87.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel87.Name = "materialLabel87";
-            this.materialLabel87.Size = new System.Drawing.Size(116, 19);
+            this.materialLabel87.Size = new System.Drawing.Size(77, 19);
             this.materialLabel87.TabIndex = 72;
-            this.materialLabel87.Text = "materialLabel87";
+            this.materialLabel87.Text = "numberstd";
             // 
             // materialLabel86
             // 
@@ -4810,9 +4870,9 @@ namespace Time_Table_managemnt
             this.materialLabel86.Location = new System.Drawing.Point(280, 437);
             this.materialLabel86.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel86.Name = "materialLabel86";
-            this.materialLabel86.Size = new System.Drawing.Size(116, 19);
+            this.materialLabel86.Size = new System.Drawing.Size(60, 19);
             this.materialLabel86.TabIndex = 71;
-            this.materialLabel86.Text = "materialLabel86";
+            this.materialLabel86.Text = "subjects";
             // 
             // materialLabel85
             // 
@@ -4822,9 +4882,9 @@ namespace Time_Table_managemnt
             this.materialLabel85.Location = new System.Drawing.Point(36, 437);
             this.materialLabel85.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel85.Name = "materialLabel85";
-            this.materialLabel85.Size = new System.Drawing.Size(116, 19);
+            this.materialLabel85.Size = new System.Drawing.Size(50, 19);
             this.materialLabel85.TabIndex = 70;
-            this.materialLabel85.Text = "materialLabel85";
+            this.materialLabel85.Text = "groups";
             // 
             // materialLabel84
             // 
@@ -4834,9 +4894,9 @@ namespace Time_Table_managemnt
             this.materialLabel84.Location = new System.Drawing.Point(504, 346);
             this.materialLabel84.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel84.Name = "materialLabel84";
-            this.materialLabel84.Size = new System.Drawing.Size(116, 19);
+            this.materialLabel84.Size = new System.Drawing.Size(86, 19);
             this.materialLabel84.TabIndex = 69;
-            this.materialLabel84.Text = "materialLabel84";
+            this.materialLabel84.Text = "subjectcode";
             // 
             // materialLabel31
             // 
@@ -4846,9 +4906,9 @@ namespace Time_Table_managemnt
             this.materialLabel31.Location = new System.Drawing.Point(280, 346);
             this.materialLabel31.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel31.Name = "materialLabel31";
-            this.materialLabel31.Size = new System.Drawing.Size(116, 19);
+            this.materialLabel31.Size = new System.Drawing.Size(32, 19);
             this.materialLabel31.TabIndex = 68;
-            this.materialLabel31.Text = "materialLabel31";
+            this.materialLabel31.Text = "tags";
             // 
             // materialLabel30
             // 
@@ -4858,9 +4918,9 @@ namespace Time_Table_managemnt
             this.materialLabel30.Location = new System.Drawing.Point(46, 346);
             this.materialLabel30.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel30.Name = "materialLabel30";
-            this.materialLabel30.Size = new System.Drawing.Size(116, 19);
+            this.materialLabel30.Size = new System.Drawing.Size(61, 19);
             this.materialLabel30.TabIndex = 67;
-            this.materialLabel30.Text = "materialLabel30";
+            this.materialLabel30.Text = "lecname";
             // 
             // materialTextBox29
             // 
@@ -4968,8 +5028,8 @@ namespace Time_Table_managemnt
             this.dataGridView9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView9.Name = "dataGridView9";
             this.dataGridView9.RowHeadersWidth = 51;
-            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Red;
-            this.dataGridView9.RowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Red;
+            this.dataGridView9.RowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView9.RowTemplate.Height = 24;
             this.dataGridView9.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView9.Size = new System.Drawing.Size(609, 216);
@@ -5108,7 +5168,7 @@ namespace Time_Table_managemnt
             this.addSssionpanel.BackColor = System.Drawing.Color.White;
             this.addSssionpanel.Controls.Add(this.materialTabSelectorAddSession);
             this.addSssionpanel.Controls.Add(this.materialTabControlAddSession);
-            this.addSssionpanel.Location = new System.Drawing.Point(304, 233);
+            this.addSssionpanel.Location = new System.Drawing.Point(307, 60);
             this.addSssionpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addSssionpanel.Name = "addSssionpanel";
             this.addSssionpanel.Size = new System.Drawing.Size(800, 599);
@@ -5143,8 +5203,9 @@ namespace Time_Table_managemnt
             // tabPage25
             // 
             this.tabPage25.BackColor = System.Drawing.Color.White;
+            this.tabPage25.Controls.Add(this.DaymaterialComboBox9);
+            this.tabPage25.Controls.Add(this.DumaterialComboBox1);
             this.tabPage25.Controls.Add(this.materialTextBox10);
-            this.tabPage25.Controls.Add(this.materialTextBox20);
             this.tabPage25.Controls.Add(this.materialLabel83);
             this.tabPage25.Controls.Add(this.materialLabel78);
             this.tabPage25.Controls.Add(this.materialComboBox31);
@@ -5160,7 +5221,6 @@ namespace Time_Table_managemnt
             this.tabPage25.Controls.Add(this.AddSessionClear);
             this.tabPage25.Controls.Add(this.materialLabel80);
             this.tabPage25.Controls.Add(this.materialLabel81);
-            this.tabPage25.Controls.Add(this.materialTextBox21);
             this.tabPage25.Controls.Add(this.materialLabel82);
             this.tabPage25.Controls.Add(this.pictureBoxAddSession);
             this.tabPage25.Location = new System.Drawing.Point(4, 25);
@@ -5170,6 +5230,67 @@ namespace Time_Table_managemnt
             this.tabPage25.Size = new System.Drawing.Size(779, 513);
             this.tabPage25.TabIndex = 0;
             this.tabPage25.Text = "Add Session";
+            // 
+            // DaymaterialComboBox9
+            // 
+            this.DaymaterialComboBox9.AutoResize = false;
+            this.DaymaterialComboBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.DaymaterialComboBox9.Depth = 0;
+            this.DaymaterialComboBox9.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.DaymaterialComboBox9.DropDownHeight = 174;
+            this.DaymaterialComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DaymaterialComboBox9.DropDownWidth = 121;
+            this.DaymaterialComboBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.DaymaterialComboBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.DaymaterialComboBox9.FormattingEnabled = true;
+            this.DaymaterialComboBox9.IntegralHeight = false;
+            this.DaymaterialComboBox9.ItemHeight = 43;
+            this.DaymaterialComboBox9.Items.AddRange(new object[] {
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"});
+            this.DaymaterialComboBox9.Location = new System.Drawing.Point(356, 182);
+            this.DaymaterialComboBox9.MaxDropDownItems = 4;
+            this.DaymaterialComboBox9.MouseState = MaterialSkin.MouseState.OUT;
+            this.DaymaterialComboBox9.Name = "DaymaterialComboBox9";
+            this.DaymaterialComboBox9.Size = new System.Drawing.Size(272, 49);
+            this.DaymaterialComboBox9.StartIndex = 0;
+            this.DaymaterialComboBox9.TabIndex = 55;
+            // 
+            // DumaterialComboBox1
+            // 
+            this.DumaterialComboBox1.AutoResize = false;
+            this.DumaterialComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.DumaterialComboBox1.Depth = 0;
+            this.DumaterialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.DumaterialComboBox1.DropDownHeight = 174;
+            this.DumaterialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DumaterialComboBox1.DropDownWidth = 121;
+            this.DumaterialComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.DumaterialComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.DumaterialComboBox1.FormattingEnabled = true;
+            this.DumaterialComboBox1.IntegralHeight = false;
+            this.DumaterialComboBox1.ItemHeight = 43;
+            this.DumaterialComboBox1.Items.AddRange(new object[] {
+            "08.30-09.30",
+            "09.30-10.30",
+            "10.30-11.30",
+            "11.30-12.30",
+            "12.30-1.30",
+            "01.30-02.30",
+            "02.30-03.30",
+            "03.30-04.30"});
+            this.DumaterialComboBox1.Location = new System.Drawing.Point(344, 415);
+            this.DumaterialComboBox1.MaxDropDownItems = 4;
+            this.DumaterialComboBox1.MouseState = MaterialSkin.MouseState.OUT;
+            this.DumaterialComboBox1.Name = "DumaterialComboBox1";
+            this.DumaterialComboBox1.Size = new System.Drawing.Size(262, 49);
+            this.DumaterialComboBox1.StartIndex = 0;
+            this.DumaterialComboBox1.TabIndex = 54;
             // 
             // materialTextBox10
             // 
@@ -5184,21 +5305,6 @@ namespace Time_Table_managemnt
             this.materialTextBox10.Size = new System.Drawing.Size(260, 50);
             this.materialTextBox10.TabIndex = 53;
             this.materialTextBox10.Text = "";
-            // 
-            // materialTextBox20
-            // 
-            this.materialTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox20.Depth = 0;
-            this.materialTextBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.materialTextBox20.Location = new System.Drawing.Point(356, 414);
-            this.materialTextBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialTextBox20.MaxLength = 50;
-            this.materialTextBox20.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox20.Multiline = false;
-            this.materialTextBox20.Name = "materialTextBox20";
-            this.materialTextBox20.Size = new System.Drawing.Size(252, 50);
-            this.materialTextBox20.TabIndex = 52;
-            this.materialTextBox20.Text = "";
             // 
             // materialLabel83
             // 
@@ -5286,7 +5392,11 @@ namespace Time_Table_managemnt
             this.materialComboBox29.ItemHeight = 43;
             this.materialComboBox29.Items.AddRange(new object[] {
             "ITPM",
-            "MAD"});
+            "MAD",
+            "DSA",
+            "OOP",
+            "ISDM",
+            "SE"});
             this.materialComboBox29.Location = new System.Drawing.Point(29, 415);
             this.materialComboBox29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialComboBox29.MaxDropDownItems = 4;
@@ -5435,13 +5545,14 @@ namespace Time_Table_managemnt
             this.AddSessionClear.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.AddSessionClear.UseAccentColor = false;
             this.AddSessionClear.UseVisualStyleBackColor = true;
+            this.AddSessionClear.Click += new System.EventHandler(this.AddSessionClear_Click);
             // 
             // materialLabel80
             // 
             this.materialLabel80.AutoSize = true;
             this.materialLabel80.Depth = 0;
             this.materialLabel80.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel80.Location = new System.Drawing.Point(360, 286);
+            this.materialLabel80.Location = new System.Drawing.Point(367, 286);
             this.materialLabel80.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel80.Name = "materialLabel80";
             this.materialLabel80.Size = new System.Drawing.Size(107, 19);
@@ -5459,22 +5570,6 @@ namespace Time_Table_managemnt
             this.materialLabel81.Size = new System.Drawing.Size(113, 19);
             this.materialLabel81.TabIndex = 24;
             this.materialLabel81.Text = "Select Lecturers";
-            // 
-            // materialTextBox21
-            // 
-            this.materialTextBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox21.Depth = 0;
-            this.materialTextBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.materialTextBox21.Location = new System.Drawing.Point(385, 179);
-            this.materialTextBox21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialTextBox21.MaxLength = 50;
-            this.materialTextBox21.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox21.Multiline = false;
-            this.materialTextBox21.Name = "materialTextBox21";
-            this.materialTextBox21.Size = new System.Drawing.Size(276, 50);
-            this.materialTextBox21.TabIndex = 21;
-            this.materialTextBox21.Text = "";
-            this.materialTextBox21.TextChanged += new System.EventHandler(this.materialTextBox21_TextChanged);
             // 
             // materialLabel82
             // 
@@ -5709,8 +5804,8 @@ namespace Time_Table_managemnt
             this.WorkingDatdataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.WorkingDatdataGridView.Name = "WorkingDatdataGridView";
             this.WorkingDatdataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Red;
-            this.WorkingDatdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Red;
+            this.WorkingDatdataGridView.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.WorkingDatdataGridView.RowTemplate.Height = 24;
             this.WorkingDatdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.WorkingDatdataGridView.Size = new System.Drawing.Size(429, 113);
@@ -6400,7 +6495,7 @@ namespace Time_Table_managemnt
             this.DisplayLocationPanel.BackColor = System.Drawing.Color.White;
             this.DisplayLocationPanel.Controls.Add(this.materialTabSelector8);
             this.DisplayLocationPanel.Controls.Add(this.LocationmaterialTabControl8);
-            this.DisplayLocationPanel.Location = new System.Drawing.Point(62, 218);
+            this.DisplayLocationPanel.Location = new System.Drawing.Point(118, 228);
             this.DisplayLocationPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DisplayLocationPanel.Name = "DisplayLocationPanel";
             this.DisplayLocationPanel.Size = new System.Drawing.Size(843, 689);
@@ -6491,8 +6586,8 @@ namespace Time_Table_managemnt
             this.ManagedataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ManagedataGridView.Name = "ManagedataGridView";
             this.ManagedataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Red;
-            this.ManagedataGridView.RowsDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Red;
+            this.ManagedataGridView.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.ManagedataGridView.RowTemplate.Height = 24;
             this.ManagedataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ManagedataGridView.Size = new System.Drawing.Size(697, 182);
@@ -7037,7 +7132,7 @@ namespace Time_Table_managemnt
             this.SessionRoomPanel3.Controls.Add(this.materialButton31);
             this.SessionRoomPanel3.Controls.Add(this.numericUpDown7);
             this.SessionRoomPanel3.Controls.Add(this.materialButton32);
-            this.SessionRoomPanel3.Location = new System.Drawing.Point(32, 525);
+            this.SessionRoomPanel3.Location = new System.Drawing.Point(45, 382);
             this.SessionRoomPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SessionRoomPanel3.Name = "SessionRoomPanel3";
             this.SessionRoomPanel3.Size = new System.Drawing.Size(823, 494);
@@ -7095,8 +7190,8 @@ namespace Time_Table_managemnt
             this.SessionridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SessionridView1.Name = "SessionridView1";
             this.SessionridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Red;
-            this.SessionridView1.RowsDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Red;
+            this.SessionridView1.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.SessionridView1.RowTemplate.Height = 24;
             this.SessionridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SessionridView1.Size = new System.Drawing.Size(675, 211);
@@ -7211,8 +7306,8 @@ namespace Time_Table_managemnt
             this.conataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.conataGridView1.Name = "conataGridView1";
             this.conataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Red;
-            this.conataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Red;
+            this.conataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle11;
             this.conataGridView1.RowTemplate.Height = 24;
             this.conataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.conataGridView1.Size = new System.Drawing.Size(708, 243);
@@ -7220,23 +7315,17 @@ namespace Time_Table_managemnt
             // 
             // addnotavailsesstabPage
             // 
+            this.addnotavailsesstabPage.Controls.Add(this.ANLmaterialComboBox9);
+            this.addnotavailsesstabPage.Controls.Add(this.ANLmaterialComboBox1);
             this.addnotavailsesstabPage.Controls.Add(this.locnotavailpanel2);
             this.addnotavailsesstabPage.Controls.Add(this.locnotavailclearbut);
             this.addnotavailsesstabPage.Controls.Add(this.locnotavailviewbut);
             this.addnotavailsesstabPage.Controls.Add(this.locnotavailaddbut);
-            this.addnotavailsesstabPage.Controls.Add(this.ANLmaterialLabel51);
-            this.addnotavailsesstabPage.Controls.Add(this.ANLnumericUpDown12);
-            this.addnotavailsesstabPage.Controls.Add(this.ANLmaterialLabel50);
-            this.addnotavailsesstabPage.Controls.Add(this.ANLnumericUpDown11);
             this.addnotavailsesstabPage.Controls.Add(this.ANLmaterialLabel47);
-            this.addnotavailsesstabPage.Controls.Add(this.ANLmaterialLabel49);
-            this.addnotavailsesstabPage.Controls.Add(this.ANLnumericUpDown10);
-            this.addnotavailsesstabPage.Controls.Add(this.ANLmaterialLabel48);
-            this.addnotavailsesstabPage.Controls.Add(this.ANLnumericUpDown9);
             this.addnotavailsesstabPage.Controls.Add(this.ANLmaterialLabel46);
-            this.addnotavailsesstabPage.Controls.Add(this.materialComboBox13);
+            this.addnotavailsesstabPage.Controls.Add(this.ANLmaterialComboBox13);
             this.addnotavailsesstabPage.Controls.Add(this.ANLmaterialLabel45);
-            this.addnotavailsesstabPage.Controls.Add(this.materialComboBox12);
+            this.addnotavailsesstabPage.Controls.Add(this.ANLmaterialComboBox12);
             this.addnotavailsesstabPage.Controls.Add(this.ANLmaterialLabel44);
             this.addnotavailsesstabPage.Location = new System.Drawing.Point(4, 25);
             this.addnotavailsesstabPage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -7246,32 +7335,176 @@ namespace Time_Table_managemnt
             this.addnotavailsesstabPage.Text = "Not Available Time";
             this.addnotavailsesstabPage.UseVisualStyleBackColor = true;
             // 
+            // ANLmaterialComboBox9
+            // 
+            this.ANLmaterialComboBox9.AutoResize = false;
+            this.ANLmaterialComboBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ANLmaterialComboBox9.Depth = 0;
+            this.ANLmaterialComboBox9.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.ANLmaterialComboBox9.DropDownHeight = 174;
+            this.ANLmaterialComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ANLmaterialComboBox9.DropDownWidth = 121;
+            this.ANLmaterialComboBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.ANLmaterialComboBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ANLmaterialComboBox9.FormattingEnabled = true;
+            this.ANLmaterialComboBox9.IntegralHeight = false;
+            this.ANLmaterialComboBox9.ItemHeight = 43;
+            this.ANLmaterialComboBox9.Items.AddRange(new object[] {
+            "8.30",
+            "9.30",
+            "10.30",
+            "11.30",
+            "12.30",
+            "1.30",
+            "2.30",
+            "3.30",
+            "4.30",
+            "5.30"});
+            this.ANLmaterialComboBox9.Location = new System.Drawing.Point(449, 210);
+            this.ANLmaterialComboBox9.MaxDropDownItems = 4;
+            this.ANLmaterialComboBox9.MouseState = MaterialSkin.MouseState.OUT;
+            this.ANLmaterialComboBox9.Name = "ANLmaterialComboBox9";
+            this.ANLmaterialComboBox9.Size = new System.Drawing.Size(283, 49);
+            this.ANLmaterialComboBox9.StartIndex = 0;
+            this.ANLmaterialComboBox9.TabIndex = 27;
+            // 
+            // ANLmaterialComboBox1
+            // 
+            this.ANLmaterialComboBox1.AutoResize = false;
+            this.ANLmaterialComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ANLmaterialComboBox1.Depth = 0;
+            this.ANLmaterialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.ANLmaterialComboBox1.DropDownHeight = 174;
+            this.ANLmaterialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ANLmaterialComboBox1.DropDownWidth = 121;
+            this.ANLmaterialComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.ANLmaterialComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ANLmaterialComboBox1.FormattingEnabled = true;
+            this.ANLmaterialComboBox1.IntegralHeight = false;
+            this.ANLmaterialComboBox1.ItemHeight = 43;
+            this.ANLmaterialComboBox1.Items.AddRange(new object[] {
+            "8.30",
+            "9.30",
+            "10.30",
+            "11.30",
+            "12.30",
+            "1.30",
+            "2.30",
+            "3.30",
+            "4.30",
+            "5.30"});
+            this.ANLmaterialComboBox1.Location = new System.Drawing.Point(449, 101);
+            this.ANLmaterialComboBox1.MaxDropDownItems = 4;
+            this.ANLmaterialComboBox1.MouseState = MaterialSkin.MouseState.OUT;
+            this.ANLmaterialComboBox1.Name = "ANLmaterialComboBox1";
+            this.ANLmaterialComboBox1.Size = new System.Drawing.Size(283, 49);
+            this.ANLmaterialComboBox1.StartIndex = 0;
+            this.ANLmaterialComboBox1.TabIndex = 26;
+            // 
             // locnotavailpanel2
             // 
+            this.locnotavailpanel2.Controls.Add(this.reqdataGridView9);
+            this.locnotavailpanel2.Controls.Add(this.materialLabel73);
+            this.locnotavailpanel2.Controls.Add(this.INAmaterialTextBox36);
+            this.locnotavailpanel2.Controls.Add(this.INAmaterialTextBox35);
+            this.locnotavailpanel2.Controls.Add(this.INAmaterialTextBox34);
+            this.locnotavailpanel2.Controls.Add(this.INAmaterialTextBox33);
             this.locnotavailpanel2.Controls.Add(this.locnotavailpicbox);
             this.locnotavailpanel2.Controls.Add(this.locnotavaildeletebut);
             this.locnotavailpanel2.Controls.Add(this.locnotavailupdatebut);
             this.locnotavailpanel2.Controls.Add(this.locnotavailrefreshbut);
-            this.locnotavailpanel2.Controls.Add(this.locnotavaildataGridView9);
-            this.locnotavailpanel2.Controls.Add(this.INAnumericUpDown12);
-            this.locnotavailpanel2.Controls.Add(this.INAnumericUpDown11);
-            this.locnotavailpanel2.Controls.Add(this.INAnumericUpDown10);
-            this.locnotavailpanel2.Controls.Add(this.INAnumericUpDown9);
-            this.locnotavailpanel2.Controls.Add(this.INAmaterialComboBox13);
-            this.locnotavailpanel2.Controls.Add(this.INAmaterialComboBox12);
-            this.locnotavailpanel2.Controls.Add(this.INAmaterialLabel51);
-            this.locnotavailpanel2.Controls.Add(this.INAmaterialLabel50);
-            this.locnotavailpanel2.Controls.Add(this.INAmaterialLabel49);
-            this.locnotavailpanel2.Controls.Add(this.INAmaterialLabel48);
-            this.locnotavailpanel2.Controls.Add(this.INAmaterialLabel47);
             this.locnotavailpanel2.Controls.Add(this.INAmaterialLabel46);
             this.locnotavailpanel2.Controls.Add(this.INAmaterialLabel45);
             this.locnotavailpanel2.Controls.Add(this.lNAmaterialLabel44);
-            this.locnotavailpanel2.Location = new System.Drawing.Point(3, 9);
+            this.locnotavailpanel2.Location = new System.Drawing.Point(3, 2);
             this.locnotavailpanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.locnotavailpanel2.Name = "locnotavailpanel2";
-            this.locnotavailpanel2.Size = new System.Drawing.Size(797, 422);
+            this.locnotavailpanel2.Size = new System.Drawing.Size(810, 429);
             this.locnotavailpanel2.TabIndex = 25;
+            // 
+            // reqdataGridView9
+            // 
+            this.reqdataGridView9.BackgroundColor = System.Drawing.Color.MintCream;
+            this.reqdataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.reqdataGridView9.Location = new System.Drawing.Point(3, 7);
+            this.reqdataGridView9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.reqdataGridView9.Name = "reqdataGridView9";
+            this.reqdataGridView9.RowHeadersWidth = 51;
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Red;
+            this.reqdataGridView9.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            this.reqdataGridView9.RowTemplate.Height = 24;
+            this.reqdataGridView9.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.reqdataGridView9.Size = new System.Drawing.Size(632, 197);
+            this.reqdataGridView9.TabIndex = 31;
+            this.reqdataGridView9.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.reqdataGridView9_CellClick);
+            // 
+            // materialLabel73
+            // 
+            this.materialLabel73.AutoSize = true;
+            this.materialLabel73.Depth = 0;
+            this.materialLabel73.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel73.Location = new System.Drawing.Point(521, 323);
+            this.materialLabel73.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel73.Name = "materialLabel73";
+            this.materialLabel73.Size = new System.Drawing.Size(68, 19);
+            this.materialLabel73.TabIndex = 23;
+            this.materialLabel73.Text = "End Time";
+            // 
+            // INAmaterialTextBox36
+            // 
+            this.INAmaterialTextBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.INAmaterialTextBox36.Depth = 0;
+            this.INAmaterialTextBox36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.INAmaterialTextBox36.Location = new System.Drawing.Point(515, 351);
+            this.INAmaterialTextBox36.MaxLength = 50;
+            this.INAmaterialTextBox36.MouseState = MaterialSkin.MouseState.OUT;
+            this.INAmaterialTextBox36.Multiline = false;
+            this.INAmaterialTextBox36.Name = "INAmaterialTextBox36";
+            this.INAmaterialTextBox36.Size = new System.Drawing.Size(172, 50);
+            this.INAmaterialTextBox36.TabIndex = 22;
+            this.INAmaterialTextBox36.Text = "";
+            // 
+            // INAmaterialTextBox35
+            // 
+            this.INAmaterialTextBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.INAmaterialTextBox35.Depth = 0;
+            this.INAmaterialTextBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.INAmaterialTextBox35.Location = new System.Drawing.Point(515, 270);
+            this.INAmaterialTextBox35.MaxLength = 50;
+            this.INAmaterialTextBox35.MouseState = MaterialSkin.MouseState.OUT;
+            this.INAmaterialTextBox35.Multiline = false;
+            this.INAmaterialTextBox35.Name = "INAmaterialTextBox35";
+            this.INAmaterialTextBox35.Size = new System.Drawing.Size(172, 50);
+            this.INAmaterialTextBox35.TabIndex = 21;
+            this.INAmaterialTextBox35.Text = "";
+            // 
+            // INAmaterialTextBox34
+            // 
+            this.INAmaterialTextBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.INAmaterialTextBox34.Depth = 0;
+            this.INAmaterialTextBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.INAmaterialTextBox34.Location = new System.Drawing.Point(43, 351);
+            this.INAmaterialTextBox34.MaxLength = 50;
+            this.INAmaterialTextBox34.MouseState = MaterialSkin.MouseState.OUT;
+            this.INAmaterialTextBox34.Multiline = false;
+            this.INAmaterialTextBox34.Name = "INAmaterialTextBox34";
+            this.INAmaterialTextBox34.Size = new System.Drawing.Size(172, 50);
+            this.INAmaterialTextBox34.TabIndex = 20;
+            this.INAmaterialTextBox34.Text = "";
+            // 
+            // INAmaterialTextBox33
+            // 
+            this.INAmaterialTextBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.INAmaterialTextBox33.Depth = 0;
+            this.INAmaterialTextBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.INAmaterialTextBox33.Location = new System.Drawing.Point(58, 268);
+            this.INAmaterialTextBox33.MaxLength = 50;
+            this.INAmaterialTextBox33.MouseState = MaterialSkin.MouseState.OUT;
+            this.INAmaterialTextBox33.Multiline = false;
+            this.INAmaterialTextBox33.Name = "INAmaterialTextBox33";
+            this.INAmaterialTextBox33.Size = new System.Drawing.Size(172, 50);
+            this.INAmaterialTextBox33.TabIndex = 19;
+            this.INAmaterialTextBox33.Text = "";
             // 
             // locnotavailpicbox
             // 
@@ -7282,6 +7515,7 @@ namespace Time_Table_managemnt
             this.locnotavailpicbox.Size = new System.Drawing.Size(43, 41);
             this.locnotavailpicbox.TabIndex = 18;
             this.locnotavailpicbox.TabStop = false;
+            this.locnotavailpicbox.Click += new System.EventHandler(this.locnotavailpicbox_Click);
             // 
             // locnotavaildeletebut
             // 
@@ -7300,6 +7534,7 @@ namespace Time_Table_managemnt
             this.locnotavaildeletebut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.locnotavaildeletebut.UseAccentColor = false;
             this.locnotavaildeletebut.UseVisualStyleBackColor = true;
+            this.locnotavaildeletebut.Click += new System.EventHandler(this.locnotavaildeletebut_Click);
             // 
             // locnotavailupdatebut
             // 
@@ -7318,6 +7553,7 @@ namespace Time_Table_managemnt
             this.locnotavailupdatebut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.locnotavailupdatebut.UseAccentColor = false;
             this.locnotavailupdatebut.UseVisualStyleBackColor = true;
+            this.locnotavailupdatebut.Click += new System.EventHandler(this.locnotavailupdatebut_Click);
             // 
             // locnotavailrefreshbut
             // 
@@ -7336,163 +7572,14 @@ namespace Time_Table_managemnt
             this.locnotavailrefreshbut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.locnotavailrefreshbut.UseAccentColor = false;
             this.locnotavailrefreshbut.UseVisualStyleBackColor = true;
-            // 
-            // locnotavaildataGridView9
-            // 
-            this.locnotavaildataGridView9.BackgroundColor = System.Drawing.Color.Azure;
-            this.locnotavaildataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.locnotavaildataGridView9.Location = new System.Drawing.Point(13, 2);
-            this.locnotavaildataGridView9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.locnotavaildataGridView9.Name = "locnotavaildataGridView9";
-            this.locnotavaildataGridView9.RowHeadersWidth = 51;
-            this.locnotavaildataGridView9.RowTemplate.Height = 24;
-            this.locnotavaildataGridView9.Size = new System.Drawing.Size(635, 231);
-            this.locnotavaildataGridView9.TabIndex = 14;
-            // 
-            // INAnumericUpDown12
-            // 
-            this.INAnumericUpDown12.Location = new System.Drawing.Point(605, 366);
-            this.INAnumericUpDown12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.INAnumericUpDown12.Name = "INAnumericUpDown12";
-            this.INAnumericUpDown12.Size = new System.Drawing.Size(75, 22);
-            this.INAnumericUpDown12.TabIndex = 13;
-            // 
-            // INAnumericUpDown11
-            // 
-            this.INAnumericUpDown11.Location = new System.Drawing.Point(429, 366);
-            this.INAnumericUpDown11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.INAnumericUpDown11.Name = "INAnumericUpDown11";
-            this.INAnumericUpDown11.Size = new System.Drawing.Size(75, 22);
-            this.INAnumericUpDown11.TabIndex = 12;
-            // 
-            // INAnumericUpDown10
-            // 
-            this.INAnumericUpDown10.Location = new System.Drawing.Point(605, 271);
-            this.INAnumericUpDown10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.INAnumericUpDown10.Name = "INAnumericUpDown10";
-            this.INAnumericUpDown10.Size = new System.Drawing.Size(75, 22);
-            this.INAnumericUpDown10.TabIndex = 11;
-            // 
-            // INAnumericUpDown9
-            // 
-            this.INAnumericUpDown9.Location = new System.Drawing.Point(429, 271);
-            this.INAnumericUpDown9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.INAnumericUpDown9.Name = "INAnumericUpDown9";
-            this.INAnumericUpDown9.Size = new System.Drawing.Size(75, 22);
-            this.INAnumericUpDown9.TabIndex = 10;
-            // 
-            // INAmaterialComboBox13
-            // 
-            this.INAmaterialComboBox13.AutoResize = false;
-            this.INAmaterialComboBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.INAmaterialComboBox13.Depth = 0;
-            this.INAmaterialComboBox13.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.INAmaterialComboBox13.DropDownHeight = 174;
-            this.INAmaterialComboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.INAmaterialComboBox13.DropDownWidth = 121;
-            this.INAmaterialComboBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.INAmaterialComboBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.INAmaterialComboBox13.FormattingEnabled = true;
-            this.INAmaterialComboBox13.IntegralHeight = false;
-            this.INAmaterialComboBox13.ItemHeight = 43;
-            this.INAmaterialComboBox13.Location = new System.Drawing.Point(87, 354);
-            this.INAmaterialComboBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.INAmaterialComboBox13.MaxDropDownItems = 4;
-            this.INAmaterialComboBox13.MouseState = MaterialSkin.MouseState.OUT;
-            this.INAmaterialComboBox13.Name = "INAmaterialComboBox13";
-            this.INAmaterialComboBox13.Size = new System.Drawing.Size(255, 49);
-            this.INAmaterialComboBox13.StartIndex = 0;
-            this.INAmaterialComboBox13.TabIndex = 9;
-            // 
-            // INAmaterialComboBox12
-            // 
-            this.INAmaterialComboBox12.AutoResize = false;
-            this.INAmaterialComboBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.INAmaterialComboBox12.Depth = 0;
-            this.INAmaterialComboBox12.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.INAmaterialComboBox12.DropDownHeight = 174;
-            this.INAmaterialComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.INAmaterialComboBox12.DropDownWidth = 121;
-            this.INAmaterialComboBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.INAmaterialComboBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.INAmaterialComboBox12.FormattingEnabled = true;
-            this.INAmaterialComboBox12.IntegralHeight = false;
-            this.INAmaterialComboBox12.ItemHeight = 43;
-            this.INAmaterialComboBox12.Location = new System.Drawing.Point(88, 270);
-            this.INAmaterialComboBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.INAmaterialComboBox12.MaxDropDownItems = 4;
-            this.INAmaterialComboBox12.MouseState = MaterialSkin.MouseState.OUT;
-            this.INAmaterialComboBox12.Name = "INAmaterialComboBox12";
-            this.INAmaterialComboBox12.Size = new System.Drawing.Size(255, 49);
-            this.INAmaterialComboBox12.StartIndex = 0;
-            this.INAmaterialComboBox12.TabIndex = 8;
-            // 
-            // INAmaterialLabel51
-            // 
-            this.INAmaterialLabel51.AutoSize = true;
-            this.INAmaterialLabel51.Depth = 0;
-            this.INAmaterialLabel51.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.INAmaterialLabel51.Location = new System.Drawing.Point(685, 366);
-            this.INAmaterialLabel51.MouseState = MaterialSkin.MouseState.HOVER;
-            this.INAmaterialLabel51.Name = "INAmaterialLabel51";
-            this.INAmaterialLabel51.Size = new System.Drawing.Size(58, 19);
-            this.INAmaterialLabel51.TabIndex = 7;
-            this.INAmaterialLabel51.Text = "Minutes";
-            // 
-            // INAmaterialLabel50
-            // 
-            this.INAmaterialLabel50.AutoSize = true;
-            this.INAmaterialLabel50.Depth = 0;
-            this.INAmaterialLabel50.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.INAmaterialLabel50.Location = new System.Drawing.Point(521, 369);
-            this.INAmaterialLabel50.MouseState = MaterialSkin.MouseState.HOVER;
-            this.INAmaterialLabel50.Name = "INAmaterialLabel50";
-            this.INAmaterialLabel50.Size = new System.Drawing.Size(43, 19);
-            this.INAmaterialLabel50.TabIndex = 6;
-            this.INAmaterialLabel50.Text = "Hours";
-            // 
-            // INAmaterialLabel49
-            // 
-            this.INAmaterialLabel49.AutoSize = true;
-            this.INAmaterialLabel49.Depth = 0;
-            this.INAmaterialLabel49.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.INAmaterialLabel49.Location = new System.Drawing.Point(685, 274);
-            this.INAmaterialLabel49.MouseState = MaterialSkin.MouseState.HOVER;
-            this.INAmaterialLabel49.Name = "INAmaterialLabel49";
-            this.INAmaterialLabel49.Size = new System.Drawing.Size(58, 19);
-            this.INAmaterialLabel49.TabIndex = 5;
-            this.INAmaterialLabel49.Text = "Minutes";
-            // 
-            // INAmaterialLabel48
-            // 
-            this.INAmaterialLabel48.AutoSize = true;
-            this.INAmaterialLabel48.Depth = 0;
-            this.INAmaterialLabel48.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.INAmaterialLabel48.Location = new System.Drawing.Point(521, 274);
-            this.INAmaterialLabel48.MouseState = MaterialSkin.MouseState.HOVER;
-            this.INAmaterialLabel48.Name = "INAmaterialLabel48";
-            this.INAmaterialLabel48.Size = new System.Drawing.Size(43, 19);
-            this.INAmaterialLabel48.TabIndex = 4;
-            this.INAmaterialLabel48.Text = "Hours";
-            // 
-            // INAmaterialLabel47
-            // 
-            this.INAmaterialLabel47.AutoSize = true;
-            this.INAmaterialLabel47.Depth = 0;
-            this.INAmaterialLabel47.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.INAmaterialLabel47.Location = new System.Drawing.Point(416, 329);
-            this.INAmaterialLabel47.MouseState = MaterialSkin.MouseState.HOVER;
-            this.INAmaterialLabel47.Name = "INAmaterialLabel47";
-            this.INAmaterialLabel47.Size = new System.Drawing.Size(68, 19);
-            this.INAmaterialLabel47.TabIndex = 3;
-            this.INAmaterialLabel47.Text = "End Time";
+            this.locnotavailrefreshbut.Click += new System.EventHandler(this.locnotavailrefreshbut_Click);
             // 
             // INAmaterialLabel46
             // 
             this.INAmaterialLabel46.AutoSize = true;
             this.INAmaterialLabel46.Depth = 0;
             this.INAmaterialLabel46.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.INAmaterialLabel46.Location = new System.Drawing.Point(416, 239);
+            this.INAmaterialLabel46.Location = new System.Drawing.Point(521, 245);
             this.INAmaterialLabel46.MouseState = MaterialSkin.MouseState.HOVER;
             this.INAmaterialLabel46.Name = "INAmaterialLabel46";
             this.INAmaterialLabel46.Size = new System.Drawing.Size(75, 19);
@@ -7558,6 +7645,7 @@ namespace Time_Table_managemnt
             this.locnotavailviewbut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.locnotavailviewbut.UseAccentColor = false;
             this.locnotavailviewbut.UseVisualStyleBackColor = true;
+            this.locnotavailviewbut.Click += new System.EventHandler(this.locnotavailviewbut_Click);
             // 
             // locnotavailaddbut
             // 
@@ -7576,46 +7664,7 @@ namespace Time_Table_managemnt
             this.locnotavailaddbut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.locnotavailaddbut.UseAccentColor = false;
             this.locnotavailaddbut.UseVisualStyleBackColor = true;
-            // 
-            // ANLmaterialLabel51
-            // 
-            this.ANLmaterialLabel51.AutoSize = true;
-            this.ANLmaterialLabel51.Depth = 0;
-            this.ANLmaterialLabel51.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ANLmaterialLabel51.Location = new System.Drawing.Point(708, 217);
-            this.ANLmaterialLabel51.MouseState = MaterialSkin.MouseState.HOVER;
-            this.ANLmaterialLabel51.Name = "ANLmaterialLabel51";
-            this.ANLmaterialLabel51.Size = new System.Drawing.Size(58, 19);
-            this.ANLmaterialLabel51.TabIndex = 21;
-            this.ANLmaterialLabel51.Text = "Minutes";
-            // 
-            // ANLnumericUpDown12
-            // 
-            this.ANLnumericUpDown12.Location = new System.Drawing.Point(608, 213);
-            this.ANLnumericUpDown12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ANLnumericUpDown12.Name = "ANLnumericUpDown12";
-            this.ANLnumericUpDown12.Size = new System.Drawing.Size(93, 22);
-            this.ANLnumericUpDown12.TabIndex = 20;
-            // 
-            // ANLmaterialLabel50
-            // 
-            this.ANLmaterialLabel50.AutoSize = true;
-            this.ANLmaterialLabel50.Depth = 0;
-            this.ANLmaterialLabel50.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ANLmaterialLabel50.Location = new System.Drawing.Point(528, 225);
-            this.ANLmaterialLabel50.MouseState = MaterialSkin.MouseState.HOVER;
-            this.ANLmaterialLabel50.Name = "ANLmaterialLabel50";
-            this.ANLmaterialLabel50.Size = new System.Drawing.Size(43, 19);
-            this.ANLmaterialLabel50.TabIndex = 19;
-            this.ANLmaterialLabel50.Text = "Hours";
-            // 
-            // ANLnumericUpDown11
-            // 
-            this.ANLnumericUpDown11.Location = new System.Drawing.Point(431, 223);
-            this.ANLnumericUpDown11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ANLnumericUpDown11.Name = "ANLnumericUpDown11";
-            this.ANLnumericUpDown11.Size = new System.Drawing.Size(91, 22);
-            this.ANLnumericUpDown11.TabIndex = 18;
+            this.locnotavailaddbut.Click += new System.EventHandler(this.locnotavailaddbut_Click);
             // 
             // ANLmaterialLabel47
             // 
@@ -7629,46 +7678,6 @@ namespace Time_Table_managemnt
             this.ANLmaterialLabel47.TabIndex = 17;
             this.ANLmaterialLabel47.Text = "End Time";
             // 
-            // ANLmaterialLabel49
-            // 
-            this.ANLmaterialLabel49.AutoSize = true;
-            this.ANLmaterialLabel49.Depth = 0;
-            this.ANLmaterialLabel49.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ANLmaterialLabel49.Location = new System.Drawing.Point(708, 105);
-            this.ANLmaterialLabel49.MouseState = MaterialSkin.MouseState.HOVER;
-            this.ANLmaterialLabel49.Name = "ANLmaterialLabel49";
-            this.ANLmaterialLabel49.Size = new System.Drawing.Size(58, 19);
-            this.ANLmaterialLabel49.TabIndex = 16;
-            this.ANLmaterialLabel49.Text = "Minutes";
-            // 
-            // ANLnumericUpDown10
-            // 
-            this.ANLnumericUpDown10.Location = new System.Drawing.Point(608, 102);
-            this.ANLnumericUpDown10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ANLnumericUpDown10.Name = "ANLnumericUpDown10";
-            this.ANLnumericUpDown10.Size = new System.Drawing.Size(93, 22);
-            this.ANLnumericUpDown10.TabIndex = 15;
-            // 
-            // ANLmaterialLabel48
-            // 
-            this.ANLmaterialLabel48.AutoSize = true;
-            this.ANLmaterialLabel48.Depth = 0;
-            this.ANLmaterialLabel48.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ANLmaterialLabel48.Location = new System.Drawing.Point(528, 102);
-            this.ANLmaterialLabel48.MouseState = MaterialSkin.MouseState.HOVER;
-            this.ANLmaterialLabel48.Name = "ANLmaterialLabel48";
-            this.ANLmaterialLabel48.Size = new System.Drawing.Size(43, 19);
-            this.ANLmaterialLabel48.TabIndex = 14;
-            this.ANLmaterialLabel48.Text = "Hours";
-            // 
-            // ANLnumericUpDown9
-            // 
-            this.ANLnumericUpDown9.Location = new System.Drawing.Point(431, 98);
-            this.ANLnumericUpDown9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ANLnumericUpDown9.Name = "ANLnumericUpDown9";
-            this.ANLnumericUpDown9.Size = new System.Drawing.Size(91, 22);
-            this.ANLnumericUpDown9.TabIndex = 13;
-            // 
             // ANLmaterialLabel46
             // 
             this.ANLmaterialLabel46.AutoSize = true;
@@ -7681,28 +7690,36 @@ namespace Time_Table_managemnt
             this.ANLmaterialLabel46.TabIndex = 12;
             this.ANLmaterialLabel46.Text = "Start Time";
             // 
-            // materialComboBox13
+            // ANLmaterialComboBox13
             // 
-            this.materialComboBox13.AutoResize = false;
-            this.materialComboBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox13.Depth = 0;
-            this.materialComboBox13.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox13.DropDownHeight = 174;
-            this.materialComboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox13.DropDownWidth = 121;
-            this.materialComboBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox13.FormattingEnabled = true;
-            this.materialComboBox13.IntegralHeight = false;
-            this.materialComboBox13.ItemHeight = 43;
-            this.materialComboBox13.Location = new System.Drawing.Point(69, 210);
-            this.materialComboBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialComboBox13.MaxDropDownItems = 4;
-            this.materialComboBox13.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialComboBox13.Name = "materialComboBox13";
-            this.materialComboBox13.Size = new System.Drawing.Size(257, 49);
-            this.materialComboBox13.StartIndex = 0;
-            this.materialComboBox13.TabIndex = 11;
+            this.ANLmaterialComboBox13.AutoResize = false;
+            this.ANLmaterialComboBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ANLmaterialComboBox13.Depth = 0;
+            this.ANLmaterialComboBox13.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.ANLmaterialComboBox13.DropDownHeight = 174;
+            this.ANLmaterialComboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ANLmaterialComboBox13.DropDownWidth = 121;
+            this.ANLmaterialComboBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.ANLmaterialComboBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ANLmaterialComboBox13.FormattingEnabled = true;
+            this.ANLmaterialComboBox13.IntegralHeight = false;
+            this.ANLmaterialComboBox13.ItemHeight = 43;
+            this.ANLmaterialComboBox13.Items.AddRange(new object[] {
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"});
+            this.ANLmaterialComboBox13.Location = new System.Drawing.Point(69, 210);
+            this.ANLmaterialComboBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ANLmaterialComboBox13.MaxDropDownItems = 4;
+            this.ANLmaterialComboBox13.MouseState = MaterialSkin.MouseState.OUT;
+            this.ANLmaterialComboBox13.Name = "ANLmaterialComboBox13";
+            this.ANLmaterialComboBox13.Size = new System.Drawing.Size(257, 49);
+            this.ANLmaterialComboBox13.StartIndex = 0;
+            this.ANLmaterialComboBox13.TabIndex = 11;
             // 
             // ANLmaterialLabel45
             // 
@@ -7716,28 +7733,38 @@ namespace Time_Table_managemnt
             this.ANLmaterialLabel45.TabIndex = 10;
             this.ANLmaterialLabel45.Text = "Select Day";
             // 
-            // materialComboBox12
+            // ANLmaterialComboBox12
             // 
-            this.materialComboBox12.AutoResize = false;
-            this.materialComboBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox12.Depth = 0;
-            this.materialComboBox12.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox12.DropDownHeight = 174;
-            this.materialComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox12.DropDownWidth = 121;
-            this.materialComboBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox12.FormattingEnabled = true;
-            this.materialComboBox12.IntegralHeight = false;
-            this.materialComboBox12.ItemHeight = 43;
-            this.materialComboBox12.Location = new System.Drawing.Point(69, 90);
-            this.materialComboBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.materialComboBox12.MaxDropDownItems = 4;
-            this.materialComboBox12.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialComboBox12.Name = "materialComboBox12";
-            this.materialComboBox12.Size = new System.Drawing.Size(257, 49);
-            this.materialComboBox12.StartIndex = 0;
-            this.materialComboBox12.TabIndex = 9;
+            this.ANLmaterialComboBox12.AutoResize = false;
+            this.ANLmaterialComboBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ANLmaterialComboBox12.Depth = 0;
+            this.ANLmaterialComboBox12.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.ANLmaterialComboBox12.DropDownHeight = 174;
+            this.ANLmaterialComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ANLmaterialComboBox12.DropDownWidth = 121;
+            this.ANLmaterialComboBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.ANLmaterialComboBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ANLmaterialComboBox12.FormattingEnabled = true;
+            this.ANLmaterialComboBox12.IntegralHeight = false;
+            this.ANLmaterialComboBox12.ItemHeight = 43;
+            this.ANLmaterialComboBox12.Items.AddRange(new object[] {
+            "B501",
+            "A001",
+            "B01",
+            "5001",
+            "EN12",
+            "EN13",
+            "ENg55",
+            "A501",
+            "C401"});
+            this.ANLmaterialComboBox12.Location = new System.Drawing.Point(69, 90);
+            this.ANLmaterialComboBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ANLmaterialComboBox12.MaxDropDownItems = 4;
+            this.ANLmaterialComboBox12.MouseState = MaterialSkin.MouseState.OUT;
+            this.ANLmaterialComboBox12.Name = "ANLmaterialComboBox12";
+            this.ANLmaterialComboBox12.Size = new System.Drawing.Size(257, 49);
+            this.ANLmaterialComboBox12.StartIndex = 0;
+            this.ANLmaterialComboBox12.TabIndex = 9;
             // 
             // ANLmaterialLabel44
             // 
@@ -7885,8 +7912,8 @@ namespace Time_Table_managemnt
             this.SessionGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SessionGridView1.Name = "SessionGridView1";
             this.SessionGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Red;
-            this.SessionGridView1.RowsDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Red;
+            this.SessionGridView1.RowsDefaultCellStyle = dataGridViewCellStyle13;
             this.SessionGridView1.RowTemplate.Height = 24;
             this.SessionGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SessionGridView1.Size = new System.Drawing.Size(508, 262);
@@ -8158,7 +8185,6 @@ namespace Time_Table_managemnt
             // 
             this.Requirmentspanel2.BackColor = System.Drawing.Color.White;
             this.Requirmentspanel2.Controls.Add(this.materialTabSelector1);
-            this.Requirmentspanel2.Controls.Add(this.updatenotsessionpanel);
             this.Requirmentspanel2.Controls.Add(this.materialTabControl2);
             this.Requirmentspanel2.Location = new System.Drawing.Point(117, 62);
             this.Requirmentspanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -8230,8 +8256,8 @@ namespace Time_Table_managemnt
             this.CondataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CondataGridView1.Name = "CondataGridView1";
             this.CondataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.Red;
-            this.CondataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Red;
+            this.CondataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle14;
             this.CondataGridView1.RowTemplate.Height = 24;
             this.CondataGridView1.Size = new System.Drawing.Size(447, 187);
             this.CondataGridView1.TabIndex = 33;
@@ -8255,8 +8281,8 @@ namespace Time_Table_managemnt
             this.ConsecutiveDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ConsecutiveDataGridView.Name = "ConsecutiveDataGridView";
             this.ConsecutiveDataGridView.RowHeadersWidth = 51;
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Red;
-            this.ConsecutiveDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Red;
+            this.ConsecutiveDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.ConsecutiveDataGridView.RowTemplate.Height = 24;
             this.ConsecutiveDataGridView.Size = new System.Drawing.Size(748, 283);
             this.ConsecutiveDataGridView.TabIndex = 31;
@@ -8367,8 +8393,8 @@ namespace Time_Table_managemnt
             this.ParellDatagridview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ParellDatagridview.Name = "ParellDatagridview";
             this.ParellDatagridview.RowHeadersWidth = 51;
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Red;
-            this.ParellDatagridview.RowsDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Red;
+            this.ParellDatagridview.RowsDefaultCellStyle = dataGridViewCellStyle16;
             this.ParellDatagridview.RowTemplate.Height = 24;
             this.ParellDatagridview.Size = new System.Drawing.Size(748, 283);
             this.ParellDatagridview.TabIndex = 34;
@@ -8390,8 +8416,8 @@ namespace Time_Table_managemnt
             this.PaldataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PaldataGridView1.Name = "PaldataGridView1";
             this.PaldataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.Red;
-            this.PaldataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Red;
+            this.PaldataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle17;
             this.PaldataGridView1.RowTemplate.Height = 24;
             this.PaldataGridView1.Size = new System.Drawing.Size(447, 187);
             this.PaldataGridView1.TabIndex = 33;
@@ -8518,8 +8544,8 @@ namespace Time_Table_managemnt
             this.NondataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NondataGridView1.Name = "NondataGridView1";
             this.NondataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.Red;
-            this.NondataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Red;
+            this.NondataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle18;
             this.NondataGridView1.RowTemplate.Height = 24;
             this.NondataGridView1.Size = new System.Drawing.Size(447, 187);
             this.NondataGridView1.TabIndex = 33;
@@ -8543,8 +8569,8 @@ namespace Time_Table_managemnt
             this.datagridviewcoloum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datagridviewcoloum.Name = "datagridviewcoloum";
             this.datagridviewcoloum.RowHeadersWidth = 51;
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Red;
-            this.datagridviewcoloum.RowsDefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Red;
+            this.datagridviewcoloum.RowsDefaultCellStyle = dataGridViewCellStyle19;
             this.datagridviewcoloum.RowTemplate.Height = 24;
             this.datagridviewcoloum.Size = new System.Drawing.Size(748, 283);
             this.datagridviewcoloum.TabIndex = 35;
@@ -8630,6 +8656,7 @@ namespace Time_Table_managemnt
             // addnotsessiontabPage
             // 
             this.addnotsessiontabPage.Controls.Add(this.ANSmaterialComboBox26);
+            this.addnotsessiontabPage.Controls.Add(this.updatenotsessionpanel);
             this.addnotsessiontabPage.Controls.Add(this.ANSclearbut);
             this.addnotsessiontabPage.Controls.Add(this.ANSviewbut);
             this.addnotsessiontabPage.Controls.Add(this.ANSsubmitbut);
@@ -8667,6 +8694,15 @@ namespace Time_Table_managemnt
             this.ANSmaterialComboBox26.FormattingEnabled = true;
             this.ANSmaterialComboBox26.IntegralHeight = false;
             this.ANSmaterialComboBox26.ItemHeight = 43;
+            this.ANSmaterialComboBox26.Items.AddRange(new object[] {
+            "08.30-09.30",
+            "09.30-10.30",
+            "10.30-11.30",
+            "11.30-12.30",
+            "12.30-1.30",
+            "01.30-02.30",
+            "02.30-03.30",
+            "03.30-04.30"});
             this.ANSmaterialComboBox26.Location = new System.Drawing.Point(484, 270);
             this.ANSmaterialComboBox26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ANSmaterialComboBox26.MaxDropDownItems = 4;
@@ -8676,6 +8712,285 @@ namespace Time_Table_managemnt
             this.ANSmaterialComboBox26.StartIndex = 0;
             this.ANSmaterialComboBox26.TabIndex = 41;
             // 
+            // updatenotsessionpanel
+            // 
+            this.updatenotsessionpanel.BackColor = System.Drawing.Color.White;
+            this.updatenotsessionpanel.Controls.Add(this.UNSdataGridView91);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialTextBox38);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialTextBox37);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialTextBox36);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialTextBox35);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialTextBox34);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialTextBox33);
+            this.updatenotsessionpanel.Controls.Add(this.updatenotsessionpicBox);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel50);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel49);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel48);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel47);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel46);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel45);
+            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel44);
+            this.updatenotsessionpanel.Controls.Add(this.UNSdeletebut);
+            this.updatenotsessionpanel.Controls.Add(this.UNSupdatebut);
+            this.updatenotsessionpanel.Controls.Add(this.UNSrefreshbut);
+            this.updatenotsessionpanel.Location = new System.Drawing.Point(0, 2);
+            this.updatenotsessionpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.updatenotsessionpanel.Name = "updatenotsessionpanel";
+            this.updatenotsessionpanel.Size = new System.Drawing.Size(816, 501);
+            this.updatenotsessionpanel.TabIndex = 40;
+            // 
+            // UNSdataGridView91
+            // 
+            this.UNSdataGridView91.BackgroundColor = System.Drawing.Color.MintCream;
+            this.UNSdataGridView91.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.UNSdataGridView91.Location = new System.Drawing.Point(25, 13);
+            this.UNSdataGridView91.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.UNSdataGridView91.Name = "UNSdataGridView91";
+            this.UNSdataGridView91.RowHeadersWidth = 51;
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Red;
+            this.UNSdataGridView91.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            this.UNSdataGridView91.RowTemplate.Height = 24;
+            this.UNSdataGridView91.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.UNSdataGridView91.Size = new System.Drawing.Size(686, 187);
+            this.UNSdataGridView91.TabIndex = 36;
+            this.UNSdataGridView91.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UNSdataGridView91_CellClick);
+            // 
+            // UNSmaterialTextBox38
+            // 
+            this.UNSmaterialTextBox38.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UNSmaterialTextBox38.Depth = 0;
+            this.UNSmaterialTextBox38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.UNSmaterialTextBox38.Location = new System.Drawing.Point(442, 425);
+            this.UNSmaterialTextBox38.MaxLength = 50;
+            this.UNSmaterialTextBox38.MouseState = MaterialSkin.MouseState.OUT;
+            this.UNSmaterialTextBox38.Multiline = false;
+            this.UNSmaterialTextBox38.Name = "UNSmaterialTextBox38";
+            this.UNSmaterialTextBox38.Size = new System.Drawing.Size(175, 50);
+            this.UNSmaterialTextBox38.TabIndex = 23;
+            this.UNSmaterialTextBox38.Text = "";
+            // 
+            // UNSmaterialTextBox37
+            // 
+            this.UNSmaterialTextBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UNSmaterialTextBox37.Depth = 0;
+            this.UNSmaterialTextBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.UNSmaterialTextBox37.Location = new System.Drawing.Point(442, 349);
+            this.UNSmaterialTextBox37.MaxLength = 50;
+            this.UNSmaterialTextBox37.MouseState = MaterialSkin.MouseState.OUT;
+            this.UNSmaterialTextBox37.Multiline = false;
+            this.UNSmaterialTextBox37.Name = "UNSmaterialTextBox37";
+            this.UNSmaterialTextBox37.Size = new System.Drawing.Size(281, 50);
+            this.UNSmaterialTextBox37.TabIndex = 22;
+            this.UNSmaterialTextBox37.Text = "";
+            // 
+            // UNSmaterialTextBox36
+            // 
+            this.UNSmaterialTextBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UNSmaterialTextBox36.Depth = 0;
+            this.UNSmaterialTextBox36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.UNSmaterialTextBox36.Location = new System.Drawing.Point(48, 349);
+            this.UNSmaterialTextBox36.MaxLength = 50;
+            this.UNSmaterialTextBox36.MouseState = MaterialSkin.MouseState.OUT;
+            this.UNSmaterialTextBox36.Multiline = false;
+            this.UNSmaterialTextBox36.Name = "UNSmaterialTextBox36";
+            this.UNSmaterialTextBox36.Size = new System.Drawing.Size(281, 50);
+            this.UNSmaterialTextBox36.TabIndex = 21;
+            this.UNSmaterialTextBox36.Text = "";
+            // 
+            // UNSmaterialTextBox35
+            // 
+            this.UNSmaterialTextBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UNSmaterialTextBox35.Depth = 0;
+            this.UNSmaterialTextBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.UNSmaterialTextBox35.Location = new System.Drawing.Point(48, 448);
+            this.UNSmaterialTextBox35.MaxLength = 50;
+            this.UNSmaterialTextBox35.MouseState = MaterialSkin.MouseState.OUT;
+            this.UNSmaterialTextBox35.Multiline = false;
+            this.UNSmaterialTextBox35.Name = "UNSmaterialTextBox35";
+            this.UNSmaterialTextBox35.Size = new System.Drawing.Size(281, 50);
+            this.UNSmaterialTextBox35.TabIndex = 20;
+            this.UNSmaterialTextBox35.Text = "";
+            // 
+            // UNSmaterialTextBox34
+            // 
+            this.UNSmaterialTextBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UNSmaterialTextBox34.Depth = 0;
+            this.UNSmaterialTextBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.UNSmaterialTextBox34.Location = new System.Drawing.Point(454, 239);
+            this.UNSmaterialTextBox34.MaxLength = 50;
+            this.UNSmaterialTextBox34.MouseState = MaterialSkin.MouseState.OUT;
+            this.UNSmaterialTextBox34.Multiline = false;
+            this.UNSmaterialTextBox34.Name = "UNSmaterialTextBox34";
+            this.UNSmaterialTextBox34.Size = new System.Drawing.Size(281, 50);
+            this.UNSmaterialTextBox34.TabIndex = 19;
+            this.UNSmaterialTextBox34.Text = "";
+            // 
+            // UNSmaterialTextBox33
+            // 
+            this.UNSmaterialTextBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UNSmaterialTextBox33.Depth = 0;
+            this.UNSmaterialTextBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.UNSmaterialTextBox33.Location = new System.Drawing.Point(53, 256);
+            this.UNSmaterialTextBox33.MaxLength = 50;
+            this.UNSmaterialTextBox33.MouseState = MaterialSkin.MouseState.OUT;
+            this.UNSmaterialTextBox33.Multiline = false;
+            this.UNSmaterialTextBox33.Name = "UNSmaterialTextBox33";
+            this.UNSmaterialTextBox33.Size = new System.Drawing.Size(281, 50);
+            this.UNSmaterialTextBox33.TabIndex = 18;
+            this.UNSmaterialTextBox33.Text = "";
+            // 
+            // updatenotsessionpicBox
+            // 
+            this.updatenotsessionpicBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("updatenotsessionpicBox.BackgroundImage")));
+            this.updatenotsessionpicBox.Location = new System.Drawing.Point(759, 2);
+            this.updatenotsessionpicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.updatenotsessionpicBox.Name = "updatenotsessionpicBox";
+            this.updatenotsessionpicBox.Size = new System.Drawing.Size(43, 41);
+            this.updatenotsessionpicBox.TabIndex = 17;
+            this.updatenotsessionpicBox.TabStop = false;
+            this.updatenotsessionpicBox.Click += new System.EventHandler(this.updatenotsessionpicBox_Click);
+            // 
+            // UNSmaterialLabel50
+            // 
+            this.UNSmaterialLabel50.AutoSize = true;
+            this.UNSmaterialLabel50.Depth = 0;
+            this.UNSmaterialLabel50.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel50.Location = new System.Drawing.Point(678, 432);
+            this.UNSmaterialLabel50.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel50.Name = "UNSmaterialLabel50";
+            this.UNSmaterialLabel50.Size = new System.Drawing.Size(104, 19);
+            this.UNSmaterialLabel50.TabIndex = 15;
+            this.UNSmaterialLabel50.Text = "Hours.Minutes";
+            // 
+            // UNSmaterialLabel49
+            // 
+            this.UNSmaterialLabel49.AutoSize = true;
+            this.UNSmaterialLabel49.Depth = 0;
+            this.UNSmaterialLabel49.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel49.Location = new System.Drawing.Point(451, 403);
+            this.UNSmaterialLabel49.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel49.Name = "UNSmaterialLabel49";
+            this.UNSmaterialLabel49.Size = new System.Drawing.Size(37, 19);
+            this.UNSmaterialLabel49.TabIndex = 9;
+            this.UNSmaterialLabel49.Text = "Time";
+            // 
+            // UNSmaterialLabel48
+            // 
+            this.UNSmaterialLabel48.AutoSize = true;
+            this.UNSmaterialLabel48.Depth = 0;
+            this.UNSmaterialLabel48.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel48.Location = new System.Drawing.Point(451, 305);
+            this.UNSmaterialLabel48.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel48.Name = "UNSmaterialLabel48";
+            this.UNSmaterialLabel48.Size = new System.Drawing.Size(29, 19);
+            this.UNSmaterialLabel48.TabIndex = 8;
+            this.UNSmaterialLabel48.Text = "Day";
+            // 
+            // UNSmaterialLabel47
+            // 
+            this.UNSmaterialLabel47.AutoSize = true;
+            this.UNSmaterialLabel47.Depth = 0;
+            this.UNSmaterialLabel47.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel47.Location = new System.Drawing.Point(460, 217);
+            this.UNSmaterialLabel47.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel47.Name = "UNSmaterialLabel47";
+            this.UNSmaterialLabel47.Size = new System.Drawing.Size(123, 19);
+            this.UNSmaterialLabel47.TabIndex = 7;
+            this.UNSmaterialLabel47.Text = "Select Session ID";
+            // 
+            // UNSmaterialLabel46
+            // 
+            this.UNSmaterialLabel46.AutoSize = true;
+            this.UNSmaterialLabel46.Depth = 0;
+            this.UNSmaterialLabel46.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel46.Location = new System.Drawing.Point(55, 403);
+            this.UNSmaterialLabel46.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel46.Name = "UNSmaterialLabel46";
+            this.UNSmaterialLabel46.Size = new System.Drawing.Size(123, 19);
+            this.UNSmaterialLabel46.TabIndex = 6;
+            this.UNSmaterialLabel46.Text = "Select Sub Group";
+            // 
+            // UNSmaterialLabel45
+            // 
+            this.UNSmaterialLabel45.AutoSize = true;
+            this.UNSmaterialLabel45.Depth = 0;
+            this.UNSmaterialLabel45.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel45.Location = new System.Drawing.Point(55, 319);
+            this.UNSmaterialLabel45.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel45.Name = "UNSmaterialLabel45";
+            this.UNSmaterialLabel45.Size = new System.Drawing.Size(91, 19);
+            this.UNSmaterialLabel45.TabIndex = 5;
+            this.UNSmaterialLabel45.Text = "Select Group";
+            // 
+            // UNSmaterialLabel44
+            // 
+            this.UNSmaterialLabel44.AutoSize = true;
+            this.UNSmaterialLabel44.Depth = 0;
+            this.UNSmaterialLabel44.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.UNSmaterialLabel44.Location = new System.Drawing.Point(60, 231);
+            this.UNSmaterialLabel44.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSmaterialLabel44.Name = "UNSmaterialLabel44";
+            this.UNSmaterialLabel44.Size = new System.Drawing.Size(105, 19);
+            this.UNSmaterialLabel44.TabIndex = 4;
+            this.UNSmaterialLabel44.Text = "Select Lecturer";
+            // 
+            // UNSdeletebut
+            // 
+            this.UNSdeletebut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.UNSdeletebut.Depth = 0;
+            this.UNSdeletebut.DrawShadows = true;
+            this.UNSdeletebut.HighEmphasis = true;
+            this.UNSdeletebut.Icon = null;
+            this.UNSdeletebut.Location = new System.Drawing.Point(722, 164);
+            this.UNSdeletebut.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.UNSdeletebut.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSdeletebut.Name = "UNSdeletebut";
+            this.UNSdeletebut.Size = new System.Drawing.Size(73, 36);
+            this.UNSdeletebut.TabIndex = 3;
+            this.UNSdeletebut.Text = "Delete";
+            this.UNSdeletebut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.UNSdeletebut.UseAccentColor = false;
+            this.UNSdeletebut.UseVisualStyleBackColor = true;
+            this.UNSdeletebut.Click += new System.EventHandler(this.UNSdeletebut_Click);
+            // 
+            // UNSupdatebut
+            // 
+            this.UNSupdatebut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.UNSupdatebut.Depth = 0;
+            this.UNSupdatebut.DrawShadows = true;
+            this.UNSupdatebut.HighEmphasis = true;
+            this.UNSupdatebut.Icon = null;
+            this.UNSupdatebut.Location = new System.Drawing.Point(718, 110);
+            this.UNSupdatebut.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.UNSupdatebut.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSupdatebut.Name = "UNSupdatebut";
+            this.UNSupdatebut.Size = new System.Drawing.Size(77, 36);
+            this.UNSupdatebut.TabIndex = 2;
+            this.UNSupdatebut.Text = "Update";
+            this.UNSupdatebut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.UNSupdatebut.UseAccentColor = false;
+            this.UNSupdatebut.UseVisualStyleBackColor = true;
+            this.UNSupdatebut.Click += new System.EventHandler(this.UNSupdatebut_Click);
+            // 
+            // UNSrefreshbut
+            // 
+            this.UNSrefreshbut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.UNSrefreshbut.Depth = 0;
+            this.UNSrefreshbut.DrawShadows = true;
+            this.UNSrefreshbut.HighEmphasis = true;
+            this.UNSrefreshbut.Icon = null;
+            this.UNSrefreshbut.Location = new System.Drawing.Point(718, 58);
+            this.UNSrefreshbut.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.UNSrefreshbut.MouseState = MaterialSkin.MouseState.HOVER;
+            this.UNSrefreshbut.Name = "UNSrefreshbut";
+            this.UNSrefreshbut.Size = new System.Drawing.Size(84, 36);
+            this.UNSrefreshbut.TabIndex = 1;
+            this.UNSrefreshbut.Text = "Refresh";
+            this.UNSrefreshbut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.UNSrefreshbut.UseAccentColor = false;
+            this.UNSrefreshbut.UseVisualStyleBackColor = true;
+            this.UNSrefreshbut.Click += new System.EventHandler(this.UNSrefreshbut_Click);
+            // 
             // ANSclearbut
             // 
             this.ANSclearbut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -8683,7 +8998,7 @@ namespace Time_Table_managemnt
             this.ANSclearbut.DrawShadows = true;
             this.ANSclearbut.HighEmphasis = true;
             this.ANSclearbut.Icon = null;
-            this.ANSclearbut.Location = new System.Drawing.Point(453, 420);
+            this.ANSclearbut.Location = new System.Drawing.Point(466, 410);
             this.ANSclearbut.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.ANSclearbut.MouseState = MaterialSkin.MouseState.HOVER;
             this.ANSclearbut.Name = "ANSclearbut";
@@ -8741,9 +9056,9 @@ namespace Time_Table_managemnt
             this.ANSmaterialLabel50.Location = new System.Drawing.Point(688, 284);
             this.ANSmaterialLabel50.MouseState = MaterialSkin.MouseState.HOVER;
             this.ANSmaterialLabel50.Name = "ANSmaterialLabel50";
-            this.ANSmaterialLabel50.Size = new System.Drawing.Size(43, 19);
+            this.ANSmaterialLabel50.Size = new System.Drawing.Size(74, 19);
             this.ANSmaterialLabel50.TabIndex = 32;
-            this.ANSmaterialLabel50.Text = "Hours";
+            this.ANSmaterialLabel50.Text = "Hours.min";
             // 
             // ANSmaterialLabel49
             // 
@@ -8771,6 +9086,14 @@ namespace Time_Table_managemnt
             this.ANSmaterialComboBox14.FormattingEnabled = true;
             this.ANSmaterialComboBox14.IntegralHeight = false;
             this.ANSmaterialComboBox14.ItemHeight = 43;
+            this.ANSmaterialComboBox14.Items.AddRange(new object[] {
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"});
             this.ANSmaterialComboBox14.Location = new System.Drawing.Point(484, 166);
             this.ANSmaterialComboBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ANSmaterialComboBox14.MaxDropDownItems = 4;
@@ -8932,283 +9255,6 @@ namespace Time_Table_managemnt
             this.ANSmaterialLabel44.TabIndex = 20;
             this.ANSmaterialLabel44.Text = "Select Lecturer";
             // 
-            // updatenotsessionpanel
-            // 
-            this.updatenotsessionpanel.BackColor = System.Drawing.Color.White;
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialTextBox38);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialTextBox37);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialTextBox36);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialTextBox35);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialTextBox34);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialTextBox33);
-            this.updatenotsessionpanel.Controls.Add(this.updatenotsessionpicBox);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel50);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel49);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel48);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel47);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel46);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel45);
-            this.updatenotsessionpanel.Controls.Add(this.UNSmaterialLabel44);
-            this.updatenotsessionpanel.Controls.Add(this.UNSdeletebut);
-            this.updatenotsessionpanel.Controls.Add(this.UNSupdatebut);
-            this.updatenotsessionpanel.Controls.Add(this.UNSdataGridView9);
-            this.updatenotsessionpanel.Controls.Add(this.UNSrefreshbut);
-            this.updatenotsessionpanel.Location = new System.Drawing.Point(25, 123);
-            this.updatenotsessionpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.updatenotsessionpanel.Name = "updatenotsessionpanel";
-            this.updatenotsessionpanel.Size = new System.Drawing.Size(820, 475);
-            this.updatenotsessionpanel.TabIndex = 40;
-            // 
-            // UNSmaterialTextBox38
-            // 
-            this.UNSmaterialTextBox38.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UNSmaterialTextBox38.Depth = 0;
-            this.UNSmaterialTextBox38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.UNSmaterialTextBox38.Location = new System.Drawing.Point(457, 408);
-            this.UNSmaterialTextBox38.MaxLength = 50;
-            this.UNSmaterialTextBox38.MouseState = MaterialSkin.MouseState.OUT;
-            this.UNSmaterialTextBox38.Multiline = false;
-            this.UNSmaterialTextBox38.Name = "UNSmaterialTextBox38";
-            this.UNSmaterialTextBox38.Size = new System.Drawing.Size(175, 50);
-            this.UNSmaterialTextBox38.TabIndex = 23;
-            this.UNSmaterialTextBox38.Text = "";
-            // 
-            // UNSmaterialTextBox37
-            // 
-            this.UNSmaterialTextBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UNSmaterialTextBox37.Depth = 0;
-            this.UNSmaterialTextBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.UNSmaterialTextBox37.Location = new System.Drawing.Point(454, 327);
-            this.UNSmaterialTextBox37.MaxLength = 50;
-            this.UNSmaterialTextBox37.MouseState = MaterialSkin.MouseState.OUT;
-            this.UNSmaterialTextBox37.Multiline = false;
-            this.UNSmaterialTextBox37.Name = "UNSmaterialTextBox37";
-            this.UNSmaterialTextBox37.Size = new System.Drawing.Size(281, 50);
-            this.UNSmaterialTextBox37.TabIndex = 22;
-            this.UNSmaterialTextBox37.Text = "";
-            // 
-            // UNSmaterialTextBox36
-            // 
-            this.UNSmaterialTextBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UNSmaterialTextBox36.Depth = 0;
-            this.UNSmaterialTextBox36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.UNSmaterialTextBox36.Location = new System.Drawing.Point(77, 330);
-            this.UNSmaterialTextBox36.MaxLength = 50;
-            this.UNSmaterialTextBox36.MouseState = MaterialSkin.MouseState.OUT;
-            this.UNSmaterialTextBox36.Multiline = false;
-            this.UNSmaterialTextBox36.Name = "UNSmaterialTextBox36";
-            this.UNSmaterialTextBox36.Size = new System.Drawing.Size(281, 50);
-            this.UNSmaterialTextBox36.TabIndex = 21;
-            this.UNSmaterialTextBox36.Text = "";
-            // 
-            // UNSmaterialTextBox35
-            // 
-            this.UNSmaterialTextBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UNSmaterialTextBox35.Depth = 0;
-            this.UNSmaterialTextBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.UNSmaterialTextBox35.Location = new System.Drawing.Point(77, 408);
-            this.UNSmaterialTextBox35.MaxLength = 50;
-            this.UNSmaterialTextBox35.MouseState = MaterialSkin.MouseState.OUT;
-            this.UNSmaterialTextBox35.Multiline = false;
-            this.UNSmaterialTextBox35.Name = "UNSmaterialTextBox35";
-            this.UNSmaterialTextBox35.Size = new System.Drawing.Size(281, 50);
-            this.UNSmaterialTextBox35.TabIndex = 20;
-            this.UNSmaterialTextBox35.Text = "";
-            // 
-            // UNSmaterialTextBox34
-            // 
-            this.UNSmaterialTextBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UNSmaterialTextBox34.Depth = 0;
-            this.UNSmaterialTextBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.UNSmaterialTextBox34.Location = new System.Drawing.Point(454, 250);
-            this.UNSmaterialTextBox34.MaxLength = 50;
-            this.UNSmaterialTextBox34.MouseState = MaterialSkin.MouseState.OUT;
-            this.UNSmaterialTextBox34.Multiline = false;
-            this.UNSmaterialTextBox34.Name = "UNSmaterialTextBox34";
-            this.UNSmaterialTextBox34.Size = new System.Drawing.Size(281, 50);
-            this.UNSmaterialTextBox34.TabIndex = 19;
-            this.UNSmaterialTextBox34.Text = "";
-            // 
-            // UNSmaterialTextBox33
-            // 
-            this.UNSmaterialTextBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UNSmaterialTextBox33.Depth = 0;
-            this.UNSmaterialTextBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.UNSmaterialTextBox33.Location = new System.Drawing.Point(77, 256);
-            this.UNSmaterialTextBox33.MaxLength = 50;
-            this.UNSmaterialTextBox33.MouseState = MaterialSkin.MouseState.OUT;
-            this.UNSmaterialTextBox33.Multiline = false;
-            this.UNSmaterialTextBox33.Name = "UNSmaterialTextBox33";
-            this.UNSmaterialTextBox33.Size = new System.Drawing.Size(281, 50);
-            this.UNSmaterialTextBox33.TabIndex = 18;
-            this.UNSmaterialTextBox33.Text = "";
-            // 
-            // updatenotsessionpicBox
-            // 
-            this.updatenotsessionpicBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("updatenotsessionpicBox.BackgroundImage")));
-            this.updatenotsessionpicBox.Location = new System.Drawing.Point(759, 2);
-            this.updatenotsessionpicBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.updatenotsessionpicBox.Name = "updatenotsessionpicBox";
-            this.updatenotsessionpicBox.Size = new System.Drawing.Size(43, 41);
-            this.updatenotsessionpicBox.TabIndex = 17;
-            this.updatenotsessionpicBox.TabStop = false;
-            this.updatenotsessionpicBox.Click += new System.EventHandler(this.updatenotsessionpicBox_Click);
-            // 
-            // UNSmaterialLabel50
-            // 
-            this.UNSmaterialLabel50.AutoSize = true;
-            this.UNSmaterialLabel50.Depth = 0;
-            this.UNSmaterialLabel50.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel50.Location = new System.Drawing.Point(678, 432);
-            this.UNSmaterialLabel50.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel50.Name = "UNSmaterialLabel50";
-            this.UNSmaterialLabel50.Size = new System.Drawing.Size(104, 19);
-            this.UNSmaterialLabel50.TabIndex = 15;
-            this.UNSmaterialLabel50.Text = "Hours.Minutes";
-            // 
-            // UNSmaterialLabel49
-            // 
-            this.UNSmaterialLabel49.AutoSize = true;
-            this.UNSmaterialLabel49.Depth = 0;
-            this.UNSmaterialLabel49.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel49.Location = new System.Drawing.Point(451, 386);
-            this.UNSmaterialLabel49.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel49.Name = "UNSmaterialLabel49";
-            this.UNSmaterialLabel49.Size = new System.Drawing.Size(37, 19);
-            this.UNSmaterialLabel49.TabIndex = 9;
-            this.UNSmaterialLabel49.Text = "Time";
-            // 
-            // UNSmaterialLabel48
-            // 
-            this.UNSmaterialLabel48.AutoSize = true;
-            this.UNSmaterialLabel48.Depth = 0;
-            this.UNSmaterialLabel48.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel48.Location = new System.Drawing.Point(451, 305);
-            this.UNSmaterialLabel48.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel48.Name = "UNSmaterialLabel48";
-            this.UNSmaterialLabel48.Size = new System.Drawing.Size(29, 19);
-            this.UNSmaterialLabel48.TabIndex = 8;
-            this.UNSmaterialLabel48.Text = "Day";
-            // 
-            // UNSmaterialLabel47
-            // 
-            this.UNSmaterialLabel47.AutoSize = true;
-            this.UNSmaterialLabel47.Depth = 0;
-            this.UNSmaterialLabel47.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel47.Location = new System.Drawing.Point(451, 231);
-            this.UNSmaterialLabel47.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel47.Name = "UNSmaterialLabel47";
-            this.UNSmaterialLabel47.Size = new System.Drawing.Size(123, 19);
-            this.UNSmaterialLabel47.TabIndex = 7;
-            this.UNSmaterialLabel47.Text = "Select Session ID";
-            // 
-            // UNSmaterialLabel46
-            // 
-            this.UNSmaterialLabel46.AutoSize = true;
-            this.UNSmaterialLabel46.Depth = 0;
-            this.UNSmaterialLabel46.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel46.Location = new System.Drawing.Point(59, 386);
-            this.UNSmaterialLabel46.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel46.Name = "UNSmaterialLabel46";
-            this.UNSmaterialLabel46.Size = new System.Drawing.Size(123, 19);
-            this.UNSmaterialLabel46.TabIndex = 6;
-            this.UNSmaterialLabel46.Text = "Select Sub Group";
-            // 
-            // UNSmaterialLabel45
-            // 
-            this.UNSmaterialLabel45.AutoSize = true;
-            this.UNSmaterialLabel45.Depth = 0;
-            this.UNSmaterialLabel45.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel45.Location = new System.Drawing.Point(60, 305);
-            this.UNSmaterialLabel45.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel45.Name = "UNSmaterialLabel45";
-            this.UNSmaterialLabel45.Size = new System.Drawing.Size(91, 19);
-            this.UNSmaterialLabel45.TabIndex = 5;
-            this.UNSmaterialLabel45.Text = "Select Group";
-            // 
-            // UNSmaterialLabel44
-            // 
-            this.UNSmaterialLabel44.AutoSize = true;
-            this.UNSmaterialLabel44.Depth = 0;
-            this.UNSmaterialLabel44.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.UNSmaterialLabel44.Location = new System.Drawing.Point(60, 231);
-            this.UNSmaterialLabel44.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSmaterialLabel44.Name = "UNSmaterialLabel44";
-            this.UNSmaterialLabel44.Size = new System.Drawing.Size(105, 19);
-            this.UNSmaterialLabel44.TabIndex = 4;
-            this.UNSmaterialLabel44.Text = "Select Lecturer";
-            // 
-            // UNSdeletebut
-            // 
-            this.UNSdeletebut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.UNSdeletebut.Depth = 0;
-            this.UNSdeletebut.DrawShadows = true;
-            this.UNSdeletebut.HighEmphasis = true;
-            this.UNSdeletebut.Icon = null;
-            this.UNSdeletebut.Location = new System.Drawing.Point(708, 158);
-            this.UNSdeletebut.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.UNSdeletebut.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSdeletebut.Name = "UNSdeletebut";
-            this.UNSdeletebut.Size = new System.Drawing.Size(73, 36);
-            this.UNSdeletebut.TabIndex = 3;
-            this.UNSdeletebut.Text = "Delete";
-            this.UNSdeletebut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.UNSdeletebut.UseAccentColor = false;
-            this.UNSdeletebut.UseVisualStyleBackColor = true;
-            this.UNSdeletebut.Click += new System.EventHandler(this.UNSdeletebut_Click);
-            // 
-            // UNSupdatebut
-            // 
-            this.UNSupdatebut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.UNSupdatebut.Depth = 0;
-            this.UNSupdatebut.DrawShadows = true;
-            this.UNSupdatebut.HighEmphasis = true;
-            this.UNSupdatebut.Icon = null;
-            this.UNSupdatebut.Location = new System.Drawing.Point(704, 110);
-            this.UNSupdatebut.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.UNSupdatebut.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSupdatebut.Name = "UNSupdatebut";
-            this.UNSupdatebut.Size = new System.Drawing.Size(77, 36);
-            this.UNSupdatebut.TabIndex = 2;
-            this.UNSupdatebut.Text = "Update";
-            this.UNSupdatebut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.UNSupdatebut.UseAccentColor = false;
-            this.UNSupdatebut.UseVisualStyleBackColor = true;
-            this.UNSupdatebut.Click += new System.EventHandler(this.UNSupdatebut_Click);
-            // 
-            // UNSdataGridView9
-            // 
-            this.UNSdataGridView9.BackgroundColor = System.Drawing.Color.Azure;
-            this.UNSdataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.UNSdataGridView9.Location = new System.Drawing.Point(14, 20);
-            this.UNSdataGridView9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.UNSdataGridView9.Name = "UNSdataGridView9";
-            this.UNSdataGridView9.RowHeadersWidth = 51;
-            this.UNSdataGridView9.RowTemplate.Height = 24;
-            this.UNSdataGridView9.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.UNSdataGridView9.Size = new System.Drawing.Size(687, 209);
-            this.UNSdataGridView9.TabIndex = 0;
-            this.UNSdataGridView9.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UNSdataGridView9_CellClick);
-            // 
-            // UNSrefreshbut
-            // 
-            this.UNSrefreshbut.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.UNSrefreshbut.Depth = 0;
-            this.UNSrefreshbut.DrawShadows = true;
-            this.UNSrefreshbut.HighEmphasis = true;
-            this.UNSrefreshbut.Icon = null;
-            this.UNSrefreshbut.Location = new System.Drawing.Point(697, 57);
-            this.UNSrefreshbut.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.UNSrefreshbut.MouseState = MaterialSkin.MouseState.HOVER;
-            this.UNSrefreshbut.Name = "UNSrefreshbut";
-            this.UNSrefreshbut.Size = new System.Drawing.Size(84, 36);
-            this.UNSrefreshbut.TabIndex = 1;
-            this.UNSrefreshbut.Text = "Refresh";
-            this.UNSrefreshbut.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.UNSrefreshbut.UseAccentColor = false;
-            this.UNSrefreshbut.UseVisualStyleBackColor = true;
-            this.UNSrefreshbut.Click += new System.EventHandler(this.UNSrefreshbut_Click);
-            // 
             // tabPage11
             // 
             this.tabPage11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage11.BackgroundImage")));
@@ -9252,7 +9298,7 @@ namespace Time_Table_managemnt
             // 
             // tabPage19
             // 
-            this.tabPage19.Controls.Add(this.dataGridView3);
+            this.tabPage19.Controls.Add(this.LecGridView1);
             this.tabPage19.Controls.Add(this.materialButton16);
             this.tabPage19.Controls.Add(this.materialButton3);
             this.tabPage19.Controls.Add(this.materialComboBox5);
@@ -9267,17 +9313,30 @@ namespace Time_Table_managemnt
             this.tabPage19.Text = "Lecturer";
             this.tabPage19.UseVisualStyleBackColor = true;
             // 
-            // dataGridView3
+            // LecGridView1
             // 
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.Azure;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(41, 156);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(684, 318);
-            this.dataGridView3.TabIndex = 8;
+            this.LecGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.LecGridView1.BackgroundColor = System.Drawing.Color.MintCream;
+            this.LecGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.LecGridView1.DefaultCellStyle = dataGridViewCellStyle21;
+            this.LecGridView1.Location = new System.Drawing.Point(50, 176);
+            this.LecGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LecGridView1.Name = "LecGridView1";
+            this.LecGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Red;
+            this.LecGridView1.RowsDefaultCellStyle = dataGridViewCellStyle22;
+            this.LecGridView1.RowTemplate.Height = 60;
+            this.LecGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.LecGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.LecGridView1.Size = new System.Drawing.Size(733, 332);
+            this.LecGridView1.TabIndex = 31;
             // 
             // materialButton16
             // 
@@ -9296,6 +9355,7 @@ namespace Time_Table_managemnt
             this.materialButton16.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton16.UseAccentColor = false;
             this.materialButton16.UseVisualStyleBackColor = true;
+            this.materialButton16.Click += new System.EventHandler(this.materialButton16_Click);
             // 
             // materialButton3
             // 
@@ -9314,6 +9374,7 @@ namespace Time_Table_managemnt
             this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton3.UseAccentColor = false;
             this.materialButton3.UseVisualStyleBackColor = true;
+            this.materialButton3.Click += new System.EventHandler(this.materialButton3_Click_1);
             // 
             // materialComboBox5
             // 
@@ -9337,6 +9398,7 @@ namespace Time_Table_managemnt
             this.materialComboBox5.Size = new System.Drawing.Size(267, 49);
             this.materialComboBox5.StartIndex = 0;
             this.materialComboBox5.TabIndex = 5;
+            this.materialComboBox5.SelectedIndexChanged += new System.EventHandler(this.materialComboBox5_SelectedIndexChanged);
             // 
             // materialLabel19
             // 
@@ -9352,7 +9414,7 @@ namespace Time_Table_managemnt
             // 
             // tabPage20
             // 
-            this.tabPage20.Controls.Add(this.dataGridView4);
+            this.tabPage20.Controls.Add(this.StudentsdataGridView1);
             this.tabPage20.Controls.Add(this.materialButton17);
             this.tabPage20.Controls.Add(this.materialButton18);
             this.tabPage20.Controls.Add(this.materialComboBox6);
@@ -9367,17 +9429,20 @@ namespace Time_Table_managemnt
             this.tabPage20.Text = "Students";
             this.tabPage20.UseVisualStyleBackColor = true;
             // 
-            // dataGridView4
+            // StudentsdataGridView1
             // 
-            this.dataGridView4.BackgroundColor = System.Drawing.Color.Azure;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(61, 218);
-            this.dataGridView4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(684, 318);
-            this.dataGridView4.TabIndex = 13;
+            this.StudentsdataGridView1.BackgroundColor = System.Drawing.Color.MintCream;
+            this.StudentsdataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.StudentsdataGridView1.Location = new System.Drawing.Point(33, 163);
+            this.StudentsdataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StudentsdataGridView1.Name = "StudentsdataGridView1";
+            this.StudentsdataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Red;
+            this.StudentsdataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle23;
+            this.StudentsdataGridView1.RowTemplate.Height = 24;
+            this.StudentsdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.StudentsdataGridView1.Size = new System.Drawing.Size(733, 332);
+            this.StudentsdataGridView1.TabIndex = 32;
             // 
             // materialButton17
             // 
@@ -9414,6 +9479,7 @@ namespace Time_Table_managemnt
             this.materialButton18.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton18.UseAccentColor = false;
             this.materialButton18.UseVisualStyleBackColor = true;
+            this.materialButton18.Click += new System.EventHandler(this.materialButton18_Click);
             // 
             // materialComboBox6
             // 
@@ -9429,6 +9495,23 @@ namespace Time_Table_managemnt
             this.materialComboBox6.FormattingEnabled = true;
             this.materialComboBox6.IntegralHeight = false;
             this.materialComboBox6.ItemHeight = 43;
+            this.materialComboBox6.Items.AddRange(new object[] {
+            "Y1S1.1",
+            "Y1S1.2",
+            "Y1S1.1.1",
+            "Y1S1.1.2",
+            "Y2S1.1",
+            "Y2S1.2",
+            "Y2S1.1.1",
+            "Y2S1.1.2",
+            "Y3S1.1",
+            "Y3S1.2",
+            "Y3S1.1.1",
+            "Y3S1.1.2",
+            "Y4S1.1",
+            "Y4S1.2",
+            "Y4S1.1.1",
+            "Y4S1.1.2"});
             this.materialComboBox6.Location = new System.Drawing.Point(109, 41);
             this.materialComboBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialComboBox6.MaxDropDownItems = 4;
@@ -9437,6 +9520,7 @@ namespace Time_Table_managemnt
             this.materialComboBox6.Size = new System.Drawing.Size(267, 49);
             this.materialComboBox6.StartIndex = 0;
             this.materialComboBox6.TabIndex = 10;
+            this.materialComboBox6.SelectedIndexChanged += new System.EventHandler(this.materialComboBox6_SelectedIndexChanged);
             // 
             // materialLabel20
             // 
@@ -9452,7 +9536,7 @@ namespace Time_Table_managemnt
             // 
             // tabPage21
             // 
-            this.tabPage21.Controls.Add(this.dataGridView5);
+            this.tabPage21.Controls.Add(this.LoacadataGridView1);
             this.tabPage21.Controls.Add(this.materialButton19);
             this.tabPage21.Controls.Add(this.materialButton20);
             this.tabPage21.Controls.Add(this.materialComboBox7);
@@ -9463,20 +9547,23 @@ namespace Time_Table_managemnt
             this.tabPage21.Name = "tabPage21";
             this.tabPage21.Size = new System.Drawing.Size(832, 535);
             this.tabPage21.TabIndex = 2;
-            this.tabPage21.Text = "Locations";
+            this.tabPage21.Text = "subjects";
             this.tabPage21.UseVisualStyleBackColor = true;
             // 
-            // dataGridView5
+            // LoacadataGridView1
             // 
-            this.dataGridView5.BackgroundColor = System.Drawing.Color.Azure;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(62, 155);
-            this.dataGridView5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.RowHeadersWidth = 51;
-            this.dataGridView5.RowTemplate.Height = 24;
-            this.dataGridView5.Size = new System.Drawing.Size(684, 318);
-            this.dataGridView5.TabIndex = 13;
+            this.LoacadataGridView1.BackgroundColor = System.Drawing.Color.MintCream;
+            this.LoacadataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.LoacadataGridView1.Location = new System.Drawing.Point(41, 147);
+            this.LoacadataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LoacadataGridView1.Name = "LoacadataGridView1";
+            this.LoacadataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Red;
+            this.LoacadataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle24;
+            this.LoacadataGridView1.RowTemplate.Height = 24;
+            this.LoacadataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.LoacadataGridView1.Size = new System.Drawing.Size(733, 332);
+            this.LoacadataGridView1.TabIndex = 33;
             // 
             // materialButton19
             // 
@@ -9513,6 +9600,7 @@ namespace Time_Table_managemnt
             this.materialButton20.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton20.UseAccentColor = false;
             this.materialButton20.UseVisualStyleBackColor = true;
+            this.materialButton20.Click += new System.EventHandler(this.materialButton20_Click);
             // 
             // materialComboBox7
             // 
@@ -9528,6 +9616,13 @@ namespace Time_Table_managemnt
             this.materialComboBox7.FormattingEnabled = true;
             this.materialComboBox7.IntegralHeight = false;
             this.materialComboBox7.ItemHeight = 43;
+            this.materialComboBox7.Items.AddRange(new object[] {
+            "ITPM",
+            "MAD",
+            "DSA",
+            "OOP",
+            "ISDM",
+            "SE"});
             this.materialComboBox7.Location = new System.Drawing.Point(177, 42);
             this.materialComboBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialComboBox7.MaxDropDownItems = 4;
@@ -9536,18 +9631,19 @@ namespace Time_Table_managemnt
             this.materialComboBox7.Size = new System.Drawing.Size(267, 49);
             this.materialComboBox7.StartIndex = 0;
             this.materialComboBox7.TabIndex = 10;
+            this.materialComboBox7.SelectedIndexChanged += new System.EventHandler(this.materialComboBox7_SelectedIndexChanged);
             // 
             // materialLabel21
             // 
             this.materialLabel21.AutoSize = true;
             this.materialLabel21.Depth = 0;
             this.materialLabel21.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel21.Location = new System.Drawing.Point(24, 55);
+            this.materialLabel21.Location = new System.Drawing.Point(50, 55);
             this.materialLabel21.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel21.Name = "materialLabel21";
-            this.materialLabel21.Size = new System.Drawing.Size(71, 19);
+            this.materialLabel21.Size = new System.Drawing.Size(62, 19);
             this.materialLabel21.TabIndex = 9;
-            this.materialLabel21.Text = "Locations";
+            this.materialLabel21.Text = "Subjects";
             // 
             // imageList1
             // 
@@ -9597,25 +9693,6 @@ namespace Time_Table_managemnt
             this.pictureBox12.Size = new System.Drawing.Size(43, 47);
             this.pictureBox12.TabIndex = 2;
             this.pictureBox12.TabStop = false;
-            // 
-            // materialButton11
-            // 
-            this.materialButton11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton11.Depth = 0;
-            this.materialButton11.DrawShadows = true;
-            this.materialButton11.HighEmphasis = true;
-            this.materialButton11.Icon = null;
-            this.materialButton11.Location = new System.Drawing.Point(429, 258);
-            this.materialButton11.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton11.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton11.Name = "materialButton11";
-            this.materialButton11.Size = new System.Drawing.Size(114, 36);
-            this.materialButton11.TabIndex = 33;
-            this.materialButton11.Text = "genarate ID";
-            this.materialButton11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton11.UseAccentColor = false;
-            this.materialButton11.UseVisualStyleBackColor = true;
-            this.materialButton11.Click += new System.EventHandler(this.materialButton11_Click);
             // 
             // elipseControl1
             // 
@@ -10072,16 +10149,8 @@ namespace Time_Table_managemnt
             this.addnotavailsesstabPage.PerformLayout();
             this.locnotavailpanel2.ResumeLayout(false);
             this.locnotavailpanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reqdataGridView9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.locnotavailpicbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.locnotavaildataGridView9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.INAnumericUpDown12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.INAnumericUpDown11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.INAnumericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.INAnumericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ANLnumericUpDown12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ANLnumericUpDown11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ANLnumericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ANLnumericUpDown9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
             this.panelManageSessionsRooms.ResumeLayout(false);
             this.MangeSessionRm1.ResumeLayout(false);
@@ -10120,20 +10189,20 @@ namespace Time_Table_managemnt
             this.addnotsessiontabPage.PerformLayout();
             this.updatenotsessionpanel.ResumeLayout(false);
             this.updatenotsessionpanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UNSdataGridView91)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.updatenotsessionpicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UNSdataGridView9)).EndInit();
             this.tabPage11.ResumeLayout(false);
             this.Tab1panel2.ResumeLayout(false);
             this.materialTabControl3.ResumeLayout(false);
             this.tabPage19.ResumeLayout(false);
             this.tabPage19.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LecGridView1)).EndInit();
             this.tabPage20.ResumeLayout(false);
             this.tabPage20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentsdataGridView1)).EndInit();
             this.tabPage21.ResumeLayout(false);
             this.tabPage21.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoacadataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
 
@@ -10206,18 +10275,15 @@ namespace Time_Table_managemnt
         private System.Windows.Forms.TabPage tabPage19;
         private System.Windows.Forms.TabPage tabPage21;
         private MaterialSkin.Controls.MaterialTabSelector materialTabSelector2;
-        private System.Windows.Forms.DataGridView dataGridView3;
         private MaterialSkin.Controls.MaterialButton materialButton16;
         private MaterialSkin.Controls.MaterialButton materialButton3;
         private MaterialSkin.Controls.MaterialComboBox materialComboBox5;
         private MaterialSkin.Controls.MaterialLabel materialLabel19;
         private System.Windows.Forms.TabPage tabPage20;
-        private System.Windows.Forms.DataGridView dataGridView4;
         private MaterialSkin.Controls.MaterialButton materialButton17;
         private MaterialSkin.Controls.MaterialButton materialButton18;
         private MaterialSkin.Controls.MaterialComboBox materialComboBox6;
         private MaterialSkin.Controls.MaterialLabel materialLabel20;
-        private System.Windows.Forms.DataGridView dataGridView5;
         private MaterialSkin.Controls.MaterialButton materialButton19;
         private MaterialSkin.Controls.MaterialButton materialButton20;
         private MaterialSkin.Controls.MaterialComboBox materialComboBox7;
@@ -10499,40 +10565,20 @@ namespace Time_Table_managemnt
 		private MaterialSkin.Controls.MaterialLabel ANSmaterialLabel46;
 		private MaterialSkin.Controls.MaterialComboBox ANSmaterialComboBox10;
 		private MaterialSkin.Controls.MaterialLabel ANSmaterialLabel44;
-		private MaterialSkin.Controls.MaterialLabel ANLmaterialLabel49;
-		private System.Windows.Forms.NumericUpDown ANLnumericUpDown10;
-		private MaterialSkin.Controls.MaterialLabel ANLmaterialLabel48;
-		private System.Windows.Forms.NumericUpDown ANLnumericUpDown9;
 		private MaterialSkin.Controls.MaterialLabel ANLmaterialLabel46;
-		private MaterialSkin.Controls.MaterialComboBox materialComboBox13;
+		private MaterialSkin.Controls.MaterialComboBox ANLmaterialComboBox13;
 		private MaterialSkin.Controls.MaterialLabel ANLmaterialLabel45;
-		private MaterialSkin.Controls.MaterialComboBox materialComboBox12;
+		private MaterialSkin.Controls.MaterialComboBox ANLmaterialComboBox12;
 		private MaterialSkin.Controls.MaterialLabel ANLmaterialLabel44;
 		private MaterialSkin.Controls.MaterialButton locnotavailclearbut;
 		private MaterialSkin.Controls.MaterialButton locnotavailviewbut;
 		private MaterialSkin.Controls.MaterialButton locnotavailaddbut;
-		private MaterialSkin.Controls.MaterialLabel ANLmaterialLabel51;
-		private System.Windows.Forms.NumericUpDown ANLnumericUpDown12;
-		private MaterialSkin.Controls.MaterialLabel ANLmaterialLabel50;
-		private System.Windows.Forms.NumericUpDown ANLnumericUpDown11;
 		private MaterialSkin.Controls.MaterialLabel ANLmaterialLabel47;
 		private System.Windows.Forms.Panel locnotavailpanel2;
 		private System.Windows.Forms.PictureBox locnotavailpicbox;
 		private MaterialSkin.Controls.MaterialButton locnotavaildeletebut;
 		private MaterialSkin.Controls.MaterialButton locnotavailupdatebut;
 		private MaterialSkin.Controls.MaterialButton locnotavailrefreshbut;
-		private System.Windows.Forms.DataGridView locnotavaildataGridView9;
-		private System.Windows.Forms.NumericUpDown INAnumericUpDown12;
-		private System.Windows.Forms.NumericUpDown INAnumericUpDown11;
-		private System.Windows.Forms.NumericUpDown INAnumericUpDown10;
-		private System.Windows.Forms.NumericUpDown INAnumericUpDown9;
-		private MaterialSkin.Controls.MaterialComboBox INAmaterialComboBox13;
-		private MaterialSkin.Controls.MaterialComboBox INAmaterialComboBox12;
-		private MaterialSkin.Controls.MaterialLabel INAmaterialLabel51;
-		private MaterialSkin.Controls.MaterialLabel INAmaterialLabel50;
-		private MaterialSkin.Controls.MaterialLabel INAmaterialLabel49;
-		private MaterialSkin.Controls.MaterialLabel INAmaterialLabel48;
-		private MaterialSkin.Controls.MaterialLabel INAmaterialLabel47;
 		private MaterialSkin.Controls.MaterialLabel INAmaterialLabel46;
 		private MaterialSkin.Controls.MaterialLabel INAmaterialLabel45;
 		private MaterialSkin.Controls.MaterialLabel lNAmaterialLabel44;
@@ -10582,7 +10628,6 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialButton AddSessionClear;
         private MaterialSkin.Controls.MaterialLabel materialLabel80;
         private MaterialSkin.Controls.MaterialLabel materialLabel81;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox21;
         private MaterialSkin.Controls.MaterialLabel materialLabel82;
         private System.Windows.Forms.PictureBox pictureBoxAddSession;
         private MaterialSkin.Controls.MaterialButton managesebtn;
@@ -10593,7 +10638,6 @@ namespace Time_Table_managemnt
         private System.Windows.Forms.FlowLayoutPanel AddSession;
         private MaterialSkin.Controls.MaterialCard materialCard16;
         private System.Windows.Forms.PictureBox pictureBox29;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox20;
         private MaterialSkin.Controls.MaterialLabel materialLabel83;
         private MaterialSkin.Controls.MaterialLabel materialLabel78;
         private MaterialSkin.Controls.MaterialComboBox materialComboBox31;
@@ -10752,7 +10796,6 @@ namespace Time_Table_managemnt
         private MaterialSkin.Controls.MaterialLabel UNSmaterialLabel44;
         private MaterialSkin.Controls.MaterialButton UNSdeletebut;
         private MaterialSkin.Controls.MaterialButton UNSupdatebut;
-        private System.Windows.Forms.DataGridView UNSdataGridView9;
         private MaterialSkin.Controls.MaterialButton UNSrefreshbut;
         private MaterialSkin.Controls.MaterialButton materialButton10;
 		private MaterialSkin.Controls.MaterialComboBox ANSmaterialComboBox26;
@@ -10763,6 +10806,22 @@ namespace Time_Table_managemnt
 		private MaterialSkin.Controls.MaterialTextBox UNSmaterialTextBox34;
 		private MaterialSkin.Controls.MaterialTextBox UNSmaterialTextBox33;
         private MaterialSkin.Controls.MaterialButton materialButton11;
+        private System.Windows.Forms.DataGridView LecGridView1;
+        private System.Windows.Forms.DataGridView StudentsdataGridView1;
+        private System.Windows.Forms.DataGridView LoacadataGridView1;
+        private MaterialSkin.Controls.MaterialComboBox DaymaterialComboBox9;
+        private MaterialSkin.Controls.MaterialComboBox DumaterialComboBox1;
+        private MaterialSkin.Controls.MaterialComboBox ANLmaterialComboBox9;
+        private MaterialSkin.Controls.MaterialComboBox ANLmaterialComboBox1;
+        private MaterialSkin.Controls.MaterialTextBox INAmaterialTextBox36;
+        private MaterialSkin.Controls.MaterialTextBox INAmaterialTextBox35;
+        private MaterialSkin.Controls.MaterialTextBox INAmaterialTextBox34;
+        private MaterialSkin.Controls.MaterialTextBox INAmaterialTextBox33;
+        private MaterialSkin.Controls.MaterialLabel materialLabel72;
+        private MaterialSkin.Controls.MaterialTextBox materialTextBox20;
+        private MaterialSkin.Controls.MaterialLabel materialLabel73;
+        private System.Windows.Forms.DataGridView reqdataGridView9;
+        private System.Windows.Forms.DataGridView UNSdataGridView91;
     }
 }
 
