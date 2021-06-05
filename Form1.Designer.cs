@@ -1311,7 +1311,7 @@ namespace Time_Table_managemnt
             this.paneManageLec.BackColor = System.Drawing.Color.White;
             this.paneManageLec.Controls.Add(this.materialTabSelectorManageLec);
             this.paneManageLec.Controls.Add(this.materialTabControlManageLec);
-            this.paneManageLec.Location = new System.Drawing.Point(37, 460);
+            this.paneManageLec.Location = new System.Drawing.Point(143, 201);
             this.paneManageLec.Margin = new System.Windows.Forms.Padding(2);
             this.paneManageLec.Name = "paneManageLec";
             this.paneManageLec.Size = new System.Drawing.Size(594, 487);

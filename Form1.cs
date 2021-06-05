@@ -1581,7 +1581,7 @@ namespace Time_Table_managemnt
 
         private void materiaDeletelec_Click(object sender, EventArgs e)
         {
-
+            //delete button
             SqlCommand cmd = new SqlCommand("delete from Lecture  where Id=@Id", con);
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@Id", this.LectureID);
