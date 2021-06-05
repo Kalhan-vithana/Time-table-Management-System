@@ -1552,7 +1552,7 @@ namespace Time_Table_managemnt
 
         private void Updatelec_Click(object sender, EventArgs e)
         {
-
+            //update button
             con.Close();
             SqlCommand cmd = new SqlCommand("update Lecture set Lecname=@Lecname,LecID=@LecID,Faculty=@Faculty,Department=@Department,Center=@Center,Bulding=@Bulding,Leval=@Leval,Rank=@Rank  where Id=@Id", con);
             cmd.CommandType = CommandType.Text;
