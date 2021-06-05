@@ -37,13 +37,12 @@ namespace Time_Table_managemnt
         }
 
 
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\MYDatabase1.mdf;Integrated Security=True;");
-
-
+        SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\BEST\Desktop\New folder (6)\Time_Table\Time-table-Management-System\MYDatabase1.mdf;Integrated Security = True");
+      
         //database connection
         // SqlConnection con = new SqlConnection(" Server=tcp:mysqlserver071.database.windows.net,1433;Initial Catalog = TimetableDB; Persist Security Info=False;User ID = azureuser; Password={your_password}; MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30");
         //SqlConnection con = new SqlConnection("Server=tcp:mysqlserver071.database.windows.net,1433;Initial Catalog=TimetableDB;Persist Security Info=False;User ID=azureuser;Password=password@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
-       // SqlConnection con = new SqlConnection("Server=tcp:itpmdbserver.database.windows.net,1433;Initial Catalog=itpmDB;Persist Security Info=False;User ID=user;Password=password@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        // SqlConnection con = new SqlConnection("Server=tcp:itpmdbserver.database.windows.net,1433;Initial Catalog=itpmDB;Persist Security Info=False;User ID=user;Password=password@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
 
 
@@ -116,7 +115,7 @@ namespace Time_Table_managemnt
        private void Chart()
         {
 
-            con.Close();
+            ///con.Close();
             SqlCommand command = new SqlCommand();
             command.Connection = con;
 
@@ -1469,7 +1468,7 @@ namespace Time_Table_managemnt
 
         private void LecSave_Click(object sender, EventArgs e)
         {
-
+            // save button
 
 
             con.Close();
@@ -2230,8 +2229,8 @@ namespace Time_Table_managemnt
             cmd.Parameters.AddWithValue("@SubjectCode", materialTextBox23.Text);
             cmd.Parameters.AddWithValue("@Groups", materialTextBox25.Text);
             cmd.Parameters.AddWithValue("@Subject", materialTextBox26.Text);
-            cmd.Parameters.AddWithValue("@Duration", materialTextBox28.Text);
-            cmd.Parameters.AddWithValue("@NumofStudents", materialTextBox29.Text);
+            cmd.Parameters.AddWithValue("@Duration", materialTextBox29.Text);
+            cmd.Parameters.AddWithValue("@NumofStudents", materialTextBox28.Text);
             cmd.Parameters.AddWithValue("@day", materialTextBox20.Text);
             cmd.Parameters.AddWithValue("@Id", SessionID);
 
@@ -3723,7 +3722,10 @@ namespace Time_Table_managemnt
            
         }
 
-       
+        private void LecName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

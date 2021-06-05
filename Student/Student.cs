@@ -25,7 +25,8 @@ namespace Time_Table_managemnt
         //SqlConnection con = new SqlConnection("Server=tcp:mysqlserver071.database.windows.net,1433;Initial Catalog=TimetableDB;Persist Security Info=False;User ID=azureuser;Password=password@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         // SqlConnection con = new SqlConnection("Server=tcp:itpmdbserver.database.windows.net,1433;Initial Catalog=itpmDB;Persist Security Info=False;User ID=user;Password=password@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\MYDatabase1.mdf;Integrated Security=True;");
+        //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Desktop\Tourist.lk\TIme-table-managemnt-System\MYDatabase1.mdf;Integrated Security=True;");
+        SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\BEST\Desktop\New folder (6)\Time_Table\Time-table-Management-System\MYDatabase1.mdf;Integrated Security = True");
 
 
         public int AddStd(Student s)
