@@ -1439,7 +1439,7 @@ namespace Time_Table_managemnt
 
         private void materialButtonManagesub_Click(object sender, EventArgs e)
         {
-
+            // delete button
             SqlCommand cmd = new SqlCommand("delete from Subject  where Id=@Id", con);
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.AddWithValue("@Id", SubjectID);
