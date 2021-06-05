@@ -973,7 +973,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox13.Depth = 0;
-            this.materialTextBox13.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox13.Location = new System.Drawing.Point(13, 217);
             this.materialTextBox13.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox13.MaxLength = 50;
@@ -988,7 +988,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox12.Depth = 0;
-            this.materialTextBox12.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox12.Location = new System.Drawing.Point(15, 149);
             this.materialTextBox12.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox12.MaxLength = 50;
@@ -1003,7 +1003,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox11.Depth = 0;
-            this.materialTextBox11.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox11.Location = new System.Drawing.Point(15, 67);
             this.materialTextBox11.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox11.MaxLength = 50;
@@ -1085,7 +1085,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox8.Depth = 0;
-            this.materialTextBox8.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox8.Location = new System.Drawing.Point(25, 28);
             this.materialTextBox8.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox8.MaxLength = 50;
@@ -1128,7 +1128,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox7.Depth = 0;
-            this.materialTextBox7.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox7.Location = new System.Drawing.Point(23, 43);
             this.materialTextBox7.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox7.MaxLength = 50;
@@ -1171,7 +1171,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox5.Depth = 0;
-            this.materialTextBox5.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox5.Location = new System.Drawing.Point(32, 43);
             this.materialTextBox5.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox5.MaxLength = 50;
@@ -1214,7 +1214,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox9.Depth = 0;
-            this.materialTextBox9.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox9.Location = new System.Drawing.Point(23, 28);
             this.materialTextBox9.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox9.MaxLength = 50;
@@ -1321,7 +1321,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTabSelectorManageLec.BaseTabControl = this.materialTabControlManageLec;
             this.materialTabSelectorManageLec.Depth = 0;
-            this.materialTabSelectorManageLec.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelectorManageLec.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelectorManageLec.Location = new System.Drawing.Point(0, 2);
             this.materialTabSelectorManageLec.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelectorManageLec.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1379,7 +1379,7 @@ namespace Time_Table_managemnt
             // 
             this.Lec1UP8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Lec1UP8.Depth = 0;
-            this.Lec1UP8.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Lec1UP8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Lec1UP8.Location = new System.Drawing.Point(248, 362);
             this.Lec1UP8.Margin = new System.Windows.Forms.Padding(2);
             this.Lec1UP8.MaxLength = 50;
@@ -1394,7 +1394,7 @@ namespace Time_Table_managemnt
             // 
             this.Lec1UP7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Lec1UP7.Depth = 0;
-            this.Lec1UP7.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Lec1UP7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Lec1UP7.Location = new System.Drawing.Point(248, 282);
             this.Lec1UP7.Margin = new System.Windows.Forms.Padding(2);
             this.Lec1UP7.MaxLength = 50;
@@ -1409,7 +1409,7 @@ namespace Time_Table_managemnt
             // 
             this.Lec1UP6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Lec1UP6.Depth = 0;
-            this.Lec1UP6.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Lec1UP6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Lec1UP6.Location = new System.Drawing.Point(248, 206);
             this.Lec1UP6.Margin = new System.Windows.Forms.Padding(2);
             this.Lec1UP6.MaxLength = 50;
@@ -1424,7 +1424,7 @@ namespace Time_Table_managemnt
             // 
             this.Lec1UP5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Lec1UP5.Depth = 0;
-            this.Lec1UP5.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Lec1UP5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Lec1UP5.Location = new System.Drawing.Point(251, 133);
             this.Lec1UP5.Margin = new System.Windows.Forms.Padding(2);
             this.Lec1UP5.MaxLength = 50;
@@ -1439,7 +1439,7 @@ namespace Time_Table_managemnt
             // 
             this.Lec1UP4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Lec1UP4.Depth = 0;
-            this.Lec1UP4.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Lec1UP4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Lec1UP4.Location = new System.Drawing.Point(8, 362);
             this.Lec1UP4.Margin = new System.Windows.Forms.Padding(2);
             this.Lec1UP4.MaxLength = 50;
@@ -1454,7 +1454,7 @@ namespace Time_Table_managemnt
             // 
             this.Lec1UP3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Lec1UP3.Depth = 0;
-            this.Lec1UP3.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Lec1UP3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Lec1UP3.Location = new System.Drawing.Point(7, 288);
             this.Lec1UP3.Margin = new System.Windows.Forms.Padding(2);
             this.Lec1UP3.MaxLength = 50;
@@ -1556,7 +1556,7 @@ namespace Time_Table_managemnt
             // 
             this.Lec1UP2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Lec1UP2.Depth = 0;
-            this.Lec1UP2.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Lec1UP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Lec1UP2.Location = new System.Drawing.Point(8, 206);
             this.Lec1UP2.Margin = new System.Windows.Forms.Padding(2);
             this.Lec1UP2.MaxLength = 50;
@@ -1648,7 +1648,7 @@ namespace Time_Table_managemnt
             // 
             this.Lec1UP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Lec1UP.Depth = 0;
-            this.Lec1UP.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Lec1UP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Lec1UP.Location = new System.Drawing.Point(8, 133);
             this.Lec1UP.Margin = new System.Windows.Forms.Padding(2);
             this.Lec1UP.MaxLength = 50;
@@ -1698,7 +1698,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTabSelector7.BaseTabControl = this.AddLecWhite;
             this.materialTabSelector7.Depth = 0;
-            this.materialTabSelector7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector7.Location = new System.Drawing.Point(0, 2);
             this.materialTabSelector7.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelector7.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1834,6 +1834,7 @@ namespace Time_Table_managemnt
             this.materialComboBox19.Size = new System.Drawing.Size(188, 49);
             this.materialComboBox19.StartIndex = 0;
             this.materialComboBox19.TabIndex = 48;
+            this.materialComboBox19.SelectedIndexChanged += new System.EventHandler(this.materialComboBox19_SelectedIndexChanged);
             // 
             // materialComboBox18
             // 
@@ -1924,7 +1925,7 @@ namespace Time_Table_managemnt
             // 
             this.Rank.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Rank.Depth = 0;
-            this.Rank.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Rank.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Rank.Location = new System.Drawing.Point(260, 263);
             this.Rank.Margin = new System.Windows.Forms.Padding(2);
             this.Rank.MaxLength = 50;
@@ -1978,7 +1979,7 @@ namespace Time_Table_managemnt
             // 
             this.idLecs.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.idLecs.Depth = 0;
-            this.idLecs.Font = new System.Drawing.Font("Roboto", 12F);
+            this.idLecs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.idLecs.Location = new System.Drawing.Point(4, 107);
             this.idLecs.Margin = new System.Windows.Forms.Padding(2);
             this.idLecs.MaxLength = 50;
@@ -2070,7 +2071,7 @@ namespace Time_Table_managemnt
             // 
             this.LecName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.LecName.Depth = 0;
-            this.LecName.Font = new System.Drawing.Font("Roboto", 12F);
+            this.LecName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.LecName.Location = new System.Drawing.Point(4, 34);
             this.LecName.Margin = new System.Windows.Forms.Padding(2);
             this.LecName.MaxLength = 50;
@@ -2243,7 +2244,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector3.BaseTabControl = this.materialTabControl4;
             this.materialTabSelector3.Depth = 0;
             this.materialTabSelector3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector3.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector3.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelector3.MouseState = MaterialSkin.MouseState.HOVER;
@@ -2382,7 +2383,7 @@ namespace Time_Table_managemnt
             // 
             this.SearchStudntGroup.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SearchStudntGroup.Depth = 0;
-            this.SearchStudntGroup.Font = new System.Drawing.Font("Roboto", 12F);
+            this.SearchStudntGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.SearchStudntGroup.Location = new System.Drawing.Point(170, 44);
             this.SearchStudntGroup.Margin = new System.Windows.Forms.Padding(2);
             this.SearchStudntGroup.MaxLength = 50;
@@ -2475,7 +2476,7 @@ namespace Time_Table_managemnt
             // 
             this.UpdateGroupID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UpdateGroupID.Depth = 0;
-            this.UpdateGroupID.Font = new System.Drawing.Font("Roboto", 12F);
+            this.UpdateGroupID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.UpdateGroupID.Location = new System.Drawing.Point(344, 379);
             this.UpdateGroupID.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateGroupID.MaxLength = 50;
@@ -2503,7 +2504,7 @@ namespace Time_Table_managemnt
             // 
             this.UpdateSubGroup.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UpdateSubGroup.Depth = 0;
-            this.UpdateSubGroup.Font = new System.Drawing.Font("Roboto", 12F);
+            this.UpdateSubGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.UpdateSubGroup.Location = new System.Drawing.Point(344, 286);
             this.UpdateSubGroup.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateSubGroup.MaxLength = 50;
@@ -2643,7 +2644,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector4.BaseTabControl = this.materialTabControl5;
             this.materialTabSelector4.Depth = 0;
             this.materialTabSelector4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector4.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector4.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelector4.MouseState = MaterialSkin.MouseState.HOVER;
@@ -2730,7 +2731,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector9.BaseTabControl = this.GenarateIDmaterialTabControl8;
             this.materialTabSelector9.Depth = 0;
             this.materialTabSelector9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector9.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector9.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelector9.MouseState = MaterialSkin.MouseState.HOVER;
@@ -2793,7 +2794,7 @@ namespace Time_Table_managemnt
             // 
             this.GenarateIDGroup.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GenarateIDGroup.Depth = 0;
-            this.GenarateIDGroup.Font = new System.Drawing.Font("Roboto", 12F);
+            this.GenarateIDGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.GenarateIDGroup.Location = new System.Drawing.Point(14, 80);
             this.GenarateIDGroup.Margin = new System.Windows.Forms.Padding(2);
             this.GenarateIDGroup.MaxLength = 50;
@@ -2905,7 +2906,7 @@ namespace Time_Table_managemnt
             // 
             this.SubGroupmaterial.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SubGroupmaterial.Depth = 0;
-            this.SubGroupmaterial.Font = new System.Drawing.Font("Roboto", 12F);
+            this.SubGroupmaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.SubGroupmaterial.Location = new System.Drawing.Point(5, 73);
             this.SubGroupmaterial.Margin = new System.Windows.Forms.Padding(2);
             this.SubGroupmaterial.MaxLength = 50;
@@ -3033,7 +3034,7 @@ namespace Time_Table_managemnt
             // 
             this.SubGroupsID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SubGroupsID.Depth = 0;
-            this.SubGroupsID.Font = new System.Drawing.Font("Roboto", 12F);
+            this.SubGroupsID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.SubGroupsID.Location = new System.Drawing.Point(328, 143);
             this.SubGroupsID.Margin = new System.Windows.Forms.Padding(2);
             this.SubGroupsID.MaxLength = 50;
@@ -3061,7 +3062,7 @@ namespace Time_Table_managemnt
             // 
             this.GroupID1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GroupID1.Depth = 0;
-            this.GroupID1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.GroupID1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.GroupID1.Location = new System.Drawing.Point(329, 58);
             this.GroupID1.Margin = new System.Windows.Forms.Padding(2);
             this.GroupID1.MaxLength = 50;
@@ -3310,7 +3311,7 @@ namespace Time_Table_managemnt
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(878, 558);
+            this.pictureBox2.Size = new System.Drawing.Size(878, 593);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
@@ -3392,7 +3393,7 @@ namespace Time_Table_managemnt
             // 
             this.offerdSem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.offerdSem.Depth = 0;
-            this.offerdSem.Font = new System.Drawing.Font("Roboto", 12F);
+            this.offerdSem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.offerdSem.Location = new System.Drawing.Point(11, 197);
             this.offerdSem.Margin = new System.Windows.Forms.Padding(2);
             this.offerdSem.MaxLength = 50;
@@ -3407,7 +3408,7 @@ namespace Time_Table_managemnt
             // 
             this.OfferdYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OfferdYear.Depth = 0;
-            this.OfferdYear.Font = new System.Drawing.Font("Roboto", 12F);
+            this.OfferdYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.OfferdYear.Location = new System.Drawing.Point(12, 125);
             this.OfferdYear.Margin = new System.Windows.Forms.Padding(2);
             this.OfferdYear.MaxLength = 50;
@@ -3524,7 +3525,7 @@ namespace Time_Table_managemnt
             // 
             this.SubjectCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SubjectCode.Depth = 0;
-            this.SubjectCode.Font = new System.Drawing.Font("Roboto", 12F);
+            this.SubjectCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.SubjectCode.Location = new System.Drawing.Point(13, 349);
             this.SubjectCode.Margin = new System.Windows.Forms.Padding(2);
             this.SubjectCode.MaxLength = 50;
@@ -3603,7 +3604,7 @@ namespace Time_Table_managemnt
             // 
             this.Subjectname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Subjectname.Depth = 0;
-            this.Subjectname.Font = new System.Drawing.Font("Roboto", 12F);
+            this.Subjectname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Subjectname.Location = new System.Drawing.Point(11, 271);
             this.Subjectname.Margin = new System.Windows.Forms.Padding(2);
             this.Subjectname.MaxLength = 50;
@@ -3668,7 +3669,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTabSelectormanagesub.BaseTabControl = this.materialTabControlmanagesub;
             this.materialTabSelectormanagesub.Depth = 0;
-            this.materialTabSelectormanagesub.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelectormanagesub.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelectormanagesub.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelectormanagesub.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelectormanagesub.MouseState = MaterialSkin.MouseState.HOVER;
@@ -3856,7 +3857,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox30.Depth = 0;
-            this.materialTextBox30.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox30.Location = new System.Drawing.Point(3, 266);
             this.materialTextBox30.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox30.MaxLength = 50;
@@ -3935,7 +3936,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox27.Depth = 0;
-            this.materialTextBox27.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox27.Location = new System.Drawing.Point(2, 187);
             this.materialTextBox27.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox27.MaxLength = 50;
@@ -4000,7 +4001,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTabSelectorAddsubject.BaseTabControl = this.materialTabControlAddSubject;
             this.materialTabSelectorAddsubject.Depth = 0;
-            this.materialTabSelectorAddsubject.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelectorAddsubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelectorAddsubject.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelectorAddsubject.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelectorAddsubject.MouseState = MaterialSkin.MouseState.HOVER;
@@ -4148,7 +4149,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector5.BaseTabControl = this.materialTabControl6;
             this.materialTabSelector5.Depth = 0;
             this.materialTabSelector5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector5.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector5.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelector5.MouseState = MaterialSkin.MouseState.HOVER;
@@ -4280,7 +4281,7 @@ namespace Time_Table_managemnt
             // 
             this.SearchTags.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SearchTags.Depth = 0;
-            this.SearchTags.Font = new System.Drawing.Font("Roboto", 12F);
+            this.SearchTags.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.SearchTags.Location = new System.Drawing.Point(163, 56);
             this.SearchTags.Margin = new System.Windows.Forms.Padding(2);
             this.SearchTags.MaxLength = 50;
@@ -4456,7 +4457,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector6.BaseTabControl = this.materialTabControl7;
             this.materialTabSelector6.Depth = 0;
             this.materialTabSelector6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector6.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector6.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelector6.MouseState = MaterialSkin.MouseState.HOVER;
@@ -4779,7 +4780,7 @@ namespace Time_Table_managemnt
             this.pictureBox6.Location = new System.Drawing.Point(0, 0);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(878, 558);
+            this.pictureBox6.Size = new System.Drawing.Size(878, 593);
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
             // 
@@ -4816,7 +4817,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTabSelectorManageSession.BaseTabControl = this.materialTabControlManageSession;
             this.materialTabSelectorManageSession.Depth = 0;
-            this.materialTabSelectorManageSession.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelectorManageSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelectorManageSession.Location = new System.Drawing.Point(0, 2);
             this.materialTabSelectorManageSession.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelectorManageSession.MouseState = MaterialSkin.MouseState.HOVER;
@@ -4890,7 +4891,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox20.Depth = 0;
-            this.materialTextBox20.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox20.Location = new System.Drawing.Point(191, 452);
             this.materialTextBox20.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox20.MaxLength = 50;
@@ -4996,7 +4997,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox29.Depth = 0;
-            this.materialTextBox29.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox29.Location = new System.Drawing.Point(18, 451);
             this.materialTextBox29.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox29.MaxLength = 50;
@@ -5011,7 +5012,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox28.Depth = 0;
-            this.materialTextBox28.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox28.Location = new System.Drawing.Point(373, 384);
             this.materialTextBox28.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox28.MaxLength = 50;
@@ -5026,7 +5027,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox26.Depth = 0;
-            this.materialTextBox26.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox26.Location = new System.Drawing.Point(200, 381);
             this.materialTextBox26.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox26.MaxLength = 50;
@@ -5041,7 +5042,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox25.Depth = 0;
-            this.materialTextBox25.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox25.Location = new System.Drawing.Point(18, 381);
             this.materialTextBox25.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox25.MaxLength = 50;
@@ -5056,7 +5057,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox23.Depth = 0;
-            this.materialTextBox23.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox23.Location = new System.Drawing.Point(373, 301);
             this.materialTextBox23.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox23.MaxLength = 50;
@@ -5071,7 +5072,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox22.Depth = 0;
-            this.materialTextBox22.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox22.Location = new System.Drawing.Point(200, 301);
             this.materialTextBox22.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox22.MaxLength = 50;
@@ -5086,7 +5087,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox18.Depth = 0;
-            this.materialTextBox18.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox18.Location = new System.Drawing.Point(18, 301);
             this.materialTextBox18.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox18.MaxLength = 50;
@@ -5198,7 +5199,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox24.Depth = 0;
-            this.materialTextBox24.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox24.Location = new System.Drawing.Point(212, 37);
             this.materialTextBox24.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox24.MaxLength = 50;
@@ -5255,7 +5256,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTabSelectorAddSession.BaseTabControl = this.materialTabControlAddSession;
             this.materialTabSelectorAddSession.Depth = 0;
-            this.materialTabSelectorAddSession.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelectorAddSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelectorAddSession.Location = new System.Drawing.Point(0, 2);
             this.materialTabSelectorAddSession.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelectorAddSession.MouseState = MaterialSkin.MouseState.HOVER;
@@ -5375,7 +5376,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox10.Depth = 0;
-            this.materialTextBox10.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox10.Location = new System.Drawing.Point(22, 145);
             this.materialTextBox10.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox10.MaxLength = 50;
@@ -5545,7 +5546,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox19.Depth = 0;
-            this.materialTextBox19.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox19.Location = new System.Drawing.Point(267, 256);
             this.materialTextBox19.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox19.MaxLength = 50;
@@ -6134,7 +6135,7 @@ namespace Time_Table_managemnt
             this.manageworkTabSelector.BaseTabControl = this.manageworkTabControl;
             this.manageworkTabSelector.Depth = 0;
             this.manageworkTabSelector.Dock = System.Windows.Forms.DockStyle.Top;
-            this.manageworkTabSelector.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.manageworkTabSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.manageworkTabSelector.Location = new System.Drawing.Point(0, 0);
             this.manageworkTabSelector.Margin = new System.Windows.Forms.Padding(2);
             this.manageworkTabSelector.MouseState = MaterialSkin.MouseState.HOVER;
@@ -6453,7 +6454,7 @@ namespace Time_Table_managemnt
             this.addTabSelector.BaseTabControl = this.addworkTabControl;
             this.addTabSelector.Depth = 0;
             this.addTabSelector.Dock = System.Windows.Forms.DockStyle.Top;
-            this.addTabSelector.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.addTabSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.addTabSelector.Location = new System.Drawing.Point(0, 0);
             this.addTabSelector.Margin = new System.Windows.Forms.Padding(2);
             this.addTabSelector.MouseState = MaterialSkin.MouseState.HOVER;
@@ -6602,7 +6603,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector8.BaseTabControl = this.LocationmaterialTabControl8;
             this.materialTabSelector8.Depth = 0;
             this.materialTabSelector8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector8.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector8.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelector8.MouseState = MaterialSkin.MouseState.HOVER;
@@ -6746,7 +6747,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox15.Depth = 0;
-            this.materialTextBox15.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox15.Location = new System.Drawing.Point(32, 473);
             this.materialTextBox15.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox15.MaxLength = 50;
@@ -6774,7 +6775,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox16.Depth = 0;
-            this.materialTextBox16.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox16.Location = new System.Drawing.Point(32, 362);
             this.materialTextBox16.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox16.MaxLength = 50;
@@ -6802,7 +6803,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox17.Depth = 0;
-            this.materialTextBox17.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox17.Location = new System.Drawing.Point(32, 266);
             this.materialTextBox17.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox17.MaxLength = 50;
@@ -7004,7 +7005,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox1.Location = new System.Drawing.Point(25, 299);
             this.materialTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox1.MaxLength = 50;
@@ -7032,7 +7033,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox6.Depth = 0;
-            this.materialTextBox6.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox6.Location = new System.Drawing.Point(25, 194);
             this.materialTextBox6.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox6.MaxLength = 50;
@@ -7060,7 +7061,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox14.Depth = 0;
-            this.materialTextBox14.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox14.Location = new System.Drawing.Point(25, 95);
             this.materialTextBox14.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox14.MaxLength = 50;
@@ -7099,7 +7100,7 @@ namespace Time_Table_managemnt
             // 
             this.AddLocTab1.BaseTabControl = this.AddLocTab2;
             this.AddLocTab1.Depth = 0;
-            this.AddLocTab1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.AddLocTab1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.AddLocTab1.Location = new System.Drawing.Point(0, 0);
             this.AddLocTab1.Margin = new System.Windows.Forms.Padding(2);
             this.AddLocTab1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -7249,7 +7250,7 @@ namespace Time_Table_managemnt
             this.RoomsBlue1.BaseTabControl = this.Rooms2;
             this.RoomsBlue1.Depth = 0;
             this.RoomsBlue1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.RoomsBlue1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.RoomsBlue1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.RoomsBlue1.Location = new System.Drawing.Point(0, 0);
             this.RoomsBlue1.Margin = new System.Windows.Forms.Padding(2);
             this.RoomsBlue1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -7563,7 +7564,7 @@ namespace Time_Table_managemnt
             // 
             this.INAmaterialTextBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.INAmaterialTextBox36.Depth = 0;
-            this.INAmaterialTextBox36.Font = new System.Drawing.Font("Roboto", 12F);
+            this.INAmaterialTextBox36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.INAmaterialTextBox36.Location = new System.Drawing.Point(386, 285);
             this.INAmaterialTextBox36.Margin = new System.Windows.Forms.Padding(2);
             this.INAmaterialTextBox36.MaxLength = 50;
@@ -7578,7 +7579,7 @@ namespace Time_Table_managemnt
             // 
             this.INAmaterialTextBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.INAmaterialTextBox35.Depth = 0;
-            this.INAmaterialTextBox35.Font = new System.Drawing.Font("Roboto", 12F);
+            this.INAmaterialTextBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.INAmaterialTextBox35.Location = new System.Drawing.Point(386, 219);
             this.INAmaterialTextBox35.Margin = new System.Windows.Forms.Padding(2);
             this.INAmaterialTextBox35.MaxLength = 50;
@@ -7593,7 +7594,7 @@ namespace Time_Table_managemnt
             // 
             this.INAmaterialTextBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.INAmaterialTextBox34.Depth = 0;
-            this.INAmaterialTextBox34.Font = new System.Drawing.Font("Roboto", 12F);
+            this.INAmaterialTextBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.INAmaterialTextBox34.Location = new System.Drawing.Point(32, 285);
             this.INAmaterialTextBox34.Margin = new System.Windows.Forms.Padding(2);
             this.INAmaterialTextBox34.MaxLength = 50;
@@ -7608,7 +7609,7 @@ namespace Time_Table_managemnt
             // 
             this.INAmaterialTextBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.INAmaterialTextBox33.Depth = 0;
-            this.INAmaterialTextBox33.Font = new System.Drawing.Font("Roboto", 12F);
+            this.INAmaterialTextBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.INAmaterialTextBox33.Location = new System.Drawing.Point(44, 218);
             this.INAmaterialTextBox33.Margin = new System.Windows.Forms.Padding(2);
             this.INAmaterialTextBox33.MaxLength = 50;
@@ -8063,7 +8064,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox32.Depth = 0;
-            this.materialTextBox32.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox32.Location = new System.Drawing.Point(179, 254);
             this.materialTextBox32.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox32.MaxLength = 50;
@@ -8078,7 +8079,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox31.Depth = 0;
-            this.materialTextBox31.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox31.Location = new System.Drawing.Point(53, 258);
             this.materialTextBox31.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox31.MaxLength = 50;
@@ -8178,7 +8179,7 @@ namespace Time_Table_managemnt
             // 
             this.ManageSessionRmBlue.BaseTabControl = this.MangeSessionRm1;
             this.ManageSessionRmBlue.Depth = 0;
-            this.ManageSessionRmBlue.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ManageSessionRmBlue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.ManageSessionRmBlue.Location = new System.Drawing.Point(0, 0);
             this.ManageSessionRmBlue.Margin = new System.Windows.Forms.Padding(2);
             this.ManageSessionRmBlue.MouseState = MaterialSkin.MouseState.HOVER;
@@ -8319,7 +8320,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector1.BaseTabControl = this.materialTabControl2;
             this.materialTabSelector1.Depth = 0;
             this.materialTabSelector1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector1.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector1.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -8443,7 +8444,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox2.Depth = 0;
-            this.materialTextBox2.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox2.Location = new System.Drawing.Point(140, 15);
             this.materialTextBox2.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox2.MaxLength = 50;
@@ -8589,7 +8590,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox3.Depth = 0;
-            this.materialTextBox3.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox3.Location = new System.Drawing.Point(143, 16);
             this.materialTextBox3.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox3.MaxLength = 50;
@@ -8734,7 +8735,7 @@ namespace Time_Table_managemnt
             // 
             this.materialTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox4.Depth = 0;
-            this.materialTextBox4.Font = new System.Drawing.Font("Roboto", 12F);
+            this.materialTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.materialTextBox4.Location = new System.Drawing.Point(142, 21);
             this.materialTextBox4.Margin = new System.Windows.Forms.Padding(2);
             this.materialTextBox4.MaxLength = 50;
@@ -8890,7 +8891,7 @@ namespace Time_Table_managemnt
             // 
             this.UNSmaterialTextBox38.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UNSmaterialTextBox38.Depth = 0;
-            this.UNSmaterialTextBox38.Font = new System.Drawing.Font("Roboto", 12F);
+            this.UNSmaterialTextBox38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.UNSmaterialTextBox38.Location = new System.Drawing.Point(332, 345);
             this.UNSmaterialTextBox38.Margin = new System.Windows.Forms.Padding(2);
             this.UNSmaterialTextBox38.MaxLength = 50;
@@ -8905,7 +8906,7 @@ namespace Time_Table_managemnt
             // 
             this.UNSmaterialTextBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UNSmaterialTextBox37.Depth = 0;
-            this.UNSmaterialTextBox37.Font = new System.Drawing.Font("Roboto", 12F);
+            this.UNSmaterialTextBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.UNSmaterialTextBox37.Location = new System.Drawing.Point(332, 284);
             this.UNSmaterialTextBox37.Margin = new System.Windows.Forms.Padding(2);
             this.UNSmaterialTextBox37.MaxLength = 50;
@@ -8920,7 +8921,7 @@ namespace Time_Table_managemnt
             // 
             this.UNSmaterialTextBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UNSmaterialTextBox36.Depth = 0;
-            this.UNSmaterialTextBox36.Font = new System.Drawing.Font("Roboto", 12F);
+            this.UNSmaterialTextBox36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.UNSmaterialTextBox36.Location = new System.Drawing.Point(36, 284);
             this.UNSmaterialTextBox36.Margin = new System.Windows.Forms.Padding(2);
             this.UNSmaterialTextBox36.MaxLength = 50;
@@ -8935,7 +8936,7 @@ namespace Time_Table_managemnt
             // 
             this.UNSmaterialTextBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UNSmaterialTextBox35.Depth = 0;
-            this.UNSmaterialTextBox35.Font = new System.Drawing.Font("Roboto", 12F);
+            this.UNSmaterialTextBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.UNSmaterialTextBox35.Location = new System.Drawing.Point(36, 364);
             this.UNSmaterialTextBox35.Margin = new System.Windows.Forms.Padding(2);
             this.UNSmaterialTextBox35.MaxLength = 50;
@@ -8950,7 +8951,7 @@ namespace Time_Table_managemnt
             // 
             this.UNSmaterialTextBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UNSmaterialTextBox34.Depth = 0;
-            this.UNSmaterialTextBox34.Font = new System.Drawing.Font("Roboto", 12F);
+            this.UNSmaterialTextBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.UNSmaterialTextBox34.Location = new System.Drawing.Point(340, 194);
             this.UNSmaterialTextBox34.Margin = new System.Windows.Forms.Padding(2);
             this.UNSmaterialTextBox34.MaxLength = 50;
@@ -8965,7 +8966,7 @@ namespace Time_Table_managemnt
             // 
             this.UNSmaterialTextBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UNSmaterialTextBox33.Depth = 0;
-            this.UNSmaterialTextBox33.Font = new System.Drawing.Font("Roboto", 12F);
+            this.UNSmaterialTextBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.UNSmaterialTextBox33.Location = new System.Drawing.Point(40, 208);
             this.UNSmaterialTextBox33.Margin = new System.Windows.Forms.Padding(2);
             this.UNSmaterialTextBox33.MaxLength = 50;
@@ -9829,7 +9830,7 @@ namespace Time_Table_managemnt
             this.materialTabSelector2.BaseTabControl = this.materialTabControl3;
             this.materialTabSelector2.Depth = 0;
             this.materialTabSelector2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialTabSelector2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTabSelector2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTabSelector2.Location = new System.Drawing.Point(0, 0);
             this.materialTabSelector2.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelector2.MouseState = MaterialSkin.MouseState.HOVER;

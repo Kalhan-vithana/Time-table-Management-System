@@ -3721,8 +3721,13 @@ namespace Time_Table_managemnt
             SubjectCode.Text = "";
            
         }
-
+         //center
         private void LecName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialComboBox19_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
