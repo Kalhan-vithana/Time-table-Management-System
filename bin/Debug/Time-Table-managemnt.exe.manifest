@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Time-Table-managemnt.exe" size="4020152">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Time-Table-managemnt.exe" size="4022200">
       <assemblyIdentity name="Time-Table-managemnt" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>R8USZxqlqSxHsdctzSrmqwvqR8+sUSFSVn3Ifw2A99c=</dsig:DigestValue>
+        <dsig:DigestValue>BAuBob8ymCMkmhksLjtboqazTUwnTJcVXx1cb8gtcAo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -71,7 +71,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bbiDYIvHbK7ucgKpSjUkObyuBbQZGGg+veC49jkXp94=</dsig:DigestValue>
+      <dsig:DigestValue>qQ/tnCW+Q38Avq6oIleWuJx1igc3RGnXzEQiWy7cJSg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="MYDatabase1_log.ldf" size="8388608" writeableType="applicationData">
@@ -80,7 +80,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>H5NhNXYI1DlwhySKWwl8jXi3Z6y9A3T0JLRjH0+Fn1U=</dsig:DigestValue>
+      <dsig:DigestValue>+iYUOloTMDE6PPDk72vojMHKEfbkkcbROQggSFzsX8E=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Time-Table-managemnt.exe.config" size="569">
