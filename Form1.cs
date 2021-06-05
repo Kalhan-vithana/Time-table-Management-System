@@ -1596,7 +1596,7 @@ namespace Time_Table_managemnt
         /*============================================= Clear Lectures =============================================================================== */
 
 
-
+        //clear
         private void Clearlec_Click(object sender, EventArgs e)
         {
             Lec1UP.Text = "";

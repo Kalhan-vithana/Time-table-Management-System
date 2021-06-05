@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RxivuCMn2ppwGyHHXyAweqhOBSnAvRCP3RumTdMroYE=</dsig:DigestValue>
+        <dsig:DigestValue>npZL1o26RvFFPEZTdWhWQYoJgam54PzJoZGlvl9EcrE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -71,7 +71,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>uWkKt/jo6AW51iaXZW6azT7CKFby7uxVLZ8j7gFBFu4=</dsig:DigestValue>
+      <dsig:DigestValue>XVYAfG19CGWBSnGcMV88lpr32En+jf7Shm7IJnL0ya8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="MYDatabase1_log.ldf" size="8388608" writeableType="applicationData">
@@ -80,7 +80,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>sNcNhx+M4ZighMsC4K0NS9dbViLb1AReIQWqxphux48=</dsig:DigestValue>
+      <dsig:DigestValue>EHsG2EH6sj4tfH/dCRf3TIX9g+rG7eDofekhFjrm6HU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Time-Table-managemnt.exe.config" size="569">
