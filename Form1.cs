@@ -1408,7 +1408,7 @@ namespace Time_Table_managemnt
 
         private void materialButtonSaveManage_Click(object sender, EventArgs e)
         {
-
+            //update subject 
 
             SqlCommand cmd = new SqlCommand("update Subject set offerdYear=@offerdYear,offerdSemester=@offerdSemester,subjectname=@subjectname,subjectCode=@subjectCode,lecHours=@lecHours,labHours=@labHours,TuteHours=@TuteHours,evhours=@evhours where Id=@Id", con);
             cmd.CommandType = CommandType.Text;
