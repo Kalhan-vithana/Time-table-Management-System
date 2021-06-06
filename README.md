@@ -22,7 +22,7 @@
 <br />
 <p align="center">
 
-    <img src=" https://github.com/Kalhan-vithana/Time-table-Management-System/blob/master/Images/icons8-saw-blade-100.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="80" height="80" />
+   
   </a>
 
   <h3 align="center">Time Table Management System</h3>
@@ -30,10 +30,16 @@
   <p align="center">
    Clone and Start  Our projects!
 
+    
+
+
+
   </p>
 </p>
-
-
+<p align="center">
+<img src="https://github.com/Kalhan-vithana/Time-table-Management-System/blob/master/Images/Projec.jpg " data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="700" height="400" />
+</p>
+    
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -83,9 +89,10 @@ Time table managemnt system
 
 ### Installation
 
-1. DownLoad The Setup
-2.Install the Setup
-3.need to Internet Connection
+- DownLoad The Setup
+- Install the Setup
+- run the Application
+- need to Internet Connection
 
 
 
@@ -105,6 +112,8 @@ Time table managemnt system
 
 
 
+
+ 
 
 <!-- CONTACT -->
 ## Contact
