@@ -22,8 +22,7 @@
 <br />
 <p align="center">
 
-    <img src="  https://github.com/Kalhan-vithana/Time-table-Management-System/blob/master/Images/icons8-saw-blade-100.png
-    " data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="80" height="80" />
+    <img src=" https://github.com/Kalhan-vithana/Time-table-Management-System/blob/master/Images/icons8-saw-blade-100.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="80" height="80" />
   </a>
 
   <h3 align="center">Time Table Management System</h3>
