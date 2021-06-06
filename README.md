@@ -93,7 +93,7 @@ Time table managemnt system
 ## Usage
 ❮img src=Images/Add%20Students%20Group.png" width = "50"❯
 
-❮img src="Images/Add%20Students%20Group.png" width="100" ❯
+❮img src="https://github.com/Kalhan-vithana/Time-table-Management-System/blob/master/Images/Add%20Students%20Group.png" width="100" ❯
 ![](Images/Add%20Students%20Group.png 250x250)
 
 
