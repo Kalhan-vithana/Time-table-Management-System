@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Time-Table-managemnt.exe" version="1.0.0.3" publicKeyToken="6ad5dad99ebaf74f" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Time-Table-managemnt" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Time-Table-managemnt.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MaterialSkin.dll" size="6624256">
+      <assemblyIdentity name="MaterialSkin" version="2.1.2.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>eFkKcQ3pVQQssMM9Q337fafJEG7dmarnYZtuCVW0KDE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Time-Table-managemnt.exe" size="4020152">
+      <assemblyIdentity name="Time-Table-managemnt" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>+Z2d5upNKTc4bjC4dwLYsOleTn/CpaQ63yJjDsChHhQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="MYDatabase1.mdf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EQrY9FWX94cHBh1nLC91SJGhrwOKRHp7v0ctS7utQ/k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MYDatabase1_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YogyfIMbznsfzMdJiQfWzCuvmxLNoX04hASET7NN5q0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Time-Table-managemnt.exe.config" size="569">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tfxPd0Fk4o+c7l88dDz3p3sbuhskCdv3Tirs9svmHI8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=PUKE-KALHAN\HP" issuerKeyHash="4a31c595ef92744f1f8eaddc0f989819cab73e9c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>EqjF1CNQAvH0zzVgKaqbaUaYHEgNbQofTUoYcWPOnto=</DigestValue></Reference></SignedInfo><SignatureValue>vicWxf22sjxgAVrRG5BX2sAH3ye8MIpiEURb8ZuvFMMS0/EW26HGrIdDWk4iAsVr0p4Yngfkydbq4vTKsogG81Pn5CuQ+1Rk6SEBjB/+22/svZMyyZX60FGaP1RKwnDSk1nKxg0pRiM83Y5d047lOco19bCKydsPxxCe0FuPjZw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>4C34E/ZQL8zQMtgAT9L0HdjO5pFfqW7bTb/trf83ewH7bnQth2b6mc+Cfjj/2JCN3tlQ82WiOyQCNLmHIYuqLGpB/ibdbvw9l/8sZEdzigx/NSc9SdLrxd3tGf8tJoCAiJrBKdnadOinhSgX8EzeHRURjsJFCU8L0aYTHiIWTeE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="da9ece6371184a4d1f0a6d0d481c9846699baa296035cff4f1025023d4c5a812" Description="" Url=""><as:assemblyIdentity name="Time-Table-managemnt.exe" version="1.0.0.3" publicKeyToken="6ad5dad99ebaf74f" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PUKE-KALHAN\HP</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>VnaE1ywnm24IjXKRUUAzpJKhEZR6Y12jCb40fWSa0zU=</DigestValue></Reference></SignedInfo><SignatureValue>cktSKAR79nPw5NRqzhxjoOPfCWBS48uiRrWrXRFBrEbnHsaC91uSuorwhekUQrlr1ymMWBsliK4o4Uzj6f289OqFWdeNZU68bqDa6W5jR+pC/8F4MQrrwznOsrtD1wrVXlq/E9eMiEssRV0gVrSIoxsgVxxNwnwHY/Oe9JaU7mo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>4C34E/ZQL8zQMtgAT9L0HdjO5pFfqW7bTb/trf83ewH7bnQth2b6mc+Cfjj/2JCN3tlQ82WiOyQCNLmHIYuqLGpB/ibdbvw9l/8sZEdzigx/NSc9SdLrxd3tGf8tJoCAiJrBKdnadOinhSgX8EzeHRURjsJFCU8L0aYTHiIWTeE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQKGjHqpk1EY5F4QBBu9E5WjANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwAUABVAEsARQAtAEsAQQBMAEgAQQBOAFwASABQMB4XDTIxMDUyMTE5NTAzM1oXDTIyMDUyMjAxNTAzM1owJzElMCMGA1UEAx4cAFAAVQBLAEUALQBLAEEATABIAEEATgBcAEgAUDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA4C34E/ZQL8zQMtgAT9L0HdjO5pFfqW7bTb/trf83ewH7bnQth2b6mc+Cfjj/2JCN3tlQ82WiOyQCNLmHIYuqLGpB/ibdbvw9l/8sZEdzigx/NSc9SdLrxd3tGf8tJoCAiJrBKdnadOinhSgX8EzeHRURjsJFCU8L0aYTHiIWTeECAwEAATANBgkqhkiG9w0BAQsFAAOBgQDBk1HCI3Sv/xF9vqE5ik91KzBVnadiPnexe64M+YE3vKIq9vJmxhqyK6eYM/Eg+cZ4cOIpLwzrHnbpCMOMYPURLtZ9gpKxROIbaQ0yqA+x7+1WA+VWHinhbJihGoml8FT2VudhYSaVFD3TwvT+NwJQJ3by/Yfi2+MDFxEwo/bK7w==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
