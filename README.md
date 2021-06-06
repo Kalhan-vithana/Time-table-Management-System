@@ -91,8 +91,9 @@ Time table managemnt system
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+❮img src=Images/Add%20Students%20Group.png" width = "50"❯
 ![](Images/Add%20Students%20Group.png)
-❮img src=Images/Add%20Students%20Group.png" ❯
+
 
 
 
