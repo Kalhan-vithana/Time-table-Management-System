@@ -21,8 +21,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+
+    <img src="  https://github.com/Kalhan-vithana/Time-table-Management-System/blob/master/Images/icons8-saw-blade-100.png
+    " data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="80" height="80" />
   </a>
 
   <h3 align="center">Time Table Management System</h3>
@@ -96,10 +97,12 @@ Time table managemnt system
 
 <img src="https://github.com/Kalhan-vithana/Time-table-Management-System/blob/master/Images/Students%20Groups%20Interface.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600" height="600" />
 
+
+<img src="https://github.com/Kalhan-vithana/Time-table-Management-System/blob/master/Images/Students%20Group%20Navigation.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600" height="600" />
+
 <img src="https://github.com/Kalhan-vithana/Time-table-Management-System/blob/master/Images/Add%20Students%20Group.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600" height="600" />
 
 
-<img src="https://github.com/Kalhan-vithana/Time-table-Management-System/blob/master/Images/Students%20Group%20Navigation.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600" height="600" />
 
 
 
