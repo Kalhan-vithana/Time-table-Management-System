@@ -92,7 +92,15 @@ Time table managemnt system
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-<img src="https://github.com/Kalhan-vithana/Time-table-Management-System/blob/master/Images/Add%20Students%20Group.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600" height="800" />
+
+
+<img src="https://github.com/Kalhan-vithana/Time-table-Management-System/blob/master/Images/Students%20Groups%20Interface.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600" height="600" />
+
+<img src="https://github.com/Kalhan-vithana/Time-table-Management-System/blob/master/Images/Add%20Students%20Group.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600" height="600" />
+
+
+<img src="https://github.com/Kalhan-vithana/Time-table-Management-System/blob/master/Images/Students%20Group%20Navigation.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600" height="600" />
+
 
 
 
